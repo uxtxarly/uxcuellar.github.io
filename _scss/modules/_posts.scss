@@ -1,0 +1,25 @@
+// BLOG POST
+.post {
+  padding: 10%;
+  &:nth-of-type(2n) {
+    background-color: $lighter-gray !important;
+  }
+}
+
+// LISTING POST
+.listing {
+  list-style-type: none;
+  padding-left: 0;
+  > li:nth-of-type(2n+1) {
+    background-color: $lighter-gray;
+  }
+}
+
+.listing__item {
+  padding: 1.5em 10% 0.5em 10%;
+}
+
+// SECTION DESCRIPTIONS
+.section-description {
+  padding: 0 10%;
+}

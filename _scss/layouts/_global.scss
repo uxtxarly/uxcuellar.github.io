@@ -1,0 +1,108 @@
+// GLOBAL LAYOUT
+///////////////////////////////////////////////////////////////////////////////
+
+// GRID CONTAINER
+.l-container {
+  @include outer-container;
+}
+
+// HEADER
+.l-header {
+  @include media($medium-screen)  {
+    position: fixed;
+    padding: em(56) 0 0 0;
+    width: em(160);
+  }
+  padding: em(20) em(10) 0 em(10);
+  text-align: center;
+}
+
+.l-header__brand {
+  @include transition (background-color 0.5s ease-in-out);
+  margin: 0 auto em(20) auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $green;
+  &:hover {
+    background-color: #fff;
+  }
+  > h1 a {
+    color: $dark-blue;
+    font-size: 90px;
+  }
+}
+
+.l-header__nav {
+  @include media($medium-screen)  {
+    display: block;
+  }
+  display: none;
+}
+
+// MAIN CONTENT
+.l-content {
+  @include media($medium-screen)  {
+    @include span-columns(10);
+    @include omega;
+    float: right;
+  }
+  background-color: #fff;
+}
+
+// FOOTER
+.l-footer {
+  @include media($medium-screen)  {
+    position: fixed;
+    bottom: 0;
+    padding-right: 1em;
+    width: em(160);
+  }
+  [class^="icon-"] {
+    @include font-size(2);
+  }
+  .icon-cc {
+    @include font-size(1.8);
+    top: em(3);
+    right: em(2);
+    position: relative;
+  }
+  padding-top: em(20);
+  color: #fff;
+  text-align: center;
+}
+
+.l-footer__credits{
+  @include font-size(1.2);
+  a {
+    @include transition (color 0.5s ease-in-out);
+    color: #fff;
+    &:hover {
+      color: $green;
+    }
+  }
+  > p {
+    margin: 0.5em 0;
+  }
+}
+
+// LISTING PAGES LAYOUT
+.l-listing {
+  padding: 0 !important;
+  > h1 {
+    padding: 10% 10% 0 10%;
+  }
+  .results_found {
+    padding: 0 10%;
+  }
+}
+
+// ARCHIVE PAGE LAYOUT
+.l-archive {
+  padding: 10%;
+}
+
+// TAG CLOUD LAYOUT
+.tag-cloud {
+  padding: 1.5em 10%;
+}
