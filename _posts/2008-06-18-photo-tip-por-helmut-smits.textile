@@ -5,6 +5,6 @@ tags:
 - micrographic
 - art
 ---
-<txp:image id="179" />
+<img src="/images/179.jpg" />
 
 Es preferible dejarse barba de una semana antes de posar en esta instalación del artista alemán Helmut Smits. [vía]

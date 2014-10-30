@@ -6,7 +6,7 @@ tags:
 - micrographic
 - product design
 ---
-<txp:image id="155" />
+<img src="/images/155.jpg" />
 
 Pues resulta que a la gente de Yamaha se les ocurrió que podían unir los dos campos en los que están especializados (el motor y la tecnología de audio) en un nuevo producto. ¿El resultado? La primera motocicleta musical de la historia!
 

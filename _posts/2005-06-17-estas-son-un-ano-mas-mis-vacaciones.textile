@@ -6,4 +6,4 @@ tags:
 - micrographic
 - pop
 ---
-<txp:image id="177" />
+<img src="/images/177.jpg" />

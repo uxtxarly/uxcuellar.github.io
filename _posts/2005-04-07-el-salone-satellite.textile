@@ -5,7 +5,7 @@ tags:
 - micrographic
 - product design
 ---
-<txp:image id="160" />
+<img src="/images/160.jpg" />
 
 Como os decía, en el Salone Satellite de la Feria de Milán se reúnen los trabajos de jovenes diseñadores que aportan algo de frescura al conjunto de la feria.
 

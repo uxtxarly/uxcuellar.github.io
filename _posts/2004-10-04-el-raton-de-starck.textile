@@ -6,7 +6,7 @@ tags:
 - micrographic
 - product design
 ---
-<txp:image id="153" />
+<img src="/images/153.jpg" />
 
 El célebre diseñador galo Philippe Starck se ha pasado al "lado oscuro" y ha firmado el diseño de un ratón óptico para Microsoft.
 

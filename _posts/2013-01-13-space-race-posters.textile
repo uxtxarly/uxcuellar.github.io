@@ -5,6 +5,6 @@ tags:
 - geekism
 - graphics
 ---
-<txp:image id="143" class="wide" />
+<img src="/images/143.jpg" class="wide" />
 
 This is a series of posters by "Justin Van Genderen":http://www.behance.net/JustinVG about the Space Race. They are geeky and beautiful.

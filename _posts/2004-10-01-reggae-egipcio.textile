@@ -5,7 +5,7 @@ tags:
 - micrographic
 - pop
 ---
-<txp:image id="152" />
+<img src="/images/152.jpg" />
 
 Jonathan Richman nos deleitó con un fantástico concierto el martes pasado en Valencia. 
 

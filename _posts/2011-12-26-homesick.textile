@@ -4,4 +4,4 @@ title: Homesick
 tags:
 - space
 ---
-<txp:image id="135" />
+<img src="/images/135.jpg" />

@@ -7,7 +7,7 @@ tags:
 ---
 Retomando viejas costumbres, aquí va un enlace de interés: se trata del portfolio de la ilustradora Brooke Núñez, Lifeinvector . Otro ejercicio magistral de freehand/illustrator para quitarse el sombrero.
 
-<txp:image id="168" />
+<img src="/images/168.jpg" />
 
 Visto en Abuse Magazine
 

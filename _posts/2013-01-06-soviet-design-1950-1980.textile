@@ -4,6 +4,6 @@ title: Soviet Design 1950-1980
 tags:
 - product design
 ---
-<txp:image id="142" class="wide" />
+<img src="/images/142.jpg" class="wide" />
 
 Hasta final de mes se puede visitar esta exposición sobre diseño industrial en la era soviética. Puesto que a la mayoría de nosotros Moscú nos queda lejos, siempre podemos echarle un vistazo a "esta galería":http://cardesigncommunity.com/articles/news-and-reviews/exhibitions/2092.html

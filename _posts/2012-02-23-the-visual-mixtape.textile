@@ -6,7 +6,7 @@ tags:
 - andrew bird
 - pop
 ---
-<txp:image id="130" />
+<img src="/images/130.jpg" />
 
 Via <a href="http://www.behance.net/gallery/The-Visual-Mixtape/512579">behance.net</a>
 

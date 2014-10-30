@@ -8,8 +8,8 @@ tags:
 ---
 Continuando con la cartelística, hojeando otro libro me encontré esta ilustración, una cartel publicitario de pastillas para la tos. Las pastillas en cuestión se llamaban REM
 
-<txp:image id="148" />
+<img src="/images/148.jpg" />
 
 Pues parece que al bueno de Michael Stipe le hizo gracia la coincidencia…
 
-<txp:image id="149" />
+<img src="/images/149.jpg" />

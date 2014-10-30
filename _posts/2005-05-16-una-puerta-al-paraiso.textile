@@ -16,13 +16,13 @@ Y de entre todas los participantes, yo me quedo con estos dos:
 
 h3. Ping Pong, de los alemanes Tobias Fraenzel y Martin Lukasczyk
 
-<txp:image id="165" />
+<img src="/images/165.jpg" />
 
 ¿Por qué conformarse con tener una puerta en casa cuando se puede tener una puerta y una mesa de ping-pong a la vez?
 
 h3. Play the Door, de los españoles Daniel Caramelo y Miguel Estima
 
-<txp:image id="166" />
+<img src="/images/166.gif" />
 
 Los timbres han pasado a la historia. Esta puerta funciona como un instrumento musical (un contrabajo), de forma que puedes utilizar una melodía propia para identificarte cuando vayas a visitar a esa persona tan especial.
 

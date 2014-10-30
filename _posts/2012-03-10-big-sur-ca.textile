@@ -5,10 +5,10 @@ tags:
 - places
 - california
 ---
-<txp:image id="192" />
+<img src="/images/192.jpg" />
 
-<txp:image id="193" />
+<img src="/images/193.jpg" />
 
-<txp:image id="194" />
+<img src="/images/194.jpg" />
 
 Big Sur es uno de esos sitios donde da igual si tus fotos son más o menos buenas (en mi caso suelen ser malas), porque nunca transmitirán las mismas sensaciones que se tienen al estar allí. Uno de mis rincones favoritos de California.

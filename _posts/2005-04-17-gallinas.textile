@@ -7,6 +7,6 @@ tags:
 ---
 Media ciudad de Milan recorrida por metro, bus y a pie bajo una incesante lluvia con el unico objeto de visitar la exposicion paralela de Benetton en “la fabrica del vapor”. Tras llegar calados, esto fue todo lo que vimos en dicha nave
 
-<txp:image id="161" />
+<img src="/images/161.jpg" />
 
 En efecto amigos: una gallina. Y luego los disenadores queremos que nos tomen en serio…

@@ -7,7 +7,7 @@ tags:
 ---
 Desde 1995, las actividades de Reclaim the Streets han transformado calles, puentes y estaciones de metro en enormes raves ilegales secundadas por cientos de “invitados”. Hasta el momento han actuado en Londres, Berlín, Sidney, Edimburgo y Amsterdam.
 
-<txp:image id="170" />
+<img src="/images/170.jpg" />
 
 La cosa funciona así: una vez se provoca un tapón en la calle (normalmente simulando un accidente de tráfico), los participantes reconquistan unos metros de espacio urbano con música y actuaciones. A veces se arrancan unos adoquines para plantar árboles y otras veces se improvisa un parque con columpios para los niños.
 

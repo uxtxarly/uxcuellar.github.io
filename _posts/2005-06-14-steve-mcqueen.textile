@@ -4,7 +4,7 @@ title: Steve McQueen
 tags:
 - micrographic
 ---
-<txp:image id="169" />
+<img src="/images/169.jpg" />
 
 Grande!
 

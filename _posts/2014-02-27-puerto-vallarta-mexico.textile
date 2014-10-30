@@ -4,8 +4,8 @@ title: Puerto Vallarta, Mexico
 tags:
 - places
 ---
-<txp:image id="190" />
+<img src="/images/190.jpg" />
 
-<txp:image id="191" />
+<img src="/images/191.jpg" />
 
 TO DO: -Go to Mexico-

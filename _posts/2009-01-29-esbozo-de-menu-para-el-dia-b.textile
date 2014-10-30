@@ -5,7 +5,7 @@ title: !binary |-
 tags:
 - meals
 ---
-!http://www.carloscuellar.net/images/128.jpg!
+!/images/128.jpg!
 
 * Entrantes: ensalada de tomates secos con queso de cabra, trufa de morcilla, calamaresnosecomo.
 * Principales: dorada, o lubina, o pato con confit.

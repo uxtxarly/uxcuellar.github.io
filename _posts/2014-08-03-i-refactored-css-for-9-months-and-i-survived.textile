@@ -14,7 +14,8 @@ When I started working on this website I found several problems that needed to b
 
 h2. Our first supermegaredesign. Meet Foundation.
 
-<txp:image id="198" />
+<img src="/images/198.png" />
+
 So we concluded that we needed a redesign from scratch that would help us find some visual consistency and would also help us clean the stylesheets mess. We thought that we could use "Foundation 4":http://foundation.zurb.com/, a well known UI framework. It was supposed to be a silver bullet: we wouldn’t need to write all the CSS from scratch, it would gave as a good foundation to achieve that visual consistency and it should also help us implement new good practices. Well, the truth is that it was a complete disaster. Foundation is a good tool, but it wasn’t what we needed. These were some of the problems we found:
 
 * Foundation is highly opinionated. It takes many design decisions for you and you are going to spend quite a long time overwriting styles, and I’m not talking about only two buttons. It’s a fight against the framework, trying to impose your styles against foundation’s defaults (that are often buried in a gem, so you don’t have access to them). It’s funny how Bootstrap has a bad rep because of this, and some designers say that Foundations is much better and more _professional_. Well, in my humble opinion, it is not. They are both very similar.

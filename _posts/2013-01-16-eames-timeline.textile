@@ -6,6 +6,6 @@ tags:
 - product design
 - architecture
 ---
-<txp:image id="146" class="wide" />
+<img src="/images/146.png" class="wide" />
 
 This is a scrolling "timeline about Charles & Ray Eames":http://www.eameshouse250.org/timeline.html. An important chapter of Design history presented with some fancy CSS3 effects. Nice!

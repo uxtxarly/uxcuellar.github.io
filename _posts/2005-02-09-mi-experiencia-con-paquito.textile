@@ -6,7 +6,7 @@ tags:
 ---
 Desde hace unos días hay un nuevo miembro en la familia llamado Paquito. Paquito es un ordenador Intel Dot Station que llegó a mis manos por el módico precio de 60 euros. Claro que el Paco no es un ordenador cualquiera: cuenta con un procesador Celeron a 300 Mhz, 128 Mb de RAM, disco duro de 10 Gb, red, módem… y no tiene ni unidad de CD ni disquetera, pero sí 3 puertos USB en los que se le puede conectar de todo.
 
-<txp:image id="158" />
+<img src="/images/158.jpg" />
 
 Es un aparato bastante apañao. Exteriormente, se parece al iMac original de Jonathan Ive y por eso a alguien se le ocurrió bautizarlo como "Paquito" que suena como "Macintosh" pero más castizo.
 

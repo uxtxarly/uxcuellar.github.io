@@ -5,7 +5,7 @@ tags:
 - micrographic
 - product design
 ---
-<txp:image id="151" />
+<img src="/images/151.jpg" />
 
 Unos contínuos dolores de espalda hicieron que el odontólogo Jordi Badía ideara, con la ayuda del diseñador Otto Canalda, un asiento polivalente que mantiene las curvas fisiológicas de la espalda (se trata de respetar un ángulo de 135º entre la columna y las piernas), además de presentar una singular escotadura que elimina la compresión de los genitales y facilita su ventilación.
 
