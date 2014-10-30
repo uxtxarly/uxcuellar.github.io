@@ -1,0 +1,11 @@
+---
+layout: post
+title: Steve McQueen
+tags:
+- micrographic
+---
+<txp:image id="169" />
+
+Grande!
+
+Vía informativos telecinco.com

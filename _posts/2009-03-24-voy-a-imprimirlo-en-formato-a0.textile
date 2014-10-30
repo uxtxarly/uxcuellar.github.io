@@ -1,0 +1,8 @@
+---
+layout: post
+title: Voy a imprimirlo en formato A0
+tags:
+- procrastination
+- graphics
+---
+<img src="/images/6.jpg" width="349" height="500" alt="" />

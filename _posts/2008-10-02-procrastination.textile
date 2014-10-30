@@ -1,0 +1,9 @@
+---
+layout: post
+title: Procrastination
+tags:
+- procrastination
+- video
+- art
+---
+<iframe width="630" height="502" src="http://www.youtube.com/embed/UXziurFkQxM" frameborder="0" allowfullscreen></iframe>

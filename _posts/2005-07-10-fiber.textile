@@ -1,0 +1,15 @@
+---
+layout: post
+title: FIBER
+tags:
+- micrographic
+---
+Estimados lectores de micrographic, os puedo plantear una preguntilla? Recordáis cuál fue la primera página web que visitásteis al conectaros por primera vez a internet? Es una pregunta que me ha venido a la cabeza esta tarde mientras rellenaba unos formularios online…
+
+Verano del 97. www.festival-benicassim.com. Durante una visita al Politécnico de Valencia me colé en un aula de libre acceso dispuesto a averiguar que era eso del “internet” y de paso aprovechar para obtener información sobre el, por aquel entonces, novedoso festival de música independiente de Benicàssim (en aquella época todavía no se llamaba FIB).
+
+Pues han pasado 8 años y hoy sigo buscando información sobre el FIB, esta vez para apuntarme al voluntariado. Tampoco han cambiado tanto las cosas, verdad? Bueno, yo me he convertido en un auténtico yonqui de las WWW y el festival ha ido adaptando su web a los nuevos tiempos. Y su última mutación ha sido a ese formato que conocemos todos tan bien… en efecto, el FIB estrena blog oficial.
+
+Y la verdad es que no es algo que me extrañe. Por un lado, la gente al frente de FIBER (la publicación oficial del festival) son bloggers conocidos como Elena Cabrera, y por otro lado, el blog es una continuación natural de las listas de correo y los foros que ya utilizaba el festival desde hacía tiempo.
+
+Así que en el nuevo FIBER nos podemos encontrar “no sólo información sobre el FIB, sino un retrato de cómo se vive la música, qué le interesa al público y qué piensan los artistas”. Además, cuenta con un podcast y con la colaboración de tres columnistas que aportan diferentes puntos de vista sobre el festival. Todo ello, gestionado con Wordpress y bajo una licencia Creative Commons. Un blog en toda regla al que habrá que seguirle la pista durante esta semanas previas al festival.

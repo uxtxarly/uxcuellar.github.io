@@ -1,0 +1,13 @@
+---
+layout: post
+title: The Visual Mixtape
+tags:
+- carteles
+- andrew bird
+- pop
+---
+<txp:image id="130" />
+
+Via <a href="http://www.behance.net/gallery/The-Visual-Mixtape/512579">behance.net</a>
+
+Curiosa serie de carteles que el diseñador Noa Emberson dedica a sus discos favoritos.

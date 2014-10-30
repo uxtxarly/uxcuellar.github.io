@@ -1,0 +1,12 @@
+---
+layout: post
+title: Bakersfield, CA
+tags:
+- bakersfield
+- california
+---
+<txp:image id="127" class="wide" />
+
+No se me ocurre una imagen que ilustre mejor lo que es esta ciudad. Bueno, no, no es justo. "Bakersfield":http://en.wikipedia.org/wiki/Bakersfield tiene un centro urbano con edificios estupendos como el "Fox Theater":http://www.foxtheateronline.com/ o el "Padre Hotel":http://www.thepadrehotel.com/ y centros de peregrinación de la música country como el "Crystal Palace":http://www.buckowens.com/index2.html de Buck Owens. Por lo demás, esta ciudad fue parida para ser conducida, no caminada, y eso tiene ventajas y desventajas.
+
+Dos meses y medio. Nos queda alguno más aquí, en Bakersfield. Sigo en mi periodo de adaptación...

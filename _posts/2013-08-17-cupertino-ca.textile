@@ -1,0 +1,17 @@
+---
+layout: post
+title: Cupertino, CA
+tags:
+- apple
+- places
+- california
+---
+<txp:image id="181" />
+
+<txp:image id="182" />
+
+Yes, it's great to be married to a girl who works at Apple. Great perks and sometimes you even get to visit the famous 1 Infinite Loop Headquarters. 
+
+<txp:image id="183" />
+
+(The cake at Caffè Macs was just ok).

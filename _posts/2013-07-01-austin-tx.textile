@@ -1,0 +1,15 @@
+---
+layout: post
+title: Austin, TX
+tags:
+- places
+---
+<txp:image id="187" />
+
+<txp:image id="188" />
+
+<txp:image id="189" />
+
+Lightspeed opened a new office in Austin and I got the chance to visit for a week. It's a cool city with a fun nightlife, and probably the best meat I had in my life. 
+
+Austin, I'm coming back next year!

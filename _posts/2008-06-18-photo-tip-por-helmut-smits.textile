@@ -1,0 +1,10 @@
+---
+layout: post
+title: 'Photo Tip, por Helmut Smits '
+tags:
+- micrographic
+- art
+---
+<txp:image id="179" />
+
+Es preferible dejarse barba de una semana antes de posar en esta instalación del artista alemán Helmut Smits. [vía]

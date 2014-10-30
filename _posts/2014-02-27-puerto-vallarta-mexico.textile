@@ -1,0 +1,11 @@
+---
+layout: post
+title: Puerto Vallarta, Mexico
+tags:
+- places
+---
+<txp:image id="190" />
+
+<txp:image id="191" />
+
+TO DO: -Go to Mexico-
