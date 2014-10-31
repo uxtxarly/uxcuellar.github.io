@@ -9,7 +9,7 @@ author:
 markdown:     kramdown
 permalink:    /blog/:title/
 highlighter:  pygments
-paginate:     5
+paginate:     10
 
 # Use the following plug-ins
 gems:
