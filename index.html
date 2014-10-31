@@ -4,18 +4,18 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
+  <article class="post">
     <h1 class="post-title"><a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}</h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content }}
-  </div>
+  </article>
   {% endfor %}
 </div>
 
 <!-- Pagination links -->
-<div class="pagination">
+<div class="paginator">
   {% if paginator.next_page %}
     <a href="/page{{paginator.next_page}}" class="older">Older</a>
   {% else %}

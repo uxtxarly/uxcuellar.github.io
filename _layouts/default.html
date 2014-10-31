@@ -1,33 +1,98 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html class="no-js" lang="en-us" dir="ltr">
 
   {% include head.html %}
 
   <body>
+    <div class="l-container">
+      
+      <header role="banner" class="l-header">
+<!--         <div class="masthead-inner">
+          <h1>{{ site.title }}</h1>
+          <p class="lead">{{ site.description }}</p>
 
-    <header class="masthead">
-      <div class="masthead-inner">
-        <h1>{{ site.title }}</h1>
-        <p class="lead">{{ site.description }}</p>
+          <div class="colophon">
+            <ul class="colophon-links">
+              <li>
+                <a href="/about.html">About</a>
+              </li>
+              <li>
+                <a href="/archive.html">Archive</a>
+              </li>
+              <li>Currently v{{ site.version }}</li>
+            </ul>
+            <p>&copy; 2014. {{ site.author.name }} All rights reserved.</p>
+          </div>
+        </div> -->
 
-        <div class="colophon">
-          <ul class="colophon-links">
-            <li>
-              <a href="/about.html">About</a>
-            </li>
-            <li>
-              <a href="/archive.html">Archive</a>
-            </li>
-            <li>Currently v{{ site.version }}</li>
-          </ul>
-          <p>&copy; 2014. {{ site.author.name }} All rights reserved.</p>
+        <div class="nav__toggle">
+          <i class="icon-menu"></i>
         </div>
-      </div>
-    </header>
+        <div class="l-header__brand">
+          <h1><a rel="home" href="/"><i class="icon-gafas" aria-hidden="true"></i><span class="is-visuallyhidden">Carlos Cuellar</span></a></h1>
+        </div>     
+        <div class="l-header__nav">
+          <nav role="navigation" class="" aria-label="Navigation">
+            <ul class="nav__list">
+              <li>
+                <a href="/">Journal</a>
+              </li>    
+              <li>
+                <a href="/archive.html">Archive</a>
+              </li>
+              <li>
+                <a href="/about.html">About</a>
+              </li>
+            </ul>
+          </nav>
+          <form role="search" method="get" action="http://carloscuellar.net/">
+            <input id="search-textbox" type="search" name="q" placeholder="Search the blog" class="nav__search">
+          </form>
+        </div>
+      </header>
 
-    <div class="content container">
-      {{ content }}
+      <main role="main" class="l-content" aria-label="Main content">
+        {{ content }}
+      </main>
+      <footer role="contentinfo" class="l-footer">
+        <div class="l-footer__credits">
+          <ul class="list--inline">
+            <li><a href="/rss" title="RSS Feed"><i class="icon-feed"></i></a></li>
+            <li><a href="https://twitter.com/carlosxcuellar" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.linkedin.com/in/carlosxcuellar" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/carlosxcuellar" title="Github"><i class="icon-github"></i></a></li>
+          </ul>
+          <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" title="All content in this blog, except where otherwise noted, is licensed under a Creative Commons Attribution 4.0 License"><i class="icon-cc"></i></a> <a xmlns:cc="http://creativecommons.org/ns#" href="http://carloscuellar.net" property="cc:attributionName" rel="cc:attributionURL">Carlos Cuéllar</a> 2014</p>
+        </div>
+      </footer>
     </div>
+    <!-- js libraries -->
+    <script src="http://carloscuellar.net/txp.smacss/js/vendor/custom.modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://carloscuellar.net/txp.smacss/js/vendor/jquery.js"><\/script>')</script>   
+    <script src="http://carloscuellar.net/txp.smacss/js/jquery.fitvids.js"></script>
 
+    <!-- fitvids -->
+    <script>
+      $(document).ready(function(){
+        // Target your .container, .wrapper, .post, etc.
+        $(".post").fitVids();
+      });
+    </script>
+
+    <!-- toggle menu -->
+    <script>
+      $(function() {
+        $( ".nav__toggle" ).click(function() {
+          $( ".l-header__nav" ).toggleClass( "is-visible");
+          return false;
+        });
+      });
+    </script>
+
+    <!-- external links -->
+    <script type="text/javascript">
+      $('a[rel="external"]').attr('target', '_blank');
+    </script>
   </body>
 </html>
