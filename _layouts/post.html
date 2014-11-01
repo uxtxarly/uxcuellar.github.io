@@ -8,7 +8,10 @@ layout: default
     {% else %}
     <h1 class="post-title">{{ page.title }}</h1>
   {% endif %}
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <p>
+    <i class="icon-clock"></i> <time>{{ page.date | date_to_string }}</time>
+    <a href="{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
+  </p>
   {{ content }}
 </article>
 <hr />
