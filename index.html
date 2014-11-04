@@ -8,7 +8,7 @@ layout: default
     <h1 class="post-title"><a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}</h1>
 
     <p>
-      <i class="icon-clock"></i> <time>{{ post.date | date_to_string }}</time>
+      <time>{{ post.date | date_to_string }}</time> &middot; 
       <a href="{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
     </p>
     {{ post.content }}

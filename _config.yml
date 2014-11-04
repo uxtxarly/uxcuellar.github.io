@@ -1,8 +1,7 @@
-name:        Carlos Cuéllar
+name:         Carlos Cuéllar
 tagline:      'Standard Nerd'
 description:  'A personal blog'
 url:          http://carloscuellar.net
-version:      2.0
 author:       
   name:       'Carlos Cuellar'
   email:      'hola@carloscuellar.net'
