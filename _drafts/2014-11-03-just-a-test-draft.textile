@@ -1,7 +1,6 @@
 ---
 layout: post
 title: just a test draft
-published: True
 categories: []
 tags: []
 ---
