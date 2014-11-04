@@ -10,6 +10,14 @@ permalink:    /blog/:title/
 highlighter:  pygments
 paginate:     10
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
+      author: "Carlos Cuéllar"
+      
 # Use the following plug-ins
 gems:
   - jemoji # Emoji please!
