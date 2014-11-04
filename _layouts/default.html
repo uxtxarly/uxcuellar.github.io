@@ -27,8 +27,8 @@
               </li>
             </ul>
           </nav>
-          <form role="search" method="get" action="http://carloscuellar.net/">
-            <input id="search-textbox" type="search" name="q" placeholder="Search the blog" class="nav__search">
+          <form onsubmit="my_search_google()" >
+            <input type="search" id="cuellar-search" placeholder="Search" class="nav__search" >
           </form>
         </div>
       </header>
@@ -51,7 +51,7 @@
     <!-- js libraries -->
     <script src="http://carloscuellar.net/txp.smacss/js/vendor/custom.modernizr.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://carloscuellar.net/txp.smacss/js/vendor/jquery.js"><\/script>')</script>   
+    <script>window.jQuery || document.write('<script src="http://carloscuellar.net/txp.smacss/js/vendor/jquery.js"><\/script>')</script> 
     <script src="http://carloscuellar.net/txp.smacss/js/jquery.fitvids.js"></script>
 
     <!-- fitvids -->
@@ -76,5 +76,14 @@
     <script type="text/javascript">
       $('a[rel="external"]').attr('target', '_blank');
     </script>
+
+    <script language="Javascript" type="text/javascript">
+      function my_search_google()
+      {
+        var query = document.getElementById("cuellar-search").value;
+        window.open("http://google.com/search?q=" + query
+      + "%20site:" + "http://carloscuellar.net");
+      }
+    </script>  
   </body>
 </html>
