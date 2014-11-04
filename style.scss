@@ -24,7 +24,8 @@
 @import 
   "base/normalize", 
   "base/elements",
-  "base/state";
+  "base/state",
+  "base/syntax";
 
 // Layouts
 @import "layouts/global";
@@ -39,4 +40,3 @@
 
 // Print styles
 @import "base/print";
-// Syntax highlighting @import is at the bottom of this file
