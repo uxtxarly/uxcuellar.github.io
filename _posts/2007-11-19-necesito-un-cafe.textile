@@ -5,6 +5,7 @@ title: !binary |-
 tags:
 - infographics
 - caffeine
+redirect_from: "blog/34/necesito-un-cafe/"
 ---
 <img src="/images/21.png" width="450" height="445" alt="" />
 

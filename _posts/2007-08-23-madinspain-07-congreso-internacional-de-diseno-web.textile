@@ -6,6 +6,7 @@ title: !binary |-
 tags:
 - micrographic
 - web design
+redirect_from: "blog/395/madinspain-07-congreso-internacional-de-diseno-web/"
 ---
 El equipo de Domestika ya tiene la maquinaria lista y engrasada para poner en marcha la segunda edición de MADinSPAIN, el Congreso Internacional de Diseño Web más importante por estos lares.
 

@@ -3,6 +3,7 @@ layout: post
 title: 'someecards.com: tarjetas corrosivas'
 tags:
 - micrographic
+redirect_from: "blog/392/someecardscom-tarjetas-corrosivas/"
 ---
 Si tenéis amistades con gusto por el humor ácido e irónico (y con conocimientos básicos de inglés), os sugiero que le echéis un vistazo a las tarjetas de someecards.com.
 

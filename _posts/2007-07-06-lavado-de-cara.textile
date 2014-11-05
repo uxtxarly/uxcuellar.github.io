@@ -3,6 +3,7 @@ layout: post
 title: Lavado de cara
 tags:
 - micrographic
+redirect_from: "blog/390/lavado-de-cara/"
 ---
 Aprovechando que las vacaciones me dejan retomar el blog, he decidido darle un pequeño lavado de cara y cargarme la anterior plantilla, que nunca terminó de funcionar como debiera.
 

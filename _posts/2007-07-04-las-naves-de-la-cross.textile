@@ -4,6 +4,7 @@ title: Las naves de la Cross
 tags:
 - architecture
 - valencia
+redirect_from: "blog/36/las-naves-de-la-cross/"
 ---
 Durante los últimos años, cada vez que cogía el tren para ir a Castellón siempre me quedaba hipnotizado por las ruinas de unas naves industriales junto al puerto de Valencia.
 

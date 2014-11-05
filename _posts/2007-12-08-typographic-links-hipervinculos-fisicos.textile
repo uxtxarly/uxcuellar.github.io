@@ -5,6 +5,7 @@ title: !binary |-
 tags:
 - typography
 - art
+redirect_from: "blog/33/typographic-links-hipervinculos-fisicos/"
 ---
 <img src="/images/20.jpg" class="wide" alt="" />
 

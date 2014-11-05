@@ -3,6 +3,7 @@ layout: post
 title: Tank Books
 tags:
 - micrographic
+redirect_from: "blog/391/tank-books/"
 ---
 Coincidiendo con la puesta en marcha de la ley anti-tabaco británica, una editorial ha lanzado una colección de libros de bolsillo con packagings que simulan cajetillas de tabaco.
 
