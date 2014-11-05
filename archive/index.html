@@ -9,17 +9,25 @@ sitemap: false
   <div itemprop="mainContentOfPage">
     <ul class="listing">
       {% for post in site.posts %}
-        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+        {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+        {% unless post.link %}
+          {% unless month == post_month %}
+            {% assign month = post_month %}
+            <li class="listing__item">
+              <h4>{{ month }}</h4>
+          {% endunless %}
+        {% endunless %}
+        {% unless post.link %}
+          <p>
+            <span class="time">{{ post.date | date: "%b %d" }}</span>: 
+            <span class="link"><a href="{{ post.url }}">{{ post.title }}</a></span>
+          </p>
 
-        {% if month != nmonth %}
-          {% if forloop.index != 1 %}</ul>{% endif %}
-          <li class="listing__item">
-            <h4>{{ post.date | date: '%B %Y' }}</h4><ul>
-          {% endif %}
-          <li><time>{{ post.date | date_to_string }}</time>: <a href="{{ post.url }}">{{ post.title }}</a></li>
-        </li>
+        {% endunless %}
+
       {% endfor %}
+
+      </li>
     </ul>
   </div>
 </section>
