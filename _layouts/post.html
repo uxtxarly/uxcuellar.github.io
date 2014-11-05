@@ -3,16 +3,17 @@ layout: default
 ---
 
 <article class="post" role="article" itemscope itemtype="http://schema.org/Article">
-  {% if page.link %}
-    <h2 itemprop="name"><a rel="external" href="{{ page.link }}">{{ page.title }} <span class="link-arrow">&rarr;</span></a></h2>
-    {% else %}
-    <h2 itemprop="name">{{ page.title }}</h2>
-  {% endif %}
-
-  <p>
-    <i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> &middot;
-    <a href="{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
-  </p>
+  <header>
+    {% if page.link %}
+      <h2 itemprop="name"><a rel="external" href="{{ page.link }}">{{ page.title }} <span class="link-arrow">&rarr;</span></a></h2>
+      {% else %}
+      <h2 itemprop="name">{{ page.title }}</h2>
+    {% endif %}
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> &middot;
+      <a href="{{ post.url }}" class="permalink">&infin;</a>
+    </p>
+  </header>
   <div itemprop="articleBody">
     {{ content }}
   </div>
