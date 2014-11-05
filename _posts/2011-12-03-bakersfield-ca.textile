@@ -4,6 +4,7 @@ title: Bakersfield, CA
 tags:
 - bakersfield
 - california
+redirect_from: "blog/45/bakersfield-ca/"
 ---
 <img src="/images/127.jpg" class="wide" />
 

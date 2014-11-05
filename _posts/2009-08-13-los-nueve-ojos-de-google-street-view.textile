@@ -5,6 +5,7 @@ tags:
 - art
 - photography
 - google
+redirect_from: "blog/19/los-nueve-ojos-de-google-street-view/"
 ---
 Hace dos años Google se embarcó en la titánica tarea de complementar su servicio <a href="http://maps.google.es/">Google Maps</a> con fotografías a ras de suelo. Armado con un ejercito de coches con cámaras de nueve lentes en su techo, Google ha recorrido ya un buen puñado de ciudades en todo el mundo y todos hemos dado paseos virtuales curioseando en sus páginas.
 

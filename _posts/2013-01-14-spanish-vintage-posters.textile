@@ -4,6 +4,7 @@ title: Spanish vintage posters
 tags:
 - vintage
 - graphics
+redirect_from: "blog/75/spanish-vintage-posters/"
 ---
 <img src="/images/144.jpg" />
 

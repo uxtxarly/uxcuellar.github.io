@@ -4,6 +4,7 @@ title: Bart Davenport en directo
 tags:
 - live
 - matisse
+redirect_from: "blog/28/bart-davenport-en-directo/"
 ---
 <img src="/images/18.jpg" width="630"  alt="bart davenport en valencia" class="wide" />
 

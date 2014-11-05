@@ -4,6 +4,7 @@ title: !binary |-
   RXNib3pvIGRlIG1lbsO6IHBhcmEgZWwgZMOtYSDigJxC4oCd
 tags:
 - meals
+redirect_from: "blog/47/esbozo-de-menu-para-el-dia-b/"
 ---
 !/images/128.jpg!
 

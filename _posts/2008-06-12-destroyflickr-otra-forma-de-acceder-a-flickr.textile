@@ -3,6 +3,7 @@ layout: post
 title: 'DestroyFlickr: otra forma de acceder a Flickr'
 tags:
 - micrographic
+redirect_from: "blog/403/destroyflickr-otra-forma-de-acceder-a-flickr/"
 ---
 Si sois usuarios habituales de Flickr no podéis dejar de echarle un vistazo a DestroyFlickr, una aplicación de Adobe Air que cambia totalmente la forma con la que interactúas con la mayor comunidad online de fotografía.
 

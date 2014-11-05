@@ -3,6 +3,7 @@ layout: post
 title: Petal Pockets
 tags:
 - product design
+redirect_from: "blog/22/petal-pockets/"
 ---
 <img src="/images/12.jpg" width="400" height="533" alt="" />
 

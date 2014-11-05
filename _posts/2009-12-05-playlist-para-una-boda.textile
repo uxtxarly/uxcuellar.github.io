@@ -4,6 +4,7 @@ title: Playlist para una boda
 tags:
 - songs
 - lists
+redirect_from: "blog/21/playlist-para-una-boda/"
 ---
 Este verano pasado comenté en twitter que me encontraba ante uno de los momentos más "alta fidelidad" de mi vida: tenía que confeccionar una lista de canciones para mi boda. Bueno, más que una boda fue una fiesta en casa de mis suegros en Bakersfield, California, pero a efectos formales para nuestros invitados americanos se trató de nuestra boda.
 

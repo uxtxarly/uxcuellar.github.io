@@ -7,6 +7,7 @@ tags:
 - festival
 - valencia
 - matisse
+redirect_from: "blog/27/datura-folk-2/"
 ---
 <img src="/images/17.jpg" width="500" height="703" alt="" />
 

@@ -4,6 +4,7 @@ title: Constructores
 tags:
 - web development
 - video
+redirect_from: "blog/66/constructores/"
 ---
 De vez en cuando es necesario echar dos pasos atrás para poder contemplar algo con cierta perspectiva. Esto mismo es lo que hizo Wilson Miner en "Build":http://2012.buildconf.com/, un evento para diseñadores con conferencias, workshops, etc.
 

@@ -4,6 +4,7 @@ title: Lettera 22
 tags:
 - graphics
 - vintage
+redirect_from: "blog/24/lettera-22/"
 ---
 <img src="/images/14.jpg" width="286" height="500" alt="" />
 

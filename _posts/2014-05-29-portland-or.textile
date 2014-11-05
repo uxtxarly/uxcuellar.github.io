@@ -4,6 +4,7 @@ title: Portland, OR
 tags:
 - places
 - oregon
+redirect_from: "blog/415/portland-or/"
 ---
 <img src="/images/196.jpg" />
 

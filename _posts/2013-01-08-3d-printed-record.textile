@@ -5,6 +5,7 @@ tags:
 - music
 - technology
 - prototyping
+redirect_from: "blog/72/3d-printed-record/"
 ---
 <iframe src="http://player.vimeo.com/video/56017345?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 

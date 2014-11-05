@@ -5,6 +5,7 @@ tags:
 - carteles
 - andrew bird
 - pop
+redirect_from: "blog/62/the-visual-mixtape/"
 ---
 <img src="/images/130.jpg" />
 

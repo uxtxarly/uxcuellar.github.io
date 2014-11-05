@@ -5,6 +5,7 @@ tags:
 - songs
 - pop
 - sixties
+redirect_from: "blog/23/how-can-i-be-down/"
 ---
 <iframe width="630" height="502" src="http://www.youtube.com/embed/DAser4oET4Q" frameborder="0" allowfullscreen></iframe>
 

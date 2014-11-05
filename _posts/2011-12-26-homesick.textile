@@ -3,5 +3,6 @@ layout: post
 title: Homesick
 tags:
 - space
+redirect_from: "blog/60/homesick/"
 ---
 <img src="/images/135.jpg" />

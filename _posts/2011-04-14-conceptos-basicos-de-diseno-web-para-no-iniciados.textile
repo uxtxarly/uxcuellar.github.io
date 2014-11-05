@@ -6,6 +6,7 @@ title: !binary |-
 tags:
 - web design
 - tips
+redirect_from: "blog/26/conceptos-basicos-de-diseno-web-para-no-iniciados/"
 ---
 <img src="/images/16.jpg" width="500" height="387" alt="" />
 

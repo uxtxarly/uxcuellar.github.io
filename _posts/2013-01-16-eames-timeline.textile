@@ -5,6 +5,7 @@ tags:
 - eames
 - product design
 - architecture
+redirect_from: "blog/76/eames-timeline/"
 ---
 <img src="/images/146.png" class="wide" />
 

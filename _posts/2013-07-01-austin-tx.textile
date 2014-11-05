@@ -3,6 +3,7 @@ layout: post
 title: Austin, TX
 tags:
 - places
+redirect_from: "blog/412/austin-tx/"
 ---
 <img src="/images/187.jpg" />
 

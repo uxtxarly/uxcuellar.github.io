@@ -4,6 +4,7 @@ title: Big Sur, CA
 tags:
 - places
 - california
+redirect_from: "blog/414/big-sur-ca/"
 ---
 <img src="/images/192.jpg" />
 

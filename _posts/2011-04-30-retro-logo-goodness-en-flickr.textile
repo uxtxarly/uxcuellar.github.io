@@ -5,6 +5,7 @@ tags:
 - graphics
 - logos
 - vintage
+redirect_from: "blog/29/retro-logo-goodness-en-flickr/"
 ---
 <a href="http://www.flickr.com/photos/jordanlloyd/sets/72157625725750162/?page=2"><img src="http://farm6.static.flickr.com/5249/5314580023_8e49538f57.jpg" alt="Una recopilación de logos retro en Flickr" /></a>
 

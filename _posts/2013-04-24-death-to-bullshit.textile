@@ -4,6 +4,7 @@ title: Death to bullshit
 tags:
 - video
 - creativity
+redirect_from: "blog/78/death-to-bullshit/"
 ---
 <iframe src="http://player.vimeo.com/video/63437853" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
 

@@ -5,6 +5,7 @@ title: !binary |-
 tags:
 - micrographic
 - blogs
+redirect_from: "blog/400/microblogging-tumblelogs-y-apatia/"
 ---
 Ayer, casi por casualidad, abrí una cuenta en Tumblr. Tumblr es un servicio de tumblelogs gratuíto. ¿Y qué es eso de los tumblelogs? Pues una variante light de un blog: un espacio donde se cuelgan anotaciones, imágenes, vídeos o comentarios que uno va recopilando al navegar por internet. Es ideal para crear un post rápido, con una imagen, un pie de foto y un link, por ejemplo.
 

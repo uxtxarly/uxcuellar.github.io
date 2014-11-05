@@ -4,6 +4,7 @@ title: Space Race Posters
 tags:
 - geekism
 - graphics
+redirect_from: "blog/73/space-race-posters/"
 ---
 <img src="/images/143.jpg" class="wide" />
 

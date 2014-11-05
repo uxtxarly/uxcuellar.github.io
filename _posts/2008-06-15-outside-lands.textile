@@ -4,6 +4,7 @@ title: Outside lands
 tags:
 - micrographic
 - pop
+redirect_from: "blog/404/outside-lands/"
 ---
 <img src="/images/178.jpg" />
 

@@ -5,6 +5,7 @@ tags:
 - apple
 - places
 - california
+redirect_from: "blog/410/cupertino-ca/"
 ---
 <img src="/images/181.jpg" />
 

@@ -3,6 +3,7 @@ layout: post
 title: Soviet Design 1950-1980
 tags:
 - product design
+redirect_from: "blog/71/soviet-design-1950-1980/"
 ---
 <img src="/images/142.jpg" class="wide" />
 

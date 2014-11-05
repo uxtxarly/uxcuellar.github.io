@@ -5,6 +5,7 @@ title: !binary |-
   w6F0aWw=
 tags:
 - micrographic
+redirect_from: "blog/407/my-document-funda-geek-o-freak-para-portatil/"
 ---
 <img src="/images/180.jpg" />
 
