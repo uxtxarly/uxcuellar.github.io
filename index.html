@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title"><a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}</h1>
+{% for post in paginator.posts %}
+<article class="post" role="article" itemscope itemtype="http://schema.org/Article">
+  {% if post.link %}
+    <h1 itemprop="name"><a rel="external" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h1>
+    {% else %}
+    <h1 itemprop="name"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  {% endif %}
 
-    <p>
-      <time>{{ post.date | date_to_string }}</time> &middot; 
-      <a href="{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
-    </p>
+  <p>
+    <i class="icon-clock"></i>&nbsp;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> &middot; 
+    <a href="{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
+  </p>
+  <div itemprop="articleBody">
     {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+  </div>
+</article>
+{% endfor %}
 
 <!-- Pagination links -->
 <nav class="paginator">
