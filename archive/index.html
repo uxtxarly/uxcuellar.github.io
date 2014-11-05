@@ -4,7 +4,7 @@ title: Archive
 sitemap: false
 ---
 <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
-  <h1 itemprop="name">Archive</h1>
+  <h2 itemprop="name">Archive</h2>
   <p class="section-description">This is a list of all the posts published on this site, listed by date.</p>
   <div itemprop="mainContentOfPage">
     <ul class="listing">
@@ -14,7 +14,7 @@ sitemap: false
           {% unless month == post_month %}
             {% assign month = post_month %}
             <li class="listing__item">
-              <h4>{{ month }}</h4>
+              <h3 class="h4">{{ month }}</h3>
           {% endunless %}
         {% endunless %}
         {% unless post.link %}
