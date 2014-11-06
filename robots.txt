@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /rss/
+
+Sitemap: http://carloscuellar.net/sitemap.xml
