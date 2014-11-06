@@ -18,10 +18,10 @@ sitemap: false
           {% endunless %}
         {% endunless %}
         {% unless post.link %}
-          <p>
-            <span class="time">{{ post.date | date: "%b %d" }}</span>: 
-            <span class="link"><a href="{{ post.url }}">{{ post.title }}</a></span>
-          </p>
+          <div itemscope itemtype="http://schema.org/Article">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>: 
+            <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+          </div>
         {% endunless %}
       {% endfor %}
       </li>
