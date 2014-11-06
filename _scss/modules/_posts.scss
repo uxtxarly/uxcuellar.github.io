@@ -28,7 +28,10 @@
 }
 
 .listing__item {
-  padding: 1.5em 10% 0.5em 10%;
+  padding: 1.5em 10%;
+  > p {
+    margin: 0;
+  }
 }
 
 // SECTION DESCRIPTIONS
