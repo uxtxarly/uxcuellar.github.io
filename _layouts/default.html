@@ -27,10 +27,9 @@
               </li>
             </ul>
           </nav>
-          <form onsubmit="my_search_google()" >
-            <input type="search" id="cuellar-search" placeholder="Search" class="nav__search" >
+          <form action="/search" method="get">
+            <input type="search" name="query" placeholder="Search" class="nav__search">
           </form>
-        </div>
       </header>
 
       <main role="main" class="l-content" aria-label="Main content">
@@ -53,6 +52,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ site.url }}/js/vendor/jquery.js"><\/script>')</script> 
     <script src="{{ site.url }}/js/jquery.fitvids.js"></script>
+    <script src="/js/jquery-tapir.min.js"></script>
 
     <!-- fitvids -->
     <script>
@@ -83,6 +83,9 @@
         var query = document.getElementById("cuellar-search").value;
         window.open("http://google.com/search?q=" + query
       + "%20site:" + "{{ site.url }}"); }
+    </script>
+    <script>
+      $('#search_results').tapir({'token': '545c397034932d8eec000000'});
     </script>
 
     <!-- google analytics -->
