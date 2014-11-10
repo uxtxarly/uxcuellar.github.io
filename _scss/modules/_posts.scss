@@ -2,7 +2,8 @@
 .post {
   padding: 10%;
   &:nth-of-type(2n) {
-    background-color: $lighter-gray !important;
+    border-top: 1px dashed $orange;
+    border-bottom: 1px dashed $orange;
   }
   
   header {
@@ -28,7 +29,8 @@
 .result {
   padding: 1.5em 10%;
   &:nth-of-type(2n+1) {
-    background-color: $lighter-gray !important;
+    border-top: 1px dashed $orange;
+    border-bottom: 1px dashed $orange;
   }
 }
 
