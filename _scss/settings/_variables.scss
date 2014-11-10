@@ -6,23 +6,23 @@ $medium-blue: #00AFD7;
 $dark-blue: #2D3E4F;
 
 $lighter-gray: #F3F3F3;
-$light-gray: #DDD;
+$light-gray: #e4e7e5;
 $medium-gray: #B2B4B2;
 $dark-gray: #54585A;
 
 $red: #F04848;
 $yellow: #ECBD0C;
-$orange: #FF8200;
+$orange: #f9742b;
 $light-orange: #FECB8B;
 $green: #2ABB9B;
 $purple: #753BBD;
 
 // FONT COLORS
 $base-font-color: $dark-gray;
-$base-accent-color: $green;
+$base-accent-color: $orange;
 
 // TEXT LINK COLORS
-$base-link-color: $base-accent-color;
+$base-link-color: $orange;
 $hover-link-color: darken($base-accent-color, 15);
 
 // BORDER COLOR
