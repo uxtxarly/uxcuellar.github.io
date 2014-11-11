@@ -14,17 +14,12 @@
           <h1><a rel="home" href="/"><i class="icon-gafas" aria-hidden="true"></i><span class="is-visuallyhidden">Carlos Cuellar</span></a></h1>
         </div>     
         <div class="l-header__nav">
+          {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
             <ul class="nav__list">
-              <li>
-                <a href="/">Journal</a>
-              </li>    
-              <li>
-                <a href="/archive">Archive</a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
+              <li><a {% if location == 'blog' %}class="active" {% endif %}href="/">Journal</a></li>
+              <li><a {% if location == 'archive' %}class="active" {% endif %}href="/archive/">Archive</a></li>
+              <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
             </ul>
           </nav>
           <form action="/search" method="get">
