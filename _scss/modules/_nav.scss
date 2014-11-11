@@ -52,7 +52,7 @@ input[type="color"] {
   border-radius: 3px 0 0 3px !important;
   background: $light-gray !important;
   box-shadow: none !important;
-  color: $orange;
+  color: $base-accent-color;
 }
 
 // NAV LIST
@@ -100,7 +100,7 @@ input[type="color"] {
   > a {
     float: left;
     padding: 0.3em 0.6em;
-    border: 1px solid $orange;
+    border: 1px solid $base-accent-color;
     border-radius: 20px;
   }
   > a:nth-of-type(2) {

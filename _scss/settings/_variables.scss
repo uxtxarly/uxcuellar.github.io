@@ -22,7 +22,7 @@ $base-font-color: $dark-gray;
 $base-accent-color: $orange;
 
 // TEXT LINK COLORS
-$base-link-color: $orange;
+$base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 
 // BORDER COLOR
