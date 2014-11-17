@@ -1,0 +1,53 @@
+---
+layout: post
+title: My Setup
+published: True
+tags: [setup, software, hardware]
+description: A list of hardware and software tools that I use daily at work and at home.
+---
+
+I wanted to talk about some tools I use so I wrote down a list that I called "Nerd Fun Tools", but then I found this "blog full of nerdy interviews with people talking about stuff they use":http://usesthis.com/. I think that's a better format than just writing a trillion nerdy posts about similar stuff, so I'm going to pretend I'm interviewing myself and I'll talk about *stuff I use*.
+
+h3. Who are you, and what do you do?
+
+Hi, my name is Carlos Cuéllar and I design e-learning products for K-12 schools at "Lightspeed Systems":http://lightspeedsystems.com/. I'm a Spaniard living in Portland who enjoys caffeine, live music and Formula 1 races.
+
+h3. What hardware do you use?
+
+My laptop is a "2012 Macbook Pro Retina with 500Gb SSD, 16 gigs of RAM and a 2.7Ghz i7 processor":http://support.apple.com/kb/sp653. It's the best computer I've ever had and I think I might keep it for another year or two. When I'm at the office, I connect my laptop to a "27&quot; Thunderbolt Display":https://www.apple.com/displays/, a wired Apple keyboard and a trackpad. It's a nice setup but I really want Apple to _retinize_ the Thunderbolt Display.
+
+!/images/my_mac.jpg(My Macbook Pro)!
+
+I use a "Time Capsule":https://www.apple.com/airport-time-capsule/ as a global backup solution and sometimes I use "SuperDuper!":http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html to clone my laptop's drive in an old external hard drive. I don't use "Crashplan":http://www.code42.com/crashplan/ or any cloud-based backup service because I keep most of my files in "Dropbox":https://www.dropbox.com, "Google Drive":https://drive.google.com and "GitHub":https://www.github.com. Hopefully that should be enough protection!
+
+I like to occasionally steal my wife's laptop (please don't tell her!), a "2013 Macbook Air":http://support.apple.com/kb/sp678, and my mobile devices are Apple-made too: an "iPhone 5S":https://www.apple.com/iphone-5s/specs/ and an "iPad Air":https://www.apple.com/ipad-air/specs/. You would think I'm an Apple fanboy, but I really like some Android smartphones. I would never buy any other tablet than an iPad though.
+
+At home, I have a dumb Toshiba LED TV that is connected to a 3rd generation "Apple TV":https://www.apple.com/appletv/ and a "Teac MC-DV600 receiver":http://www.teac.com/product/mc-dv600/. The Apple TV is getting dated but it's still great for me. I use Airplay all the time to mirror content from video apps, Netflix and Amazon Prime Video feed me with more content than I can actually watch, and the Podcast and Radio apps are just great. I would probably use a "Raspberry Pi with XBMC":http://www.raspbmc.com/ if I was in Europe, but here there's no need for it. The Teac receiver is not too fancy (I really need to upgrade those bookshelf speakers), but its secret weapon is a multizone DVD player that lets me watch movies I purchased in Spain. I also have an "Audio-Technica AT-LP60 turntable":http://www.audio-technica.com/cms/turntables/9a7f42b88ee1e14b/index.html, a "Logitech UE Boom wireless speaker":http://www.ultimateears.com/en-us/boom and I recently ordered the new "Amazon Fire TV Stick":http://www.amazon.com/Amazon-W87CUN-Fire-TV-Stick/dp/B00GDQ0RMG but I won't get it for another two weeks.
+
+h3. And what software?
+
+h4. Design
+
+"Sketch 3":http://bohemiancoding.com/sketch/ has become my main design tool: I use it for wireframes and also for more polished mockups. Then I create and share clickable prototypes with "InVision":http://www.invisionapp.com/, which is one of the most useful web-based tools a designer can use. 
+
+!/images/sketch3.jpg(Sketch 3)!
+
+When I need to edit bitmap files I still open "Photoshop":http://www.adobe.com/products/photoshop.html, but I've never been a fan. I was a "Fireworks":https://creative.adobe.com/products/fireworks user for a long time and when Adobe started neglecting it I switched to "Illustrator":http://www.adobe.com/products/illustrator.html which kind of worked for me (it's still as bloated as Photoshop). Recently Sketch gained traction in the design community and I was happy to switch.
+
+I also use many smaller tools like "ImageOptim":https://imageoptim.com/ to optimize image compression, "xScope":http://xscopeapp.com/ to measure things on screen and mirror mockups in mobile devices, "Sip":http://theolabrothers.com/sip/ to pick colors on screen, and "Preview":http://support.apple.com/en-us/HT2506 for almost everything else. Seriously, Preview is a powerful piece of software that is often underused. 
+
+h4. Development
+
+"Google Chrome":https://www.google.com/chrome is my default browser and when I try to switch to Safari or any other browser I always come back to Chrome because of the developer tools and plugins. "Sublime Text 2":http://www.sublimetext.com/ is my favorite text editor and similarly, when I try any other editor I always end up back in Sublime because it's faster and it has more and better plugins. For Git purposes I use "Tower":http://www.git-tower.com/ and as most designers I use the "Terminal":http://en.wikipedia.org/wiki/Terminal_(OS_X) only when it's strictly necessary (start and stop servers, update stuff and not a lot more). "Forklift":http://www.binarynights.com/forklift/ is my FTP client but I rarely use FTP anymore, and I use "VMware Fusion":http://www.vmware.com/products/fusion when I need to run Windows and check things on Internet Explorer.
+
+h4. Productivity
+
+I use "Alfred":http://www.alfredapp.com/ like 50 times a day. It helps me save time doing custom web searches, starting local servers, checking the weather, sending todo items to Trello, expanding text... It's similar to Quicksilver but without the learning curve. I also use "BetterSnapTool":https://itunes.apple.com/en/app/bettersnaptool/id417375580?mt=12 to arrange windows in my screen and "1Password":https://agilebits.com/onepassword to save... yes, passwords. I manage my todo lists with "Trello":https://trello.com/, all my emails are stored in a "Google Apps":https://www.google.com/work/apps/business/ account and I also store things on "Dropbox":https://www.dropbox.com/ (at work) and "Google Drive":https://drive.google.com (for personal stuff). "Evernote":https://evernote.com/ helps me take random notes, keep snippets of code, and store screenshots of websites and things I like, but I'm looking for an alternative. Maybe I'll give "OneNote":http://www.onenote.com/ a try soon.
+
+h4. Others
+
+At work we use "Slack":https://slack.com/ for messaging and I use "Skype":http://www.skype.com/en/ when I need to call someone in Europe. I have a 20,000 songs collection that I keep in "iTunes Match":https://www.apple.com/itunes/itunes-match/ and sometimes I listen to "iTunes Radio":https://www.apple.com/itunes/itunes-radio/ because it's included in my iTunes subscription and it doesn't have commercials, but it's not great. "Instapaper":https://www.instapaper.com is my read-it-later thing and I check blog articles and news on "ReadKit":http://readkitapp.com/ (mac) and "Unread":http://supertop.co/unread/ (iPad). "Readmill":https://readmill.com/ used to be my default ebook reader, but now that it's closed I have to use "iBooks":https://www.apple.com/ibooks/.
+
+h3. What would be your dream setup?
+
+I'm happy with my current setup. As I said before, I'm waiting for the day that Apple announces new Thunderbolt Displays and Apple TVs, and I also think that I will buy a new receiver when we move to a bigger house. And about the software, I'm always trying new stuff. The goal is to try to simplify things and find smoother workflows, but that's not always easy. 
