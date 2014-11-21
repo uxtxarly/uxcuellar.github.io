@@ -26,14 +26,14 @@ description: A personal blog about design, technology, music and procrastination
 <!-- Pagination links -->
 <nav class="paginator">
   {% if paginator.next_page %} 
-    <a href="/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
+    <a rel="next" href="/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
   {% endif %} 
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" title="Newer entries">Newer  &raquo;</a>
+    <a rel="prev" href="/" title="Newer entries">Newer  &raquo;</a>
     {% else %}
-    <a href="/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
+    <a rel="prev" href="/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
     {% endif %}
   {% endif %}
 </nav>
