@@ -4,4 +4,4 @@ title: Proteus, starter kits for your static site
 link: http://thoughtbot.github.io/proteus/
 ---
 
-If you use a static site generatork like "Jekyll":http://jekyllrb.com/ or "Middleman":http://middlemanapp.com/, Proteus will help you get up an running. It's a collection of starter kits that will give you a basic foundation for your site: HAML + Coffeescript + Sass + Bourbon + Neat + Brackets... That's pretty much the same setup I use. If you use "Serve":http://get-serve.com/ instead of Jekyll, this "Serve Project":https://github.com/carlosXcuellar/serve-smacss I forked a few months ago uses the same components except Brackets.
+If you use a static site generatork like "Jekyll":http://jekyllrb.com/ or "Middleman":http://middlemanapp.com/, Proteus will help you get up an running. It's a collection of starter kits that will give you a basic foundation for your site: HAML + Coffeescript + Sass + Bourbon + Neat + Bitters... That's pretty much the same setup I use. If you use "Serve":http://get-serve.com/ instead of Jekyll, this "Serve Project":https://github.com/carlosXcuellar/serve-smacss I forked a few months ago uses the same components except Bitters.
