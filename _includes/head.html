@@ -12,7 +12,7 @@
   {% else %}
     <meta name="description" content="{{ content | strip_html | truncatewords: 150 | strip_newlines | escape_once }}" />
     <meta name="og:description" content="{{ content | strip_html | truncatewords: 150 | strip_newlines | escape_once }}" />
-    <meta name="twitter:description" content="{{ page.content | strip_html | truncate: 150 }}" />
+    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | strip_newlines | escape_once | truncate: 150 }}" />
   {% endif %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}
     {{ site.name }}">
