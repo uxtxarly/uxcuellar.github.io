@@ -14,11 +14,11 @@
     <meta name="og:description" content="{{ page.content | textilize | strip_html | xml_escape | truncate: 200 }}" />
     <meta name="twitter:description" content="{{ page.content | textilize | strip_html | xml_escape | truncate: 200 }}" />
   {% endif %}
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% else %}{{ site.name }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@cuellarfr">
