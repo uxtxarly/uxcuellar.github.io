@@ -1,1 +1,1 @@
-This is a port of my personal blog to Jekyll
+This is the source for my personal blog, [carloscuellar.net](http://carloscuellar.net).
