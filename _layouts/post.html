@@ -10,8 +10,8 @@ layout: default
       <h2 itemprop="name">{{ page.title }}</h2>
     {% endif %}
     <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> &middot;
-      <a href="{{ post.url }}" class="permalink">&infin;</a>
+      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> &middot;
+      <a href="{{ post.url }}" class="permalink" itemprop="url">&infin;</a>
     </p>
   </header>
   <div itemprop="articleBody">
