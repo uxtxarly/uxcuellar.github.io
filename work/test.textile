@@ -5,7 +5,7 @@ description: Ut viverra odio eu sem maximus sodales. Donec lacinia, nibh a moles
 tags: prototyping, user research
 duration: 6 Months, June 2014
 company: Lightspeed Systems
-img: http://dummyimage.com/600x400/4d494d/686a82.gif&text=placeholder+image
+img: 198.png
 ---
 
 Integer porta nunc a augue volutpat ultricies. Aenean vitae mi ut ante varius porta quis vitae ante. Suspendisse hendrerit erat sed pharetra aliquet. Aenean ac accumsan urna. Nullam iaculis porttitor massa, vitae sagittis velit mattis sed. Ut viverra odio eu sem maximus sodales. Donec lacinia, nibh a molestie ullamcorper, urna justo gravida sem, a tincidunt tellus augue et nisi. Morbi finibus vulputate dui vitae cursus. Duis velit sapien, rhoncus sit amet posuere et, faucibus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
