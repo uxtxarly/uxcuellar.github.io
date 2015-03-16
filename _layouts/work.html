@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h2 itemprop="name">{{ page.title }}</h2>
+    <p class="project__summary">{{ page.description }}</p>
+    <img src="/images/{{ page.img }}" alt="">
+    <ul class="list--details">
+      <li><strong>Contribution:</strong> {{ page.tags }}</li>
+      <li><strong>Teammates:</strong> {{ page.teammates }}</li>
+      <li><strong>Duration:</strong> {{ page.duration }}</li>
+      <li><strong>Sponsor:</strong> {{ page.sponsor }}</li>
+    </ul>
+  </header>
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>  
+</article>
+

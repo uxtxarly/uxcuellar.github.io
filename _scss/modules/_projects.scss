@@ -1,0 +1,34 @@
+.project {
+  clear: both;
+  padding: 2.5em 10%;
+  border-top: 1px dashed $base-accent-color;
+}
+
+.project__thumb {
+  float: left;
+  border-radius: $base-border-radius;
+  width: em(150);
+  height: em(150);
+
+  @media only screen and (max-width: $small-screen) {
+    width: em(100);
+    height: em(100);
+  }
+}
+
+.project__description {
+  margin-left: em(180);
+
+  @media only screen and (max-width: $small-screen) {
+    margin-left: em(130);
+  }
+
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+.project__summary { 
+  font-weight: bold;
+  color: $medium-gray;
+}

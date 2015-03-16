@@ -3,7 +3,7 @@
 
 $lighter-gray: #F3F3F3;
 $light-gray: #e4e7e5;
-$medium-gray: #B2B4B2;
+$medium-gray: #868886;
 $dark-gray: #4d5955;
 
 $blue: #049baf;
@@ -15,11 +15,11 @@ $purple: #c65885;
 
 // FONT COLORS
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: #7C9CA0;
 
 // TEXT LINK COLORS
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: #539098;
+$hover-link-color: lighten($base-link-color, 15);
 
 // BORDER COLOR
 $base-border-color: #DEDEDE;

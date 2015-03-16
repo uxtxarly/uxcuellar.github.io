@@ -12,9 +12,10 @@
     }
     time {
       color: $medium-gray;
+      @include font-size(1.4);
     }
     .permalink {
-      @include font-size(2.4);
+      @include font-size(2);
     }
   }
 
@@ -23,20 +24,6 @@
   }
 }
 
-// LISTING POST
-.listing {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.listing__item,
-.result {
-  padding: 1.5em 10%;
-  &:nth-of-type(2n+1) {
-    border-top: 1px dashed $base-accent-color;
-    border-bottom: 1px dashed $base-accent-color;
-  }
-}
 
 // SECTION DESCRIPTIONS
 .section-description {
