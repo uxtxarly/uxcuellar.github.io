@@ -1,0 +1,17 @@
+.project {
+  clear: both;
+  padding: 1.5em 10%;
+  border-top: 1px dashed $base-accent-color;
+}
+
+.project__thumb {
+  float: left;
+}
+
+.project__description {
+  margin-left: 180px;
+  & > ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
