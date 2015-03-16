@@ -20,7 +20,12 @@
     margin-left: 130px;
   }
 
-  & > p {
+  > p {
     margin-bottom: 0;
   }
+}
+
+.project__summary { 
+  font-weight: bold;
+  color: $medium-gray;
 }
