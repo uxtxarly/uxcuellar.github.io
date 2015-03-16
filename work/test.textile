@@ -3,4 +3,12 @@ layout: work
 title: Portfolio Textile
 ---
 
+<ul class="list--details">
+  <li><strong>Contribution:</strong> tag, tag, tag, tag, tag</li>
+  <li><strong>Duration:</strong> 6 Months, June 2014</li>
+  <li><strong>Company:</strong> Lightspeed Systems</li>
+</ul>
+
+<img src="http://dummyimage.com/600x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+
 Integer porta nunc a augue volutpat ultricies. Aenean vitae mi ut ante varius porta quis vitae ante. Suspendisse hendrerit erat sed pharetra aliquet. Aenean ac accumsan urna. Nullam iaculis porttitor massa, vitae sagittis velit mattis sed. Ut viverra odio eu sem maximus sodales. Donec lacinia, nibh a molestie ullamcorper, urna justo gravida sem, a tincidunt tellus augue et nisi. Morbi finibus vulputate dui vitae cursus. Duis velit sapien, rhoncus sit amet posuere et, faucibus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.

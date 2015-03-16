@@ -50,8 +50,15 @@ dl {
   }
 }
 
-// LISTING PROJECTS
-.listing--projects {
+// LIST PROJECTS
+.list--projects {
   list-style-type: none;
   padding-left: 0;
+}
+
+.list--details {
+  list-style-type: none;
+  padding-left: 0;
+  color: $medium-gray;
+  @include font-size(1.4);
 }
