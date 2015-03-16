@@ -7,9 +7,12 @@
 .project__thumb {
   float: left;
   border-radius: $base-border-radius;
+  width: em(150);
+  height: em(150);
 
   @media only screen and (max-width: $small-screen) {
-    max-width: em(100);
+    width: em(100);
+    height: em(100);
   }
 }
 
