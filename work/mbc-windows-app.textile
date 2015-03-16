@@ -1,13 +1,10 @@
 ---
 layout: work
 title: MBC Windows App
-description: A software used by teachers in order to monitor students’ computer screens in real time.
-tags: prototyping, user research.
+description: A light version of the My Big Campus app for Windows 8 devices.
+tags: design research, information architecture, visual design.
 teammates: Robert Wilson.
 duration: 3 Months, February 2015.
 sponsor: Lightspeed Systems.
 img: mbc_win-mockup.png
 ---
-
-Integer porta nunc a augue volutpat ultricies. Aenean vitae mi ut ante varius porta quis vitae ante. Suspendisse hendrerit erat sed pharetra aliquet. Aenean ac accumsan urna. Nullam iaculis porttitor massa, vitae sagittis velit mattis sed. Ut viverra odio eu sem maximus sodales. Donec lacinia, nibh a molestie ullamcorper, urna justo gravida sem, a tincidunt tellus augue et nisi. Morbi finibus vulputate dui vitae cursus. Duis velit sapien, rhoncus sit amet posuere et, faucibus ut mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
