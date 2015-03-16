@@ -9,15 +9,15 @@
   border-radius: $base-border-radius;
 
   @media only screen and (max-width: $small-screen) {
-    max-width: 100px;
+    max-width: em(100);
   }
 }
 
 .project__description {
-  margin-left: 180px;
+  margin-left: em(180);
 
   @media only screen and (max-width: $small-screen) {
-    margin-left: 130px;
+    margin-left: em(130);
   }
 
   > p {
