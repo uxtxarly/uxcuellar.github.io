@@ -9,11 +9,9 @@ sponsor: Lightspeed Systems.
 img: mbc_win-mockup.png
 ---
 
-The development team at Lightspeed was asked to create a reduced, native version of MBC for Windows 8. We wanted to adapt our current iOS and Android apps to Windows tablets, respecting the interactions and patterns of this platform, but offering a experience that our users could identify as MBC.
+The development team at Lightspeed was asked to create a reduced, native version of MBC for Windows 8. We wanted to adapt our current iOS and Android apps to Windows tablets by respecting the interactions and patterns of this platform while offering a true MBC experience to our users.
 <figure>
 !/images/mbc-win-proto.png(mockup of the windows app)!
 <figcaption>A Windows experience that users could still identify as MBC.</figcaption>
 </figure>
-I found the Windows Design Guidelines quite confusing, so part of the process consisted of identifying the best practices of some of the most popular apps at the Windows Marketplace and reuse them in our prototype.
-
-Unfortunately, the project was cancelled before being finished, but the prototype was tested with users with quite a successful result.
+I found the Windows Design Guidelines quite confusing, so part of the process consisted of identifying the best practices of some of the most popular apps in the Windows Marketplace and reusing them in our prototype, which was later user-tested with a successful result.
