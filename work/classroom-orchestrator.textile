@@ -9,4 +9,16 @@ sponsor: Lightspeed Systems.
 img: classroom_shot.png
 ---
 
+In this project for Lightspeed we created a new software used by teachers in order to monitor student's computers in a classroom. We wanted to quickly build a minimal viable product that was going to be used by Miami-Dade School District as part of a pilot program, so we would be able to have early feedback from real users from the very beginning of the project.
+<figure>
+!/images/co_wire1.png(Wireframe of Classroom Orchestrator)!
+<figcaption>Early wireframe of the group dashboard.</figcaption>
+</figure>
+For our user research we used some of the personas that we already had available in the office from other projects, and then we created specific scenarios for them. During this development we had to solve several technical issues related with the amount of bandwidth used by the app and the storage of images. This issues would affect the user experience and we decided to use some compromised solutions like turning off the recording of students screens by default, so the teacher would need to turn the recording on if he or she is interested in monitor one particular student (in that case, hi-res images would be stored).
+<figure>
+!/images/co_mockup2.jpg(Mockup of Classroom Orchestrator)!
+<figcaption>Mockup of the recorded sessions screen.</figcaption>
+</figure>
+After a testing and iteration period, we added some extra features and we enabled superusers to monitor school groups and districts.
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/8vmavZ8bcKs" frameborder="0" allowfullscreen></iframe>

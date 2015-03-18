@@ -1,10 +1,19 @@
 ---
 layout: work
 title: My Big Campus
-description: My Big Campus is a Learning Management System developed by Lightspeed Systems.
+description: My Big Campus is a Learning Management System for K-12 schools developed by Lightspeed Systems.
 tags: user research, scenarios, prototyping, front-end development, visual design.
 teammates: Dustin McCraw, Steve Landwehr, David Patrick, Andrew Hecht, Sam Bible, Aaron Benson, Ryan Bond, Carson McMillan.
 duration: 3 Years, March 2015.
 sponsor: Lightspeed Systems.
 img: mbc-home-small.png
 ---
+
+I probably spent 80% of my time at Lightspeed working for "My Big Campus":http://www.mybigcampus.com/. Users research, creation of personas, scenarios, prototypes... and also implementation and front-end development.
+<figure>
+!/images/mbc-wf1.png(wireframe of mbc)!
+<figcaption>This is part of a wireframe for the Messages section of MBC</figcaption>
+</figure>
+What made My Big Campus different from any of my prior projects was the size. It was big project, with many complex features. And it's a project that counts 5 million registered users across 3 different continents. This required me to be extremely careful with aspects like the accessibility, the adaptability of the design to different languages and the performance and speed of the whole website.
+
+My Big Campus has evolved a lot during the last years. It started being a monitorized social network for students, a safe way to share YouTube videos in a classroom, and it ended up being a full-featured <acronym title="Learning Management System">LMS</acronym> that integrates with the rest of the Lightspeed products.

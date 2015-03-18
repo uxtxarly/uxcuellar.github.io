@@ -92,6 +92,12 @@ img {
   height: auto;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+  @include font-size(1.2);
+}
+
 // INLINE TEXT SEMANTICS
 abbr, acronym {
   border-bottom: 1px dotted $base-border-color;
