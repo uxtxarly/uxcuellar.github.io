@@ -79,11 +79,13 @@ a {
   }
 }
 
-div[itemprop="articleBody"] a:visited {
+article a:visited,
+.listing a:visited {
   color: $hover-link-color;; // color visited links (only for articles)
 }
 
-div[itemprop="articleBody"] a:hover {
+article a:hover,
+.listing a:hover {
   border-bottom: 1px solid $hover-link-color;; // underline links on hover (only for articles)
 }
 
