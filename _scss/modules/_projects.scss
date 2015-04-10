@@ -10,9 +10,16 @@
   width: em(150);
   height: em(150);
 
+  @include filter(grayscale(90%));
+  @include transition(all 0.5s ease-in-out);
+
   @media only screen and (max-width: $small-screen) {
     width: em(100);
     height: em(100);
+  }
+
+  &:hover {
+    @include filter(grayscale(0));
   }
 }
 
