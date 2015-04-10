@@ -29,3 +29,9 @@
 .section-description {
   padding: 0 10%;
 }
+
+// BUTTON
+.button {
+  @include button(simple, $base-accent-color);
+  color: #fff !important;
+}
