@@ -9,8 +9,9 @@
   border-radius: $base-border-radius;
   width: em(150);
   height: em(150);
-
-  @include filter(grayscale(90%));
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  
   @include transition(all 0.5s ease-in-out);
 
   @media only screen and (max-width: $small-screen) {
@@ -19,7 +20,8 @@
   }
 
   &:hover {
-    @include filter(grayscale(0));
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
 }
 
