@@ -84,12 +84,13 @@ input[type="color"] {
   @include media($medium-screen)  {
     display: none;
   }
+  @include font-size(1.6);
+  text-transform: uppercase;
   position: absolute;
-  top: em(30);
+  top: 2.35em;
   right: 1em;
   display: block;
   color: $light-gray;
-  font-size: 30px;
 }
 
 // PAGINATOR 
