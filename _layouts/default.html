@@ -11,7 +11,7 @@
           <i class="icon-menu"></i>
         </div>
         <div class="l-header__brand">
-          <h1><a rel="home" href="/"><i class="icon-gafas" aria-hidden="true"></i><span class="is-visuallyhidden">Carlos Cuellar</span></a></h1>
+          <h1><a rel="home" href="/"><i class="icon-gafas" aria-hidden="true"></i><span>Carlos Cuéllar</span></a></h1>
         </div>     
         <div class="l-header__nav">
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
@@ -64,11 +64,6 @@
           return false;
         });
       });
-    </script>
-
-    <!-- external links -->
-    <script>
-      $('a[rel="external"]').attr('target', '_blank');
     </script>
 
     <!-- external search -->
