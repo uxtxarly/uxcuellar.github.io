@@ -15,7 +15,8 @@ $purple: #c65885;
 
 // FONT COLORS
 $base-font-color: $dark-gray;
-$base-accent-color: #7C9CA0;
+$base-accent-color: $blue;
+$base-accent-color-darken: darken($base-accent-color, 10);
 
 // TEXT LINK COLORS
 $base-link-color: #539098;

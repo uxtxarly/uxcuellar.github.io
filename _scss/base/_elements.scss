@@ -7,7 +7,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  background-color: $base-accent-color;
+  @include linear-gradient(to right,$base-accent-color,$base-accent-color-darken);
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
