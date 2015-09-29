@@ -27,11 +27,3 @@ After a testing and iteration period, we added some extra features and we enable
 The front-end implementation used the same patterns and CSS I created earlier for the rest of the My Big Campus products.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/8vmavZ8bcKs" frameborder="0" allowfullscreen></iframe>
-
-!/images/co_mockup_1.gif(Mockup of Classroom Orchestrator)!
-
-!/images/co_mockup_2.gif(Mockup of Classroom Orchestrator)!
-
-!/images/co_mockup_3.gif(Mockup of Classroom Orchestrator)!
-
-!/images/co_mockup_4.gif(Mockup of Classroom Orchestrator)!

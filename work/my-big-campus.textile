@@ -17,17 +17,3 @@ I spent about 80% of my time at Lightspeed working for "My Big Campus":http://ww
 What made My Big Campus different from any of my prior projects was the size. It was a big project with many complex features and it counted 5 million registered users across 3 different continents. This required me to be extremely careful with aspects such as accessibility, the adaptability of the design to different languages, and the performance and speed of the entire website.
 
 My Big Campus has greatly evolved over the past few years. It started out as a monitored social network for students and a safe way to share YouTube videos in a classroom, but it ended up being a full-featured <acronym title="Learning Management System">LMS</acronym> that integrates with the rest of the Lightspeed products.
-
-!/images/mbc_wf_1.gif(wireframe of mbc)!
-
-!/images/mbc_wf_2.gif(wireframe of mbc)!
-
-!/images/mbc_wf_3.gif(wireframe of mbc)!
-
-!/images/mbc_wf_4.gif(wireframe of mbc)!
-
-!/images/mbc_wf_5.gif(wireframe of mbc)!
-
-!/images/mbc_wf_6.gif(wireframe of mbc)!
-
-!/images/mbc_wf_7.gif(wireframe of mbc)!

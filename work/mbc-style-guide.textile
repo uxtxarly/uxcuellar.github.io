@@ -19,31 +19,3 @@ At that point, we realized we needed to make changes, promote a more consistent 
 In order to improve CSS scalability, I decided to build our own framework after a failed experiment with a popular UI framework. I followed the "SMACSS":https://smacss.com/ methodology for the structure and the "BEM":https://en.bem.info/ naming convention for the styles naming. You can learn more about the refactor process in this "blog post":/blog/i-refactored-css-for-9-months-and-i-survived/ I wrote a few months ago.
 
 The final result was a stylesheet file that was 70% lighter and 1.5 seconds faster than the original one.
-
-!/images/sg_1.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_2.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_3.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_4.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_5.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_6.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_7.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_8.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_9.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_10.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_11.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_12.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_13.jpg(Screenshot of MBC Style Guide)!
-
-!/images/sg_14.jpg(Screenshot of MBC Style Guide)!
