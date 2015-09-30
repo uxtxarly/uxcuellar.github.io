@@ -9,12 +9,20 @@
 // HEADER
 .l-header {
   @include media($medium-screen)  {
-    position: fixed;
     padding: em(56) 0 0 0;
     width: em(160);
+    left: inherit;
+    background: transparent;
+    position: fixed;
   }
+  @include linear-gradient(to right,$base-accent-color,$base-accent-color-darken);
   padding: em(20) em(10) 0 em(10);
   text-align: center;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  z-index: 1;
 }
 
 .l-header__brand {
@@ -73,7 +81,9 @@
     @include span-columns(10);
     @include omega;
     float: right;
+    margin-top: 0;
   }
+  margin-top: 5em;
   background-color: $light-gray;
   min-height: 100vh;
 }

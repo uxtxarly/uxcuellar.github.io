@@ -6,7 +6,7 @@
   <body>
     <div class="l-container">
       
-      <header role="banner" class="l-header">
+      <header role="banner" class="l-header" id="header">
         <div class="nav__toggle">
           <i class="icon-menu"></i> Menu
         </div>
@@ -56,13 +56,16 @@
       });
     </script>
 
-    <!-- toggle menu -->
+    <!-- menu -->
     <script>
       $(function() {
         $( ".nav__toggle" ).click(function() {
           $( ".l-header__nav" ).toggleClass( "is-visible");
           return false;
         });
+        if ($(window).width() < 800) {
+          $('.l-header').scrollupbar();
+        }
       });
     </script>
 
@@ -70,6 +73,7 @@
     <script>
       $('#search_results').tapir({'token': '545c397034932d8eec000000'});
     </script>
+
 
     <!-- google analytics -->
     <script>
