@@ -11,16 +11,16 @@
           <i class="icon-menu"></i> Menu
         </div>
         <div class="l-header__brand">
-          <h1><a rel="home" href="/"><i class="icon-gafas" aria-hidden="true"></i><span>Carlos Cuéllar</span></a></h1>
+          <h1><a rel="home" href="/" title="Go to home"><i class="icon-gafas" aria-hidden="true"></i><span>Carlos Cuéllar</span></a></h1>
         </div>     
         <div class="l-header__nav">
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
             <ul class="nav__list">
-              <li><a {% if location == 'blog' %}class="active" {% endif %}href="/">blog</a></li>
-              <li><a {% if location == 'archive' %}class="active" {% endif %}href="/archive/">archive</a></li>
-              <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/">work</a></li>
-              <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">about</a></li>
+              <li><a {% if location == 'blog' %}class="active" {% endif %}href="/" title="Go to blog section">blog</a></li>
+              <li><a {% if location == 'archive' %}class="active" {% endif %}href="/archive/" title="Go to archive page">archive</a></li>
+              <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/" title="Go to work section">work</a></li>
+              <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/" title="Go to about page">about</a></li>
             </ul>
           </nav>
           <form action="/search" method="get">
