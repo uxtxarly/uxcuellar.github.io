@@ -29,7 +29,7 @@
   @include media($medium-screen)  {
     width: 100px;
     height: 100px;
-    margin: 0 auto em(20) auto;
+    margin: 0 auto;
   }
   @include transition (background-color 0.5s ease-in-out);
   margin: 0 em(20) em(20);
@@ -51,17 +51,16 @@
   > h1 span {
     @include media($medium-screen)  {
       float: left;
-      margin-bottom: 2em;
       display: inline;
-      width: auto;
       position: inherit;
+      margin-left: -1.3em;
       margin-bottom: 2em;
     }
-    @include font-size(2);
+    @include font-size(1.8);
     color: $light-gray;
     position: relative;
     width: 8em;
-    top: -2.2em;
+    top: -2.4em;
     left: 3em;
     display: block;
   }
