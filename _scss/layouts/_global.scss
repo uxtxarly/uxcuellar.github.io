@@ -40,9 +40,6 @@
     }
     font-size: 45px;
   }
-  > h1 i {
-    line-height: 1.2;
-  }
   > h1 span {
     @include media($medium-screen)  {
       float: left;
@@ -56,7 +53,7 @@
     color: $light-gray;
     position: relative;
     width: 8em;
-    top: -2.5em;
+    top: -2.2em;
     left: 3em;
     display: block;
   }
