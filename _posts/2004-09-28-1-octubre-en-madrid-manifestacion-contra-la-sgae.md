@@ -8,7 +8,7 @@ tags:
 ---
 Copio y pego de IndyMedia Madrid:
 
-bq. El día 1 de Octubre a las 18h se ha convocado una manifestación en Madrid frente a las puertas del Tribunal de Cuentas para marchar desde allí hacia el edificio de la SGAE y hacerles saber lo contentísimos que estamos por las medidas que adoptan para evitar la piratería musical y manifestarles nuestro agradecimiento generalizado.
+<blockquote>El día 1 de Octubre a las 18h se ha convocado una manifestación en Madrid frente a las puertas del Tribunal de Cuentas para marchar desde allí hacia el edificio de la SGAE y hacerles saber lo contentísimos que estamos por las medidas que adoptan para evitar la piratería musical y manifestarles nuestro agradecimiento generalizado.</blockquote>
 
 Si no tienes palabras para agradecer a estos señores el favor que hacen a la sociedad con su altruista contribución, pues anímate y vente con nosotros, que les llevaremos nuestro mensaje de amor, amistad, reconocimiento y apoyo a los señores a los que tanto apreciamos.
 

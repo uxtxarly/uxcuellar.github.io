@@ -13,4 +13,4 @@ En los 80 comenzamos grabando cassettes para nuestros amigos. En los 90 llegaron
 
 Por eso no deja de ser irónico este experimento de Amanda Ghassaei. Utiliza un software que convierte una pista digital en un modelo 3D de un disco. Esto modelo se imprime gracias a una de las nuevas impresoras 3D, y voilá, tenemos una réplica ultramoderna de un venerable vinilo.
 
-Se pueden encontrar las instrucciones del proceso en "instructables":http://www.instructables.com/id/3D-Printed-Record/.
+Se pueden encontrar las instrucciones del proceso en <a href="http://www.instructables.com/id/3D-Printed-Record/">instructables</a>.

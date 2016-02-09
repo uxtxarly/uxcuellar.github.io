@@ -10,9 +10,11 @@ Así que, y puesto que sólo llevo 7 posts y es un lujo que todavía me puedo pe
 
 Mi blog se llama ahora MICROGRAPH. Buscando en thefreedictionary.com tenemos que:
 
-bq. Mi´cro`graph
+<blockquote>
+Mi´cro`graph
 n.	1.	An instrument for executing minute writing or engraving.
 2.	a graphic image, such as a photograph or drawing, representing an object as seen with a microscope, usually much enlarged as compared with the original object. A photograph of a microscopic image is also called a photomicrograph or microphotograph.
+</blockquote>
 
 No deja de ser sugerente que se refiera a fotografías que examinan objetos minúsculos (un blog que se dedica a examinar cosas minúsculas… hmmmm… suena bien!). Además micro también hace referencia al mundo de la informática y graph al del diseño gráfico, dos de mis pasiones.
 

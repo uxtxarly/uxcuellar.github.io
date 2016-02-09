@@ -5,4 +5,4 @@ tags:
 - google
 - micrographic
 ---
-Google recopila en "esta página":http://www.google.com/holidaylogos.html todos esos logos conmemorativos que utilizan en fechas especiales :)
+Google recopila en <a href="http://www.google.com/holidaylogos.html">esta página</a> todos esos logos conmemorativos que utilizan en fechas especiales :)

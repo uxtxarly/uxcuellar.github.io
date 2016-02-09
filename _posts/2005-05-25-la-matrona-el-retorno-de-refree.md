@@ -5,7 +5,8 @@ tags:
 - micrographic
 - pop
 ---
-bq. Ya no hay pena
+<blockquote>
+Ya no hay pena
 y las mujeres al pasar
 se me enredan
 en mi segunda mitad.
@@ -13,6 +14,7 @@ Es tan moderna esta ciudad
 que hay que celebrarlo todo.
 Ya no hay pena,
 con lo bien que se me da.
+</blockquote>
 
 Así comienza ‘La Matrona’, el tercer disco de Raül Fernández, Refree. Y como dice la hoja de promoción de Acuarela, se trata de “los puntos cardinales de ‘La matrona’: la celebración de la vida, las mujeres, la ciudad que nos rodea, y la aflicción siempre vista con ironía y escepticismo”.
 

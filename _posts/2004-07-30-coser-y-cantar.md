@@ -9,7 +9,8 @@ Estoy sufriendo el verano con todas sus consecuencias: calor, picaduras de mosqu
 
 Bueno, reconozco que antes no me estaba ajustando del todo a la realidad. Ayer, una maravillosa anomalía en mi vida hizo que desempolvara un disco de la más fantástica anomalía del pop español: Vainica Doble.
 
-bq. Astro rutilante de la gran pantalla,
+<blockquote>
+Astro rutilante de la gran pantalla,
 fascinante y cínico play-boy de playa,
 campeón olímpico con diez medallas,
 hábil político donde los haya,
@@ -57,6 +58,7 @@ antes de tirarse por el balcón y quedarse cojo…
 volar, volar, volar.
 
 "Alas de algodón", de su cuarto LP "El eslabón perdido" (1980)
+</blockquote>
 
 Fue una anomalía que a principio de los 70, en un panorama musical saturado de grises cantautores políticos, surgieran de la nada estas dos brujitas (Carmen Santonja y Gloria Van Aerssen ) con un universo propio tan mágico como único.
 

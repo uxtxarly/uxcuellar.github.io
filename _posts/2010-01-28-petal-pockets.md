@@ -9,4 +9,4 @@ redirect_from: "blog/22/petal-pockets/"
 
 Mi cuñada Claire ha puesto a la venta su primer diseño, un bolso de lo más original que ha bautizado como Petal Pockets. Yo le he echado una mano con la web que está online desde hace unos días. Si queréis podéis echarle un vistazo, y si os gusta y estáis interesado en comprarlo podéis enviarle un mensaje a través del formulario de contacto de la web (hemos configurado la tienda para que en un principio sólo venda productos dentro de Estados Unidos).
 
-"www.clairecomptondesigns.com":http://www.clairecomptondesigns.com/
+<a href="http://www.clairecomptondesigns.com/">www.clairecomptondesigns.com</a>.

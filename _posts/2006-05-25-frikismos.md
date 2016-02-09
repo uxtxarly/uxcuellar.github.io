@@ -8,7 +8,7 @@ Como muchos sabréis, hoy es el día del orgullo friki y para celebrarlo un buen
 
 Empecemos reconociendo los hechos: sí, soy friki, o al menos moderadamente friki. Y no lo digo yo. A las pruebas me remito: hace unos meses una amiga me presentó a su novio, y el buen hombre lo primero que me soltó a la cara fue esto:
 
-bq. Pues eres casi tan friki como te imaginaba, Txarly. Bueno, en realidad te hacía con un look más Elvis Costello, pero normal del todo no eres.
+<blockquote>Pues eres casi tan friki como te imaginaba, Txarly. Bueno, en realidad te hacía con un look más Elvis Costello, pero normal del todo no eres.</blockquote>
 
 Como comprenderéis, fue un golpe bajo a mi autoestima. Cómo que no me parezco lo suficiente a Elvis Costello??? Elvis Costello es un crack, es el Dios de los gafapasta y para colmo está casado con ese pedazo de mujer que es Diana Krall. Yo quiero ser Elvis Costello! Faltaría más.
 

@@ -14,21 +14,24 @@ Modificando .htaccess (un pequeño archivo de texto que sirve para configurar el
 
 Comprobamos si tenemos un archivo .htaccess en nuestro servidor (carpeta www, donde está el index). Si no lo tenemos, sólo tenemos que crear un archivo de texto en el bloc de notas y llamarlo .htaccess. Copiamos estas líneas en él:
 
-bc. RewriteEngine On
+<code>
+RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http://PON-EL-NOMBRE-DE-TU-DOMINIO.com [NC]
 RewriteCond %{HTTP_REFERER} !^http://www.PON-EL-NOMBRE-DE-TU-DOMINIO.com [NC]
 RewriteRule .*\.(gif|jpg|jpeg|swf|png)$ – [NC,F]
+</code>
 
 Claro que también se puede tener más mala leche y configurar .htaccess para que en lugar de mostrar la imagen enlazada aparezca una imagen de 2000×2 píxeles (por ejemplo) que destroce la maquetación del blog o foro que te está robando la imagen. Sólo tendríamos que cambiar la última línea del ejemplo de arriba por esta otra:
 
-bc. RewriteRule .*\.(gif|jpg)$ http://PON-EL-NOMBRE-DE-TU-DOMINIO/bad-image.gif [R,NC]
+<code>RewriteRule .*\.(gif|jpg)$ http://PON-EL-NOMBRE-DE-TU-DOMINIO/bad-image.gif [R,NC]</code>
 
 siendo bad-image.gif la imagen con la que pensamos causar el pequeño sabotaje
 
 Los usuarios de Textpattern debemos tener cuidado a la hora de manipular .htaccess porque nos podemos cargar el acceso a nuestro blog con bastante facilidad. Tal y como explican en Joshuaink (el blog con más amor dentro que una furgoneta llena de hippies: recomendado), debemos añadir dos líneas (la 2 y la 3) al .htaccess que nos viene por defecto con TXP de forma que quede así:
 
-bc. RewriteEngine On
+<code>
+RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http://(www\.)?PON-EL-NOMBRE-DE-TU-DOMINIO.com(/)?.*$ [NC]
 RewriteRule .*\.(gif|jpe?g|png|bmp)$ [F,NC]
@@ -36,10 +39,12 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.+) – [PT,L]
 RewriteRule ^(.*) index.php
+</code>
 
 De todas formas, esta solución no es perfecta porque impide que se puedan ver las imágenes del blog en bloglines, por ejemplo, y hace que los búscadores de imágenes se olviden de nuestro blog, y no es eso lo que nos interesa. Sólo buscamos parar los pies a algunos usuarios de Google Images, no a todos. Así pues, una solución más acertada sería tener un .htaccess así:
 
-bc. RewriteEngine On
+<code>
+RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{HTTP_REFERER} !^http://(www\.)?tu-dominio.com(/)?.*$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://(www\.)?otro-dominio-permitido.org(/)?.*$ [NC]
@@ -54,3 +59,4 @@ RewriteRule .*\.(gif|jpe?g|png|bmp)$ [F,NC]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.+) – [PT,L]
+</code>

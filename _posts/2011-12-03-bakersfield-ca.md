@@ -6,8 +6,6 @@ tags:
 - california
 redirect_from: "blog/45/bakersfield-ca/"
 ---
-<img src="/images/127.jpg" class="wide" />
-
-No se me ocurre una imagen que ilustre mejor lo que es esta ciudad. Bueno, no, no es justo. "Bakersfield":http://en.wikipedia.org/wiki/Bakersfield tiene un centro urbano con edificios estupendos como el "Fox Theater":http://www.foxtheateronline.com/ o el "Padre Hotel":http://www.thepadrehotel.com/ y centros de peregrinación de la música country como el "Crystal Palace":http://www.buckowens.com/index2.html de Buck Owens. Por lo demás, esta ciudad fue parida para ser conducida, no caminada, y eso tiene ventajas y desventajas.
-
-Dos meses y medio. Nos queda alguno más aquí, en Bakersfield. Sigo en mi periodo de adaptación...
+<p><img src="/images/127.jpg" class="wide"></p>
+<p>No se me ocurre una imagen que ilustre mejor lo que es esta ciudad. Bueno, no, no es justo. <a href="http://en.wikipedia.org/wiki/Bakersfield">Bakersfield</a> tiene un centro urbano con edificios estupendos como el <a href="http://www.foxtheateronline.com/">Fox Theater</a> o el <a href="http://www.thepadrehotel.com/">Padre Hotel</a> y centros de peregrinación de la música country como el <a href="http://www.buckowens.com/index2.html">Crystal Palace</a> de Buck Owens. Por lo demás, esta ciudad fue parida para ser conducida, no caminada, y eso tiene ventajas y desventajas.</p>
+<p>Dos meses y medio. Nos queda alguno más aquí, en Bakersfield. Sigo en mi periodo de adaptación…</p>

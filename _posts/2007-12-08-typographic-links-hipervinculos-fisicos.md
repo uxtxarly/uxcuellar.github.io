@@ -9,4 +9,4 @@ redirect_from: "blog/33/typographic-links-hipervinculos-fisicos/"
 ---
 <img src="/images/20.jpg" class="wide" alt="" />
 
-*Typographic Links* es un libro del diseñador "Dan Collier":http://dtcollier.co.uk/ que relaciona distintos conceptos tipográficos mediante unos ‘hipervínculos’ creados con hilo rojo que recorren toda la publicación. Una curiosa forma de emular el mundo de las www en el material impreso.
+<strong>Typographic Links</strong> es un libro del diseñador <a href="http://dtcollier.co.uk/">Dan Collier</a> que relaciona distintos conceptos tipográficos mediante unos ‘hipervínculos’ creados con hilo rojo que recorren toda la publicación. Una curiosa forma de emular el mundo de las www en el material impreso.
