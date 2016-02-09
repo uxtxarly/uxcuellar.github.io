@@ -9,9 +9,9 @@ sponsor: Lightspeed Systems.
 img: mbc-home-small.png
 ---
 
-I spent about 80% of my time at Lightspeed working for "My Big Campus":http://www.mybigcampus.com/ doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.
+I spent about 80% of my time at Lightspeed working for <a href="http://www.mybigcampus.com/">My Big Campus</a> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.
 <figure>
-!/images/mbc-wf1.png(wireframe of mbc)!
+<img src="/images/mbc-wf1.png" alt="wireframe of mbc">
 <figcaption>This is part of a wireframe for the Messages section of MBC</figcaption>
 </figure>
 What made My Big Campus different from any of my prior projects was the size. It was a big project with many complex features and it counted 5 million registered users across 3 different continents. This required me to be extremely careful with aspects such as accessibility, the adaptability of the design to different languages, and the performance and speed of the entire website.

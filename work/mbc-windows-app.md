@@ -12,7 +12,7 @@ img: mbc_win-mockup.png
 
 The development team at Lightspeed was asked to create a reduced, native version of MBC for Windows 8. We wanted to adapt our current iOS and Android apps to Windows tablets by respecting the interactions and patterns of this platform while offering a true MBC experience to our users.
 <figure>
-!/images/mbc-win-proto.png(mockup of the windows app)!
+<img src="/images/mbc-win-proto.png" alt="mockup of the windows app">
 <figcaption>A Windows experience that users could still identify as MBC.</figcaption>
 </figure>
 
