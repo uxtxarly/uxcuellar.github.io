@@ -12,14 +12,15 @@ $yellow: #ECBD0C;
 $orange: #f9742b;
 $green: #2ABB9B;
 $purple: #c65885;
+$brown: #87806F;
 
 // FONT COLORS
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
-$base-accent-color-darken: darken($base-accent-color, 10);
+$base-accent-color: $brown;
+$base-accent-color-darken: darken($base-accent-color, 15);
 
 // TEXT LINK COLORS
-$base-link-color: #539098;
+$base-link-color: $brown;
 $hover-link-color: darken($base-link-color, 15);
 
 // BORDER COLOR
