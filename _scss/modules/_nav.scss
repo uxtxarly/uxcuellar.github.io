@@ -36,7 +36,7 @@ input[type="search"] {
   @include appearance(none);
 }
 
-input[type="checkbox"], 
+input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: $base-line-height / 4;
@@ -92,9 +92,12 @@ input[type="color"] {
   display: block;
   color: $light-gray;
   cursor: pointer;
+  svg {
+    margin: 0 0.2em -0.05em 0;
+  }
 }
 
-// PAGINATOR 
+// PAGINATOR
 .paginator {
   @include clearfix;
   margin-bottom: 0;

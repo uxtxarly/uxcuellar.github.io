@@ -12,17 +12,17 @@
 // SASS SETTINGS
 ///////////////////////////////////////////////////////////////////////////////
 
-@import 
-  "settings/variables", 
-  "settings/functions", 
+@import
+  "settings/variables",
+  "settings/functions",
   "settings/mixins";
 
 // THE STYLES
 ///////////////////////////////////////////////////////////////////////////////
 
 // Base styles
-@import 
-  "base/normalize", 
+@import
+  "base/normalize",
   "base/elements",
   "base/state",
   "base/syntax";
@@ -32,7 +32,6 @@
 
 // Modules
 @import
-  "modules/icons",
   "modules/lists",
   "modules/nav",
   "modules/posts",
