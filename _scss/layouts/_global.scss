@@ -119,6 +119,14 @@
   }
 }
 
+.l-footer__nav {
+  @include media($medium-screen)  {
+    display: none;
+  }
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
 // LISTING PAGES LAYOUT
 .l-listing {
   padding: 0 !important;
