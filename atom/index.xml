@@ -13,7 +13,11 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
+        {% if post.link %}
+          <link>{{ post.link | escape }}</link>
+          {% else %}
+          <link>{{ site.url }}{{ post.url }}</link>
+        {% endif %}
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
     {% endfor %}
