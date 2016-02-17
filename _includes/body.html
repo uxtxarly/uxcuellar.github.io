@@ -86,6 +86,16 @@
       });
     </script>
 
+    <!-- menu -->
+    <script>
+      $(function() {
+        $( ".nav__toggle" ).click(function() {
+          $( ".l-header__nav" ).slideToggle( "fast", function() {
+          });
+        });
+      });
+    </script>
+
     <!-- external search -->
     <script>
       $('#search_results').tapir({'token': '545c397034932d8eec000000'});
