@@ -99,6 +99,9 @@
   padding-top: em(20);
   color: #fff;
   text-align: center;
+  .list--inline path:hover {
+    fill: #fff;
+  }
 }
 
 .l-footer__credits{
