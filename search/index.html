@@ -6,5 +6,19 @@ sitemap: false
 <section role="region" class="l-listing" itemscope itemtype="http://schema.org/CollectionPage">
   <h2 itemprop="name">Search Results</h2>
   <p class="section-description">These are all the posts matching your search query:</p>
-  <div class="listing" id="search_results"></div>
+  <div class="listing" id="search_results">
+    <script>
+  (function() {
+    var cx = '000085170515983592966:slp66y05vcs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+  </div>
 </section>
