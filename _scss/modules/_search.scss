@@ -1,0 +1,20 @@
+// OVERWRITE GOOGLE CUSTOM SEARCH FIELDS
+
+.gsc-search-button {
+  display: none !important;
+}
+.gsc-input {
+  padding-right: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  height: 1.75em !important;
+}
+.gsc-input-box {
+  border: none !important;
+  background: $light-gray !important;
+  height: 35px !important;
+  border-radius: 3px 0 0 3px;
+}
+.gsc-search-box td {
+  vertical-align: bottom !important;
+}

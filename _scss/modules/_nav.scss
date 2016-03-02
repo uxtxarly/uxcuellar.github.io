@@ -46,16 +46,6 @@ input[type="color"] {
   height: $base-line-height * 2;
 }
 
-// SEARCH FORM
-.nav__search {
-  border: none !important;
-  border-radius: 3px 0 0 3px !important;
-  background: $light-gray !important;
-  box-shadow: none !important;
-  color: $base-accent-color;
-  width: 101% !important;
-}
-
 // NAV LIST
 .nav__list {
   padding: em(20,16) 0;

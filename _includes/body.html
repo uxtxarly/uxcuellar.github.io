@@ -25,10 +25,7 @@
               <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/" title="Go to about page">about</a></li>
             </ul>
           </nav>
-          <form action="/search" method="get">
-            <input type="search" name="query" placeholder="Search" class="nav__search">
-          </form>
-          <div>
+          <div class="l-header__search">
             <script>
               (function() {
                 var cx = '000085170515983592966:slp66y05vcs';
@@ -41,7 +38,7 @@
                 s.parentNode.insertBefore(gcse, s);
               })();
             </script>
-            <gcse:searchbox-only></gcse:searchbox-only></div>
+            <gcse:searchbox-only></gcse:searchbox-only>
           </div>
       </header>
 
@@ -97,6 +94,16 @@
     <script>
       $(document).ready(function(){
         $(".post").fitVids();
+      });
+    </script>
+
+    <!-- custom search -->
+    <script>
+      $(document).ready(function(){
+        setTimeout( function(){ 
+          jQuery(".gsc-input").attr("placeholder", "Search");
+        }
+       , 1000 );
       });
     </script>
 
