@@ -1,23 +1,9 @@
-// OVERWRITE GOOGLE CUSTOM SEARCH FIELDS
-
-.gsc-search-button {
-  display: none !important;
-}
-.gsc-input {
-  padding-right: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  height: 1.75em !important;
-}
-.gsc-input-box {
+// SEARCH FORM
+.nav__search {
   border: none !important;
+  border-radius: 3px 0 0 3px !important;
   background: $light-gray !important;
-  height: 35px !important;
-  border-radius: 3px 0 0 3px;
-}
-.gsc-search-box td {
-  vertical-align: bottom !important;
-}
-.gsst_b {
-  top: 3px;
+  box-shadow: none !important;
+  color: $base-accent-color;
+  width: 101% !important;
 }

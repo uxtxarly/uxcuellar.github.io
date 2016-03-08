@@ -25,21 +25,9 @@
               <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/" title="Go to about page">about</a></li>
             </ul>
           </nav>
-          <div class="l-header__search">
-            <script>
-              (function() {
-                var cx = '000085170515983592966:slp66y05vcs';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                    '//cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-              })();
-            </script>
-            <gcse:searchbox-only></gcse:searchbox-only>
-          </div>
+          <form action="/search" method="get">
+            <input type="search" name="query" placeholder="Search" class="nav__search">
+          </form>
       </header>
 
       <main role="main" class="l-content" aria-label="Main content">
@@ -97,16 +85,6 @@
       });
     </script>
 
-    <!-- custom search -->
-    <script>
-      $(document).ready(function(){
-        setTimeout( function(){ 
-          jQuery(".gsc-input").attr("placeholder", "Search");
-        }
-       , 300 );
-      });
-    </script>
-
     <!-- menu -->
     <script>
       $(function() {
@@ -116,7 +94,6 @@
         });
       });
     </script>
-
 
     <!-- google analytics -->
     <script>
