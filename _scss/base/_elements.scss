@@ -7,7 +7,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  @include linear-gradient(to right, $base-accent-color, $base-accent-color-darken);
+  background-color: $base-accent-color; 
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
@@ -58,6 +58,7 @@ a {
   @include transition(color 0.1s linear);
   color: $base-link-color;
   text-decoration: none;
+  border-bottom: 1px dotted $base-accent-color;
 
   &:hover {
     color: $hover-link-color;
