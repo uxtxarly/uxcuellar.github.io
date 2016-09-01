@@ -17,9 +17,6 @@ textarea,
   padding: ($base-line-height / 3) ($base-line-height / 3);
   width: 100%;
   border: 1px solid $form-border-color;
-  border-radius: $form-border-radius;
-  background-color: white;
-  box-shadow: $form-box-shadow;
   font-size: $form-font-size;
   font-family: $form-font-family;
   &:hover {
@@ -27,8 +24,6 @@ textarea,
   }
   &:focus {
     outline: none;
-    border-color: $form-border-color-focus;
-    box-shadow: $form-box-shadow-focus;
   }
 }
 
@@ -93,7 +88,6 @@ input[type="color"] {
   margin-bottom: 0;
   padding: 1em 10%;
   text-align: center;
-  background-color: $dark-gray;
   > a {
     color: $light-gray;
     float: left;
