@@ -1,0 +1,48 @@
+I hereby claim:
+
+  * I am an admin of http://carloscuellar.net
+  * I am cuellarfr (https://keybase.io/cuellarfr) on keybase.
+  * I have a public key ASD-su-4RJAVgA1o1seOjZ9PYlwA9zEBkmy2GdV55jAGoQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120feb2efb8449015800d68d6c78e8d9f4f625c00f73101926cb619d579e63006a10a",
+            "host": "keybase.io",
+            "kid": "0120feb2efb8449015800d68d6c78e8d9f4f625c00f73101926cb619d579e63006a10a",
+            "uid": "74023b53ccafd7f3b4f95399aa9ba519",
+            "username": "cuellarfr"
+        },
+        "service": {
+            "hostname": "carloscuellar.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1495662713,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495662682,
+        "hash": "e92a6acdb921820bf7f42be502bdcdfb09e0698bfefaaf9270267f0a088cb6565910531cfce2357e97003d3e15d0e227905a39fbbfd3bbfa42cb14d311ea7b76",
+        "seqno": 1108016
+    },
+    "prev": "0ffc44a29d65c56f28a1b8089af9e0c456d5f59e18f35380c2c251cde0e61b64",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/rLvuESQFYANaNbHjo2fT2JcAPcxAZJsthnVeeYwBqEKp3BheWxvYWTFAvt7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZmViMmVmYjg0NDkwMTU4MDBkNjhkNmM3OGU4ZDlmNGY2MjVjMDBmNzMxMDE5MjZjYjYxOWQ1NzllNjMwMDZhMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZmViMmVmYjg0NDkwMTU4MDBkNjhkNmM3OGU4ZDlmNGY2MjVjMDBmNzMxMDE5MjZjYjYxOWQ1NzllNjMwMDZhMTBhIiwidWlkIjoiNzQwMjNiNTNjY2FmZDdmM2I0Zjk1Mzk5YWE5YmE1MTkiLCJ1c2VybmFtZSI6ImN1ZWxsYXJmciJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY2FybG9zY3VlbGxhci5uZXQiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIzIn0sImN0aW1lIjoxNDk1NjYyNzEzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTU2NjI2ODIsImhhc2giOiJlOTJhNmFjZGI5MjE4MjBiZjdmNDJiZTUwMmJkY2RmYjA5ZTA2OThiZmVmYWFmOTI3MDI2N2YwYTA4OGNiNjU2NTkxMDUzMWNmY2UyMzU3ZTk3MDAzZDNlMTVkMGUyMjc5MDVhMzlmYmJmZDNiYmZhNDJjYjE0ZDMxMWVhN2I3NiIsInNlcW5vIjoxMTA4MDE2fSwicHJldiI6IjBmZmM0NGEyOWQ2NWM1NmYyOGExYjgwODlhZjllMGM0NTZkNWY1OWUxOGYzNTM4MGMyYzI1MWNkZTBlNjFiNjQiLCJzZXFubyI6MTIsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAgYHvmGHLDwXuoGrqpJ0TDsyzeWMj+0cH7U/p4nbdDBw1iX8DEnfQuTu7epdNZirIOPRB5ON/lrHCEwa9F5rWB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB3dQVnJIrMq3MNcoYZ27bd289UtlXy1v8ScTdb1gvIco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cuellarfr
