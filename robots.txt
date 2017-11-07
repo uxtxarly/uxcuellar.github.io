@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /work/
 
 Sitemap: http://carloscuellar.net/sitemap.xml
