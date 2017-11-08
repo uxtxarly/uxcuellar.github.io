@@ -2,7 +2,7 @@ name:         The Digital Journal of Carlos Cuéllar
 tagline:      'Standard Nerd'
 description:  'A personal blog about design, technology, music and procrastination.'
 url:          http://carloscuellar.net
-author:       
+author:
   name:       'Carlos Cuellar'
   email:      'hola@carloscuellar.net'
 markdown:     kramdown
@@ -19,7 +19,7 @@ defaults:
       author: "Carlos Cuéllar"
 
 # Use the following plug-ins
-gems:
+plugins:
   - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-redirect-from

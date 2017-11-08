@@ -12,16 +12,16 @@ $yellow: #ECBD0C;
 $orange: #f9742b;
 $green: #2ABB9B;
 $purple: #79818A;
-$brown: #232020;
+$brown: #653024;
 
 // FONT COLORS
-$base-font-color: #fff;
-$base-accent-color: $brown;
-$base-accent-color-darken: #fff($base-accent-color, 15);
+$base-font-color: $brown;
+$base-accent-color: $light-gray;
+$base-accent-color-darken: #dbe0db;
 
 // TEXT LINK COLORS
-$base-link-color: #fff;
-$hover-link-color: darken($base-link-color, 15);
+$base-link-color: $brown;
+$hover-link-color: lighten($base-link-color, 25);
 
 // BORDER COLOR
 $base-border-color: #DEDEDE;

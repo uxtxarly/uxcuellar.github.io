@@ -1,7 +1,7 @@
 .project {
   clear: both;
   padding: 2.5em 10%;
-  border-top: 1px dashed $base-accent-color;
+  border-top: 1px solid $base-font-color;
 }
 
 .project__thumb {
@@ -11,7 +11,7 @@
   height: em(150);
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
-  
+
   @include transition(all 0.5s ease-in-out);
 
   @media only screen and (max-width: $small-screen) {
@@ -37,7 +37,7 @@
   }
 }
 
-.project__summary { 
+.project__summary {
   font-weight: bold;
   color: $medium-gray;
 }

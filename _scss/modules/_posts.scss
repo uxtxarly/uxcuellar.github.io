@@ -2,8 +2,8 @@
 .post {
   padding: 10%;
   &:nth-of-type(2n) {
-    border-top: 1px dashed $base-accent-color;
-    border-bottom: 1px dashed $base-accent-color;
+    border-top: 1px solid $base-font-color;
+    border-bottom: 1px solid $base-font-color;
   }
 
   header {

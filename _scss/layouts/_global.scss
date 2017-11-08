@@ -12,10 +12,9 @@
     padding: em(56) 0 0 0;
     width: em(160);
     left: inherit;
-    background: transparent;
     position: fixed;
   }
-  background-color: $base-accent-color;
+  background: #fff;
   padding: em(20) em(10) 0 em(10);
   text-align: center;
   position: absolute;
@@ -36,9 +35,9 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: $light-gray;
+  background-color: $base-font-color;
   &:hover {
-    background-color: #fff;
+    background-color: $hover-link-color;
   }
   > h1 svg {
     @include media($medium-screen)  {
@@ -58,7 +57,7 @@
       margin-bottom: 2em;
     }
     @include font-size(1.8);
-    color: $light-gray;
+    color: $base-font-color;
     position: relative;
     width: 8em;
     top: -60px;
@@ -82,9 +81,10 @@
     @include omega;
     float: right;
     margin-top: 0;
+    border-left: 1px solid $base-font-color;
+    border-right: 1px solid $base-font-color;
   }
   margin-top: 5em;
-  background-color: $brown;
   min-height: 100vh;
 }
 
@@ -97,10 +97,9 @@
     width: em(160);
   }
   padding-top: em(20);
-  color: #fff;
   text-align: center;
   .list--inline path:hover {
-    fill: #fff;
+    fill: $hover-link-color;
   }
 }
 
@@ -108,9 +107,8 @@
   @include font-size(1.2);
   a {
     @include transition (color 0.5s ease-in-out);
-    color: $light-gray;
     &:hover {
-      color: #fff;
+      color: $hover-link-color;
     }
   }
   > p {

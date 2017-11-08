@@ -46,14 +46,14 @@ input[type="color"] {
   padding: em(20,16) 0;
   list-style-type: none;
   a {
-    color: $light-gray;
+    color: $base-font-color;
   }
   a:hover, a:focus {
-    color: #fff;
+    color: $hover-link-color;
   }
   > li {
     padding: 0.4em 0;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $base-font-color;
   }
   > li:last-child {
     border-bottom: none;
@@ -75,7 +75,6 @@ input[type="color"] {
   top: 34px;
   right: 1em;
   display: block;
-  color: $light-gray;
   cursor: pointer;
   svg {
     margin: 0 0.2em -0.05em 0;
@@ -89,14 +88,14 @@ input[type="color"] {
   padding: 1em 10%;
   text-align: center;
   > a {
-    color: $light-gray;
+    color: $base-font-color;
     float: left;
     padding: 0.3em 0.6em;
-    border: 1px solid $light-gray;
+    border: 1px solid $base-font-color;
     border-radius: 20px;
     font-weight: bold;
     &:hover {
-      color: lighten($light-gray, 15);
+      color: lighten($base-font-color, 15);
     }
   }
   > a:nth-of-type(2) {

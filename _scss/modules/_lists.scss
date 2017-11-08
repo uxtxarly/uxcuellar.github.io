@@ -23,7 +23,7 @@ dl {
   list-style-type: none;
 }
 
-// INLINE LIST 
+// INLINE LIST
 .list--inline {
   display: inline;
   padding-left: 0;
@@ -45,8 +45,8 @@ dl {
 .result {
   padding: 1.5em 10%;
   &:nth-of-type(2n+1) {
-    border-top: 1px dashed $base-accent-color;
-    border-bottom: 1px dashed $base-accent-color;
+    border-top: 1px solid $base-font-color;
+    border-bottom: 1px solid $base-font-color;
   }
 }
 
