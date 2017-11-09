@@ -1,15 +1,28 @@
-name:         The Digital Journal of Carlos Cuéllar
+title:         The Digital Journal of Carlos Cuéllar
 tagline:      'Standard Nerd'
 description:  'A personal blog about design, technology, music and procrastination.'
 url:          http://carloscuellar.net
 author:
-  name:       'Carlos Cuellar'
+  name:       'Carlos Cuéllar'
   email:      'hola@carloscuellar.net'
 markdown:     kramdown
 permalink:    /blog/:title/
 highlighter:  rouge
 paginate:     10
 host: 0.0.0.0
+twitter:
+  username: cuellarfr
+logo: /apple-touch-icon-precomposed.png
+social:
+  name: Carlos Cuellar
+  links:
+    - https://twitter.com/cuellarfr
+    - https://www.linkedin.com/in/cuellarfr
+    - https://github.com/cuellarfr
+    - https://keybase.io/cuellarfr
+webmaster_verifications:
+  google: ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg
+  bing: 019F5FD588A9EE4EF990A4653E7E03C3
 
 defaults:
   -
