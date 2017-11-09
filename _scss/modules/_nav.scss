@@ -69,14 +69,14 @@ input[type="color"] {
 
 // NAV LIST
 .nav__toggle {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen)  {
     display: none;
   }
   @include font-size(1.6);
   text-transform: uppercase;
   position: absolute;
   top: 34px;
-  right: 1em;
+  right: 2em;
   display: block;
   cursor: pointer;
   svg {

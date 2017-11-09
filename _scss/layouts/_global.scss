@@ -3,12 +3,14 @@
 
 // GRID CONTAINER
 .l-container {
-  @include outer-container;
+  max-width: 64.25em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // HEADER
 .l-header {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen) {
     padding: em(56) 0 0 0;
     width: em(160);
     left: inherit;
@@ -27,7 +29,7 @@
 }
 
 .l-header__brand {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen) {
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -42,7 +44,7 @@
     opacity: 0.5;
   }
   > h1 svg {
-    @include media($medium-screen)  {
+    @media screen and (min-width: $medium-screen) {
       width: 80px;
       margin-top: 0.3em;
       margin-bottom: 0.4em;
@@ -51,7 +53,7 @@
     margin-top: -0.4em;
   }
   > h1 span {
-    @include media($medium-screen)  {
+    @media screen and (min-width: $medium-screen) {
       float: left;
       display: inline;
       position: inherit;
@@ -70,7 +72,7 @@
 }
 
 .l-header__nav {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen) {
     display: block;
   }
   display: none;
@@ -78,9 +80,8 @@
 
 // MAIN CONTENT
 .l-content {
-  @include media($medium-screen)  {
-    @include span-columns(10);
-    @include omega;
+  @media screen and (min-width: $medium-screen) {
+    width: 80%;
     float: right;
     margin-top: 0;
     border-left: 1px solid $base-border-color;
@@ -92,7 +93,7 @@
 
 // FOOTER
 .l-footer {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen) {
     position: fixed;
     bottom: 0;
     padding-right: 1em;
@@ -124,7 +125,7 @@
 }
 
 .l-footer__nav {
-  @include media($medium-screen)  {
+  @media screen and (min-width: $medium-screen) {
     display: none;
   }
   margin-bottom: 1em;
