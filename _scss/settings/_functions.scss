@@ -13,3 +13,10 @@
 @function rs( $target, $context: $base-fs, $unit: em ) {
   @return relative-size( $target, $context, $unit );
 }
+
+// PX to EM
+///////////////////////////////////////////////////////////////////////////////
+
+@function em($pxval, $base: 16) {
+  @return ($pxval / $base) * 1em;
+}

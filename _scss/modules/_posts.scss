@@ -2,8 +2,8 @@
 .post {
   padding: 10%;
   &:nth-of-type(2n) {
-    border-top: 1px solid $base-font-color;
-    border-bottom: 1px solid $base-font-color;
+    border-top: 1px solid $base-border-color;
+    border-bottom: 1px solid $base-border-color;
   }
 
   header {
@@ -29,7 +29,7 @@
   }
 
   a {
-    border-bottom: 1px dotted $base-font-color;
+    border-bottom: 1px dotted $base-border-color;
   }
 }
 
@@ -41,6 +41,12 @@
 
 // BUTTON
 .button {
-  @include button(simple, $base-accent-color);
+  border: none !important;
+  background: $base-font-color;
+  padding: 0.5em 1em;
+  border-radius: 3px;
   color: #fff !important;
+  &:hover {
+    background: $hover-link-color;
+  }
 }

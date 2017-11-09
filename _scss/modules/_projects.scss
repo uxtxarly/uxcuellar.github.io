@@ -1,7 +1,7 @@
 .project {
   clear: both;
-  padding: 2.5em 10%;
-  border-top: 1px solid $base-font-color;
+  padding: 10%;
+  border-top: 1px solid $base-border-color;
 }
 
 .project__thumb {
@@ -39,5 +39,4 @@
 
 .project__summary {
   font-weight: bold;
-  color: $medium-gray;
 }

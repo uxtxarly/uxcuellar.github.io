@@ -24,7 +24,7 @@ $base-link-color: $brown;
 $hover-link-color: lighten($base-link-color, 25);
 
 // BORDER COLOR
-$base-border-color: #DEDEDE;
+$base-border-color: $brown;
 
 // ALERT COLORS
 $error-color: $red;
@@ -34,8 +34,8 @@ $success-color: $green;
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: "Inter UI", $helvetica;
-$serif: $georgia;
+$sans-serif: "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 $base-font-family: $sans-serif;
 $header-font-family: $sans-serif;
@@ -50,7 +50,7 @@ $base-border-radius: em(3);
 ///////////////////////////////////////////////////////////////////////////////
 
 $small-screen: em(560);
-$medium-screen: em(860);
+$medium-screen: em(800);
 $large-screen: em(960);
 $huge-screen: em(1600);
 
