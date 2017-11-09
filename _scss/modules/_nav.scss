@@ -10,7 +10,7 @@ $form-font-family: $base-font-family;
 
 
 textarea,
-#{$all-text-inputs} {
+input {
   @include box-sizing(border-box);
   @include transition(border-color);
   margin-bottom: $base-line-height / 2;
@@ -28,7 +28,7 @@ textarea,
 }
 
 input[type="search"] {
-  @include appearance(none);
+  @include prefixer(appearance, none, webkit moz ms o spec);
 }
 
 input[type="checkbox"],

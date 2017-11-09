@@ -3,7 +3,7 @@
 
 // GRID CONTAINER
 .l-container {
-  max-width: 64.25em;
+  max-width: em(1024);
   margin-left: auto;
   margin-right: auto;
 }
@@ -81,7 +81,7 @@
 // MAIN CONTENT
 .l-content {
   @media screen and (min-width: $medium-screen) {
-    width: 80%;
+    width: 78%;
     float: right;
     margin-top: 0;
     border-left: 1px solid $base-border-color;

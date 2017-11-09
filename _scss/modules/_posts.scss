@@ -41,6 +41,11 @@
 
 // BUTTON
 .button {
-  @include button(simple, $base-accent-color);
+  background: $base-font-color;
+  padding: 0.5em 1em;
+  border-radius: 3px;
   color: #fff !important;
+  &:hover {
+    background: $hover-link-color;
+  }
 }

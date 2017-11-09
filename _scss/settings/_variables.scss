@@ -34,8 +34,8 @@ $success-color: $green;
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: "Inter UI", $helvetica;
-$serif: $georgia;
+$sans-serif: "Inter UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 $base-font-family: $sans-serif;
 $header-font-family: $sans-serif;
