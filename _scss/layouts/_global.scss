@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid $base-font-color;
+  border-bottom: 1px solid $base-border-color;
 }
 
 .l-header__brand {
@@ -83,8 +83,8 @@
     @include omega;
     float: right;
     margin-top: 0;
-    border-left: 1px solid $base-font-color;
-    border-right: 1px solid $base-font-color;
+    border-left: 1px solid $base-border-color;
+    border-right: 1px solid $base-border-color;
   }
   margin-top: 5em;
   min-height: 100vh;
