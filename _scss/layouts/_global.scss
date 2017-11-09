@@ -13,6 +13,7 @@
     width: em(160);
     left: inherit;
     position: fixed;
+    border-bottom: none;
   }
   background: #fff;
   padding: em(20) em(10) 0 em(10);
@@ -22,6 +23,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  border-bottom: 1px solid $base-font-color;
 }
 
 .l-header__brand {
