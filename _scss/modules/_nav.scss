@@ -69,7 +69,7 @@ input[type="color"] {
 
 // NAV LIST
 .nav__toggle {
-  @media screen and (min-width: $medium-screen)  {
+  @media screen and (min-width: $large-screen)  {
     display: none;
   }
   @include font-size(1.6);
