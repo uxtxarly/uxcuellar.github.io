@@ -90,9 +90,6 @@ input[type="color"] {
   > a {
     color: $base-font-color;
     float: left;
-    padding: 0.3em 0.6em;
-    border: 1px solid $base-font-color;
-    border-radius: 20px;
     font-weight: bold;
     &:hover {
       color: lighten($base-font-color, 15);
