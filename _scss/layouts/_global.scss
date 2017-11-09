@@ -32,14 +32,14 @@
     height: 100px;
     margin: 0 auto;
   }
-  @include transition (background-color 0.5s ease-in-out);
+  @include transition (opacity 0.5s ease-in-out);
   margin: 0 em(20) em(20);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: $base-font-color;
   &:hover {
-    background-color: $hover-link-color;
+    opacity: 0.5;
   }
   > h1 svg {
     @include media($medium-screen)  {
@@ -101,16 +101,17 @@
   padding-top: em(20);
   text-align: center;
   .list--inline path:hover {
-    fill: $hover-link-color;
+    fill: $base-font-color;
   }
 }
 
 .l-footer__credits{
   @include font-size(1.2);
   a {
-    @include transition (color 0.5s ease-in-out);
+    @include transition (opacity 0.5s ease-in-out);
     &:hover {
-      color: $hover-link-color;
+      color: $base-font-color;
+      opacity: 0.5;
     }
   }
   > p {

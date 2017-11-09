@@ -47,9 +47,11 @@ input[type="color"] {
   list-style-type: none;
   a {
     color: $base-font-color;
+    opacity: 0.5
   }
   a:hover, a:focus {
-    color: $hover-link-color;
+    opacity: 1;
+    @include transition (opacity 0.5s ease-in-out);
   }
   > li {
     padding: 0.4em 0;
@@ -61,6 +63,7 @@ input[type="color"] {
   .active {
     font-weight: 800;
     text-transform: uppercase;
+    opacity: 1;
   }
 }
 
