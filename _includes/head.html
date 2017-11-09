@@ -5,31 +5,18 @@
   <meta name="author" content="Carlos Cuéllar">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow, noodp, noydir">
-  {% if page.description %}
-    <meta name="description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}">
-    <meta property="og:description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}">
-    <meta name="twitter:description" content="{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}">
-  {% else %}
-    <meta name="description" content="{{ page.content | textilize | strip_html | xml_escape | truncate: 200 }}" />
-    <meta name="og:description" content="{{ page.content | textilize | strip_html | xml_escape | truncate: 200 }}" />
-    <meta name="twitter:description" content="{{ page.content | textilize | strip_html | xml_escape | truncate: 200 }}" />
-  {% endif %}
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-  <meta property="og:site_name" content="{{ site.name }}">
+  <meta name="google-site-verification" content="ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg">
+  <meta name="msvalidate.01" content="019F5FD588A9EE4EF990A4653E7E03C3">
+
+  {% seo %}
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@cuellarfr">
   <meta name="twitter:site" content="@cuellarfr">
   <meta name="twitter:image:src" content="{{ site.url }}/apple-touch-icon-precomposed.png">
-  <meta name="google-site-verification" content="ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg">
-  <meta name="msvalidate.01" content="019F5FD588A9EE4EF990A4653E7E03C3">
-  <title>
-    {% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}
-  </title>
-
+  <meta name="theme-color" content="#653024" />
+  
   <!-- CSS -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Chivo:400,900,400italic' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="/style.css">
@@ -48,6 +35,4 @@
   <link rel="alternate" type="application/rss+xml" title="RSS Feed (Only Articles)" href="/feed-articles.xml">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed (Only Links)" href="/feed-links.xml">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
 </head>
