@@ -2,11 +2,6 @@
     <div class="l-container">
 
       <header role="banner" class="l-header" id="header">
-        <div class="nav__toggle">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32">
-            <path fill="#653024" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
-          </svg> Menu
-        </div>
         <div class="l-header__brand">
           <h1><a rel="home" href="/" title="Go to home">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 32 32">
@@ -15,6 +10,13 @@
             <span>Carlos Cuéllar</span></a>
           </h1>
         </div>
+
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="nav__toggle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32">
+            <path fill="#653024" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+          </svg> Menu
+        </label>
         <div class="l-header__nav">
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
