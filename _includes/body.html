@@ -2,11 +2,6 @@
     <div class="l-container">
 
       <header role="banner" class="l-header" id="header">
-        <div class="nav__toggle">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32">
-            <path fill="#653024" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
-          </svg> Menu
-        </div>
         <div class="l-header__brand">
           <h1><a rel="home" href="/" title="Go to home">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 32 32">
@@ -15,6 +10,13 @@
             <span>Carlos Cuéllar</span></a>
           </h1>
         </div>
+
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="nav__toggle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 32 32">
+            <path fill="#653024" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+          </svg> Menu
+        </label>
         <div class="l-header__nav">
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
@@ -74,27 +76,6 @@
       </footer>
     </div>
 
-    <!-- js  -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/application.js"></script>
-
-    <!-- fitvids -->
-    <script>
-      $(document).ready(function(){
-        $(".post").fitVids();
-      });
-    </script>
-
-    <!-- menu -->
-    <script>
-      $(function() {
-        $( ".nav__toggle" ).click(function() {
-          $( ".l-header__nav" ).slideToggle( "fast", function() {
-          });
-        });
-      });
-    </script>
-
     <!-- google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -105,20 +86,4 @@
       ga('send', 'pageview');
     </script>
 
-    <!-- statcounter -->
-    <script type="text/javascript">
-    var sc_project=10393014;
-    var sc_invisible=1;
-    var sc_security="1fed8ccd";
-    var scJsHost = (("https:" == document.location.protocol) ?
-    "https://secure." : "http://www.");
-    document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-    </script>
-    <noscript><div class="statcounter"><a title="click tracking"
-    href="http://statcounter.com/" target="_blank"><img
-    class="statcounter"
-    src="http://c.statcounter.com/10393014/0/1fed8ccd/1/"
-    alt="click tracking"></a></div></noscript>
   </body>

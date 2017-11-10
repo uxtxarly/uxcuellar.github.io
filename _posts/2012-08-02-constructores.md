@@ -12,4 +12,4 @@ Como desarrolladores construimos herramientas  y esas herramientas transforman n
 
 Somos constructores de un nuevo mundo digital, y aunque nuestros productos sean efímeros, tienen un enorme impacto en las personas.
 
-<iframe src="http://player.vimeo.com/video/34017777" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class="embed"><iframe src="http://player.vimeo.com/video/34017777" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
