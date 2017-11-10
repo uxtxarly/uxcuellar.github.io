@@ -6,7 +6,9 @@ tags:
 - pop
 redirect_from: "blog/388/minutos-musicales/"
 ---
-<iframe width="420" height="315" src="//www.youtube.com/embed/l3FLEM1Uwzo" frameborder="0" allowfullscreen></iframe>
+<div class="embed">
+  <iframe width="420" height="315" src="//www.youtube.com/embed/l3FLEM1Uwzo" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Tu perrito librepensador – Single
 

@@ -28,7 +28,7 @@ redirect_from: "blog/417/i-refactored-css-for-9-months-and-i-survived/"
 <h2>About <span class="caps">SMACSS</span>.</h2>
 <p><a href="https://smacss.com/"><span class="caps">SMACSS</span></a> is a methodology, a way to write and organize <span class="caps">CSS</span> created by <a href="http://snook.ca/">Jonathan Snook</a>. Snook says that we should stop coding with a <em>page</em> mentality, that’s when you take a look at a psd file and try to type the code in a linear way… and then you repeat the same process for every single psd. You should instead take a step back and try to identify visual patterns in that page that are repeated across the site. These pattern should be coded in flexible modules that should be as context agnostic as possible, so you can reuse them in different parts of your site. That way you create a more organized and maintainable <span class="caps">CSS</span>.</p>
 <p>If you are interested in this you should read <a href="http://shop.smacss.com/">Snook’s book</a>, or you could just watch this video as a quick introduction:</p>
-<p><div class="fluid-width-video-wrapper" style="padding-top: 56.2%;"><iframe src="//player.vimeo.com/video/99877232?color=9C191E" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid694822"></iframe></div></p>
+<div class="embed"><iframe src="//player.vimeo.com/video/99877232?color=9C191E" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid694822"></iframe></div>
 <p>Basically, we used to have a <span class="caps">CSS</span> file structure like this:</p>
 <pre><code>├── Sections
 │   ├── name of the section 1.scss
@@ -67,7 +67,7 @@ redirect_from: "blog/417/i-refactored-css-for-9-months-and-i-survived/"
 │   └── variables.scss
 ├── themes (seasonal themes that we only used on holidays)
 │   ├── christmas.scss
-│   └── halloween.scss 
+│   └── halloween.scss
 └── application.scss</code></pre>
 <p>We are also following (most of the time) some naming conventions that make our selectors easier to identify, and we are <a href="http://thesassway.com/beginner/the-inception-rule">trying to avoid nesting selectors more than three levels</a>. <strong>The result is a compiled stylesheet that is 70% smaller and a site that loads 1.5 seconds faster.</strong> Not bad, not bad at all.</p>
 <h2>Let’s document all this stuff.</h2>
