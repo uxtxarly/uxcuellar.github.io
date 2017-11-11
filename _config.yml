@@ -39,6 +39,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:
