@@ -66,6 +66,21 @@ input[type="color"] {
   }
 }
 
+// SEARCH FORM
+.nav__search {
+  @media screen and (min-width: $large-screen) {
+    width: 11em;
+  }
+  border: none !important;
+  border-bottom: 1px solid $base-font-color !important;
+  box-shadow: none !important;
+  background-color: $cream;
+}
+
+input::placeholder {
+  color: $hover-link-color;
+}
+
 // MENU TOGGLE
 input#toggle {
   display: none;
