@@ -13,16 +13,17 @@ $orange: #f9742b;
 $green: #2ABB9B;
 $purple: #79818A;
 $brown: #653024;
+$brownish: #8C7973;
 $cream: #FAFAF3;
 
 // FONT COLORS
 $base-font-color: $brown;
-$base-accent-color: $light-gray;
-$base-accent-color-darken: #dbe0db;
+$base-accent-color: $cream;
+$base-accent-color-darken: darken($base-accent-color, 25);
 
 // TEXT LINK COLORS
 $base-link-color: $brown;
-$hover-link-color: lighten($base-link-color, 25);
+$hover-link-color: $brownish;
 
 // BORDER COLOR
 $base-border-color: $brown;
