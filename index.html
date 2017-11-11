@@ -3,37 +3,12 @@ layout: home
 description: A personal blog about design, technology, music and procrastination.
 ---
 
-{% for post in paginator.posts %}
 <article class="post" role="article" itemscope itemtype="http://schema.org/Article">
   <header>
-    {% if post.link %}
-      <h2 itemprop="name"><a rel="external" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h2>
-      {% else %}
-      <h2 itemprop="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {% endif %}
-
-    <p>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> &middot;
-      <a href="{{ post.url }}" class="permalink" itemprop="url" title="Permalink">&infin;</a>
-    </p>
+    <h1 class="hero">Hola!</h1>
   </header>
   <div itemprop="articleBody">
-    {{ post.content }}
+    <p>My name is Carlos Cuéllar and I've been designing all kind of digital experiences since 2004.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </article>
-{% endfor %}
-
-<!-- Pagination links -->
-<nav class="paginator">
-  {% if paginator.next_page %} 
-    <a rel="next" href="/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
-  {% endif %} 
-
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a rel="prev" href="/" title="Newer entries">Newer  &raquo;</a>
-    {% else %}
-    <a rel="prev" href="/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
-    {% endif %}
-  {% endif %}
-</nav>

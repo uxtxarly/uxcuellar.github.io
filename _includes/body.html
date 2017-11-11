@@ -21,9 +21,8 @@
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
             <ul class="nav__list">
-              <li><a {% if page.layout == 'home' %}class="active" {% endif %}{% if location == 'blog' %}class="active" {% endif %}href="/" title="Go to blog section">blog</a></li>
-              <li><a {% if location == 'archive' %}class="active" {% endif %}href="/archive/" title="Go to archive page">archive</a></li>
-<!--               <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/" title="Go to work section">work</a></li> -->
+              <li><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/" title="Go to blog">blog</a></li>
+              <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/" title="Go to work section">work</a></li>
               <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/" title="Go to about page">about</a></li>
             </ul>
           </nav>

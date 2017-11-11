@@ -8,3 +8,7 @@
   box-shadow: none !important;
   background-color: $cream;
 }
+
+input::placeholder {
+  color: $base-link-color;
+}

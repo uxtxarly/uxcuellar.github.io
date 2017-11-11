@@ -33,6 +33,11 @@ h1, .h1 {
   @include font-size(3.6); // 36px
 }
 
+h1.hero {
+  @include font-size(10);
+  text-align: center;
+}
+
 h2, .h2 {
   @include font-size(3.2); // 32px
 }
