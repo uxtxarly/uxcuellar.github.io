@@ -35,7 +35,6 @@ h1, .h1 {
 
 h1.hero {
   @include font-size(10);
-  text-align: center;
 }
 
 h2, .h2 {
