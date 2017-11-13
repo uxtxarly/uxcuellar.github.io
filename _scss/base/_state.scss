@@ -96,6 +96,10 @@
   text-align: justify;
 }
 
+.is-bold {
+  font-weight: bold;
+}
+
 // CLEARFIX HACK
 .clearfix {
   @include clearfix;
