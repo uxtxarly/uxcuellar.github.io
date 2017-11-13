@@ -3,7 +3,6 @@ layout: work
 title: Horsepower
 description: Horsepower is an ag-oriented e-commerce website that connects farmers and buyers.
 tags: visual design, user research, information architecture, prototyping, front-end development.
-teammates: Cody Jenkins, David Isham, Doug Guastaferro, Landon Friend.
 duration: 9 Months, July 2012.
 sponsor: HP Agrisystems.
 img: horsepower-home-small.png

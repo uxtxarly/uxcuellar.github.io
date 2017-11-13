@@ -3,7 +3,6 @@ layout: work
 title: MBC Style Guide
 description: Live style guide used across several MBC products. It contains visual examples, explanations of use and snippets of code.
 tags: design research, front-end development.
-teammates: Sam Bible.
 duration: 9 Months, June 2014.
 sponsor: Lightspeed Systems.
 img: styleguide-home-small.png

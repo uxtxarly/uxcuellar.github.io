@@ -21,10 +21,9 @@
           {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <nav role="navigation" class="" aria-label="Navigation">
             <ul class="nav__list">
-              <li><a {% if page.layout == 'home' %}class="active" {% endif %}{% if location == 'blog' %}class="active" {% endif %}href="/" title="Go to blog section">blog</a></li>
-              <li><a {% if location == 'archive' %}class="active" {% endif %}href="/archive/" title="Go to archive page">archive</a></li>
-<!--               <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/" title="Go to work section">work</a></li> -->
-              <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/" title="Go to about page">about</a></li>
+              <li><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/" title="Go to blog">blog</a></li>
+              <li><a {% if location == 'work' %}class="active" {% endif %}href="/work/" title="Go to work section">work</a></li>
+              <li><a {% if location == 'colophon' %}class="active" {% endif %}href="/colophon/" title="Go to site colophon">colophon</a></li>
             </ul>
           </nav>
           <form action="/search" method="get">
@@ -39,10 +38,9 @@
         <div class="l-footer__credits">
           <nav class="l-footer__nav">
             <ul class="list--inline">
-            <li><a href="/" title="Go to blog section">blog</a></li>
-            <li><a href="/archive/" title="Go to archive page">archive</a></li>
-            <!-- <li><a href="/work/" title="Go to work section">work</a></li> -->
-            <li><a href="/about/" title="Go to about page">about</a></li>
+            <li><a href="/blog/" title="Go to blog section">blog</a></li>
+            <li><a href="/work/" title="Go to work page">work</a></li>
+            <li><a href="/colophon/" title="Go to site colophon">colophon</a></li>
           </ul>
           </nav>
           <ul class="list--inline">

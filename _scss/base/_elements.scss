@@ -11,7 +11,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  background-color: #fff;
+  background-color: $cream;
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   @include font-size(3.6); // 36px
+}
+
+h1.hero {
+  @include font-size(10);
 }
 
 h2, .h2 {
@@ -59,7 +63,7 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  @include transition(color 0.3s linear);
   color: $base-link-color;
   text-decoration: none;
 

@@ -3,7 +3,6 @@ layout: work
 title: Classroom Orchestrator
 description: A software used by teachers in order to monitor students’ computer screens in real time.
 tags: design research, prototyping, front-end development.
-teammates: Dustin McCraw, Steve Landwehr, Ken Chitwood.
 duration: 3 Months, February 2015.
 sponsor: Lightspeed Systems.
 img: classroom_shot.png

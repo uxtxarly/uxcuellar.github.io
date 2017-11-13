@@ -46,12 +46,11 @@ input[type="color"] {
   padding: em(20,16) 0;
   list-style-type: none;
   a {
-    color: $base-font-color;
-    opacity: 0.5
+    color: $hover-link-color;
   }
   a:hover, a:focus {
-    opacity: 1;
-    @include transition (opacity 0.5s ease-in-out);
+    color: $base-link-color;
+    @include transition (color 0.5s ease-in-out);
   }
   > li {
     padding: 0.4em 0;
@@ -63,8 +62,23 @@ input[type="color"] {
   .active {
     font-weight: 800;
     text-transform: uppercase;
-    opacity: 1;
+    color: $base-link-color;
   }
+}
+
+// SEARCH FORM
+.nav__search {
+  @media screen and (min-width: $large-screen) {
+    width: 11em;
+  }
+  border: none !important;
+  border-bottom: 1px solid $base-font-color !important;
+  box-shadow: none !important;
+  background-color: $cream;
+}
+
+input::placeholder {
+  color: $hover-link-color;
 }
 
 // MENU TOGGLE
