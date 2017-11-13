@@ -37,6 +37,10 @@
 // SECTION DESCRIPTIONS
 .section-description {
   padding: 0 10%;
+
+  a {
+    border-bottom: 1px dotted $base-border-color;
+  }
 }
 
 // BUTTON
