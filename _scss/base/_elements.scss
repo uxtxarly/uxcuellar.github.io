@@ -109,6 +109,7 @@ img {
 figcaption {
   text-align: center;
   font-style: italic;
+  margin-bottom: 2em;
   @include font-size(1.2);
 }
 

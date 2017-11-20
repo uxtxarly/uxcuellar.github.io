@@ -1,7 +1,6 @@
 .project {
   clear: both;
-  padding: 10%;
-  border-top: 1px solid $base-border-color;
+  padding: 4% 10% 0% 10%;
 }
 
 .project__thumb {
@@ -39,4 +38,9 @@
 
 .project__summary {
   font-weight: bold;
+}
+
+.project__category {
+  border-top: 1px solid $base-border-color;
+  margin-top: 10%;
 }
