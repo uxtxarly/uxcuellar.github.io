@@ -7,7 +7,7 @@ duration: 3 Months, February 2015.
 sponsor: Lightspeed Systems.
 img: classroom_shot.png
 ---
-<a href="/work/co-proto" class="button">VIEW INTERACTIVE PROTOTYPE</a>
+<a href="/work/co-proto/#/screens/36065803?maintainScrollPosition=false" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 
 In this project for Lightspeed, we created new software used by teachers in order to monitor students' computers in a classroom. We wanted to quickly build a minimal, viable product that was going to be used by Miami-Dade School District as part of a pilot program so that we would be able to have early feedback from real users from the very beginning of the project.
 <figure>
