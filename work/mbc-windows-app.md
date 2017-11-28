@@ -6,6 +6,7 @@ tags: design research, information architecture, visual design.
 duration: 3 Months, February 2015.
 sponsor: Lightspeed Systems.
 img: mbc_win-mockup.png
+sitemap: false
 ---
 <a href="/work/mbc-win-proto" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 

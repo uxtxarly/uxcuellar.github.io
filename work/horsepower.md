@@ -6,6 +6,7 @@ tags: visual design, user research, information architecture, prototyping, front
 duration: 9 Months, July 2012.
 sponsor: HP Agrisystems.
 img: horsepower-home-small.png
+sitemap: false
 ---
 
 When I joined <a href="http://www.horsepower.com">Horsepower</a>, the development team already had a functional website with all the core features available and a minimalist style. My first task consisted of creating a new corporate brand showing the company's values, and I also wrote a style guide that was used by the rest of the developers and marketing team.

@@ -6,6 +6,7 @@ tags: design research, prototyping, front-end development.
 duration: 3 Months, February 2015.
 sponsor: Lightspeed Systems.
 img: classroom_shot.png
+sitemap: false
 ---
 <a href="/work/co-proto/#/screens/36065803?maintainScrollPosition=false" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 

@@ -6,6 +6,7 @@ tags: user research, scenarios, task flows, prototyping.
 duration: 2 Months, February 2014.
 sponsor: Lightspeed Systems.
 img: mbc-photo-login.png
+sitemap: false
 ---
 <a href="/work/photoapp_proto-student_v2.pdf" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 

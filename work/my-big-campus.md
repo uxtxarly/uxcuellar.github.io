@@ -6,6 +6,7 @@ tags: user research, scenarios, prototyping, front-end development, visual desig
 duration: 3 Years, March 2015.
 sponsor: Lightspeed Systems.
 img: mbc-home-small.png
+sitemap: false
 ---
 
 I spent about 80% of my time at Lightspeed working for <a href="http://www.mybigcampus.com/">My Big Campus</a> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.
