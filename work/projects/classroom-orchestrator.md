@@ -8,14 +8,14 @@ sponsor: Lightspeed Systems.
 img: classroom_shot.png
 sitemap: false
 ---
-<a href="/work/co-proto/#/screens/36065803?maintainScrollPosition=false" class="button">VIEW INTERACTIVE PROTOTYPE</a>
+<a href="/work/projects/co-proto/#/screens/36065803?maintainScrollPosition=false" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 
 In this project for Lightspeed, we created new software used by teachers in order to monitor students' computers in a classroom. We wanted to quickly build a minimal, viable product that was going to be used by Miami-Dade School District as part of a pilot program so that we would be able to have early feedback from real users from the very beginning of the project.
 <figure>
 <img src="/images/co_wire1.png" alt="Wireframe of Classroom Orchestrator">
 <figcaption>Early wireframe of the group dashboard.</figcaption>
 </figure>
-For our user research I used some of the personas that we already had available in the office from other projects, and then I created specific scenarios for them. After that, I created and tested several interactions using wireframes and <a href="/work/co-proto">interactive prototypes</a>.
+For our user research I used some of the personas that we already had available in the office from other projects, and then I created specific scenarios for them. After that, I created and tested several interactions using wireframes and <a href="/work/projects/co-proto">interactive prototypes</a>.
 
 During this development, we had to solve several technical issues related with the amount of bandwidth used by the app and the storage of images. These issues would have affected user experience, so we collaborated to find an efficient solution. We turned off the default recording of students' screens so that the teacher would need to turn the recording on if he/she were interested in monitoring one particular student (in that case, hi-res images would be stored).
 <figure>
