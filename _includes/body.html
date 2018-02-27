@@ -26,9 +26,15 @@
               <li><a {% if location == 'colophon' %}class="active" {% endif %}href="/colophon/" title="Go to site colophon">colophon</a></li>
             </ul>
           </nav>
-          <form action="/search" method="get">
-            <input type="search" name="query" placeholder="Search" class="nav__search">
-          </form>
+          <form name="search" action="//duckduckgo.com/">
+            <input type="search" class="nav__search" placeholder="Search" name="q">
+            <input type="hidden" value="carloscuellar.net" name="sites">
+            <input type="hidden" value="1" name="kh">
+            <input type="hidden" value="1" name="kn">
+            <input type="hidden" value="1" name="kac">
+            <input type="hidden" value="1" name="kc">
+            </div>
+        </form>
       </header>
 
       <main role="main" class="l-content" aria-label="Main content">
