@@ -31,6 +31,11 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       author: "Carlos Cuéllar"
+  -
+    scope:
+      path: "work/projects/protos"
+    values:
+      sitemap: false
 
 # Use the following plug-ins
 plugins:
