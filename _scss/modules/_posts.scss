@@ -84,3 +84,8 @@
   }
   display: none;
 }
+
+.work-pic {
+  border-radius: 5px;
+  filter: grayscale(100%) sepia(25%);
+}
