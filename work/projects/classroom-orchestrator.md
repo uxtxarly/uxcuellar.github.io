@@ -25,6 +25,4 @@ During this development, we had to solve several technical issues related with t
 After a testing and iteration period, we added some extra features and we enabled superusers to monitor school groups and districts.
 
 The front-end implementation used the same patterns and CSS I created earlier for the rest of the My Big Campus products.
-<div class="embed">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/8vmavZ8bcKs" frameborder="0" allowfullscreen></iframe>
-</div>
+
