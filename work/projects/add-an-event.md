@@ -24,7 +24,7 @@ The old event submission form was a one-page long, unstructured and intimidating
 
 The other problem was behind the scenes. This form wasn't creating an event entry in our database, it was only generating a note in our help desk with the event information. Then, a venue advisor had to process manually that information and create the event listing in our system. This workflow was slow and not scalable.
 
-This project's goal was to create a multi-page submission form that empowers and educates organizers at the same time. From an engineering perspective, we also needed this form to create automatically a database entry that will be reviewed by a Goldstar employee before going live.
+This project's goal was to create a multi-page submission form that empowers and educates organizers at the same time. This way we expect to decrease the time needed to publish an event and also decrease the involvement in the process of venue advisors. From an engineering perspective, we also needed this form to create automatically a database entry that will be reviewed by a Goldstar employee before going live.
 
 ### Some Research First
 I started talking to stakeholders, venue advisors, and developers so I could learn more about the business requirements and different expectations inside the company. It turns out that they all had different ideas about how this form should work and who were our primary users: should we try to please our biggest suppliers or should we instead try to be more accessible to the smaller organizers that don't currently use our tools?
