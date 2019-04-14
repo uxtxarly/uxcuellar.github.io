@@ -8,4 +8,4 @@ description:
 
 ![domestic battle](/images/its_a_battle.jpg)
 
-> I can't believe you expected me to eat this thing.
+> I can't believe you expected me to eat that thing.
