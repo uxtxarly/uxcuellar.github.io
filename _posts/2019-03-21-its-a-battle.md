@@ -2,8 +2,7 @@
 layout: post
 published: true
 title:  "It's a Battle"
-link: 
-tags: 
+tags: personal
 description: 
 ---
 
