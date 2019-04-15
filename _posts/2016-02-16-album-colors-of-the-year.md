@@ -3,7 +3,7 @@ title: Album Colors Of The Year
 layout: post
 link: http://albumcolors.com/
 ---
-![album colors](http://carloscuellar.net/images/albumcolors.jpg)
+![album colors](/images/albumcolors.jpg)
 
 This is an interesting project where [Marcos Rodriguez](http://marco.la/) and [Zé Felipe](http://zefelipe.com/) compiled 150 album covers from last year organized by color. Every cover is linked to its album in Spotify.
 
