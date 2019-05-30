@@ -57,3 +57,7 @@ exclude:
 sass:
   sass_dir: _scss
   style: :compressed
+  
+# Config for atom feed
+feed:
+  path: atom/index.xml
