@@ -101,18 +101,18 @@
   padding-top: em(20);
   text-align: center;
   .list--inline path:hover {
-    fill: $base-font-color;
+    fill: $hover-link-color;
   }
 }
 
 .l-footer__credits{
   @include font-size(1.2);
-  a {
+ /* a {
     @include transition (opacity 0.5s ease-in-out);
     &:hover {
       opacity: 0.5;
     }
-  }
+  }*/
   > p {
     margin: 0.5em 0;
 
