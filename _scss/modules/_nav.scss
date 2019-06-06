@@ -69,16 +69,17 @@ input[type="color"] {
 // SEARCH FORM
 .nav__search {
   @media screen and (min-width: $large-screen) {
-    width: 11em;
+    width: 100%;
   }
   border: none !important;
-  border-bottom: 1px solid $base-font-color !important;
+  border-bottom: 1px solid $orange !important;
   box-shadow: none !important;
-  background-color: $cream;
+  background-color: #222;
+  color: #fff;
 }
 
 input::placeholder {
-  color: $hover-link-color;
+  color: $cream;
 }
 
 // MENU TOGGLE
