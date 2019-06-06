@@ -74,7 +74,7 @@ input[type="color"] {
   border: none !important;
   border-bottom: 1px solid $orange !important;
   box-shadow: none !important;
-  background-color: #222;
+  background-color: $base-bg-color;
   color: #fff;
 }
 

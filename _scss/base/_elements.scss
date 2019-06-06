@@ -11,7 +11,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  background-color: #222222;
+  background-color: $base-bg-color;
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
