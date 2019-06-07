@@ -1,17 +1,24 @@
 ---
-layout: home
+layout: default
 description: A personal blog about design, technology, music and procrastination.
 ---
 
 <article class="post" role="article" itemscope itemtype="http://schema.org/Article">
-  <header>
-    <img src="/images/141.jpg" alt="carlos cuellar" class="aside-pic">
-    <h1 class="hero">Hola!</h1>
+  <header class="hero">
+    <h1>Hola!</h1>
+    <h2 class="h3">I'm Carlos Cuéllar, UX Designer from Spain based in Portland, OR.</h2>
+    <br>
+    <h3 class="h5">This is my personal website where I collect notes and links about design, technology and music.</h3>
   </header>
-  <div itemprop="articleBody">
-    <p class="is-bold">My name is Carlos Cuéllar and I'm an Interaction Designer from Spain based in Portland, Oregon.</p>
-    <p>I've been designing all kind of digital experiences since 2004 and I currently work for <a href="https://www.goldstar.com">Goldstar Events</a> where I help people go out more. I'm an advocate of design as a problem solving discipline and I use empathy as a primary skill.</p>
-    <p>When not staring at a screen, I listen to classic alternative rock music records (yes, that means I'm getting old) and I try to find happy hours in downtown Portland.</p>
-    <p>You can say hola to me on <a href="https://twitter.com/cuellarfr" rel="me">Twitter</a>, catch me on <a href="https://www.linkedin.com/in/cuellarfr" rel="me">Linkedin</a> or send me an <a href="mailto:hola@carloscuellar.net" rel="me">email</a>.</p>
-  </div>
+  <hr>
+  <h2>Recent posts and links:</h2>
+  <ul class="listing">  
+  {% for post in site.posts limit:5 %}
+    {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+      <li class="" itemscope itemtype="http://schema.org/Article">
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="is-bold">{{ post.date | date: "%b %d, %y " }}</time>: 
+        <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+      </li>
+  {% endfor %}
+  </ul>
 </article>
