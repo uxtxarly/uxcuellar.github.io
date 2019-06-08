@@ -12,7 +12,6 @@ description: A personal blog about design, technology, music and procrastination
       {% else %}
       <h2 itemprop="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     {% endif %}
-
     <p>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> &middot;
       <a href="{{ post.url }}" class="permalink" itemprop="url" title="Permalink">&infin;</a>
@@ -29,7 +28,6 @@ description: A personal blog about design, technology, music and procrastination
   {% if paginator.next_page %}
     <a rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
   {% endif %}
-
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
     <a rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
