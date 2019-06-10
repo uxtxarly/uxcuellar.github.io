@@ -16,8 +16,8 @@ description: A personal blog about design, technology, music and procrastination
   {% for post in site.posts limit:5 %}
     {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
       <li class="" itemscope itemtype="http://schema.org/Article">
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="is-bold">{{ post.date | date: "%b %d, %y " }}</time>: 
-        <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+        <time datetime="{{ post.date | date_to_xmlschema }}" >{{ post.date | date: "%b %d, %y " }}</time>: 
+        <span itemprop="name" class="is-bold"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
       </li>
   {% endfor %}
   </ul>
