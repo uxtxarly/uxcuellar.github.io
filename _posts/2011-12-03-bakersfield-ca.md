@@ -2,7 +2,7 @@
 layout: post
 title: Bakersfield, CA
 tags:
-- bakersfield
+- travel
 - california
 redirect_from: "blog/45/bakersfield-ca/"
 ---

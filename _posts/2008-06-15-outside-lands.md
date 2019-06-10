@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Outside lands
-tags:
-- micrographic
-- pop
+tags: micrographic, music, travel
 redirect_from: "blog/404/outside-lands/"
 ---
 <img src="/images/178.jpg" />

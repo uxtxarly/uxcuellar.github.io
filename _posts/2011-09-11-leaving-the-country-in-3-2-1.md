@@ -2,7 +2,7 @@
 layout: post
 title: Leaving the country in 3, 2, 1...
 tags:
-- moving
+- travel
 - california
 redirect_from: "blog/44/leaving-the-country-in-3-2-1/"
 ---

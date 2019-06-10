@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Rumbo a California
-tags:
-- micrographic
+tags: micrographic, travel
 redirect_from: "blog/408/rumbo-a-california/"
 ---
 Dentro de unas horas Jill y yo partimos rumbo a California, no sin antes hacer una escala un tanto extraña en Frankfurt. Va a ser un mes completo en la tierra de …rellenen ustedes mismos con su propio tópico… y tenemos programadas visitas a Los Ángeles, San Francisco, Las Vegas y algún lugar más del que me olvido ahora.
