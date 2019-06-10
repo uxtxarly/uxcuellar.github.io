@@ -11,12 +11,20 @@ layout: default
     {% endif %}
     <p>
       <time class="dt-published" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> &middot;
-      <a href="{{ post.url }}" class="permalink u-url" itemprop="url" title="Permalink">&infin;</a> &middot;
+      <span class="reading-time" title="Estimated read time">
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+              1 min
+          {% else %}
+              {{ words | divided_by:180 }} mins
+          {% endif %}
+      </span> &middot;
       <span>Tags: 
         {% for tags in page.tags %}
           <em class="p-category">{{ tags }}</em>
         {% endfor %}
-      </span>
+      </span> &middot; 
+      <a href="{{ post.url }}" class="permalink u-url" itemprop="url" title="Permalink">&infin;</a> 
       <a rel="author" class="p-author h-card hidden" href="https://carloscuellar.net">Carlos Cuéllar</a>
     </p>
   </header>
