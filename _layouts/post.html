@@ -30,7 +30,7 @@ layout: default
   </header>
   <div itemprop="articleBody" class="e-content">
     {{ content }}
-  </div>
+  </div>  
 </article>
 <article class="post">
   <h3>Comments and mentions</h3>
@@ -43,3 +43,11 @@ layout: default
     async>
   </script>
 </article> 
+<nav class="paginator">
+  {% if page.previous.url %}
+    <a rel="prev" href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a rel="next" href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+  {% endif %}
+</nav>
