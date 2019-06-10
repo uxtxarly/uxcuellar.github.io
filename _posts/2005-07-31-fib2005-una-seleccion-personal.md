@@ -8,6 +8,8 @@ tags:
 ---
 Menos de una semana. Ya casi casi me veo recorriendo el camino rural que lleva a la entrada del recinto de conciertos de Benicàssim. Otro año más? Pues sí. Y van seis.
 
+<!--more-->
+
 A pesar de los pesares (y son muchos pesares), el cartel de este año del FIB me parece lo suficientemente estimulante como para acercarme de nuevo por allí, y a una semana vista es tiempo de consultar los horarios y planificar un poco qué es lo que queremos ver… porque verlo todo es imposible. Lo mejor que se puede hacer en un festival tan agotador como el FIB es ser selectivo y tener claro desde el principio qué grupos hay que ver y qué grupos son prescindibles, porque empacharse de conciertos suele ser contraproducente. Es mejor tratar de descansar entre concierto y concierto si no queremos terminar destrozados antes de hora.
 
 Creo que hay bastante entre lo que elegir en el FIB, así que la propuesta de micrographic es sólo una de tantas posibles:

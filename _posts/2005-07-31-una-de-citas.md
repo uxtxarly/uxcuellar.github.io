@@ -5,6 +5,7 @@ tags:
 - micrographic
 ---
 Era inevitable: tenía que pasar. Calor, sofoco, vacaciones, pocas noticias, pocas ideas… tenía que llegar el meme veraniego! Pues el meme ya está aquí, me lo ha pasado Superporcel y va de citas célebres. Empezamos:
+<!--more-->
 
 * “Oh, mírame Marge, estoy haciendo feliz a mucha gente, soy un hombre mágico que vive en el país feliz, en una casa de gominola en la calle de la piruleta. Ah, por cierto, pretendía ser sarcástico.” Homer J. Simpson.
 * “Todos cometemos errores, por eso los lápices llevan goma de borrar” Lenny (The Simpsons).

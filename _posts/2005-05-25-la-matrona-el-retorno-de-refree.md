@@ -18,6 +18,8 @@ con lo bien que se me da.
 
 Así comienza ‘La Matrona’, el tercer disco de Raül Fernández, Refree. Y como dice la hoja de promoción de Acuarela, se trata de “los puntos cardinales de ‘La matrona’: la celebración de la vida, las mujeres, la ciudad que nos rodea, y la aflicción siempre vista con ironía y escepticismo”.
 
+<!--more-->
+
 “Podríamos hablar del Serrat de ‘1978’ o ‘… Para piel de manzana’, del ‘White album’ de los Beatles, del Claudio Baglioni de ‘Solo’ o ‘E tu’, de Vainica Doble o los Beach Boys. Y también del pop orquestal del gran Van Dyke Parks. Además, para el melómano, en el disco hay ingeniosos guiños a Leonard Cohen, Abba, ‘Smile’, préstamos (que por serlo implican un explícito agradecimiento) que amplifican el alcance de ‘La Matrona’ como un disco que refleja un permanente fluir de ideas”.
 
 Estoy escuchando ahora mismo ‘La Matrona’ por primera vez, y parece un trabajo más luminoso que ‘Nones’ (su anterior lp, disco del año 2003 en Rockdelux). Tengo un gran recuerdo de ‘Nones’ y del concierto que Raül dio en Valencia el 13 de marzo del 2004, la noche anterior al famoso vuelco electoral. Un gran compositor con una excelente banda, que hizo que nos aisláramos durante un par de horas de esa situación tan extraña y tensa causada por los atentados y todo lo que sucedió después. Sí, le tengo cariño a ese concierto…

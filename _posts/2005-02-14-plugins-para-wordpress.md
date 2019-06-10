@@ -7,6 +7,8 @@ tags:
 ---
 Los plugins de WordPress son una herramienta poderosa para personalizar tu blog y adaptarlo a tus necesidades. Estos son algunos de los plugins que estoy utilizando ahora mismo en micrographic.
 
+<!--more-->
+
 * Brian Latest’s Comments: este plugin añade un listado actualizable con los últimos posts y las personas que han comentado en ellos. Muy útil para estar al tanto de las discusiones de los posts.
 * WordPress Plugin Manager: es un plugin para instalar plugins. Es decir, lo que consigue este plugin es simplificar aún más la instalación de otros plugins. Tan sencillo como consultar una lista con los plugins disponibles y hacer clic en "instalar"
 * Spam Karma: la solución definitiva contra el spam? Este plugin unifica todos los métodos antispam creados hasta ahora: listas de IPs censuradas (blacklist), filtros de palabras prohibidas, métodos de autentificación… y hasta un filtrado de spam en el trackback (la última pesadilla de muchos bloguers). Lo llevo probando desde hace un mes y el resultado es excelente: filtra todo el spam, no tiene "falsos positivos" y modera los comentarios dudosos.

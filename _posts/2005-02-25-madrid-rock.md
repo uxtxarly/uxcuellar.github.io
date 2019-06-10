@@ -6,6 +6,8 @@ tags:
 ---
 Estos días he estado siguiendo con atención las noticias que se sucedían en los medios sobre el cierre de Madrid Rock. Pues bien, después de que numerosos medios publicasen conmovedores artículos echándole la culpa del cierre a la piratería, los trabajadores hablan:
 
+<!--more-->
+
 Los trabajadores de Madrid Rock convocan una concentración en la puerta de la tienda (Gran Via, 25) el lunes 28 de Febrero a las 14 horas por los siguientes motivos:
 
 * Para defender nuestros derechos como trabajadores. Como ya es conocido, la tienda va a cerrar en breve sus puertas. La empresa ha aducido, incluso en entrevistas en medios de comunicación tanto locales como nacionales, qué es por motivo de la pirateria discográfica y de las descargas por internet, pero el motivo real es qué un poderoso grupo textil tiene apalabrada la compra del local por una abultada cantidad. Es decir, qué los dueños han visto la posibilidad de un negocio redondo sin moverse del sillón y han echado la culpa a causas ajenas, sabiendo qué los medios de comunicación y el público en general iban a creérselo. Los trabajadores no hemos sido informados oficialmente del hecho en ningún momento.

@@ -7,6 +7,8 @@ tags:
 ---
 En el anterior post comentaba que la documentación de Textpattern en castellano es prácticamente inexistente, pero la cosa cambia bastante si dominamos el inglés… Para todos aquellos que se defiendan en la lengua de Shakespeare, estos son los sitios que hay que conocer para estar al día en todo lo referente a TXP.
 
+<!--more-->
+
 * Textpattern.com El sitio oficial desde donde se ofrece el programa y se explican sus funcionalidades básicas. Es el primer sitio al que deberíamos acudir en caso de decidirnos a montar un blog con TXP.
 * Textpattern.org Aquí es donde se encuentran todos los recursos generados por la comunidad de usuarios de TXP. Plugins, plantillas, mods, tutoriales, trucos… Imprescindible.
 * Textbook Un manual de usuario en forma de wiki la mar de completo. Cualquier duda referente al funcionamiento de TXP encontrará aquí respuesta.

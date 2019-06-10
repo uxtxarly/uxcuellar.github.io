@@ -6,6 +6,7 @@ tags:
 - micrographic
 ---
 El jueves pasado me topé con un panfletillo curioso en un conocido bar de copas de Castellón. Se trataba de una hoja promocional de locales de ocio de la ciudad que los situaba en el mapa de un imaginario metro de Castellón. Y el caso es que la cosa puede tener su gracia si tenemos en cuenta que se rebautizan las calles con nombres tan rimbombantes como Judge Borrull Square o Bou Brothers Avenue, pero si pensamos en los sufridos usuarios del transporte (publico? JA!) de esta bendita ciudad, la cosa cambia…
+<!--more-->
 
 * La red de autobuses municipal está gestionada por varias empresas privadas que explotan por separado las líneas, con consecuencias tan graciosas como que estas líneas no estén enlazadas entre sí o que cada compañía utilice sus propias paradas. El servicio es lento, imprevisible y, en resumen, un auténtico desastre. Un cero para las autoridades locales que prefirieron repartir el negocio entre amiguetes antes que montar una EMT como dios manda.
 * La inversión de ferrocarrils de la generalitat (empresa pública responsable del metro de Valencia y el tranvía de Alicante) en Castellón es de cero patatero. Es como si aquí la gente no pagase impuestos y no tuviese derecho a unas infraestructuras dignas. De juzgado de guardia.

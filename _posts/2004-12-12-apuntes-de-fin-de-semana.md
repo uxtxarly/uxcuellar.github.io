@@ -6,6 +6,8 @@ tags:
 ---
 Llevo un sábado bastante atareado, intentando poner al día un montón de trabajos pendientes desde tiempos inmemoriales, y preparando un suculento manjar para la cena de esta noche (quién ha dicho que en los pisos de estudiantes se come mal?). Me estreso porque quiero, porque siempro dejo para el final TODO, pero esa es una característica incorregible de mi personalidad… En fin, a lo que íbamos: unas pequeñas recomendaciones para el fin de semana.
 
+<!--more-->
+
 Aya Kato es una joven ilustradora japonesa que tiene unos trabajos que quitan el hipo. Simplemente maravillosos: los dibujos más bonitos que he visto en mucho tiempo. Y su web es de visita obligada. (Vía Boing Boing).
 
 En la web del artista Michael Paulus podemos encontrar un estudio de anatomía realmente curioso. Este buen hombre se ha entretenido analizando cómo serían los esqueletos de algunos famosos personajes de animación (las SuperNenas, Pedro Picapiedra, Piolín, Charlie Brown…) y el resultado no deja de ser sorprendente (y gracioso). (También vía Boing Boing)

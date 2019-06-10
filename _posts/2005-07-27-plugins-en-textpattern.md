@@ -7,6 +7,8 @@ tags:
 ---
 Al igual que ocurre con MT o WP, la mejor forma de adaptar Textpattern a las necesidades particulares de cada uno es mediante el uso de plugins, pequeñas extensiones del CMS que añaden funcionalidades extra.
 
+<!--more-->
+
 El lugar donde se deben buscar los plugins para TXP es textpattern.org. Allí encontraremos prácticamente de todo, y podremos dejar comentarios en caso de que surjan dudas. Una vez descargado el plugin sólo queda instalarlo, y ese proceso en TXP no puede ser más sencillo. Los plugins vienen en forma de archivos de texto que abriremos para copiar todo su contenido. Lo siguiente será entrar en la sección de plugins de TXP (sección admin / plugins), pegar el texto en la casilla “instalar plugins” y hacer clic en el botón “subir”. En la siguiente pantalla se nos pedirá confirmación, y después volveremos a la pantalla de gestión de plugins donde deberemos comprobar que el plugin está activado. En algunos casos hay que seguir algún paso más, así que conviene leer el “read me” que suele acompañar a cada plugin.
 
 La instalación de plugins no tiene más secretos, así que paso a detallar qué plugins estoy usando ahora mismo en micrographic:

@@ -8,7 +8,7 @@ tags:
 redirect_from: "blog/19/los-nueve-ojos-de-google-street-view/"
 ---
 Hace dos años Google se embarcó en la titánica tarea de complementar su servicio <a href="http://maps.google.es/">Google Maps</a> con fotografías a ras de suelo. Armado con un ejercito de coches con cámaras de nueve lentes en su techo, Google ha recorrido ya un buen puñado de ciudades en todo el mundo y todos hemos dado paseos virtuales curioseando en sus páginas.
-
+<!--more-->
 <img src="/images/7.jpg" width="500" height="400" alt="" />
 
 Con un archivo fotográfico tan brutal, Google no sólo ha añadido un servicio más a su Google Maps. Ha conseguido retratar de forma precisa la realidad social de muchas zonas del mundo. Como prueba de ello, el artista canadiense <a href="http://jonrafman.com/">Jon Rafman</a> ha recopilado algunas de las mejores imágenes de Google Street View y el resultado es fantástico. Os recomiendo su artículo en <a href="http://www.artfagcity.com/2009/08/12/img-mgmt-the-nine-eyes-of-google-street-view/">Art Fag City</a>.<!--more-->

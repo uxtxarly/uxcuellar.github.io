@@ -13,6 +13,8 @@ Cultura:
 
 (Diccionario de la Real Academia Española . Vigésimo segunda edición, en línea)
 
+<!--more-->
+
 Los abajo firmantes,
 
 

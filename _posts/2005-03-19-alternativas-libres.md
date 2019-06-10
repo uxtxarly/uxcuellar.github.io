@@ -7,6 +7,8 @@ tags:
 ---
 En esta semana que llevo usando Ubuntu me han ido surgiendo pequeñas dudas que he ido resolviendo investigando en foros y con la ayuda de amigos mucho más puestos que yo en esto de linux.
 
+<!--more-->
+
 Una de las webs que me han resultado más útiles es alternativas libres. Aquí se puede encontrar un listado de programas de uso común en windows, con su correspondiente equivalente libre en linux. Tampoco es que esperase encontrar respuesta a todas mis necesidades (sigo echando de menos programas competentes de CAD o de ilustración vectorial), pero sí que he encontrado aplicaciones con idéntica funcionalidad en otros campos.
 
 Esta es mi tabla personal de migración windows-linux:

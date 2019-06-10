@@ -18,7 +18,12 @@ description: A personal blog about design, technology, music and procrastination
     </p>
   </header>
   <div itemprop="articleBody">
-    {{ post.content }}
+    {% if post.content contains site.excerpt_separator %}
+      {{ post.excerpt }}
+      <a href="{{ post.url }}">Read more</a>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
   </div>
 </article>
 {% endfor %}

@@ -9,6 +9,8 @@ description: Some notes about building a component library in Sketch.
 
 At [Goldstar](https://www.goldstar.com), we've been developing our own **design system** for the last few months and I can tell you it's been a lot of fun. A design system is a collection of reusable UI components, guided by some rules, that can be assembled together in order to build new interfaces. We use a set of component libraries for [Sketch](https://www.sketch.com) in order to create, store and reuse this system, and I've been involved in creating the first one of these libraries. _Note: Sketch calls its reusable componentes ["Symbols"](https://www.sketch.com/docs/symbols/)._
 
+<!--more-->
+
 And how does this work? Well, these UI components work like building blocks; we categorize our components in different levels and each level builds off the one that precedes it. It's an approach that borrows heavily from [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) principles, but I'll talk a bit more about this architecture later. 
 
 And why Sketch? It's been our preferred design tool for the last 4 years and we like its plugin ecosystem and how it works with other tools like [Abstract](https://www.abstract.com) (for version control) or [InVision](https://www.invisionapp.com) (light prototyping, feedback, handoff). We are always exploring new alternatives, but we have invested a lot of time building these libraries and I don't think we're going to be migrating to other design tools like [Figma](https://www.figma.com) or [Adobe XD](https://www.adobe.com/products/xd.html) anytime soon.

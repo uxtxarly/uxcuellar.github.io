@@ -5,6 +5,7 @@ tags:
 - micrographic
 ---
 No hay nada como regresar de vacaciones y encontrarse con la nevera vacía, la gata de mi compañero de piso arrasando con todo, las facturas de teléfono por pagar… y la cuenta de Bloglines a rebosar. Estos son algunos de los enlaces que me han parecido más interesantes:
+<!--more-->
 
 * Lego Digital Designer es una especie de LegoCAD: un software que sirve para diseñar artilugios con Lego, con la posibilidad de enviar tus propios diseños a la juguetera y que por un módico precio te los manden a casa. No está nada mal, oigan, pero yo es que siempre he sido más de TENTE… Visto en Core77.
 * En Isopixel nos informan de la convocatoria del cuarto ciclo de “Diseño Industrial ¿Quién Sabe 4? Diseño Extraño”. Conferencias, talleres y concursos, el 28 y 29 de octubre en Querétano (México).

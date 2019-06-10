@@ -7,6 +7,8 @@ tags:
 ---
 A sólo 48 horas de la inauguración del Satellite, ha llegado a mis manos el folleto de lo que será nuestro stand en la feria. Viene con un pequeño resumen de lo que son cada uno de los prototipos que llevamos… Vendrá a ser algo como esto:
 
+<!--more-->
+
 * Cajistero-Puf, de Diana Santiago. O cómo reconvertir una caja de refrescos en un revistero que también puede ser un puf, dependiendo de la ocasión y las necesidades. Útil e impactante.
 * Groove, de Eduardo Alonso. Perchero rompedor a la vez que funcional y versátil. Se compone de un panel interactivo que permite jugar con diferentes composiciones de formas y colores.
 * Neuronas, de Aymara Aravena. Lámpara que ofrece diferentes juegos de sombras, dependiendo de su posición. El hecho de que funcione a pilas le proporciona cierta autonomía. Permite ser colocada en cualquier lugar y en cualquier posición.

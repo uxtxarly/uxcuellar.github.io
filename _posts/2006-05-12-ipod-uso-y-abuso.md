@@ -6,6 +6,8 @@ tags:
 ---
 Sé que unos cuantos amigos bloggers se me van a echar al cuello (ya me imagino los comments: ‘Pijo! Pijo!’), pero creo que es de justicia dedicarle este post al cacharro que me ha proporcionado más momentos de felicidad en los últimos meses: el txarlyPod, o sea, mi iPod.
 
+<!--more-->
+
 Hay gente que quiere a su perro o a su gato, igual que hay señoras que le hablan a sus plantas… pues yo le profeso el mismo cariño a txarlyPod. Qué habría sido de mí si no hubiese acudido a mi auxilio en ciertos momentos críticos! Creo que nunca lo he contado en este blog, pero servidor ejerce un magnetismo irresistible hacia los freaks. Me explico: si voy en el tren y sube al vagón un señor con boina y una jaula con gallinas, o una señora en batín y zapatillas de andar por casa o, que sé yo, un psicópata asesino en serie con los ojos inyectados en sangre (todos los casos son verdaderos excepto este último), inevitablemente recorrerán el vagón para venir a sentarse a mi lado. Y trascurridos un par de minutos de silencio sepulcral… tratarán de darme conversación!!! En ese momento, dado mi lógico desconocimiento del mundo de las gallinas, batines o matanzas de gorrinos, es cuando viene al rescate txarlyPod, dándome la excusa perfecta para abstraerme de la conversación. Algunos pensaréis que soy un maleducado, pero no, no es un tema de mala educación: es una mera cuestión de supervivencia.
 
 Bueno, y puesto que le estoy tan agradecido a txarlyPod, procedo a contaros algunos cuidados que le dedico y que a él le gustan (me lo dice al oído cada noche).

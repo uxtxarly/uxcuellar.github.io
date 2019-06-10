@@ -7,6 +7,8 @@ tags:
 ---
 Ando estos días con mis compañeros de piso dándole vueltas a la idea de montar un ordenador sencillito que funcione como servidor en nuestra pequeña red local. Juntando desechos de unos y chatarra informática de otros podríamos llegar a conseguir un “frankenstein” que cumpliese su cometido.
 
+<!--more-->
+
 Con esta idea en la cabeza, ayer acudimos a la universidad, ya que, casualmente, se está deshaciendo estos días de material informático obsoleto. Y tan obsoleto! Apilados en el hueco de una escalera encontramos montañas de torres, placas, monitores de fósforo verde… y una docena de viejos macs. Así que al final terminamos llevándonos a casa una vieja torre (de la que aprovecharíamos la fuente de alimentación, la disquetera y poco más) y dos impecables Macintosh Classic. Arqueología informática, deberían llamarlo.
 
 El ordenador en cuestión: un modelo del año 90 con un procesador 6800 a 8 Mhz, 2 Mb de memoria RAM y un disco duro de 40 Mb. Toda una reliquia! :D Funcionaba? Pues, por desgracia, no. Al encenderlo, lo único que aparece es un “tablero de ajedrez”. En cualquier caso, es un modelo clásico que ocupa poco espacio y con un diseño bastante bonito, así que pensé en dejarlo como objeto decorativo en mi habitación.

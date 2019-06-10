@@ -11,7 +11,7 @@ siempre me quedaba hipnotizado por las ruinas de unas naves industriales
 junto al puerto de Valencia.
 
 <img src="/images/22.jpg" width="480" height="353" alt="" />
-
+<!--more-->
 No tenía ni idea de la historia de esas naves, ni de la polémica que
 existe actualmente en torno a su futuro uso. Yo sólo veía esas cerchas
 al aire, que parecían mantener el equilibrio casi por arte de magia, y

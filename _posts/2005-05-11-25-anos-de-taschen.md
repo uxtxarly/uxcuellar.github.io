@@ -7,6 +7,7 @@ tags:
 - art
 ---
 <p>No pude resistirlo… Fue superior a mis fuerzas! El domingo pasado, aprovechando la hora y pico que faltaba para que saliera mi tren, me acerqué a la <span class="caps">FNAC</span> de Valencia. Craso error! Siempre que entro en ese centro comercial termino saliendo con un par de bolsas de plástico llenas y mi pobre visa electrón tiritando. Pero, ¿qué podía hacer?</p>
+<!--more-->
 <p>Resulta que los de la <span class="caps">TASCHEN</span> (editorial de la que ya me he declarado en otras ocasiones ferviente seguidor) andan celebrando estos días su 25 aniversario, y para conmemorarlo han lanzado una serie de libros fieles a su política editorial (bueno, bonito y barato), pero a lo bruto. En realidad, creo que es una especie de recopilación de “grandes éxitos” de la editorial germana, con nuevas portadas y con un precio imbatible.</p>
 <p>Estas son mis tres nuevas adquisiciones:</p>
 <h3>1000 Record Covers, de Michael Ochs</h3>

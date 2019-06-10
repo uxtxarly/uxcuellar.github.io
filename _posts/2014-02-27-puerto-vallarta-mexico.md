@@ -6,7 +6,7 @@ tags:
 redirect_from: "blog/413/puerto-vallarta-mexico/"
 ---
 <img src="/images/190.jpg" />
-
+<!--more-->
 <img src="/images/191.jpg" />
 
 TO DO: -Go to Mexico-

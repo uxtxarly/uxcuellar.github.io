@@ -9,6 +9,7 @@ redirect_from: "blog/415/portland-or/"
 
 <p><img src="/images/196.jpg"></p>
 <p>A few weeks ago I had the chance to visit <a href="http://www.travelportland.com/">Portland</a>. Lightspeed opened a new office there so it was the perfect excuse to visit another city and another state!</p>
+<!--more-->
 <p>I have to say that I loved the place. In fact, I loved it so much that I’m considering moving there in the next months. These are some of the cool things you can find in Portland:</p>
 <ul>
   <li>Plenty of music venues, concerts, bars, record stores, cultural life…</li>

@@ -7,6 +7,8 @@ tags:
 ---
 Me acaba de llegar un mail de la UJI anunciando las primeras Jornadas sobre Cómic de Castellón. Me parece interesante, así que copio y pego:
 
+<!--more-->
+
 La Asociación Freaks In Black y el colectivo Fanzone, con el apoyo y patrocinio de la Universitat Jaume I de Castelló y la colaboración del Aula de Cinema, organizan las I Jornadas sobre Cómic de Castellón, cómicsCS_05. El evento, que tendrá lugar los días 21, 22 y 23 de abril en la Facultad de Ciencias Humanas y Sociales, tiene el fin de difundir la afición a los tebeos ydar a conocer el mundo de la historieta entre la sociedad castellonense.
 Entre los actos se cuentan mesas redondas sobre distintos temas de interés general en torno al mundo del cómic y charlas a cargo de reconocidas personalidades en la materia, así como encuentros y ruedas de firmas con los autores invitados. También se organizará un mercadillo, con la participación de diversas editoriales y fanzines, que estará activo a lo largo de todas las
 jornadas, así como un taller de iniciación a la creación de historietas, a cargo de Otracosa Comics.

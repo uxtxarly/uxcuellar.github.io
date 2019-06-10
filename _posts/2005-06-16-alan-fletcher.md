@@ -6,7 +6,7 @@ tags:
 - art
 ---
 <img src="/images/171.jpg" />
-
+<!--more-->
 <img src="/images/172.jpg" />
 
 <img src="/images/173.jpg" />

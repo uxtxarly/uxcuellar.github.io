@@ -6,6 +6,8 @@ tags:
 ---
 Ya está. Hoy he hecho el último examen de la convocatoria de enero. Me olvidaré del estrés, los agobios y las prisas de última hora hasta junio. Que cómo me ha ido la cosa? Pues como siempre… comsí-comsá… habrá de todo :) Ya veremos las notas.
 
+<!--more-->
+
 Sabéis que hace tres semanas prometí alejarme del ordenador y no postear en el blog, y he cumplido… parcialmente. En efecto, no he posteado, pero no he podido evitar la tentación de hacer unos pequeños cambios en el diseño y la estructura de micrographic. Creo que ahora queda todo más a mano y que el cambio ha sido a mejor, pero de todas formas ya sabéis que todas las críticas son bien recibidas.
 
 También tengo que agradeceros que durante estas tres semanas hayáis continuado pasando por aquí. Lo de las canciones ha resultado ser una idea bastante exitosa… tanto, que hasta alguno me ha pedido que continúe poniendo música y me quede calladito unos cuantos días más! Pero no va a ser así. El pesao del Txarly vuelve. Además, con unas cuantas historias que contar.

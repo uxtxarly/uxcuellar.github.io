@@ -5,7 +5,7 @@ tags:
 - micrographic
 ---
 Como muchos sabréis, hoy es el día del orgullo friki y para celebrarlo un buen número de bloggers están enseñando sus vergüenzas orgullos frikis al mundo. Y yo me pregunto: qué necesidad hay de hacerlo??? Uno prefiere vivir su frikismo en la intimidad, como el que no sale del armario, oiga! El caso es que el Camarada Bakunin me ha señalado con el dedo, y no se trata de ir decepcionando a la gente del partido, así que allá vamos.
-
+<!--more-->
 Empecemos reconociendo los hechos: sí, soy friki, o al menos moderadamente friki. Y no lo digo yo. A las pruebas me remito: hace unos meses una amiga me presentó a su novio, y el buen hombre lo primero que me soltó a la cara fue esto:
 
 <blockquote>Pues eres casi tan friki como te imaginaba, Txarly. Bueno, en realidad te hacía con un look más Elvis Costello, pero normal del todo no eres.</blockquote>

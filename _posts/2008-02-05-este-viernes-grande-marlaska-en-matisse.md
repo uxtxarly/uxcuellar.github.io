@@ -8,6 +8,7 @@ redirect_from: "blog/399/este-viernes-grande-marlaska-en-matisse/"
 ---
 
 <p><strong><span class="caps">SIETE</span> <span class="caps">MOTIVOS</span> <span class="caps">PARA</span> <span class="caps">ESCUCHAR</span> “EL <span class="caps">MOMENTO</span> DE HACER” (<span class="caps">GRANDE</span>-<span class="caps">MARLASKA</span>)</strong></p>
+<!--more-->
 <ol>
   <li>Tenemos la triste inercia de ignorar a los grupos que escriben pop con minúsculas. Los discos de Hello Cuca, Tachenko, Jonston, Beef, Incrucificables o Los Carradine pasan sin pena ni gloria mientras que cualquiera que compone himnos parece un poeta (muchas veces confundimos solemnidad con sustancia).</li>
   <li>Es un grupo digno de sus influencias: Violent Femmes, Beat Happening, The Go-Betweens, Television Personalities, The Feelies, La Polla Records, The Wedding Present, Phil Ochs… Casi nada. ¿Cuántos artistas (de aquí o de fuera) pueden decir eso?</li>

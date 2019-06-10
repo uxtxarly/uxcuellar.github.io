@@ -8,6 +8,7 @@ tags:
 <p><img src="/images/167.jpg"></p>
 <p>Superporcel debe conocer la obsesión que, como buen fan de Alta Fidelidad , tengo por hacer listas. Carlos ha comenzado un juego que funciona como si de una carta en cadena se tratara: se trata de responder un cuestionario (en este caso, musical) y pasarle el testigo a otros cinco bloggers de tu elección… Y yo he sido señalado con el dedo en la primera ronda :)</p>
 <p>Vamos allá!</p>
+<!--more-->
 <p><strong>Testigo recibido de:</strong><br>
 superporcel</p>
 <p><strong>Tamaño total de los archivos de música en mi ordenador:</strong><br>

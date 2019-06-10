@@ -7,6 +7,8 @@ Desde hace unos días hay un nuevo miembro en la familia llamado Paquito. Paquit
 
 <img src="/images/158.jpg" />
 
+<!--more-->
+
 Es un aparato bastante apañao. Exteriormente, se parece al iMac original de Jonathan Ive y por eso a alguien se le ocurrió bautizarlo como "Paquito" que suena como "Macintosh" pero más castizo.
 
 El ordenador es uno de los PCs tontos procedentes de aquel fallido experimento de AOL y el Banco Santander, AOL Avant, por el que se alquilaba un terminal para conectarse a internet por 3000 pesetas al mes. Aquello fue un rotundo fracaso y hoy todavía se pueden encontrar paquitos de segunda mano en foros y tiendas de informática en internet.
