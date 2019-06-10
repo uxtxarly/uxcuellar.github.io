@@ -2,6 +2,7 @@
 title: Pixel Art Meets Industrial Design
 layout: post
 link: https://www.instagram.com/jung_soo_park/
+tags: design
 ---
 
 ![Eames Chair](/images/pixelart_eames.png)

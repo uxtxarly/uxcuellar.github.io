@@ -2,7 +2,7 @@
 layout: post
 title: Puerto Vallarta, Mexico
 tags:
-- places
+- travel
 redirect_from: "blog/413/puerto-vallarta-mexico/"
 ---
 <img src="/images/190.jpg" />

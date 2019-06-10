@@ -2,6 +2,7 @@
 title: Album Colors Of The Year
 layout: post
 link: http://albumcolors.com/
+tags: music, graphic design
 ---
 ![album colors](/images/albumcolors.jpg)
 

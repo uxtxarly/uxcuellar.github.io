@@ -2,7 +2,7 @@
 layout: post
 title: Portland, OR
 tags:
-- places
+- travel
 - oregon
 redirect_from: "blog/415/portland-or/"
 ---

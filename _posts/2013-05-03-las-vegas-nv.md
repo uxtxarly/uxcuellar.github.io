@@ -2,7 +2,7 @@
 layout: post
 title: Las Vegas, NV
 tags:
-- places
+- travel
 redirect_from: "blog/411/las-vegas-nv/"
 ---
 <img src="/images/184.jpg" />

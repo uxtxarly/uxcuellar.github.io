@@ -3,7 +3,7 @@ layout: post
 title: Cupertino, CA
 tags:
 - apple
-- places
+- travel
 - california
 redirect_from: "blog/410/cupertino-ca/"
 ---

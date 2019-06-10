@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Mi experiencia con Paquito
-tags:
-- micrographic
+tags: micrographic, hardware, diy
 ---
 Desde hace unos días hay un nuevo miembro en la familia llamado Paquito. Paquito es un ordenador Intel Dot Station que llegó a mis manos por el módico precio de 60 euros. Claro que el Paco no es un ordenador cualquiera: cuenta con un procesador Celeron a 300 Mhz, 128 Mb de RAM, disco duro de 10 Gb, red, módem… y no tiene ni unidad de CD ni disquetera, pero sí 3 puertos USB en los que se le puede conectar de todo.
 
