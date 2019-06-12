@@ -37,6 +37,11 @@ defaults:
     values:
       sitemap: false
 
+# GitHub info
+github:
+  repo: cuellarfr/cuellarfr.github.io
+  branch: master
+  
 # Use the following plug-ins
 plugins:
   - jemoji # Emoji please!
