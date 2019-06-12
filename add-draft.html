@@ -40,7 +40,7 @@ permalink: /add-draft.html
 				</div>
 				<div class="form-group">
 					<label for="password" class="sr-only">password</label>
-					<input type="password" class="form-control" id="password" placeholder="GitHub password">
+					<input type="password" class="form-control" id="password" placeholder="GitHub password or token">
 				</div>
 				<input type="button" class="btn btn-default" id="go" value="Post" /> 
 				<a class="btn btn-link" data-toggle="collapse" href="#submitform" aria-expanded="false" aria-controls="submitform">Remember username/password</a>
@@ -48,7 +48,7 @@ permalink: /add-draft.html
 			<div class="collapse" id="submitform">
 				<br>
 				<div class="well">
-					<p>Because of the way this form works (the form data is not sumbitted, as forms usually do), your browser may not ask you to remember the username/password. 
+					<p>Because of the way this form works (the form data is not submitted, as forms usually do), your browser may not ask you to remember the username/password. 
 					<br>If you'd like to save them to your password manager, fill them in and click this button.
 					<br>This will not create a new post!</p>
 					<input type="submit" class="btn btn-default" value="Trick browser to save username/password">
@@ -66,7 +66,7 @@ permalink: /add-draft.html
 		}
 		selection = encodeURIComponent(selection);
 		new_window=window.open('{{ "/add-draft.html" | prepend: site.baseurl | prepend: site.url }}?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');
-		})();">post to GitHub</a></p>
+		})();">Post to GitHub</a></p>
 	</div>
 	<script>
 		function get_query(){
