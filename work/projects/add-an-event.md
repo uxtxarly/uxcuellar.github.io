@@ -8,7 +8,7 @@ sponsor: Goldstar Events
 img: addevent-storyboard.jpg
 sitemap: false
 ---
-
+<hr>
 ### TLDR: A Quick Summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
 * Interviewed event organizers and venue advisors to learn more about pain points in the old form.

@@ -8,6 +8,7 @@ sponsor: Lightspeed Systems.
 img: mbc_win-mockup.png
 sitemap: false
 ---
+<hr>
 <a href="/work/projects/protos/mbc-win-proto" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 
 The development team at Lightspeed was asked to create a reduced, native version of MBC for Windows 8. We wanted to adapt our current iOS and Android apps to Windows tablets by respecting the interactions and patterns of this platform while offering a true MBC experience to our users.

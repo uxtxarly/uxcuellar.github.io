@@ -8,7 +8,7 @@ sponsor: HP Agrisystems.
 img: horsepower-home-small.png
 sitemap: false
 ---
-
+<hr>
 When I joined <a href="http://www.horsepower.com">Horsepower</a>, the development team already had a functional website with all the core features available and a minimalist style. My first task consisted of creating a new corporate brand showing the company's values, and I also wrote a style guide that was used by the rest of the developers and marketing team.
 <figure>
 <a href="/work/projects/protos/hp_doc_identityguide.pdf"><img src="/images/hp-sg.png" alt="page of the style guide" title="download the horsepower identity guide"></a>

@@ -8,7 +8,7 @@ sponsor: Lightspeed Systems.
 img: mbc-home-small.png
 sitemap: false
 ---
-
+<hr>
 I spent about 80% of my time at Lightspeed working for <a href="http://www.mybigcampus.com/">My Big Campus</a> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.
 <figure>
 <img src="/images/mbc-wf1.png" alt="wireframe of mbc">

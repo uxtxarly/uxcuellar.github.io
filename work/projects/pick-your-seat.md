@@ -8,7 +8,7 @@ sponsor: Goldstar Events
 img: chart_shot.jpg
 sitemap: false
 ---
-
+<hr>
 <a href="/work/projects/protos/seat-mobile-proto/index.html#/screens" class="button">VIEW MOBILE PROTOTYPE</a>
 
 <a href="/work/projects/protos/seat-desktop-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
