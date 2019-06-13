@@ -48,7 +48,8 @@
   background: $base-link-color;
   padding: 0.5em 1em;
   border-radius: 3px;
-  color: #fff !important;
+  color: $base-bg-color !important;
+  font-weight: bold !important;
   &:hover {
     background: $hover-link-color;
   }
