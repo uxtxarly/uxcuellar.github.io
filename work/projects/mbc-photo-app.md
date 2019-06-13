@@ -8,6 +8,7 @@ sponsor: Lightspeed Systems.
 img: mbc-photo-login.png
 sitemap: false
 ---
+<hr>
 <a href="/work/projects/protos/photoapp_proto-student_v2.pdf" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 
 Smartphones are an essential part of modern life and today they are integrated into many classrooms. This project maximized the potential of the smartphone at school, turning it into an educational tool.

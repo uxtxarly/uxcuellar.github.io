@@ -1,5 +1,6 @@
 // BLOG POST
-.post {
+.post,
+.intro {
   padding: 10%;
   &:nth-of-type(2n) {
     border-top: 1px solid $base-border-color;
@@ -47,7 +48,8 @@
   background: $base-link-color;
   padding: 0.5em 1em;
   border-radius: 3px;
-  color: #fff !important;
+  color: $base-bg-color !important;
+  font-weight: bold !important;
   &:hover {
     background: $hover-link-color;
   }
@@ -79,12 +81,38 @@
 
 // HOME HER0
 .hero {
-  background: $base-border-color;
+  background: url(../images/hero_bg.jpg) $base-border-color;
+  background-size: cover;
   border-radius: 5px;
   padding: 2em;
+  margin-bottom: 2em;
   text-align: right;
+  text-shadow: 1px 1px 1px $base-bg-color;
   h1 {
     @include font-size(10);
     padding-top: 1em;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+    
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    &:visited {
+      color: #fff;
+    }
+    
+    &:active {
+      outline: none;
+      color: #fff;
+    }
+
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
   }
 }

@@ -9,7 +9,7 @@ $dark-gray: #4d5955;
 $blue: #049baf;
 $red: #F04848;
 $yellow: #ECBD0C;
-$orange: #E49527;
+$orange: #FBB33B;
 $green: #2ABB9B;
 $purple: #79818A;
 $brown: #653024;
@@ -24,7 +24,7 @@ $base-accent-color-darken: darken($base-accent-color, 25);
 
 // TEXT LINK COLORS
 $base-link-color: $orange;
-$hover-link-color: #FABB57;
+$hover-link-color: lighten($base-link-color, 10);
 
 // BORDER COLOR
 $base-border-color: $orange;

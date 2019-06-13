@@ -8,7 +8,7 @@ sponsor: Goldstar Events
 img: overview-header.jpg
 sitemap: false
 ---
-
+<hr>
 ###  A Quick Summary
 - Designed a new dashboard page for Goldstar's Audience Marketing Platform.
 - Interviewed event organizers and venue advisors to understand current user flows.
