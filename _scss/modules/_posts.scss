@@ -1,5 +1,6 @@
 // BLOG POST
-.post {
+.post,
+.intro {
   padding: 10%;
   &:nth-of-type(2n) {
     border-top: 1px solid $base-border-color;
