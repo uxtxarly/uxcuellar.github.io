@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /work/projects/
 
-Sitemap: http://carloscuellar.net/sitemap.xml
+Sitemap: https://carloscuellar.net/sitemap.xml
