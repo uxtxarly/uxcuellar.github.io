@@ -81,10 +81,8 @@
 
 // HOME HER0
 .hero {
-  background: #6A8565;
-  border-radius: 5px;
-  padding: 2.5em;
-  margin-bottom: 2em;
+  background: #403434;
+  padding: 10%;
   color: #fff;
   h1 {
     @include font-size(10);
