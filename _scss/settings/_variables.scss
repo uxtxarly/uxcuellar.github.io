@@ -17,17 +17,17 @@ $brownish: #8C7973;
 $cream: #FAFAF3;
 
 // FONT COLORS
-$base-bg-color: #222;
-$base-font-color: #fff;
-$base-accent-color: $cream;
+$base-bg-color: #F4F4F4;
+$base-font-color: #403434;
+$base-accent-color: #94B68E;
 $base-accent-color-darken: darken($base-accent-color, 25);
 
 // TEXT LINK COLORS
-$base-link-color: $orange;
+$base-link-color: #6A8565;
 $hover-link-color: lighten($base-link-color, 10);
 
 // BORDER COLOR
-$base-border-color: $orange;
+$base-border-color: #403434;
 
 // ALERT COLORS
 $error-color: $red;

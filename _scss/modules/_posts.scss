@@ -81,13 +81,11 @@
 
 // HOME HER0
 .hero {
-  background: url(../images/hero_bg.jpg) $base-border-color;
-  background-size: cover;
+  background: #6A8565;
   border-radius: 5px;
-  padding: 2em;
+  padding: 2.5em;
   margin-bottom: 2em;
-  text-align: right;
-  text-shadow: 1px 1px 1px $base-bg-color;
+  color: #fff;
   h1 {
     @include font-size(10);
     padding-top: 1em;
