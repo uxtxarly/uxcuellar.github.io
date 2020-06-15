@@ -89,8 +89,12 @@ input#toggle {
   right: 2em;
   display: block;
   cursor: pointer;
+  font-family: $label-font-family;
   svg {
     margin: 0 0.2em -0.05em 0;
+  }
+  &:hover {
+    color: $hover-link-color;
   }
 }
 
