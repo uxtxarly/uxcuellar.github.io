@@ -78,11 +78,6 @@ a {
   }
 }
 
-article a:visited,
-.listing a:visited {
-  color: $hover-link-color; // color visited links (only for articles)
-}
-
 article a:hover,
 .listing a:hover {
   border-bottom: 1px solid $hover-link-color; // underline links on hover (only for articles)
