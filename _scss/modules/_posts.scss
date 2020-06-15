@@ -81,9 +81,8 @@
 
 // HOME HER0
 .hero {
-  background: #403434;
   padding: 10%;
-  color: #fff;
+  border-bottom: 1px solid $base-border-color;
   h1 {
     @include font-size(10);
     padding-top: 1em;
