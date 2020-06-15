@@ -138,3 +138,8 @@ blockquote {
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
 }
+
+label {
+  font-family: $sans-serif;
+  @include font-size(1.4);
+}
