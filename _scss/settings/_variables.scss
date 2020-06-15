@@ -31,9 +31,10 @@ $success-color: $green;
 ///////////////////////////////////////////////////////////////////////////////
 
 $sans-serif: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$serif: "IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif;
 
-$base-font-family: $sans-serif;
+$base-font-family: $serif;
+$label-font-family: $sans-serif;
 $header-font-family: $sans-serif;
 
 // SIZES

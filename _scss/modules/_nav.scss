@@ -18,7 +18,7 @@ input {
   width: 100%;
   border: 1px solid $form-border-color;
   font-size: $form-font-size;
-  font-family: $form-font-family;
+  font-family: $label-font-family;
   &:hover {
     border-color: $form-border-color-hover;
   }
@@ -45,6 +45,7 @@ input[type="color"] {
 .nav__list {
   padding: em(20,16) 0;
   list-style-type: none;
+  font-family: $label-font-family;
 
   > li {
     padding: 0.4em 0;
@@ -104,6 +105,7 @@ input#toggle {
   padding: 1em 10%;
   text-align: center;
   background: $gray;
+  font-family: $label-font-family;
   > a {
     float: left;
     font-weight: bold;

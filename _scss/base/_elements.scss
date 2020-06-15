@@ -99,8 +99,8 @@ img {
 
 figcaption {
   text-align: center;
-  font-style: italic;
   margin-bottom: 2em;
+  font-family: $label-font-family;
   @include font-size(1.2);
 }
 
