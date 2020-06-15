@@ -20,8 +20,8 @@ sitemap: false
         {% endunless %}
         {% unless post.link %}
           <div itemscope itemtype="http://schema.org/Article">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>: 
-            <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
+            <span itemprop="name"><a rel="bookmark" href="{{ post.url }}" class="is-bold">{{ post.title }}</a></span>
           </div>
         {% endunless %}
       {% endfor %}
