@@ -45,13 +45,13 @@ input[type="color"] {
 .nav__list {
   padding: em(20,16) 0;
   list-style-type: none;
-  a {
-    color: $hover-link-color;
-  }
-  a:hover, a:focus {
-    color: $base-link-color;
-    @include transition (color 0.5s ease-in-out);
-  }
+  // a {
+  //   color: $hover-link-color;
+  // }
+  // a:hover, a:focus {
+  //   color: $base-link-color;
+  //   @include transition (color 0.5s ease-in-out);
+  // }
   > li {
     padding: 0.4em 0;
     border-bottom: 1px solid $base-border-color;
@@ -62,7 +62,7 @@ input[type="color"] {
   .active {
     font-weight: 800;
     text-transform: uppercase;
-    color: $base-link-color;
+    // color: $base-link-color;
   }
 }
 
@@ -109,7 +109,7 @@ input#toggle {
   margin-bottom: 0;
   padding: 1em 10%;
   text-align: center;
-  background: $brown;
+  background: $gray;
   > a {
     float: left;
     font-weight: bold;

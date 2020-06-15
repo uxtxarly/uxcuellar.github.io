@@ -5,22 +5,23 @@ $red: #F04848;
 $yellow: #ECBD0C;
 $greenish: #94B68E;
 $green: #6A8565;
+$plum: #DCA0DB;
 $brown: #403434;
-$cream: #F4F4F4;
-$gray: #4d5955;
+$cream: #EDE6E3;
+$gray: #64696D;
 
 // FONT COLORS
-$base-bg-color: $cream;
-$base-font-color: $brown;
-$base-accent-color: $greenish;
-$base-accent-color-darken: darken($base-accent-color, 25);
+$base-bg-color: $gray;
+$base-font-color: $cream;
+$base-accent-color: $cream;
+$base-accent-color-darken: $plum;
 
 // TEXT LINK COLORS
-$base-link-color: $green;
-$hover-link-color: lighten($base-link-color, 10);
+$base-link-color: $cream;
+$hover-link-color: $plum;
 
 // BORDER COLOR
-$base-border-color: $brown;
+$base-border-color: $cream;
 
 // ALERT COLORS
 $error-color: $red;
