@@ -49,7 +49,7 @@ input[type="color"] {
 
   > li {
     padding: 0.4em 0;
-    border-bottom: 1px solid $base-border-color;
+    // border-bottom: 1px solid $base-border-color;
   }
   > li:last-child {
     border-bottom: none;
@@ -85,7 +85,7 @@ input#toggle {
   @include font-size(1.6);
   text-transform: uppercase;
   position: absolute;
-  top: 34px;
+  top: 1.2em;
   right: 2em;
   display: block;
   cursor: pointer;
