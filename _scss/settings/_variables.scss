@@ -3,24 +3,25 @@
 
 $red: #F04848;
 $yellow: #ECBD0C;
-$greenish: #94B68E;
-$green: #6A8565;
+$green: #94B68E;
+$plum: #DCA0DB;
 $brown: #403434;
-$cream: #F4F4F4;
-$gray: #4d5955;
+$cream: #EDE6E3;
+$gray: #64696D;
+$dim-gray: #72767E;
 
 // FONT COLORS
-$base-bg-color: $cream;
-$base-font-color: $brown;
-$base-accent-color: $greenish;
-$base-accent-color-darken: darken($base-accent-color, 25);
+$base-bg-color: $gray;
+$base-font-color: $cream;
+$base-accent-color: $cream;
+$base-accent-color-darken: $plum;
 
 // TEXT LINK COLORS
-$base-link-color: $green;
-$hover-link-color: lighten($base-link-color, 10);
+$base-link-color: $cream;
+$hover-link-color: $plum;
 
 // BORDER COLOR
-$base-border-color: $brown;
+$base-border-color: $dim-gray;
 
 // ALERT COLORS
 $error-color: $red;
@@ -31,9 +32,10 @@ $success-color: $green;
 ///////////////////////////////////////////////////////////////////////////////
 
 $sans-serif: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$serif: "IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif;
 
-$base-font-family: $sans-serif;
+$base-font-family: $serif;
+$label-font-family: $sans-serif;
 $header-font-family: $sans-serif;
 
 // SIZES
@@ -47,7 +49,5 @@ $base-border-radius: em(3);
 
 $small-screen: em(560);
 $medium-screen: em(800);
-$large-screen: em(960);
+$large-screen: em(1024);
 $huge-screen: em(1600);
-
-$max-width: em(1028);

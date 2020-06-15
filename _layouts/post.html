@@ -19,30 +19,20 @@ layout: default
               {{ words | divided_by:180 }} mins
           {% endif %}
       </span> &middot;
-      <span>Tags: 
+      <span>Tags:
         {% for tags in page.tags %}
           <em class="p-category">{{ tags }}</em>
         {% endfor %}
-      </span> &middot; 
-      <a href="{{ post.url }}" class="permalink u-url" itemprop="url" title="Permalink">&infin;</a> 
+      </span> &middot;
+      <a href="{{ post.url }}" class="permalink u-url" itemprop="url" title="Permalink">&infin;</a>
       <a rel="author" class="p-author h-card hidden" href="https://carloscuellar.net">Carlos Cuéllar</a>
     </p>
   </header>
   <div itemprop="articleBody" class="e-content">
     {{ content }}
-  </div>  
+  </div>
 </article>
-<article class="post">
-  <h3>Comments and mentions</h3>
-  <script src="https://utteranc.es/client.js"
-    repo="cuellarfr/cuellarfr.github.io"
-    issue-term="pathname"
-    label="comment"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-  </script>
-</article> 
+
 <nav class="paginator">
   {% if page.previous.url %}
     <a rel="prev" href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>

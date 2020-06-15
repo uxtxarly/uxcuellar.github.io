@@ -18,7 +18,7 @@ input {
   width: 100%;
   border: 1px solid $form-border-color;
   font-size: $form-font-size;
-  font-family: $form-font-family;
+  font-family: $label-font-family;
   &:hover {
     border-color: $form-border-color-hover;
   }
@@ -45,16 +45,11 @@ input[type="color"] {
 .nav__list {
   padding: em(20,16) 0;
   list-style-type: none;
-  a {
-    color: $hover-link-color;
-  }
-  a:hover, a:focus {
-    color: $base-link-color;
-    @include transition (color 0.5s ease-in-out);
-  }
+  font-family: $label-font-family;
+
   > li {
     padding: 0.4em 0;
-    border-bottom: 1px solid $base-border-color;
+    // border-bottom: 1px solid $base-border-color;
   }
   > li:last-child {
     border-bottom: none;
@@ -62,7 +57,6 @@ input[type="color"] {
   .active {
     font-weight: 800;
     text-transform: uppercase;
-    color: $base-link-color;
   }
 }
 
@@ -75,6 +69,7 @@ input[type="color"] {
   border-bottom: 1px solid $base-border-color !important;
   box-shadow: none !important;
   background-color: $base-bg-color;
+  color: $base-font-color;
 }
 
 
@@ -90,12 +85,16 @@ input#toggle {
   @include font-size(1.6);
   text-transform: uppercase;
   position: absolute;
-  top: 34px;
+  top: 1.2em;
   right: 2em;
   display: block;
   cursor: pointer;
+  font-family: $label-font-family;
   svg {
     margin: 0 0.2em -0.05em 0;
+  }
+  &:hover {
+    color: $hover-link-color;
   }
 }
 
@@ -109,7 +108,8 @@ input#toggle {
   margin-bottom: 0;
   padding: 1em 10%;
   text-align: center;
-  background: $brown;
+  background: $gray;
+  font-family: $label-font-family;
   > a {
     float: left;
     font-weight: bold;

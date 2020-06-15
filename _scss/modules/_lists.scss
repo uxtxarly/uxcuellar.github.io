@@ -39,15 +39,16 @@ dl {
 .listing {
   list-style-type: none;
   padding-left: 0;
+  font-family: $label-font-family;
 }
 
 .listing__item,
 .result {
-  padding: 1.5em 10%;
-/*  &:nth-of-type(2n+1) {
+  padding: 2.5em 10%;
+  &:nth-of-type(2n+1) {
     border-top: 1px solid $base-border-color;
     border-bottom: 1px solid $base-border-color;
-  }*/
+  }
 }
 
 // LIST PROJECTS
@@ -59,5 +60,6 @@ dl {
 .list--details {
   list-style-type: none;
   padding-left: 0;
+  font-family: $label-font-family;
   @include font-size(1.4);
 }

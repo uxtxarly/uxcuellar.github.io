@@ -2,10 +2,7 @@
 .post,
 .intro {
   padding: 10%;
-  &:nth-of-type(2n) {
-    border-top: 1px solid $base-border-color;
-    border-bottom: 1px solid $base-border-color;
-  }
+  border-bottom: 1px solid $base-border-color;
 
   header {
     > h2 {
@@ -16,6 +13,7 @@
     }
     > p {
       @include font-size(1.4);
+      font-family: $label-font-family;
     }
     .time {
       color: $base-font-color;
@@ -27,7 +25,7 @@
   }
 
   a {
-    border-bottom: 1px dotted $base-border-color;
+    border-bottom: 1px dotted $base-font-color;
   }
 }
 
@@ -81,9 +79,8 @@
 
 // HOME HER0
 .hero {
-  background: #403434;
   padding: 10%;
-  color: #fff;
+  border-bottom: 1px solid $base-border-color;
   h1 {
     @include font-size(10);
     padding-top: 1em;
@@ -91,16 +88,16 @@
   a {
     color: #fff;
     text-decoration: underline;
-    
+
     &:hover {
       color: #fff;
       text-decoration: none;
     }
-    
+
     &:visited {
       color: #fff;
     }
-    
+
     &:active {
       outline: none;
       color: #fff;

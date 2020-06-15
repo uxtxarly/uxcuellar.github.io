@@ -78,11 +78,6 @@ a {
   }
 }
 
-article a:visited,
-.listing a:visited {
-  color: $hover-link-color; // color visited links (only for articles)
-}
-
 article a:hover,
 .listing a:hover {
   border-bottom: 1px solid $hover-link-color; // underline links on hover (only for articles)
@@ -104,8 +99,8 @@ img {
 
 figcaption {
   text-align: center;
-  font-style: italic;
   margin-bottom: 2em;
+  font-family: $label-font-family;
   @include font-size(1.2);
 }
 
@@ -142,4 +137,9 @@ blockquote {
   padding-left: $base-line-height / 2;
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
+}
+
+label {
+  font-family: $sans-serif;
+  @include font-size(1.4);
 }
