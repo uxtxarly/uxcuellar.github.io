@@ -45,13 +45,7 @@ input[type="color"] {
 .nav__list {
   padding: em(20,16) 0;
   list-style-type: none;
-  // a {
-  //   color: $hover-link-color;
-  // }
-  // a:hover, a:focus {
-  //   color: $base-link-color;
-  //   @include transition (color 0.5s ease-in-out);
-  // }
+
   > li {
     padding: 0.4em 0;
     border-bottom: 1px solid $base-border-color;
@@ -62,7 +56,6 @@ input[type="color"] {
   .active {
     font-weight: 800;
     text-transform: uppercase;
-    // color: $base-link-color;
   }
 }
 
@@ -75,6 +68,7 @@ input[type="color"] {
   border-bottom: 1px solid $base-border-color !important;
   box-shadow: none !important;
   background-color: $base-bg-color;
+  color: $base-font-color;
 }
 
 

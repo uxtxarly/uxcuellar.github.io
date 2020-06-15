@@ -97,7 +97,9 @@
     position: fixed;
     bottom: 0;
     width: em(160);
+    border-top: none;
   }
+  border-top: 1px solid $base-border-color;
   padding-top: em(20);
   text-align: center;
   .list--inline path:hover {
@@ -107,12 +109,12 @@
 
 .l-footer__credits{
   @include font-size(1.2);
- /* a {
+  a {
     @include transition (opacity 0.5s ease-in-out);
     &:hover {
       opacity: 0.5;
     }
-  }*/
+  }
   > p {
     margin: 0.5em 0;
 
