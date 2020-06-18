@@ -3,22 +3,23 @@
 
 $red: #F04848;
 $yellow: #ECBD0C;
+$orange: #FF794F;
 $green: #94B68E;
 $plum: #DCA0DB;
 $brown: #403434;
 $cream: #EDE6E3;
-$gray: #64696D;
-$dim-gray: #72767E;
+$gray: #6B7074;
+$dim-gray: #7D818A;
 
 // FONT COLORS
 $base-bg-color: $gray;
 $base-font-color: $cream;
 $base-accent-color: $cream;
-$base-accent-color-darken: $plum;
+$base-accent-color-darken: $orange;
 
 // TEXT LINK COLORS
 $base-link-color: $cream;
-$hover-link-color: $plum;
+$hover-link-color: $orange;
 
 // BORDER COLOR
 $base-border-color: $dim-gray;
