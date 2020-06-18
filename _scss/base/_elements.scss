@@ -79,7 +79,8 @@ a {
 }
 
 article a:hover,
-.listing a:hover {
+.listing a:hover,
+.hero a:hover {
   border-bottom: 1px solid $hover-link-color; // underline links on hover (only for articles)
 }
 
