@@ -1,13 +1,13 @@
 .project {
   clear: both;
-  padding: 4% 10% 0% 10%;
+  // padding: 4% 10% 0% 10%;
 }
 
 .project__thumb {
   float: left;
   border-radius: $base-border-radius;
-  width: em(150);
-  height: em(150);
+  width: em(120);
+  height: em(120);
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
 
