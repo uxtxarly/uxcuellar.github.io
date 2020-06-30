@@ -15,9 +15,24 @@ Smartphones are an essential part of modern life and today they are integrated i
 
 We generated ideas around the possible uses of smartphones by our personas, then we filtered the best ones and used them to create usage scenarios. After that, I built some paper prototypes that allowed us to test basic interactions. The next step was to create an <a href="/work/projects/protos/photoapp_proto-student_v2.pdf">interactive prototype</a> and several task flows showing the use of the app by parents, students and educators.
 
-<figure><a href="/images/photoapp-flow.jpg"><img src="/images/photoapp-flow-small.jpg" alt="teacher work flow of the photo app"></a><figcaption>Teacher work flow of the photo app</figcaption></figure>
+<figure>
+<a href="#img1">
+  <img src="/images/photoapp-flow-small.jpg" class="thumbnail">
+</a>
+<a href="#_" class="ligtbox">
+  <img src="/images/photoapp-flow.jpg">
+</a>
+<figcaption>Teacher work flow of the photo app</figcaption>
+</figure>
 
 
-<figure><a href="/images/photoapp_flow-student.png"><img src="/images/photoapp_flow-student.jpg" alt="student work flow of the photo app"></a><figcaption>Student work flow of the photo app</figcaption></figure>
+<figure>
+<a href="#img1">
+  <img src="/images/photoapp_flow-student.png" class="thumbnail">
+</a>
+<a href="#_" class="lightbox" id="img2">
+  <img src="/images/photoapp_flow-student.png">
+</a>
+<figcaption>Student work flow of the photo app</figcaption></figure>
 
 The final result was a safe and monitored app, similar to Instagram and used by students to share pictures with the rest of their classmates.
