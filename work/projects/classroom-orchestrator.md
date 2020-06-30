@@ -18,11 +18,12 @@ In this project for Lightspeed, we created new software used by teachers in orde
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/images/co_wire1.png" alt="Wireframe of Classroom Orchestrator">
-    <img src="/images/co_wire1.png" alt="Wireframe of Classroom Orchestrator">
-    <img src="/images/co_wire1.png" alt="Wireframe of Classroom Orchestrator">
+    <img src="/images/co_wire2.png" alt="Wireframe of Classroom Orchestrator">
+    <img src="/images/co_wire3.png" alt="Wireframe of Classroom Orchestrator">
+    <img src="/images/co_wire4.png" alt="Wireframe of Classroom Orchestrator">
   </div>
   <br>
-  <figcaption>Early wireframe of the group dashboard.</figcaption>
+  <figcaption>Early wireframes of the group dashboard.</figcaption>
 </figure>
 
 For our user research I used some of the personas that we already had available in the office from other projects, and then I created specific scenarios for them. After that, I created and tested several interactions using wireframes and <a href="/work/projects/protos/co-proto">interactive prototypes</a>.
@@ -32,11 +33,13 @@ During this development, we had to solve several technical issues related with t
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/images/co_mockup2.jpg" alt="Mockup of Classroom Orchestrator">
-    <img src="/images/co_mockup2.jpg" alt="Mockup of Classroom Orchestrator">
-    <img src="/images/co_mockup2.jpg" alt="Mockup of Classroom Orchestrator">
+    <img src="/images/co_mockup_1.gif" alt="Mockup of Classroom Orchestrator">
+    <img src="/images/co_mockup_2.gif" alt="Mockup of Classroom Orchestrator">
+    <img src="/images/co_mockup_3.gif" alt="Mockup of Classroom Orchestrator">
+    <img src="/images/co_mockup_4.gif" alt="Mockup of Classroom Orchestrator">
   </div>
   <br>
-  <figcaption>Mockup of the recorded sessions screen.</figcaption>
+  <figcaption>Mockups of the recorded sessions screen.</figcaption>
 </figure>
 
 After a testing and iteration period, we added some extra features and we enabled superusers to monitor school groups and districts.
