@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 img: chart_shot.jpg
 sitemap: false
 ---
+<script src="/flickity.js"></script>
 <hr>
 <a href="/work/projects/protos/seat-mobile-proto/index.html#/screens" class="button">VIEW MOBILE PROTOTYPE</a>
 
@@ -27,4 +28,13 @@ All this information was used in the ideation of 3 initial low fidelity prototyp
 
 Our final prototype included several features that we weren't technically able to implement at once and that's why I had to create several <a href="/work/projects/protos/seat-mobile-proto-temp/index.html#/screens">intermediate solutions</a> that were used temporarily for several months. These solutions, along with a <a href="/work/projects/protos/seat-desktop-proto/index.html#/screens">desktop version</a>, were implemented in a limited amount of events that allowed us to compile information and feedback from users in a process that lasted more than 6 months.
 
-<figure><img src="/images/chart_desktop.jpg" alt="desktop version"><figcaption>Mockup of the desktop version.</figcaption></figure>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/seat_desktop1.jpg" alt="mockup of the desktop version">
+    <img src="/images/seat_desktop2.jpg" alt="mockup of the desktop version">
+    <img src="/images/seat_desktop3.jpg" alt="mockup of the desktop version">
+    <img src="/images/seat_desktop4.jpg" alt="mockup of the desktop version">
+  </div>
+  <br>
+  <figcaption>Early mockups of key screens.</figcaption>
+</figure>
