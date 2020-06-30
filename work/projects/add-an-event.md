@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 img: addevent-storyboard.jpg
 sitemap: false
 ---
+<script src="/flickity.js"></script>
 <hr>
 ### TLDR: A Quick Summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
@@ -38,7 +39,7 @@ After that, I interviewed different organizers. I wanted to learn how's their ev
 We also did a lot of competitive analysis. We needed to know how the most common problems with event submission where solved by others in our industry, so we reviewed more than 30 websites.
 
 ### How This Works
-With all this information, we already knew how we wanted our form to work. With the help of our product manager, we created a story map and I started sketches and rough wireframes that showed the architecture, navigation, and flow of the new form. 
+With all this information, we already knew how we wanted our form to work. With the help of our product manager, we created a story map and I started sketches and rough wireframes that showed the architecture, navigation, and flow of the new form.
 
 We wanted the form to be divided into non-linear logical steps, so users could start anywhere the submission process and save it as a draft if needed. There's a lot of information that needs to be added to the form and it's common to not have all the information ready when organizers start filling the form.
 
@@ -46,19 +47,40 @@ Since we wanted to make this form more accessible to smaller organizers, we avoi
 
 We also wanted users to be able to preview the events they build, and that's why we show a preview of how the event will look once published. This preview view gets updated every time the organizer enters more information, so they really feel like they're building something, not just filling a form.
 
-<figure><img src="/images/addevent_title.jpg" alt="wireframe"><figcaption>Wireframe showing the first step of the form, navigation and preview panel.</figcaption></figure>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/amp_event_wire1.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire2.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire3.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire4.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire5.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire6.png" alt="wireframe of the event form">
+    <img src="/images/amp_event_wire7.png" alt="wireframe of the event form">
+  </div>
+  <br>
+  <figcaption>Wireframes showing some of the steps of the form.</figcaption>
+</figure>
+
 
 ### Challenges I Found
-The form is divided into two main blocks: event information and inventory. Designing the event information part was pretty straightforward with all the information I had available, but the inventory part was (unfortunately) a different story. 
+The form is divided into two main blocks: event information and inventory. Designing the event information part was pretty straightforward with all the information I had available, but the inventory part was (unfortunately) a different story.
 
-I created and iterated (after user testing) an inventory submission process that felt familiar to organizers and seemed to work fine, but I 'forgot' to validate my design with the developers. It turned out that we had some serious technical constraints created by our aging database architecture so the solution proposed couldn't be implemented. There wasn't an easy way to fix this, so I had to start again and propose new solutions that matched our database architecture better and still provided an acceptable user experience. 
+I created and iterated (after user testing) an inventory submission process that felt familiar to organizers and seemed to work fine, but I 'forgot' to validate my design with the developers. It turned out that we had some serious technical constraints created by our aging database architecture so the solution proposed couldn't be implemented. There wasn't an easy way to fix this, so I had to start again and propose new solutions that matched our database architecture better and still provided an acceptable user experience.
 
-<figure><img src="/images/addevent_newinv.jpg" alt="wireframe"><figcaption>Wireframe showing a solution for the inventory submission.</figcaption></figure>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/amp_event_mock1.png" alt="mockup of the event form">
+    <img src="/images/amp_event_mock2.png" alt="mockup of the event form">
+    <img src="/images/amp_event_mock3.png" alt="mockup of the event form">
+    <img src="/images/amp_event_mock4.png" alt="mockup of the event form">
+    <img src="/images/amp_event_mock5.png" alt="mockup of the event form">
+  </div>
+  <br>
+  <figcaption>Some final mockups.</figcaption>
+</figure>
 
 ### Implementation (Yes, It's Hard)
 This was a big project for everybody: designers, front-end and back-end developers. It was not feasible to replace the old form in one day so we planned a gradual release process. The new navigation was partially implemented and then we proceeded with the different steps of the form. It's still a work in progress and we hope it will be finished in the next few months.
 
 ### Things I Learned
 Developers are your friends! It doesn't matter how good your design is if it can't be implemented. Keep fluid communication with all the actors involved and validate your designs early and often.
-
-
