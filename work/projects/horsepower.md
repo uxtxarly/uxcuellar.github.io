@@ -20,7 +20,3 @@ This website was sponsored by the Friend family, farmers based in Tulare, Califo
 <figcaption>Early wireframe of the home page.</figcaption>
 </figure>
 Some quick tech notes: the website was developed using <a href="http://www.asp.net/">ASP.NET</a> and the front-end I implemented was based on the <a href="http://getbootstrap.com/">Bootstrap</a> framework from Twitter, which was new at that time.
-
-<div class="embed">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/9C2nppwNTgo" frameborder="0" allowfullscreen></iframe>
-</div>
