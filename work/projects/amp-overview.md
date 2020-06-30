@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 img: overview-header.jpg
 sitemap: false
 ---
+<script src="/flickity.js"></script>
 <hr>
 ###  A Quick Summary
 - Designed a new dashboard page for Goldstar's Audience Marketing Platform.
@@ -17,7 +18,7 @@ sitemap: false
 - Reviewed incremental implementation of the solution.
 
 ### The Story Behind This Project
-Another important part of the overhaul of Goldstar's Supplier Center was the redesign of the home page. The new Audience Marketing Platform wanted to encourage organizers to use its new tools and provide more inventory, and that's why we needed to highlight all these new features in a new home page. 
+Another important part of the overhaul of Goldstar's Supplier Center was the redesign of the home page. The new Audience Marketing Platform wanted to encourage organizers to use its new tools and provide more inventory, and that's why we needed to highlight all these new features in a new home page.
 
 In order to increase user engagement, we wanted this page to be not just a regular dashboard with data but a notification center with actionable notifications and alerts focused on creating value for organizers and easing venue advisors workload.
 
@@ -33,9 +34,28 @@ The existing home page was just a sales summary that showed active events on the
 
 With that information, I paired with a visual designer and we created a number of wireframes that were reviewed internally first, and later shared with some organizers.
 
-<figure><img src="/images/overview-wf.jpg" alt="wireframe"><figcaption>One of the wireframes created for this project.</figcaption></figure>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/amp_overview_wire1.png" alt="wireframe of amp overview">
+    <img src="/images/amp_overview_wire2.png" alt="wireframe of amp overview">
+    <img src="/images/amp_overview_wire3.png" alt="wireframe of amp overview">
+    <img src="/images/amp_overview_wire4.png" alt="wireframe of amp overview">
+  </div>
+  <br>
+  <figcaption>Some wireframes created for this project.</figcaption>
+</figure>
 
 <figure><img src="/images/overview-test.jpg" alt="usability testing"><figcaption>Screenshot of a remote usability testing session.</figcaption></figure>
+
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/amp_overview_mock1.png" alt="mockup of amp overview">
+    <img src="/images/amp_overview_mock2.png" alt="mockup of amp overview">
+    <img src="/images/amp_overview_mock3.png" alt="mockup of amp overview">
+  </div>
+  <br>
+  <figcaption>A couple of early mockups.</figcaption>
+</figure>
 
 ### Challenges I found
 A lot of people was involved in this project and they all had different ideas about how to approach this new home page. I had to fight assumptions and design trends, and be an advocate for the user that didn't want to see his workflow disrupted.
