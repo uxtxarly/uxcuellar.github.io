@@ -8,15 +8,48 @@ sponsor: HP Agrisystems.
 img: horsepower-home-small.png
 sitemap: false
 ---
+<script src="/flickity.js"></script>
 <hr>
-When I joined <a href="http://www.horsepower.com">Horsepower</a>, the development team already had a functional website with all the core features available and a minimalist style. My first task consisted of creating a new corporate brand showing the company's values, and I also wrote a style guide that was used by the rest of the developers and marketing team.
+<p>When I joined <a href="http://www.horsepower.com">Horsepower</a>, the development team already had a functional website with all the core features available and a minimalist style. My first task consisted of creating a new corporate brand showing the company's values, and I also wrote a style guide that was used by the rest of the developers and marketing team.</p>
 <figure>
-<a href="/work/projects/protos/hp_doc_identityguide.pdf"><img src="/images/hp-sg.png" alt="page of the style guide" title="download the horsepower identity guide"></a>
-<figcaption>The style guide showed how to use (and how not to use) the company's logo.</figcaption>
-</figure>
-This website was sponsored by the Friend family, farmers based in Tulare, California. The Friends already had a successful experience with a prior non-web version of Horsepower, so they had a solid idea of the business goals and an extensive knowledge of our customers. With the information they provided, we added new features to the site and we reimagined the user experience, culminating with the release of a new version of the site just six months after I joined the team.
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/hp_styleguide1.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide2.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide3.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide4.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide5.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide6.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide7.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide8.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide9.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide10.png" alt="Style guide of horsepower.com">
+    <img src="/images/hp_styleguide11.png" alt="Style guide of horsepower.com">
+  </div>
+  <br>
+  <figcaption>Horsepower's style guide</figcaption>
+<p>This website was sponsored by the Friend family, farmers based in Tulare, California. The Friends already had a successful experience with a prior non-web version of Horsepower, so they had a solid idea of the business goals and an extensive knowledge of our customers. With the information they provided, we added new features to the site and we reimagined the user experience, culminating with the release of a new version of the site just six months after I joined the team.</p>
 <figure>
-<img src="/images/hp-wf.png" alt="wireframe of horsepower">
-<figcaption>Early wireframe of the home page.</figcaption>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/hp_wire1.png" alt="Wireframe of horsepower.com">
+    <img src="/images/hp_wire2.png" alt="Wireframe of horsepower.com">
+    <img src="/images/hp_wire3.png" alt="Wireframe of horsepower.com">
+    <img src="/images/hp_wire4.png" alt="Wireframe of horsepower.com">
+    <img src="/images/hp_wire5.png" alt="Wireframe of horsepower.com">
+    <img src="/images/hp_wire6.png" alt="Wireframe of horsepower.com">
+  </div>
+  <br>
+  <figcaption>Wireframes of the site.</figcaption>
 </figure>
-Some quick tech notes: the website was developed using <a href="http://www.asp.net/">ASP.NET</a> and the front-end I implemented was based on the <a href="http://getbootstrap.com/">Bootstrap</a> framework from Twitter, which was new at that time.
+<p>Some quick tech notes: the website was developed using <a href="http://www.asp.net/">ASP.NET</a> and the front-end I implemented was based on the <a href="http://getbootstrap.com/">Bootstrap</a> framework from Twitter, which was new at that time.</p>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/hp_mock1.png" alt="Prototype of horsepower.com">
+    <img src="/images/hp_mock2.png" alt="Prototype of horsepower.com">
+    <img src="/images/hp_mock3.png" alt="Prototype of horsepower.com">
+    <img src="/images/hp_mock4.png" alt="Prototype of horsepower.com">
+    <img src="/images/hp_mock5.png" alt="Prototype of horsepower.com">
+    <img src="/images/hp_mock6.png" alt="Prototype of horsepower.com">
+  </div>
+  <br>
+  <figcaption>Screen captures of a HTML prototype</figcaption>
+</figure>
