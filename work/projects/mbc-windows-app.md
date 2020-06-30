@@ -26,6 +26,7 @@ sitemap: false
   </div>
   <br>
   <figcaption>A Windows experience that users could still identify as MBC.</figcaption>
+</figure>
 
 <p>In this project, I defined interactions creating wireframes, mockups and <a href="/work/projects/protos/mbc-win-proto">interactive prototypes</a> that were used later by the development team.</p>
 

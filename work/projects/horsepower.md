@@ -27,6 +27,7 @@ sitemap: false
   </div>
   <br>
   <figcaption>Horsepower's style guide</figcaption>
+</figure>
 <p>This website was sponsored by the Friend family, farmers based in Tulare, California. The Friends already had a successful experience with a prior non-web version of Horsepower, so they had a solid idea of the business goals and an extensive knowledge of our customers. With the information they provided, we added new features to the site and we reimagined the user experience, culminating with the release of a new version of the site just six months after I joined the team.</p>
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>

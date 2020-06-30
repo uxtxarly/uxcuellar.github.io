@@ -37,6 +37,7 @@ We generated ideas around the possible uses of smartphones by our personas, then
 <a href="#_" class="lightbox" id="img2">
   <img src="/images/photoapp_flow-student.png">
 </a>
-<figcaption>Student work flow of the photo app</figcaption></figure>
+<figcaption>Student work flow of the photo app</figcaption>
+</figure>
 
 The final result was a safe and monitored app, similar to Instagram and used by students to share pictures with the rest of their classmates.
