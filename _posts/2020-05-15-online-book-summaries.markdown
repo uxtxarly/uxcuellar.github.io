@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Online Book Summaries"
-date: "2020-06-01 23:13:51 -0700"
+date: "2020-05-15 23:13:51 -0700"
 link: https://www.getabstract.com/en/
 tags: resources
 ---
