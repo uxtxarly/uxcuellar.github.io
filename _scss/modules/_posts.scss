@@ -43,14 +43,14 @@
 .button {
   @include transition (background-color 0.5s ease-in-out);
   border: none !important;
-  background: $base-link-color;
+  background: $hover-link-color;
   padding: 0.5em 1em;
   border-radius: 3px;
-  color: $base-bg-color !important;
+  color: $base-font-color !important;
   font-family: $sans-serif;
   font-weight: bold !important;
   &:hover {
-    background: $hover-link-color;
+    background:  darken($hover-link-color, 25%);
   }
 }
 
