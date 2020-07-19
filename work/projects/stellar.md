@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Stellar
-description: A new mobile-first interactive seating chart UI for a ticketing company.
-tags: user research, prototyping, usability testing.
+description: A new platform to sell tickets to live entertainment, focused on online events.
+tags: user research, flows, wireframing, prototyping.
 duration: 2 Months, June 2020.
 sponsor: Goldstar Events
 img: st_preview.jpg
@@ -23,7 +23,7 @@ story
     <img src="/images/st-wire5.jpg" alt="wireframe of the desktop version">
   </div>
   <br>
-  <figcaption>Wireframes of the organizer side.</figcaption>
+  <figcaption>Wireframes of the organizer site.</figcaption>
 </figure>
 
 
@@ -39,7 +39,7 @@ story
 <a href="#_" class="lightbox" id="img1">
   <img src="/images/st-onboarding_flow.jpg">
 </a>
-<figcaption>Flow of the onboarding process for new organizers </figcaption></figure>
+<figcaption>Some flows for new users.</figcaption></figure>
 
 
 <figure>
@@ -51,5 +51,5 @@ story
     <img src="/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
   <br>
-  <figcaption>Final mockups of the organizer side.</figcaption>
+  <figcaption>Final mockups of the organizer site.</figcaption>
 </figure>
