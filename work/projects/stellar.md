@@ -5,7 +5,7 @@ description: A new mobile-first interactive seating chart UI for a ticketing com
 tags: user research, prototyping, usability testing.
 duration: 2 Months, June 2020.
 sponsor: Goldstar Events
-img: chart_shot.jpg
+img: st_preview.jpg
 sitemap: false
 ---
 <script src="/flickity.js"></script>
@@ -14,21 +14,42 @@ sitemap: false
 
 story
 
-<figure><img src="/images/personas.jpg" alt="personas"><figcaption>Meet Eva and Karen, our proto-personas.</figcaption></figure>
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/st-wire1.jpg" alt="wireframe of the desktop version">
+    <img src="/images/st-wire2.jpg" alt="wireframe of the desktop version">
+    <img src="/images/st-wire3.jpg" alt="wireframe of the desktop version">
+    <img src="/images/st-wire4.jpg" alt="wireframe of the desktop version">
+    <img src="/images/st-wire5.jpg" alt="wireframe of the desktop version">
+  </div>
+  <br>
+  <figcaption>Wireframes of the organizer side.</figcaption>
+</figure>
 
-story
-
-<figure><img src="/images/first_protos.jpg" alt="initial prototypes"><figcaption>Screenshots of the 3 first prototypes.</figcaption></figure>
 
 story
 
 <figure>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img1">
+  <img src="/images/st-onboarding_flow_small.jpg" class="thumbnail">
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img1">
+  <img src="/images/st-onboarding_flow.jpg">
+</a>
+<figcaption>Flow of the onboarding process for new organizers </figcaption></figure>
+
+
+<figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-    <img src="/images/seat_desktop1.jpg" alt="mockup of the desktop version">
-    <img src="/images/seat_desktop2.jpg" alt="mockup of the desktop version">
-    <img src="/images/seat_desktop3.jpg" alt="mockup of the desktop version">
-    <img src="/images/seat_desktop4.jpg" alt="mockup of the desktop version">
+    <img src="/images/st-mock1.jpg" alt="mockup of the desktop version">
+    <img src="/images/st-mock2.jpg" alt="mockup of the desktop version">
+    <img src="/images/st-mock3.jpg" alt="mockup of the desktop version">
+    <img src="/images/st-mock4.jpg" alt="mockup of the desktop version">
+    <img src="/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
   <br>
-  <figcaption>Early mockups of key screens.</figcaption>
+  <figcaption>Final mockups of the organizer side.</figcaption>
 </figure>
