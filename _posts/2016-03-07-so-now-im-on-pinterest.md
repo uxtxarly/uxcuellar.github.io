@@ -12,6 +12,6 @@ I started using [Evernote](https://evernote.com/) to keep track of everything. E
 
 After that I started using [Google Drive](https://drive.google.com/). The workflow was smoother because with Google Drive you can use a [Chrome extension](http://googledrive.blogspot.com/2012/12/introducing-save-to-drive-extension.html) that uploads web screenshots with just one click, so that was nice! The problem is that using Google Drive as an image viewer is not that great: you can't resize the thumbnails and the content takes forever to load. I had to find something better.
 
-So, after trying a few [desktop apps](https://realmacsoftware.com/ember/) with little success, I decided to give [Pinterest](https://www.pinterest.com/) an opportunity. Yes, Pinterest is that social network where you go find pictures of cupcakes. But Pinterest is fast, it has a really handy Chrome extension and, if you follow the right people, it can help you find cool stuff too. 
+So, after trying a few [desktop apps](https://realmacsoftware.com/ember/) with little success, I decided to give [Pinterest](https://www.pinterest.com/) an opportunity. Yes, Pinterest is that social network where you go find pictures of cupcakes. But Pinterest is fast, it has a really handy Chrome extension and, if you follow the right people, it can help you find cool stuff too.
 
-**So now [I'm on Pinterest](https://www.pinterest.com/cuellarfr/).** If you follow me, I'll follow you... as long as you don't pin pictures of cupcakes.
+**So now [I'm on Pinterest](https://www.pinterest.com/uxcuellar/).** If you follow me, I'll follow you... as long as you don't pin pictures of cupcakes.

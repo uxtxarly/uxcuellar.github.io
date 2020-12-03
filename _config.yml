@@ -1,10 +1,10 @@
 title:        Carlos Cuéllar
 tagline:      'UX Designer'
 description:  'UX Designer'
-url:          http://carloscuellar.net
+url:          https://carloscuellar.net
 author:
   name:       'Carlos Cuéllar'
-  email:      'hola@carloscuellar.net'
+  email:      'uxcuellar@gmail.com'
 markdown:     kramdown
 permalink:    /blog/:title/
 highlighter:  rouge
@@ -12,15 +12,14 @@ paginate:     10
 paginate_path: /blog/page:num/
 host: 0.0.0.0
 twitter:
-  username: cuellarfr
+  username: uxcuellar
 logo: /apple-touch-icon-precomposed.png
 social:
   name: Carlos Cuéllar
   links:
-    - https://twitter.com/cuellarfr
-    - https://www.linkedin.com/in/cuellarfr
-    - https://github.com/cuellarfr
-    - https://keybase.io/cuellarfr
+    - https://twitter.com/uxcuellar
+    - https://www.linkedin.com/in/uxcuellar
+    - https://github.com/uxcuellar
 webmaster_verifications:
   google: ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg
   bing: 019F5FD588A9EE4EF990A4653E7E03C3
@@ -39,9 +38,9 @@ defaults:
 
 # GitHub info
 github:
-  repo: cuellarfr/cuellarfr.github.io
+  repo: uxcuellar/uxcuellar.github.io
   branch: master
-  
+
 # Use the following plug-ins
 plugins:
   - jemoji # Emoji please!
@@ -62,7 +61,7 @@ exclude:
 sass:
   sass_dir: _scss
   style: :compressed
-  
+
 # Config for atom feed
 feed:
   path: atom/index.xml
