@@ -4,16 +4,20 @@
 
 html {
   font-size: 62.5%; // Sets up base 10
+  font-family: $base-font-family;
   @media only screen and (max-width: $small-screen) {
     font-size: 58%; // Smaller type for small devices
   }
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 body {
   @include font-size(1.6); // 16px
   background-color: $base-bg-color;
   color: $base-font-color;
-  font-family: $base-font-family;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,7 +28,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $header-font-family;
   margin: 0 0  0.3em 0;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.25;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }

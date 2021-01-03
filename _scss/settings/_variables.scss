@@ -5,21 +5,23 @@ $red: #F04848;
 $yellow: #ECBD0C;
 $orange: #FF794F;
 $green: #94B68E;
+$blue: #1C7FFF;
 $plum: #DCA0DB;
 $brown: #403434;
 $cream: #EDE6E3;
 $gray: #64696D;
-$dim-gray: #7D818A;
+$dim-gray: #3F3F3F;
+$dark-gray: #232326;
 
 // FONT COLORS
-$base-bg-color: $gray;
+$base-bg-color: $dark-gray;
 $base-font-color: $cream;
 $base-accent-color: $cream;
-$base-accent-color-darken: $orange;
+$base-accent-color-darken: $blue;
 
 // TEXT LINK COLORS
 $base-link-color: $cream;
-$hover-link-color: $orange;
+$hover-link-color: $blue;
 
 // BORDER COLOR
 $base-border-color: $dim-gray;
@@ -32,8 +34,8 @@ $success-color: $green;
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: "IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+$sans-serif: "Inter", sans-serif;
+$serif: Georgia, Cambria, "Times New Roman", Times, serif;
 
 $base-font-family: $sans-serif;
 $label-font-family: $sans-serif;

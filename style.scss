@@ -13,11 +13,11 @@
 
 // THE STYLES
 ///////////////////////////////////////////////////////////////////////////////
+@import url('https://rsms.me/inter/inter.css');
 
 // Base styles
 @import
   "base/normalize",
-  "base/fonts",
   "base/elements",
   "base/state",
   "base/syntax";
