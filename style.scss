@@ -3,6 +3,10 @@
 
 @charset "utf-8";
 
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 // SASS SETTINGS
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -35,7 +39,3 @@
 
 // Print styles
 @import "base/print";
-
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
