@@ -10,6 +10,10 @@ html {
   }
 }
 
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body {
   @include font-size(1.6); // 16px
   background-color: $base-bg-color;
@@ -24,7 +28,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $header-font-family;
   margin: 0 0  0.3em 0;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.25;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
