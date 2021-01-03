@@ -35,3 +35,7 @@
 
 // Print styles
 @import "base/print";
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
