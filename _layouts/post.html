@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post h-entry" role="article" itemscope itemtype="http://schema.org/Article">
-  <header>
+  <header class="header-bg">
     {% if page.link %}
       <h2 itemprop="name" class="e-content p-name"><a rel="external" href="{{ page.link }}" >{{ page.title }} <span class="link-arrow">&rarr;</span></a></h2>
       {% else %}
@@ -34,7 +34,7 @@ layout: default
   <br>
   <hr>
   <script src="https://utteranc.es/client.js"
-     repo="uxcuellar/uxcuellar.github.io"		
+     repo="uxcuellar/uxcuellar.github.io"
      issue-term="pathname"
      label="comment"
      theme="photon-dark"

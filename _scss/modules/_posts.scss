@@ -29,6 +29,12 @@
   }
 }
 
+.header-bg {
+  margin: -12% -12% 1.5em -12%;
+  padding: 12% 12% 0 12%;
+  border-bottom: 1px solid $base-border-color;
+  background-image: $texture;
+}
 
 // SECTION DESCRIPTIONS
 .section-description {
