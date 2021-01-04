@@ -10,7 +10,7 @@ sitemap: false
 ---
 <script src="/flickity.js"></script>
 <hr>
-<a href="/work/projects/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+<a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
 
 In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry early and hard, and my employer Goldstar Events was no exception. We stopped selling tickets for live events and our revenue plummeted. With no certainties about when and how we would get back to regular sales, we had to pivot and find new paths for the company.
 
