@@ -10,7 +10,7 @@ sitemap: false
 ---
 <script src="/flickity.js"></script>
 <hr>
-<a href="/work/projects/protos/mbc-win-proto" class="button">VIEW INTERACTIVE PROTOTYPE</a>
+<a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/mbc-win-proto" class="button">VIEW INTERACTIVE PROTOTYPE</a>
 
 <p>The development team at Lightspeed was asked to create a reduced, native version of MBC for Windows 8. We wanted to adapt our current iOS and Android apps to Windows tablets by respecting the interactions and patterns of this platform while offering a true MBC experience to our users.</p>
 
