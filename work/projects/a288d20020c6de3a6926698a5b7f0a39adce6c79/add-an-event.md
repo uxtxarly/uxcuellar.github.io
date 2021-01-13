@@ -70,6 +70,7 @@ We also wanted users to be able to preview the events they build, and that's why
     <img src="/images/amp_event_wire7.png" alt="wireframe of the event form">
   </div>
   <br>
+  <figcaption>Wireframes</figcaption>
 </figure>
 
 
@@ -87,7 +88,7 @@ I created and iterated (after user testing) an inventory submission process that
     <img src="/images/amp_event_mock5.png" alt="mockup of the event form">
   </div>
   <br>
-  <figcaption>Some final mockups.</figcaption>
+  <figcaption>Mockups</figcaption>
 </figure>
 
 ### Implementation (Yes, It's Hard)
