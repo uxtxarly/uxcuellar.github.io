@@ -13,12 +13,12 @@ sitemap: false
 
 ### The story behind this project
 
-In order to bring logic, consistency, and structure to our designs across multiple platforms, the design team at Goldstar decided to create a design system. We didn’t want to have just a UI kit, but a system that was flexible, scalable, and able to enforce better workflows. All the elements in this system needed to have structure and meaning, and they also needed to be easily accessible not only to designers but to all of our developers. This system was also part of a bigger rebranding effort that the company started months before.
+In order to bring logic, consistency, and structure to our designs across multiple platforms, the design team at Goldstar decided to create a design system. We didn’t want to have just a UI kit, but a system that was flexible, scalable, and able to enforce better workflows. All the elements in this system needed to have structure and meaning, and they also needed to be easily accessible not only to designers but to all of our developers. This system was also part of a bigger rebranding effort that the company started earlier in 2018.
 
 ### Steps
 
 1. **Visual audit.**  
-The first step was to do a visual audit of the current design, compiling all existing UI elements in order to find duplicities. We reviewed not only Goldstar's main consumer site but all the different apps, marketing, and internal tools.
+The first step was to do a visual audit of the current design, compiling all existing UI elements in order to find duplicities. We reviewed not only Goldstar's main consumer site but all the different apps, marketing, and internal tools used in the company.
 2. **Creation of visual design language.**  
 The visual design language is the core of any design system, and it includes things like colors, typography, spacers, separators, and patterns. All these elements were based on Goldstar's new corporate branding.
 3. **Creation of component libraries.**  
@@ -43,7 +43,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/images/ds-1.jpg" alt="Primitives: typography">
   </div>
   </figure><br>
-- **Level 1 / Foundation:** The foundation level included components that can’t be broken down any further. These were the very basic building blocks of our products. As such, they couldn't contain nested components and overrides were minimal. Some foundational components were logos and avatars.<br><br>
+- **Level 1 / Foundation:** The foundation level included components that could not be broken down any further. These were the very basic building blocks of our products. As such, they could not contain nested components and overrides were minimal. Some foundational components were logos and avatars.<br><br>
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/images/ds-4.jpg" alt="L1: avatars">
@@ -85,7 +85,7 @@ An example would be:
 
 `L2/nav/breadcrumbs/_pieces/link`
 
-Keeping a consistent naming across components was also important because Sketch uses these names in order to arrange them in menus and in order to display the right component overrides when you use these components. Designers were able to use these overrides to customize components with different nested elements, making them a lot more powerful and flexible.
+Keeping a consistent naming across components was also important because Sketch used these names in order to arrange them in menus and in order to display the right component overrides. Designers were able to use these overrides to customize components with different nested elements, making them a lot more powerful and flexible.
 
 ### Maintenance and updates
 
