@@ -41,6 +41,18 @@ We also did a lot of competitive analysis. We needed to know how the most common
 ### How This Works
 With all this information, we already knew how we wanted our form to work. With the help of our product manager, we created a story map and I started sketches and rough wireframes that showed the architecture, navigation, and flow of the new form.
 
+<figure>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img1">
+  <img src="/images/amp_event-map.jpg" class="thumbnail">
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img1">
+  <img src="/images/amp_event-map.jpg">
+</a>
+<figcaption>Story Map</figcaption></figure>
+
 We wanted the form to be divided into non-linear logical steps, so users could start anywhere the submission process and save it as a draft if needed. There's a lot of information that needs to be added to the form and it's common to not have all the information ready when organizers start filling the form.
 
 Since we wanted to make this form more accessible to smaller organizers, we avoided technical language and tried a more conversational UI, with plenty of examples, tooltips and help available. We also wanted to encourage better content (event description and images) so we provided examples of what to do and what not to do.
@@ -58,7 +70,6 @@ We also wanted users to be able to preview the events they build, and that's why
     <img src="/images/amp_event_wire7.png" alt="wireframe of the event form">
   </div>
   <br>
-  <figcaption>Wireframes showing some of the steps of the form.</figcaption>
 </figure>
 
 
