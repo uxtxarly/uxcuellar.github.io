@@ -30,11 +30,11 @@ It is in this context that we found a new market opportunity in the streaming of
 
 <figure>
   <!-- thumbnail image wrapped in a link -->
-  <a href="#img1">
+  <a href="#img11">
     <img src="/images/st-onboarding_flow_small.jpg" class="thumbnail">
   </a>
   <!-- lightbox container hidden with CSS -->
-  <a href="#_" class="lightbox" id="img1">
+  <a href="#_" class="lightbox" id="img11">
     <img src="/images/st-onboarding_flow.jpg">
   </a>
   <figcaption>Some flows for new users.</figcaption>
@@ -63,7 +63,6 @@ The next step is a soft launch in the summer of 2020, with apps for iOS, Android
     <img src="/images/st-mock1.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock2.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock3.jpg" alt="mockup of the desktop version">
-    <img src="/images/st-mock4.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
   <br>
