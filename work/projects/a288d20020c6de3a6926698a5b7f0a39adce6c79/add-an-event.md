@@ -44,7 +44,7 @@ With all this information, we already knew how we wanted our form to work. With 
 <figure>
 <!-- thumbnail image wrapped in a link -->
 <a href="#img1">
-  <img src="/images/amp_event-map.jpg" class="thumbnail">
+  <img src="/images/amp_event-map_small.jpg" class="thumbnail">
 </a>
 
 <!-- lightbox container hidden with CSS -->
