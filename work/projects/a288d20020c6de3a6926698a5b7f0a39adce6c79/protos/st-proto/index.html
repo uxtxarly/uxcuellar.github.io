@@ -39,6 +39,9 @@
 	<link type="text/css" rel="stylesheet" href="assets/apps/share/css-static/bootstrap.css">
 	<link type="text/css" rel="stylesheet" href="assets/apps/share/css-static/intlTelInput.css">
 	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/share-offline.css">
+	<!-- Clicky -->
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101189938);</script>
+	<script async src="//static.getclicky.com/js"></script>
 </head>
 <body
 	class="branding-invision"
@@ -55,7 +58,7 @@
 	<div ng-if="isLoadingOpen" ng-controller="loading.LoadingController" inv-loading-sequence class="m-loading">
 
 		<!-- BEGIN: Loading Indicator. -->
-		
+
 
 			<div class="loading-backdrop">
 
@@ -73,9 +76,9 @@
 					<p>
 						Powered by <a href="http://www.InVisionApp.com/" target="_blank">InVision</a>
 
-						
+
 							, the best way to share and collaborate on design.
-						
+
 
 					</p>
 
@@ -87,15 +90,15 @@
 
 					<h3><a href="http://www.InVisionApp.com/" target="_blank">Powered by InVision</a></h3>
 
-					
+
 						<p><em>Prototyping, Collaboration &amp; Workflow for Designers</em></p>
-					
+
 
 				</div> <!-- loading-footer -->
 
 			</div> <!-- loading-backdrop -->
 
-		
+
 		<!-- END: Loading Indicator. -->
 
 	</div>
@@ -140,13 +143,13 @@
 		ng-if="browserCompatibility.isNotCompatible"
 		class="m-browser-compatibility ng-cloak"></div>
 
-	
-	
-		<script type="text/javascript" src="assets/scripts.js"></script>
-	
 
-	
-	
+
+		<script type="text/javascript" src="assets/scripts.js"></script>
+
+
+
+
 
 		<script type="text/javascript">
 
@@ -185,13 +188,13 @@
 
 		</script>
 
-	
 
 
-	
-	
+
+
+
 		<script type="text/ng-template" id="/assets/apps/share/views/directives/toggle.htm">
-<div class="m-toggle off">	
+<div class="m-toggle off">
 <!-- BEGIN: Labels Track. -->
 <div class="toggle-labels-track">
 <div class="toggle-labels">
@@ -266,9 +269,9 @@ Already have an account? <a ng-click="triggerAuthModal(false)"> Sign In </a>
 </div>
 </div>
 </script><script type="text/ng-template" id="/assets/apps/share/views/partials/preload.htm">	<!--
-BEGIN: HACKY CSS PRELOAD. 
-Until we have better sprite technology, let's at least pre-load the images this way so that 
-the parallel loading of Screen images is less likely to conflict. 
+BEGIN: HACKY CSS PRELOAD.
+Until we have better sprite technology, let's at least pre-load the images this way so that
+the parallel loading of Screen images is less likely to conflict.
 -->
 <div style="height: 1px ; left: -100px ; overflow: hidden ; position: absolute ; top: -100px ; width: 1px ;">
 <img src="assets/apps/share/img/app-switch.png" />
@@ -313,9 +316,9 @@ Click anywhere to leave a comment on this screen
 <div ng-class="{ active: $parent.commentControl.isBorderExpanded }" class="border w"></div>
 </div>
 <!-- END: Context. --></script><script type="text/ng-template" id="/assets/apps/share/views/comments/comments.htm"><div
-ng-controller="comments.CommentsController" 
-inv-comments-key-combos 
-class="m-comments" 
+ng-controller="comments.CommentsController"
+inv-comments-key-combos
+class="m-comments"
 ng-class="{ mobile: project.isMobile }">
 <!-- Context. -->
 <div ng-include=" '/assets/apps/share/views/comments/context.htm' "></div>
@@ -1660,17 +1663,17 @@ ng-repeat="screen in screens track by screen.id"
 data-distance="{{ screen.distanceFromStartScreen }}"
 class="screen {{ screen.alignment }}"
 ng-class="{ visible: (screen.id == selectedScreen.id) }"
-ng-style="{ 
-width: ( Math.round(screen.width * screen.displayScale) + 'px' ), 
-height: ( Math.round(screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( Math.round(screen.width * screen.displayScale) + 'px' ),
+height: ( Math.round(screen.height * screen.displayScale) + 'px' )
 }"
 data-displayScale="{{screen.displayScale}}">
 <img
 inv-screen
 ng-src="{{ screen.imageUrl }}"
-ng-style="{ 
-width: ( Math.round(screen.width * screen.displayScale) + 'px' ), 
-height: ( Math.round(screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( Math.round(screen.width * screen.displayScale) + 'px' ),
+height: ( Math.round(screen.height * screen.displayScale) + 'px' )
 }" />
 </div>
 </div>
@@ -1696,8 +1699,8 @@ ng-class="{ visible: (screen.id == selectedScreen.id) }">
 </h2>
 <a class="btnClose" href="javascript:;" ng-click=" toggleBrowse() ">x</a>
 </div>
-<div ng-repeat="displayItem in displayObjects" 
-class="{{displayItem.type}}" 
+<div ng-repeat="displayItem in displayObjects"
+class="{{displayItem.type}}"
 ng-class="{ 'invisible-group': displayItem.type == 'divider' && displayItem.sort == 0}" >
 <div ng-if=" shouldDividerDisplay(displayItem) " class="divider">
 <p class="dividerLabel">
@@ -2094,7 +2097,7 @@ width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScal
 </div><!-- inner2 -->
 </div> <!-- inner -->
 </script>
-	
+
 
 
 </body>

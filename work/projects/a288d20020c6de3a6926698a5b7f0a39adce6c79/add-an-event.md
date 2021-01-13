@@ -10,6 +10,8 @@ sitemap: false
 ---
 <script src="/flickity.js"></script>
 <hr>
+<a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/add-an-event/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+
 ### TLDR: A Quick Summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
 * Interviewed event organizers and venue advisors to learn more about pain points in the old form.
