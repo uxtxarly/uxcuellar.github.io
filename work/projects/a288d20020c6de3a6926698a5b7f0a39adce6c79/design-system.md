@@ -87,6 +87,8 @@ An example would be:
 
 Keeping a consistent naming across components was also important because Sketch used these names in order to arrange them in menus and in order to display the right component overrides. Designers were able to use these overrides to customize components with different nested elements, making them a lot more powerful and flexible.
 
+![Component architecture](/images/components-architecture.jpg)
+
 ### Maintenance and updates
 
 So once we had the first of our component libraries ready we had to create a protocol in order to add or modify these components. Designers needed to keep in mind that modifying these components in the master library would affect any design file using this library. They could easily break things!

@@ -17,12 +17,24 @@ In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry
 It is in this context that we found a new market opportunity in the streaming of online events. In the last few months, we’ve seen a surge of online, home-produced events, but they use streaming platforms that were not designed for this use case, and the user experience is far from smooth. We found that we could provide a professional platform for event organizers that would allow them to sell tickets, manage marketing and customer service, and produce premium quality streams, all in one place.
 
 <figure>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img1">
+  <img src="/images/stellar-storymap_small.jpg" class="thumbnail">
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img1">
+  <img src="/images/stellar-storymap.jpg">
+</a>
+<figcaption>Story Map</figcaption></figure>
+
+<figure>
   <!-- thumbnail image wrapped in a link -->
-  <a href="#img1">
+  <a href="#img11">
     <img src="/images/st-onboarding_flow_small.jpg" class="thumbnail">
   </a>
   <!-- lightbox container hidden with CSS -->
-  <a href="#_" class="lightbox" id="img1">
+  <a href="#_" class="lightbox" id="img11">
     <img src="/images/st-onboarding_flow.jpg">
   </a>
   <figcaption>Some flows for new users.</figcaption>
@@ -51,7 +63,6 @@ The next step is a soft launch in the summer of 2020, with apps for iOS, Android
     <img src="/images/st-mock1.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock2.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock3.jpg" alt="mockup of the desktop version">
-    <img src="/images/st-mock4.jpg" alt="mockup of the desktop version">
     <img src="/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
   <br>

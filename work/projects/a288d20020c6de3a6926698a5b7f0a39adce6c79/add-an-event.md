@@ -10,6 +10,8 @@ sitemap: false
 ---
 <script src="/flickity.js"></script>
 <hr>
+<a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/add-an-event/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+
 ### TLDR: A Quick Summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
 * Interviewed event organizers and venue advisors to learn more about pain points in the old form.
@@ -41,6 +43,18 @@ We also did a lot of competitive analysis. We needed to know how the most common
 ### How This Works
 With all this information, we already knew how we wanted our form to work. With the help of our product manager, we created a story map and I started sketches and rough wireframes that showed the architecture, navigation, and flow of the new form.
 
+<figure>
+<!-- thumbnail image wrapped in a link -->
+<a href="#img1">
+  <img src="/images/amp_event-map_small.jpg" class="thumbnail">
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#_" class="lightbox" id="img1">
+  <img src="/images/amp_event-map.jpg">
+</a>
+<figcaption>Story Map</figcaption></figure>
+
 We wanted the form to be divided into non-linear logical steps, so users could start anywhere the submission process and save it as a draft if needed. There's a lot of information that needs to be added to the form and it's common to not have all the information ready when organizers start filling the form.
 
 Since we wanted to make this form more accessible to smaller organizers, we avoided technical language and tried a more conversational UI, with plenty of examples, tooltips and help available. We also wanted to encourage better content (event description and images) so we provided examples of what to do and what not to do.
@@ -58,7 +72,7 @@ We also wanted users to be able to preview the events they build, and that's why
     <img src="/images/amp_event_wire7.png" alt="wireframe of the event form">
   </div>
   <br>
-  <figcaption>Wireframes showing some of the steps of the form.</figcaption>
+  <figcaption>Wireframes</figcaption>
 </figure>
 
 
@@ -76,7 +90,7 @@ I created and iterated (after user testing) an inventory submission process that
     <img src="/images/amp_event_mock5.png" alt="mockup of the event form">
   </div>
   <br>
-  <figcaption>Some final mockups.</figcaption>
+  <figcaption>Mockups</figcaption>
 </figure>
 
 ### Implementation (Yes, It's Hard)

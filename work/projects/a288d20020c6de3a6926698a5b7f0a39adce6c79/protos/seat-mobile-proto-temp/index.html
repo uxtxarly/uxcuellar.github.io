@@ -52,6 +52,9 @@
 	<!--[if lt IE 8]>
 		<script src="/assets/json2/json2.js"></script>
 	<![endif]-->
+	<!-- Clicky -->
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101189938);</script>
+	<script async src="//static.getclicky.com/js"></script>
 </head>
 <body
 	class="branding-invision"
@@ -68,7 +71,7 @@
 	<div ng-if="isLoadingOpen" ng-controller="loading.LoadingController" inv-loading-sequence class="m-loading">
 
 		<!-- BEGIN: Loading Indicator. -->
-		
+
 
 			<div class="loading-backdrop">
 
@@ -86,9 +89,9 @@
 					<p>
 						Powered by <a href="http://www.InVisionApp.com/" target="_blank">InVision</a>
 
-						
+
 							, the best way to share and collaborate on design.
-						
+
 
 					</p>
 
@@ -100,15 +103,15 @@
 
 					<h3><a href="http://www.InVisionApp.com/" target="_blank">Powered by InVision</a></h3>
 
-					
+
 						<p><em>Prototyping, Collaboration &amp; Workflow for Designers</em></p>
-					
+
 
 				</div> <!-- loading-footer -->
 
 			</div> <!-- loading-backdrop -->
 
-		
+
 		<!-- END: Loading Indicator. -->
 
 	</div>
@@ -153,10 +156,10 @@
 		ng-if="browserCompatibility.isNotCompatible"
 		class="m-browser-compatibility ng-cloak"></div>
 
-	
-	
+
+
 		<script type="text/javascript" src="assets/scripts.js"></script>
-	
+
 
 		<script type="text/javascript">
 
@@ -554,8 +557,8 @@ Comments
 </div>
 </script><script type="text/ng-template" id="/assets/apps/share/views/presentations/slides.htm"><div ng-switch on="subview">
 <div ng-switch-when="comments">
-<div 
-id="comments_bar" 
+<div
+id="comments_bar"
 ng-controller="toolbar.ToolbarController"
 ng-hide="isShowingSketchBuilder">
 <h2>Click anywhere on the image to leave a comment</h2>
@@ -564,32 +567,32 @@ ng-hide="isShowingSketchBuilder">
 </div>
 </div>
 <!-- desktop projects -->
-<div 	
+<div
 ng-if=" !project.isMobile || subview == 'comments' "
 inv-screens
 ng-controller="screens.ScreensController"
 class="m-screens desktop"
 ng-style="bodyStyle"
-ng-class="{ 
+ng-class="{
 isScaledCommentMode: project.isMobile,
 'comment-mode': subview == 'comments'
 }">
-<div 
+<div
 class="screen visible {{ screen.alignment }}"
-ng-style="{ 
-width: ( (screen.width * screen.displayScale) + 'px' ), 
-height: ( (screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( (screen.width * screen.displayScale) + 'px' ),
+height: ( (screen.height * screen.displayScale) + 'px' )
 }">
-<img 
+<img
 ng-src="{{ getScreenUrl() }}"
-ng-style="{ 
-width: ( (screen.width * screen.displayScale) + 'px' ), 
-height: ( (screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( (screen.width * screen.displayScale) + 'px' ),
+height: ( (screen.height * screen.displayScale) + 'px' )
 }" />
 </div>
 </div>
 <!-- mobile projects-->
-<div 	
+<div
 ng-if=" project.isMobile && subview == 'preview' "
 class="m-screens" >
 <div class="screen mobile visible {{ screen.alignment }}">
@@ -678,7 +681,7 @@ height: screen.height * screen.displayScale + 'px'
 </div>
 <div class="scroll-wrap">
 <div class="sketchImage_wrapper">
-<img  
+<img
 ng-src="{{ screen.imageUrl }}"
 ng-style="{ width: screen.width * screen.displayScale + 'px',
 height: screen.height * screen.displayScale + 'px'}"
@@ -690,7 +693,7 @@ class="sketch_image"
 </div> <!-- end builderWindow -->
 </div>
 </script><script type="text/ng-template" id="/assets/apps/share/views/directives/toggle.htm">
-<div class="m-toggle off">	
+<div class="m-toggle off">
 <!-- BEGIN: Labels Track. -->
 <div class="toggle-labels-track">
 <div class="toggle-labels">
@@ -713,8 +716,8 @@ class="sketch_image"
 </div>
 <!-- END: Thumb Track. -->
 </div></script><script type="text/ng-template" id="/assets/apps/share/views/screens/screens.htm"><div ng-if="!isLiveShare && project.isSnap">
-<div 
-ng-if="subview == 'comments'" 
+<div
+ng-if="subview == 'comments'"
 ng-include=" '/assets/apps/share/views/share-lite/comment-bar.htm' "></div>
 <div ng-include=" '/assets/apps/share/views/share-lite/share-bar.htm' "></div>
 </div>
@@ -731,17 +734,17 @@ ng-repeat="screen in screens track by screen.id"
 data-distance="{{ screen.distanceFromStartScreen }}"
 class="screen {{ screen.alignment }}"
 ng-class="{ visible: (screen.id == selectedScreen.id) }"
-ng-style="{ 
-width: ( Math.round(screen.width * screen.displayScale) + 'px' ), 
-height: ( Math.round(screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( Math.round(screen.width * screen.displayScale) + 'px' ),
+height: ( Math.round(screen.height * screen.displayScale) + 'px' )
 }"
 data-displayScale="{{screen.displayScale}}">
 <img
 inv-screen
 ng-src="{{ screen.imageUrl }}"
-ng-style="{ 
-width: ( Math.round(screen.width * screen.displayScale) + 'px' ), 
-height: ( Math.round(screen.height * screen.displayScale) + 'px' ) 
+ng-style="{
+width: ( Math.round(screen.width * screen.displayScale) + 'px' ),
+height: ( Math.round(screen.height * screen.displayScale) + 'px' )
 }" />
 </div>
 </div>
@@ -907,7 +910,7 @@ ng-bind-html="comment.html"
 class="post-comment">
 </div>
 <div ng-if="comment.isEditing" class="editing-mode">
-<div 
+<div
 inv-comment
 comment="comment.comment"
 name="post-comment"
@@ -967,10 +970,10 @@ Cancel
 <!-- END: Comments. -->
 <div class="comment-item post-new-comment">
 <div class="post post-emojis">
-<div 
+<div
 class="post-comment"
 ng-class="{ 'has-sketch': tempSketches.length > 0 }">
-<div 
+<div
 inv-comment
 comment="newComment"
 name="post-comment"
@@ -1013,7 +1016,7 @@ ng-show="tempSketches.length == 0 && isCommentInputVisible && ( ! conversation.i
 </div>
 </div> <!-- post-comment -->
 </div> <!-- post -->
-</div> 
+</div>
 <!-- Delete confirmation for entire conversation. -->
 <div inv-fade-show="isDeleting" class="delete-confirmation delete-conversation">
 <p>Delete this <strong>entire</strong> conversation?</p>
@@ -1043,7 +1046,7 @@ Your name
 </label>
 </div>
 <div class="field" ng-class="{ 'defined': identity.email.length }">
-<input 
+<input
 type="text"
 id="identity.email"
 ng-model="identity.email"
@@ -1086,7 +1089,7 @@ tabindex="301"
 Password
 </label>
 </div>
-<div 
+<div
 ng-show="errorMessage"
 class="alert alert-error"
 ng-bind-html="errorMessage"
@@ -1220,8 +1223,8 @@ No thanks, continue...
 </div> <!-- share-modal -->
 </div> <!-- share_bar --></script><script type="text/ng-template" id="/assets/apps/share/views/browse/thumbnails.htm">
 <div class="thumbnail-list" ng-class="{ 'without-comments': excludeComments }">
-<div ng-repeat="displayItem in displayObjects" 
-class="{{displayItem.type}}" 
+<div ng-repeat="displayItem in displayObjects"
+class="{{displayItem.type}}"
 ng-class="{ 'invisible-group': displayItem.type == 'divider' && displayItem.sort == 0}" >
 <div ng-if=" shouldDividerDisplay(displayItem) " class="divider">
 <p class="dividerLabel">
@@ -1968,9 +1971,9 @@ Post Comment
 <div class="border w"></div>
 </div>
 <!-- END: Context. --></script><script type="text/ng-template" id="/assets/apps/share/views/comments/comments.htm"><div
-ng-controller="comments.CommentsController" 
-inv-comments-key-combos 
-class="m-comments" 
+ng-controller="comments.CommentsController"
+inv-comments-key-combos
+class="m-comments"
 ng-class="{ mobile: project.isMobile }">
 <!-- Context. -->
 <div ng-if=" (isLiveShare || !project.isSnap)" ng-include=" '/assets/apps/share/views/comments/context.htm' "></div>
@@ -2115,9 +2118,9 @@ Show Resolved ({{ filters.showCompleted.count }})
 <!-- END: Filters. -->
 </div>
 </script><script type="text/ng-template" id="/assets/apps/share/views/partials/preload.htm">	<!--
-BEGIN: HACKY CSS PRELOAD. 
-Until we have better sprite technology, let's at least pre-load the images this way so that 
-the parallel loading of Screen images is less likely to conflict. 
+BEGIN: HACKY CSS PRELOAD.
+Until we have better sprite technology, let's at least pre-load the images this way so that
+the parallel loading of Screen images is less likely to conflict.
 -->
 <div style="height: 1px ; left: -100px ; overflow: hidden ; position: absolute ; top: -100px ; width: 1px ;">
 <img src="assets/apps/share/img/app-switch.png" />
@@ -2261,7 +2264,7 @@ width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScal
 </div> <!-- current-picture -->
 </div><!-- inner2 -->
 </div> <!-- inner -->
-</script> 
+</script>
 
 
 </body>
