@@ -29,7 +29,7 @@ We wanted to consolidate this new knowledge and we also wanted to make it availa
 
 <figure><img src="/images/overview-personas.jpg" alt="personas"><figcaption>Organizers personas created for this project.</figcaption></figure>
 
-### Talk About the Process
+### How This Works
 The existing home page was just a sales summary that showed active events on the site and related remittance alerts, a pretty utilitarian design. We thought about what additional elements we could show in a dashboard page and how they would help the organizers. We started populating our list with banners, widgets, charts, and notifications that alert users if the inventory or the sales are low.
 
 With that information, I paired with a visual designer and we created a number of wireframes that were reviewed internally first, and later shared with some organizers.
