@@ -12,7 +12,7 @@ sitemap: false
 <hr>
 <a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
 
-### The Story Behind This Project
+### The story behind this project
 
 In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry early and hard, and my employer Goldstar Events was no exception. We stopped selling tickets for live events and our revenue plummeted. With no certainties about when and how we would get back to regular sales, we had to pivot and find new paths for the company.
 
@@ -20,7 +20,7 @@ It is in this context that we discovered a market opportunity in the streaming o
 
 I contributed to this project by **designing the events organizer site**, where organizers create events and inventories, manage ticket transactions, and produce a professional streaming signal for their customers.
 
-### Some Research First
+### Some research first
 
 This project was very different than anything else I did before at Goldstar. We were in a situation of emergency and we had to move fast, very fast. We took a few days to interview some of our closest partners and that allowed us to learn more about their workflows producing and selling online events, pain points, and needs. We also did a competitive analysis of similar services offered by other companies and we reused some of our existing personas.
 
