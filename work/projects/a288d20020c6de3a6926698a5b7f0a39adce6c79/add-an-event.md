@@ -12,13 +12,13 @@ sitemap: false
 <hr>
 <a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/add-an-event/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
 
-### TLDR: A Quick Summary
+### TLDR: A quick summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
 * Interviewed event organizers and venue advisors to learn more about pain points in the old form.
 * Created and iterated multiple user flows and prototypes.
 * Reviewed incremental implementation because of technical constraints.
 
-### The Story Behind This Project
+### The story behind this project
 Goldstar's Supplier Center was a marketing platform for event organizers where they could submit event listings, check sales reports or print will-call lists, among some other basic features. In an effort to improve the organizer's experience and allow scalability, this platform is being redesigned and turned into a more powerful marketing tool. The new 'Audience Marketing Platform' has new analytics and charts, a paid service to increase event exposure and a redesigned submission form for events and inventories.
 
 The old event submission form was a one-page long, unstructured and intimidating form, where organizers had to provide all the event information (description, images, advisories) and ticket inventories. It was never a popular feature of the site, in fact, some of our biggest organizers preferred to send an Excel file with the event information via email instead of having to deal with our form.
@@ -29,7 +29,7 @@ The other problem was behind the scenes. This form wasn't creating an event entr
 
 This project's goal was to create a multi-page submission form that empowers and educates organizers at the same time. This way we expect to decrease the time needed to publish an event and also decrease the involvement in the process of venue advisors. From an engineering perspective, we also needed this form to create automatically a database entry that will be reviewed by a Goldstar employee before going live.
 
-### Some Research First
+### Some research first
 I started talking to stakeholders, venue advisors, and developers so I could learn more about the business requirements and different expectations inside the company. It turns out that they all had different ideas about how this form should work and who were our primary users: should we try to please our biggest suppliers or should we instead try to be more accessible to the smaller organizers that don't currently use our tools?
 
 > We needed to decide who our primary user was.
@@ -40,7 +40,7 @@ After that, I interviewed different organizers. I wanted to learn how's their ev
 
 We also did a lot of competitive analysis. We needed to know how the most common problems with event submission where solved by others in our industry, so we reviewed more than 30 websites.
 
-### How This Works
+### How this works
 With all this information, we already knew how we wanted our form to work. With the help of our product manager, we created a story map and I started sketches and rough wireframes that showed the architecture, navigation, and flow of the new form.
 
 <figure>
@@ -76,7 +76,7 @@ We also wanted users to be able to preview the events they build, and that's why
 </figure>
 
 
-### Challenges I Found
+### Challenges I found
 The form is divided into two main blocks: event information and inventory. Designing the event information part was pretty straightforward with all the information I had available, but the inventory part was (unfortunately) a different story.
 
 I created and iterated (after user testing) an inventory submission process that felt familiar to organizers and seemed to work fine, but I 'forgot' to validate my design with the developers. It turned out that we had some serious technical constraints created by our aging database architecture so the solution proposed couldn't be implemented. There wasn't an easy way to fix this, so I had to start again and propose new solutions that matched our database architecture better and still provided an acceptable user experience.
@@ -93,8 +93,8 @@ I created and iterated (after user testing) an inventory submission process that
   <figcaption>Mockups</figcaption>
 </figure>
 
-### Implementation (Yes, It's Hard)
+### Implementation (Yes, it's hard)
 This was a big project for everybody: designers, front-end and back-end developers. It was not feasible to replace the old form in one day so we planned a gradual release process. The new navigation was partially implemented and then we proceeded with the different steps of the form. It's still a work in progress and we hope it will be finished in the next few months.
 
-### Things I Learned
+### Things I learned
 Developers are your friends! It doesn't matter how good your design is if it can't be implemented. Keep fluid communication with all the actors involved and validate your designs early and often.
