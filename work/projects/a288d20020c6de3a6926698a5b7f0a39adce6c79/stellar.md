@@ -100,4 +100,3 @@ I created some mockups and prototypes that were tested by our launching partners
 ### Things I learned
 
 The pandemic and its consequences forced us to work like a startup: roles were fluid and everybody had a voice in the development process. That wasn't an issue, and the collaboration between teammates was great. 8 months later, I can say that was the foundation of a solid product that is going to be an important part of Goldstar's future.
-
