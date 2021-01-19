@@ -39,6 +39,8 @@ The UI components of this system work like building blocks; we categorized our c
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/images/ds-2.jpg" alt="Primitives: primary colors">
+    <img src="/images/ds-17.jpg" alt="Primitives: supporting colors">
+    <img src="/images/ds-18.jpg" alt="Primitives: combination of colors">
     <img src="/images/ds-3.jpg" alt="Primitives: hand drawn patterns">
     <img src="/images/ds-1.jpg" alt="Primitives: typography">
   </div>
@@ -49,6 +51,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/images/ds-4.jpg" alt="L1: avatars">
     <img src="/images/ds-5.jpg" alt="L1: logos">
     <img src="/images/ds-6.jpg" alt="L1: icons">
+    <img src="/images/ds-19.jpg" alt="L1: icons">
   </div>
   </figure><br>
 - **Level 2 / Lower-level blocks:** These were typically composed of a combination of primitives and level 1 components. Some UI elements included here were buttons and form elements.<br><br>
@@ -65,6 +68,8 @@ The UI components of this system work like building blocks; we categorized our c
 - **Level 3 / Mid-level blocks:** Mid-level blocks were typically composed of a combination of primitives, level 1, and level 2 components. Modal windows, tables, and cards were all part of this level.<br><br>
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/images/ds-20.jpg" alt="L3: cards">
+    <img src="/images/ds-21.jpg" alt="L3: cards">
     <img src="/images/ds-13.jpg" alt="L3: cards">
     <img src="/images/ds-14.jpg" alt="L3: cards">
     <img src="/images/ds-15.jpg" alt="L3: modal windows">
