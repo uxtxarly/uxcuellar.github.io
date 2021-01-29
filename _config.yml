@@ -32,7 +32,7 @@ defaults:
       author: "Carlos Cuéllar"
   -
     scope:
-      path: "work/projects/protos"
+      path: "work/projects/"
     values:
       sitemap: false
 
