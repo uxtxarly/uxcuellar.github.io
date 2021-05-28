@@ -49,6 +49,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-admin
 
 # Exclude these files from your production _site
 exclude:
