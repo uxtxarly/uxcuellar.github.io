@@ -87,3 +87,4 @@ prose:
       - name: "tags"
         field:
           help: "tags separated by commas"
+          value:
