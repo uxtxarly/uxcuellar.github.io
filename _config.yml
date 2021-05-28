@@ -84,6 +84,12 @@ prose:
         field:
           element: "text"
           label: "title"
+      - name: "link"
+        field:
+          element: "text"
+          label: "link"
       - name: "tags"
         field:
-          help: "tags separated by commas"
+          element: "text"
+          label: "tags"
+          help: "separated by commas"
