@@ -73,3 +73,4 @@ excerpt_separator: <!--more-->
 prose:
   siteurl: "http://carloscuellar.net"
   media: "images"
+  rooturl: "_posts"
