@@ -68,3 +68,8 @@ feed:
 
 # Config for post's excerpts
 excerpt_separator: <!--more-->
+
+# Prose Config
+prose:
+  siteurl: "http://carloscuellar.net"
+  media: "images"
