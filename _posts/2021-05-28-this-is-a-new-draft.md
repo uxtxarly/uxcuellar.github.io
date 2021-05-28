@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Prose config
 tags: supertag
 link: 'https://github.com/prose/prose/wiki/Prose-Configuration'
