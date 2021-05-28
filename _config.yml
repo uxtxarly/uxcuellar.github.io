@@ -93,3 +93,8 @@ prose:
           element: "text"
           label: "tags"
           help: "separated by commas"
+      - name: "description"
+        field:
+          element: "text"
+          label: "description"
+          help: "short description for SEO"
