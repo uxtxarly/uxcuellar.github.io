@@ -86,5 +86,4 @@ prose:
           label: "title"
       - name: "tags"
         field:
-          element: "text"
           help: "tags separated by commas"
