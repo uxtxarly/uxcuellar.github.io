@@ -3,6 +3,7 @@ layout: post
 published: false
 title: This is a new draft
 tags: 'link, test, prose'
+link: 'https://github.com/prose/prose/wiki/Prose-Configuration'
 ---
 ![gafas@2x.png]({{site.baseurl}}/images/gafas%402x.png)
 
