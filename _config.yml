@@ -95,6 +95,6 @@ prose:
           help: "separated by commas"
       - name: "description"
         field:
-          element: "text"
+          element: "textarea"
           label: "description"
           help: "short description for SEO"
