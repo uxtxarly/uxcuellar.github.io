@@ -97,4 +97,4 @@ prose:
         field:
           element: "textarea"
           label: "description"
-          help: "short description for SEO"
+          help: "no more than 160 characters, use primary keywords for SEO"
