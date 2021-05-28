@@ -74,3 +74,9 @@ prose:
   siteurl: "http://carloscuellar.net"
   media: "images"
   rooturl: "_posts"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
