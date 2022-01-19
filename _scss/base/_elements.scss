@@ -4,7 +4,6 @@
 
 html {
   font-size: 62.5%; // Sets up base 10
-  font-family: $base-font-family;
   @media only screen and (max-width: $small-screen) {
     font-size: 58%; // Smaller type for small devices
   }
@@ -18,6 +17,7 @@ body {
   @include font-size(1.6); // 16px
   background-color: $base-bg-color;
   color: $base-font-color;
+  font-family: $base-font-family;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
