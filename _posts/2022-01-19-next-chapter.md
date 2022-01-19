@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Next Chapter
 tags: 'work, ux'
 description: Last October I joined Trimble.
