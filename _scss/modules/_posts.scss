@@ -92,7 +92,7 @@
   h1 {
     @include font-size(10);
     padding-top: 1em;
-    color: $base-accent-color;
+    color: $hover-link-color;
   }
   a {
     border-bottom: 1px dotted $base-font-color;

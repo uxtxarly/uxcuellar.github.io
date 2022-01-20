@@ -29,6 +29,12 @@
 
 .l-header__brand {
   min-height: 2.5em;
+  a {
+    color: $hover-link-color;
+    &:hover {
+      color: $base-link-color;
+    }
+  }
 }
 
 .l-header__nav {
