@@ -17,11 +17,11 @@ $dark-gray: #232326;
 $base-bg-color: $dark-gray;
 $base-font-color: $cream;
 $base-accent-color: $cream;
-$base-accent-color-darken: $blue;
+$base-accent-color-darken: $yellow;
 
 // TEXT LINK COLORS
 $base-link-color: $cream;
-$hover-link-color: $blue;
+$hover-link-color: $yellow;
 
 // BORDER COLOR
 $base-border-color: $dim-gray;
@@ -37,8 +37,8 @@ $texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' widt
 // TYPOGRAPHY
 ///////////////////////////////////////////////////////////////////////////////
 
-$sans-serif: "Inter", sans-serif;
-$serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$sans-serif: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif;
 
 $base-font-family: $sans-serif;
 $label-font-family: $sans-serif;
