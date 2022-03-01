@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: FigJam Templates
 link: 'https://www.figma.com/@uxcuellar'
 tags: 'ux, resources, figjam'
