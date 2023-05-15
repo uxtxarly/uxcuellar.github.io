@@ -17,9 +17,8 @@ logo: /apple-touch-icon-precomposed.png
 social:
   name: Carlos Cuéllar
   links:
-    - https://twitter.com/uxcuellar
-    - https://www.linkedin.com/in/uxcuellar
-    - https://github.com/uxcuellar
+    - https://www.linkedin.com/in/cuellarfr
+    - https://github.com/cuellarfr
 webmaster_verifications:
   google: ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg
   bing: 019F5FD588A9EE4EF990A4653E7E03C3
@@ -38,7 +37,7 @@ defaults:
 
 # GitHub info
 github:
-  repo: uxcuellar/uxcuellar.github.io
+  repo: cuellarfr/cuellarfr.github.io
   branch: master
 
 # Use the following plug-ins
