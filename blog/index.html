@@ -1,43 +1,17 @@
 ---
 layout: default
-title: Blog
-description: A personal blog about design, technology, music and procrastination.
+title: "Blog"
+heading: "Blog"
 ---
 
-{% for post in paginator.posts %}
-<article class="post" role="article" itemscope itemtype="http://schema.org/Article">
-  <header>
-    {% if post.link %}
-      <h2 itemprop="name"><a rel="external" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h2>
-      {% else %}
-      <h2 itemprop="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {% endif %}
-    <p>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> &middot;
-      <a href="{{ post.url }}" class="permalink" itemprop="url" title="Permalink">&infin;</a>
-    </p>
-  </header>
-  <div itemprop="articleBody">
-    {% if post.content contains site.excerpt_separator %}
-      {{ post.excerpt }}
-      <a href="{{ post.url }}">Read more</a>
-    {% else %}
-      {{ post.content }}
-    {% endif %}
-  </div>
-</article>
-{% endfor %}
+{% include heading.html heading=page.heading %}
 
-<!-- Pagination links -->
-<nav class="paginator">
-  {% if paginator.next_page %}
-    <a rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
-    {% else %}
-    <a rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
-    {% endif %}
-  {% endif %}
-</nav>
+<main class="py-6">
+  {% for post in paginator.posts %}
+  <div class="mb-12">
+    {% include summary.html post=post %}
+  </div>
+  {% endfor %}
+</main>
+
+{% include paginator.html %}
