@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% include heading.html heading=page.heading %}
+
+<div class="lg:flex">
+  <div class="max-w-xs px-2.5 lg:max-w-none lg:w-1/3 mb-6">
+    <img src="/assets/images/141.jpg" alt="portrait of carlos cuellar" class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800">
+  </div>
+  <div class="lg:w-2/3 lg:order-first lg:pr-12">
+    <h2 class="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl">My name is Carlos Cuéllar and I'm a Spanish-American UX Designer based in Portland, OR.</h2>
+    <div class="mt-6 space-y-7 text-base text-zinc-600">
+      <p class="">In this site I collect notes and links about design, technology and music. I also like to share the <a href="https://last.fm/user/txarly" class="underline">music I like</a>, my shows on <a href="https://www.mixcloud.com/txarly_spins" class="underline">Mixcloud</a> and the <a href="/music/records" class="underline">vinyl records I collect</a>.</p>
+      <p class="">You can also follow me here: </p>
+      <ul class="inline">
+        {% for item in site.data.social %}
+          <li class="inline-block px-2 py-4">
+            <a class="" href="{{ item.link }}"><img width="24" height="24" src="{{ item.image }}" alt="{{ item.name }}" /></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<hr class="lg:-mt-3 xl:-mt-12">
+<div class="lg:flex mt-6">
+
+  <main class="lg:w-1/2">
+    <h3 class="text-2xl font-semibold mb-2">Recent posts</h2>
+    {% for post in site.posts limit:3 %}
+    <div class="mb-6 lg:border-l-2 border-gray-100 pl-3">
+      <h4 class="text-base font-semibold tracking-tight text-zinc-800"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+      <p>{{ post.description | markdownify }}</p>
+    </div>
+    {% endfor %}
+  </main>
+  
+  <main class="lg:w-1/2">
+    <h3 class="text-2xl font-semibold mb-2">Recent mixes</h2>
+    {% for show in site.shows reversed limit:3 %}
+    <div class="mb-6 lg:border-l-2 border-gray-100 pl-3">
+      <h4 class="text-base font-semibold tracking-tight text-zinc-800"><a href="{{ show.url | relative_url }}">{{ show.title }}</a></h4>
+      <p>{{ show.description | markdownify }}</p>
+    </div>
+    {% endfor %}
+  </main>
+
+</div>

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Apple Podcasts",
+    "link": "https://podcasts.apple.com/us/podcast/experiment-in-terror/id1705297692",
+    "image": "https://simpleicons.org/icons/applepodcasts.svg"
+  },
+  {
+    "name": "Google Podcasts",
+    "link": "https://podcasts.apple.com/us/podcast/experiment-in-terror/id1705297692",
+    "image": "https://simpleicons.org/icons/googlepodcasts.svg"
+  },
+  {
+    "name": "Spotify",
+    "link": "https://open.spotify.com/show/35sLR8Yz2JWLwRSNnzISvH",
+    "image": "https://simpleicons.org/icons/spotify.svg"
+  },
+  {
+    "name": "Amazon Music",
+    "link": "https://music.amazon.com/podcasts/ccc55bde-7f7d-4204-82c7-13a28db62ca0/experiment-in-terror",
+    "image": "https://simpleicons.org/icons/amazon.svg"
+  },
+  {
+    "name": "Mixcloud",
+    "link": "https://www.mixcloud.com/txarly_spins",
+    "image": "https://simpleicons.org/icons/mixcloud.svg"
+  },
+  {
+    "name": "RSS",
+    "link": "https://www.ivoox.com/podcast-experiment-in-terror_fg_f12250807_filtro_1.xml",
+    "image": "https://simpleicons.org/icons/rss.svg"
+  }
+]
