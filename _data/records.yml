@@ -1,5 +1,23 @@
 main:
 -
+    Artist: The Clientele
+    Title: I Am Not There Anymore
+    Label: Merge
+    Released: 2023
+    Thumbnail: /assets/images/record-placeholder.jpg
+-
+    Artist: The Clientele
+    Title: God Save The Clientele
+    Label: Merge
+    Released: 2007
+    Thumbnail: /assets/images/record-placeholder.jpg
+-
+    Artist: The Clientele
+    Title: Strange Geometry
+    Label: Merge
+    Released: 2005
+    Thumbnail: /assets/images/record-placeholder.jpg
+-
     Artist: AC DC
     Title: Who Made Who
     Label: Atlantic

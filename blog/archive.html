@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Archive"
+heading: "Archive"
+description: This is a list of all the posts published on this site, listed by date.
+sitemap: false
+---
+
+{% include heading.html heading=page.heading %}
+
+<section role="region" class="prose" itemscope itemtype="http://schema.org/CollectionPage">
+  <p>This is a list of all the <strong>posts</strong> published on this site, listed by date.</p>
+  <div itemprop="mainContentOfPage">
+    <ul>
+      {% for post in site.posts %}
+        {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+        {% unless post.link %}
+          {% unless month == post_month %}
+            {% assign month = post_month %}
+            <li>
+              <h3>{{ month }}</h3>
+          {% endunless %}
+        {% endunless %}
+        {% unless post.link %}
+          <div itemscope itemtype="http://schema.org/Article">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
+            <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+          </div>
+        {% endunless %}
+      {% endfor %}
+      </li>
+    </ul>
+  </div>
+</section>
