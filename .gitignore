@@ -1,5 +1,10 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+_site
+.DS_Store
+.jekyll
+.bundle
+.sass-cache
+Gemfile.lock
 node_modules
+package.json
+_mdwriter.cson
+/.jekyll-metadata

@@ -1,29 +1,66 @@
-baseurl: "/"
-permalink: pretty
-title: "cuellar.fr"
-collections_dir: collections
-markdown: kramdown
-highlighter: rouge
+title:        Carlos Cuéllar
+tagline:      'UX Designer'
+description:  'UX Designer'
+url:          https://carloscuellar.net
+author:
+  name:       'Carlos Cuéllar'
+  email:      'uxcuellar@gmail.com'
+markdown:     kramdown
+permalink:    /blog/:title/
+highlighter:  rouge
+paginate:     10
+paginate_path: /blog/page:num/
+host: 0.0.0.0
+twitter:
+  username: uxcuellar
+logo: /apple-touch-icon-precomposed.png
+social:
+  name: Carlos Cuéllar
+  links:
+    - https://www.linkedin.com/in/cuellarfr
+    - https://github.com/cuellarfr
+webmaster_verifications:
+  google: ZTzErRU2qHFONj6qV8Y0t3_ukyx-MtVQzKWwXq0BPLg
+  bing: 019F5FD588A9EE4EF990A4653E7E03C3
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      author: "Carlos Cuéllar"
+  -
+    scope:
+      path: "work/projects/"
+    values:
+      sitemap: false
+
+# GitHub info
+github:
+  repo: cuellarfr/cuellarfr.github.io
+  branch: master
+
+# Use the following plug-ins
+plugins:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-admin
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+
+# Set the Sass partials directory, as we're using @imports
 sass:
-  indentWidth: 4
-  style: compact
-  precision: 10
-
-logo:
-  logo_desktop_image: assets/images/author/carlos.png
-  logo_desktop_text: "cuellar.<strong>fr</strong>"
-  logo_mobile_image: assets/images/author/carlos.png
-  logo_mobile_text: ""
-  logo_desktop_height: "36px"
-  logo_desktop_width: "36px"
-  logo_mobile_height: "36px"
-  logo_mobile_width: "36px"
-
-seo:
-  meta_twitter_site: "@cuellarfr"
-  meta_twitter_creator: "@cuellarfr"
-  meta_og_image: "/assets/images/author/carlos.png"
+  sass_dir: _scss
+  style: :compressed
 
 # Config for atom feed
 feed:
@@ -32,68 +69,9 @@ feed:
 # Config for post's excerpts
 excerpt_separator: <!--more-->
 
-plugins:
-  - jekyll-environment-variables
-  - jekyll-postcss
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-admin
-  - jekyll-postcss
-
-paginate: 10
-paginate_path: /blog/page:num/
-
-collections:
-  posts:
-    output: true
-    permalink: /blog/:path/
-  cases:
-    output: true
-    permalink: /work/:path/
-  shows:
-    output: true
-    permalink: /music/shows/:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: "images"
-    values:
-      image: true
-  - scope:
-      path: "categories"
-    values:
-      layout: category
-      permalink: /category/:basename/
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - yarn.lock
-  - package.json
-  - package-lock.json
-  - vendor
-  - LICENSE.md
-  - LICENSE
-  - README.md
-  - .vscode
-  - .gitignore
-  - .liquidrc
-  - postcss.config.js
-  - tailwind.config.js
-  - netlify.toml
-
 # Prose Config
 prose:
-  siteurl: "http://cuellar.fr"
+  siteurl: "http://carloscuellar.net"
   media: "images"
   rooturl: "_posts"
   metadata:

@@ -1,32 +1,32 @@
 ---
 layout: default
-title: "work"
-heading: "Work"
+title: Work
+description: This is how I work
 ---
-
-{% include heading.html heading=page.heading %}
-
-
-
-
-<p>Portfolio and blah blah</p>
-
-<ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-  {% for case in site.cases %}
-  
-    <li class="group relative flex flex-col items-start bg-slate-100 rounded-md p-4">
-      <a href="{{ case.url | relative_url }}">
-        {% if case.thumbnail %}
-          <img width="80" height="45" class="rounded-md mb-8 hover:opacity-70 transition duration-300 ease-in-out float-left mr-4" alt="{{ case.title }}" src="/assets/images/{{ case.thumbnail | relative_url }}"/>
-        {% endif %}
-        <span><strong>{{ case.title }}</strong></span>
-        <span>{{ case.description | markdownify }}</span>
-      </a>
-    </li>
-   
-  {% endfor %}
-</ul>
-
-
-
-{% include paginator.html %}
+<article class="post" role="article" itemscope="" itemtype="http://schema.org/Article">
+  <header class="header-bg">
+    <h1>My Work</h1>
+  </header>
+  <p><a href="https://www.nngroup.com/ux-certification/verify/" style="decoration:none"><img src="/images/nng-uxc-badge.png" alt="UX Certification Badge from Nielsen Norman Group" class="is-right" style="width:110px"></a>
+  I am a <a href="certificates/nng-ux-certificate-cuellar.pdf"><strong>certified User Experience Designer</strong></a> with an industrial design background and some love for front-end web development. I have been creating experiences that simplify users’ lives since 2006. I'm an advocate of design as a problem solving discipline and I use empathy as a primary skill.</p>
+  <h2>Where I work</h2>
+  <p>I started my career in Spain working for marketing agencies. In 2011, I moved to California with my wife where I started working as an in-house designer for an e-commerce startup.</p>
+  <p>My second American gig was at Lightspeed Systems, where I designed e-learning software for K-12 schools. After that, I worked at Goldstar building marketing tools for live entertainment events.</p>
+  <p>I'm currently a <strong>Senior UX Designer at Trimble</strong>, where I help construction companies manage projects and human resources.</p>
+  <p>If you want to know more about my work experience, please feel free to take a look at <strong><a href="./carlos-cuellar_resume.pdf">my resume</a></strong>.</p>
+  <h2>How I work</h2>
+  <p>Every project is different and I often wear different hats, but my fundamental approach to UX Design is consistent. It's a collaborative and iterative process where I work closely with product managers, other designers and developers in different stages. I enjoy this approach because it's effective and I'm always learning new things. These are the steps I follow in my design process.</p>
+  <p><img src="/images/process.png" alt="design process"></p>
+  <h3 class="h4">1. Research</h3>
+  <p>As a designer, my main job is to solve problems so I need to clearly define them. In order to do that, I interview stakeholders so I can understand the product vision and constraints. That also helps me define the project goals and schedule. After that, I normally review any existing work or product, and then I do a bit of competitive analysis in order to learn how other companies solved similar problems. Later, I do field studies and user interviews so I can understand their workflows, pain points, behaviors, needs, and map out use cases and scenarios.</p>
+  <h3 class="h4">2. Ideate</h3>
+  <p>At this stage of the process, I start looking for solutions to the problem. I normally work with product managers on a story map and then I immediately start sketching and creating quick wireframes that I iterate so I can explore different UI solutions.</p>
+  <h3 class="h4">3. Prototype</h3>
+  <p>Depending on the project, these wireframes can evolve into interactive prototypes that I build using tools like <a href="https://www.sketchapp.com/">Sketch</a>, <a href="https://www.figma.com">Figma</a>, <a href="https://framer.com/">Framer</a> or <a href="https://middlemanapp.com/">Middleman</a>.</p>
+  <h3 class="h4">4. User Test</h3>
+  <p>Once I have a working prototype I need to start testing and refining it. I normally start with casual testing in the office where I ask some coworkers to complete tasks in order to find the most obvious usability issues. After that, I prepare some usability testing sessions with real users or users with a profile similar to our personas. I typically prefer in-person usability testing because it allows me to interact with users and ask follow-up questions. However, this can be time-consuming so sometimes I do remote testing using services like <a href="https://www.usertesting.com/">UserTesting</a>. Once I analyze and extract the test results, I use this feedback to improve the prototype and once it's done, I test it again. The process is repeated until I reach an optimal solution for both users and stakeholders.</p>
+  <h3 class="h4">5. Implement</h3>
+  <p>Lastly, I work with visual designers and front-end engineers during the final implementation of the solution. The result is often deployed for a few users using A/B testing. I use web analytics and user feedback in the last round of refinement of the product.</p>
+  <h2>Portfolio</h2>
+  <p><img src="/images/board.jpg" alt="board" class="work-pic"></p>
+  <p>I showcase some of my projects in this <a href="/work/projects"><strong>portfolio</strong></a>. Access is password protected, so if you need one please send me an <a href="mailto:uxcuellar@gmail.com" rel="me">email</a>.</p>

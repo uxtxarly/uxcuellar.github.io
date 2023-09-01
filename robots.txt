@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /work/
+
+Sitemap: https://carloscuellar.net/sitemap.xml

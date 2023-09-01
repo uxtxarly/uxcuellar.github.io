@@ -1,0 +1,41 @@
+.project {
+  clear: both;
+  // padding: 4% 10% 0% 10%;
+}
+
+.project__thumb {
+  float: left;
+  border-radius: $base-border-radius;
+  width: em(120);
+  height: em(120);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+
+  @include transition(all 0.5s ease-in-out);
+
+  @media only screen and (max-width: $small-screen) {
+    width: em(100);
+    height: em(100);
+  }
+
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+.project__description {
+  margin-left: em(180);
+
+  @media only screen and (max-width: $small-screen) {
+    margin-left: em(130);
+  }
+
+  > p {
+    margin-bottom: 0;
+  }
+}
+
+.project__summary {
+  font-weight: bold;
+}

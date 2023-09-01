@@ -4,11 +4,12 @@
 
 /* TEAM */
   Design & development: Carlos Cuéllar
-  Site: cuellar.fr
+  Site: carloscuellar.net
+  Twitter: uxcuellar
   Location: Portland, OR
 
 
 /* SITE */
   Standards: HTML5, CSS3 (SCSS)
   Components: Jekyll, GitHub Pages
-  Software: VS Code, Acorn, Figma
+  Software: Atom, Acorn, Sketch
