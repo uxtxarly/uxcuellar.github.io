@@ -1,5 +1,29 @@
 main:
 -
+    Artist: Paul McCartney
+    Title: McCartney
+    Label: Apple
+    Released: 1970
+    Thumbnail: https://i.discogs.com/GuFNgXJxkbRfvEj-xeK1nhjgv0Uub84NmXqXzxLzXCE/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzUx/NzYtMTY0NDU5NTM1/OC04NzkxLmpwZWc.jpeg
+-
+    Artist: Bob Dylan
+    Title: Pat Garrett and Billy The Kid
+    Label: CBS
+    Released: 1973
+    Thumbnail: https://i.discogs.com/L7gWNkHT4vAxfnPwHZMljHtdACMxzi6WCwU8INMZieo/rs:fit/g:sm/q:90/h:500/w:495/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDk4/NjItMTIyMzE1OTEx/NC5qcGVn.jpeg
+-
+    Artist: The Weather Station
+    Title: Howe Is It That I Should Look At The Stars
+    Label: Fat Possum
+    Released: 2022
+    Thumbnail: https://i.discogs.com/q3bW34abl1lRP3E1Ny36cwmDs2aPIYbjld1qTGutKuM/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzcz/Mzg2LTE2NDY3NDY5/ODQtODg0MS5qcGVn.jpeg
+-
+    Artist: Gladys Knight and the Pips
+    Title: Gladys Knight and the Pips
+    Label: Maxx
+    Released: 1965
+    Thumbnail: /assets/images/record-placeholder.jpg
+-
     Artist: The Clientele
     Title: I Am Not There Anymore
     Label: Merge
