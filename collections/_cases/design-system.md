@@ -8,7 +8,7 @@ sponsor: Goldstar Events
 thumbnail: ds-tn.jpg
 sitemap: false
 ---
-<script src="/flickity.js"></script>
+<script src="/assets/js/flickity.js"></script>
 ---
 
 ### The story behind this project

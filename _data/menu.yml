@@ -1,16 +1,10 @@
 main:
-  # - name: "Home"
-  #   url: "/"
-  #   weight: 1
   - name: "Blog"
     url: "/blog/"
-    weight: 2
+    weight: 1
   - name: "Music"
     url: "/music/"
-    weight: 3
-  - name: "Work"
-    url: "/work/"
-    weight: 4
+    weight: 2
   - name: "About"
     url: "/about/"
-    weight: 5
+    weight: 3

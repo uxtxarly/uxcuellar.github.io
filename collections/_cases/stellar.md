@@ -8,9 +8,9 @@ sponsor: Goldstar Events
 thumbnail: st_logo.png
 sitemap: false
 ---
-<script src="/flickity.js"></script>
+<script src="/assets/js/flickity.js"></script>
 <hr>
-<a href="/work/projects/a288d20020c6de3a6926698a5b7f0a39adce6c79/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+<a href="/assets/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
 
 ### The story behind this project
 

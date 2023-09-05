@@ -1,0 +1,29 @@
+---
+layout: default
+title: "work"
+heading: "Work"
+---
+
+{% include heading.html heading=page.heading %}
+
+<p>Portfolio and blah blah</p>
+
+<ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+  {% for case in site.cases %}
+  
+    <li class="group relative flex flex-col items-start bg-slate-100 rounded-md p-4">
+      <a href="{{ case.url | relative_url }}">
+        {% if case.thumbnail %}
+          <img width="80" height="45" class="rounded-md mb-8 hover:opacity-70 transition duration-300 ease-in-out float-left mr-4" alt="{{ case.title }}" src="/assets/images/{{ case.thumbnail | relative_url }}"/>
+        {% endif %}
+        <span><strong>{{ case.title }}</strong></span>
+        <span>{{ case.description | markdownify }}</span>
+      </a>
+    </li>
+   
+  {% endfor %}
+</ul>
+
+
+
+{% include paginator.html %}

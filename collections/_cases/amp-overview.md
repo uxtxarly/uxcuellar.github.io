@@ -8,7 +8,7 @@ sponsor: Goldstar Events
 thumbnail: overview-tn.jpg
 sitemap: false
 ---
-<script src="/flickity.js"></script>
+<script src="/assets/js/flickity.js"></script>
 <hr>
 ###  A quick summary
 - Designed a new dashboard page for Goldstar's Audience Marketing Platform.
