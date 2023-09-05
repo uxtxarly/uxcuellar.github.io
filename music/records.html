@@ -18,8 +18,8 @@ heading: "Records Collected"
 
 <div class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-8 mb-3">
   {% for item in site.data.records.main %}
-    <span><img src="{{ item.Thumbnail }}" alt="" width="160px" loading="lazy" class="rounded border-x-gray-300 border-2">
-      <small class="text-center">"{{ item.Title }}", by {{ item.Artist }}</small>
+    <span><img src="/assets/images/records/{{ item.Thumbnail }}" alt="" width="160px" height="160px" loading="lazy" class="rounded border-x-gray-300 border-2">
+      <small>"{{ item.Title }}", by {{ item.Artist }}</small>
     </span>
   {% endfor %}
 </div>
