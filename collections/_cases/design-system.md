@@ -5,6 +5,7 @@ description: A design system that brings consistency and structure across multip
 tags: design research, visual design.
 duration: 3 Months, April 2018.
 sponsor: Goldstar Events
+image: /assets/images/ds-header.jpg
 thumbnail: ds-tn.jpg
 sitemap: false
 ---

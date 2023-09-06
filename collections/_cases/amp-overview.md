@@ -5,6 +5,7 @@ description: A new dashboard page for an event organizer's marketing platform.
 tags: user research, wireframing, prototyping, usability testing.
 duration: 5 Months, March 2018.
 sponsor: Goldstar Events
+image: /assets/images/overview-header.jpg
 thumbnail: overview-tn.jpg
 sitemap: false
 ---

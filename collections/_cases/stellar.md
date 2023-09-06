@@ -5,12 +5,13 @@ description: A new ticketing platform for live entertainment, focused on online 
 tags: user research, flows, wireframing, prototyping.
 duration: 2 Months, June 2020.
 sponsor: Goldstar Events
+image: /assets/images/st_preview.jpg
 thumbnail: st_logo.png
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
 <hr>
-<a href="/assets/protos/st-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+<a href="/assets/protos/st-proto/index.html#/screens" class="">VIEW DESKTOP PROTOTYPE</a>
 
 ### The story behind this project
 

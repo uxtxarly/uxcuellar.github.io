@@ -5,6 +5,7 @@ description: An interactive form that allows event organizers to build, preview 
 tags: user research, wireframing, prototyping, usability testing.
 duration: 8 Months, January 2019.
 sponsor: Goldstar Events
+image: /assets/images/addevent-storyboard.jpg
 thumbnail: addevent-tn.jpg
 sitemap: false
 ---
