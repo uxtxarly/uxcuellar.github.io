@@ -1,36 +1,26 @@
 ---
 layout: basic
 title: "About Carlos"
-date: 2018-11-28T15:15:34+10:00
 permalink: "/about/"
-description: "Business plan hackathon handshake responsive web design."
-image: "https://source.unsplash.com/Dq5P6eWZXNY/1600x900"
+description: "About Carlos and this website"
 ---
 
-<article class="post">
-  <header class="header-bg">
-    <h1>About Carlos</h1>
-  </header>
-  <p><strong>I'm Carlos Cuéllar and I'm a UX Designer from Valencia, Spain.</strong> I live in Portland, OR with my wife, our two kinds and a little Chihuahua mix.</p>
-  <p>When not staring at a screen, <a href="https://www.last.fm/user/txarly">I listen to classic alternative rock music records</a> (yes, that means I'm getting old) and I try to find good food in downtown Portland.</p>
-  
-    <div class="mt-16 sm:mt-20 my-6"><div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8"><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2"><img alt="" loading="lazy" width="3744" height="5616" decoding="async" data-nimg="1" class="absolute inset-0 h-full w-full object-cover" sizes="(min-width: 640px) 18rem, 11rem" srcset="https://source.unsplash.com/YmQ0-nmWcV0/1600x900" style="color: transparent;"></div><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2"><img alt="" loading="lazy" width="3936" height="2624" decoding="async" data-nimg="1" class="absolute inset-0 h-full w-full object-cover" sizes="(min-width: 640px) 18rem, 11rem" srcset="https://source.unsplash.com/YmQ0-nmWcV0/1600x900" style="color: transparent;"></div><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2"><img alt="" loading="lazy" width="5760" height="3840" decoding="async" data-nimg="1" class="absolute inset-0 h-full w-full object-cover" sizes="(min-width: 640px) 18rem, 11rem" srcset="https://source.unsplash.com/YmQ0-nmWcV0/1600x900" style="color: transparent;"></div><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2"><img alt="" loading="lazy" width="2400" height="3000" decoding="async" data-nimg="1" class="absolute inset-0 h-full w-full object-cover" sizes="(min-width: 640px) 18rem, 11rem" srcset="https://source.unsplash.com/YmQ0-nmWcV0/1600x900" style="color: transparent;"></div><div class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2"><img alt="" loading="lazy" width="4240" height="2384" decoding="async" data-nimg="1" class="absolute inset-0 h-full w-full object-cover" sizes="(min-width: 640px) 18rem, 11rem" srcset="https://source.unsplash.com/YmQ0-nmWcV0/1600x900" style="color: transparent;"></div></div></div>
-  
-  <h2 class="h4">About this website</h2>
-  <p>This site is a showcase of some of my work and it's also a blog where I write random notes about design, music, technology, etc. I also keep a collection of links, some of them recovered from my old <a href="https://en.wikipedia.org/wiki/Delicious_(website)">Delicious</a> account.</p>
-  <p>The first <a href="/blog/archive">blog posts</a> are from 2004 and at that time I was using <a href="https://www.blogger.com/">Blogger</a> as my publishing platform. After that, I used <a href="https://textpattern.com/">Textpattern</a> for years as my CMS of choice and right now I'm using <a href="https://jekyllrb.com/">Jekyll</a> to generate this site and <a href="https://pages.github.com/">Github Pages</a> to host it. If you want to follow the blog, you can subscribe to the <a href="/atom">RSS feed</a>.</p>
-  <p>All the code and markup were made on <a href="https://macromates.com">TextMate</a>, wireframes, mockups, icons and other vector graphics were created on <a href="https://www.sketchapp.com/">Bohemian Coding's Sketch</a>, and when I needed to edit bitmap images I used <a href="https://flyingmeat.com/acorn/">Flying Meat's Acorn</a>. The typeface you're seeing is <a href="https://www.ibm.com/plex/">IBM's Plex Sans</a>.</p>
-  <p>This site has been tested and is supported in modern and ancient browsers like Chrome, Safari, Opera, Internet Explorer (9+), Edge and Firefox.</p>
-  <hr>
-  <h2 class="h4">Contact</h2>
-  <p>If you need to contact me, you can say hola to me on <a href="https://twitter.com/uxcuellar" rel="me">Twitter</a>, catch me on <a href="https://www.linkedin.com/in/uxcuellar" rel="me">Linkedin</a>, send me an <a href="mailto:uxcuellar@gmail.com" rel="me">email</a> or just use the form below.</p>
-  <form method="POST" action="https://formspree.io/f/mnqobyla">
-    <label for="name">Name</label>
-    <input type="text" name="name" placeholder="Your name.">
-    <label for="email">Email</label>
-    <input type="email" name="email" placeholder="Your email address.">
-    <label for="message">Message</label>
-    <textarea name="message" placeholder="Type your message here." rows="5"></textarea>
-    <button class="button" type="submit">Send</button>
-  </form>
-</article>
+## About me
+
+Hi, I'm Carlos Cuellar, a certified User Experience Designer with an industrial design background and I have been creating experiences that simplify user's lives since 2006. Today, I work at Trimble where we craft software solutions for construction companies.
+
+Depending on the project I might wear different hats, but I always follow a user-centered process where I collaborate closely with users, product managers, developers, and other designers. 
+
+Originally from Valencia, Spain, I live now in the Portland area with my wife and two kids.
+
+## About this website
+
+This is the latest iteration of a personal website I started in the early 2000s. There are random notes about design, music, and technology, and also links to resources I find interesting. In this new version, I'm also adding links to my music podcast.
+
+You can check the source code at this Github repository. The site is built using Jekyll and it's hosted in Github Pages. If you want to follow the blog, you can subscribe to the RSS feed.
+
+Both the content and the code created by me in this website is open source. Any other external content shared here is property of their respective owners.
+
+## Get in touch
+- Send me an email: [carlos@cuellar.fr](mailto:carlos@cuellar.fr)
+- Follow me on [Mastodon](https://social.vivaldi.net/@cuellarfr), [Threads](https://www.threads.net/@cuellarfr) or [LinkedIn](https://www.linkedin.com/in/cuellarfr).
