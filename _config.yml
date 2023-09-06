@@ -55,6 +55,9 @@ collections:
   shows:
     output: true
     permalink: /music/shows/:path/
+  updates:
+    output: true
+    permalink: /now/:path/
 
 defaults:
   - scope:

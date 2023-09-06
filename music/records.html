@@ -17,9 +17,9 @@ description: "A list of records collected by the author"
   <p>Am I following those rules? Absolutely not! So here's the list organized alphabetically. I'll be adding the cover art and a link to <a href="https://www.discogs.com/">Discogs</a>, but right now it's just a work in progress.</p>
 </div>
 
-<div class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-8 mb-3">
+<div class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8 mb-3">
   {% for item in site.data.records.main %}
-    <span><img src="/assets/images/records/{{ item.Thumbnail }}" alt="" width="160px" height="160px" loading="lazy" class="rounded border-x-gray-300 border-2">
+    <span class="bg-slate-200 p-4 rounded"><img src="/assets/images/records/{{ item.Thumbnail }}" alt="" width="160px" height="160px" loading="lazy" class="rounded border-x-gray-300 border-2">
       <small>"{{ item.Title }}", by {{ item.Artist }}</small>
     </span>
   {% endfor %}

@@ -1,0 +1,15 @@
+---
+layout: basic
+title: "Now"
+heading: "Now"
+description: "This is what I'm up to lately."
+---
+
+<main class="py-6">
+  {% for update in site.updates limit:1 %}
+  <article class="mb-12 prose">
+    <h2>{{ update.title }}</h2>
+    <div>{{ update.content }}</div>
+  </article>
+  {% endfor %}
+</main>

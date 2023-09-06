@@ -5,6 +5,9 @@ main:
   - name: "Music"
     url: "/music/"
     weight: 2
+  - name: "Now"
+    url: "/now/"
+    weight: 3
   - name: "About"
     url: "/about/"
-    weight: 3
+    weight: 4
