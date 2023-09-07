@@ -3,6 +3,7 @@ layout: post
 title: Las Vegas, NV
 tags:
 - travel
+authors: ["carlos"]
 ---
 <img src="/assets/images/184.jpg" />
 <!--more-->

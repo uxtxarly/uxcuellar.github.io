@@ -3,9 +3,6 @@ layout: post
 published: true
 title: FigJam Templates
 link: 'https://www.figma.com/@cuellarfr'
-thumbnail: "https://source.unsplash.com/YmQ0-nmWcV0/640x360"
-image: "https://source.unsplash.com/YmQ0-nmWcV0/1600x900"
-categories: ["Branding","Hosting"]
 tags: ux, resources, figjam
 description: A small collection of templates for FigJam
 authors: ["carlos"]

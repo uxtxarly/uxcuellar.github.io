@@ -3,6 +3,7 @@ layout: post
 title: "The Friends of Rachel Worth"
 date: "2019-12-06 22:19:56 -0700"
 tags: music
+authors: ["carlos"]
 ---
 The Friends of Rachel Worth was the second [Go-Betweens](http://go-betweens.net) album I bought back in 2000. A year before, I discovered this Australian band thanks to a compilation CD called _Bellavista Terrace_, and they immediately became one of my favorite bands ever.
 

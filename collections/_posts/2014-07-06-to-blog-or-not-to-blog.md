@@ -3,6 +3,7 @@ layout: post
 title: To blog or not to blog
 tags:
 - blogs
+authors: ["carlos"]
 ---
 
 <p>In the last few weeks I felt like I needed to write again and update this blog. Oh yes, I know this sounds like a cheap new year’s resolution and I know I have written these exact same words before, but this time I want to take it a bit more seriously and I have some good reasons to do it.</p>

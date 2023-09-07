@@ -5,6 +5,7 @@ tags:
 - css
 - refactor
 - web development
+authors: ["carlos"]
 ---
 
 <p>I think that during the last 9 months I spent 80% of my time at work writing or refactoring <span class="caps">CSS</span>. Exciting, right? Well, the truth is that I had to change my mentality about how to do this kind of stuff. I had many years of experience doing <span class="caps">CSS</span> for small sites, sites with hundreds or a few thousand users. And I used to do this by my own, alone. Now I work on a e-learning web app that is used by several millions of kids across North America, Europe and Australia, and we have a team of developers working on the same code continuously. So the priorities and goals are different, and the performance and maintainability are in the top of the list.</p>

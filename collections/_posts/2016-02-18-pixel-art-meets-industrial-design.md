@@ -3,6 +3,7 @@ title: Pixel Art Meets Industrial Design
 layout: post
 link: https://www.instagram.com/jung_soo_park/
 tags: design
+authors: ["carlos"]
 ---
 
 ![Eames Chair](/assets/images/pixelart_eames.png)

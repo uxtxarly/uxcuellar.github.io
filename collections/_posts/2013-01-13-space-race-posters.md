@@ -4,6 +4,7 @@ title: Space Race Posters
 tags:
 - geekism
 - graphics
+authors: ["carlos"]
 ---
 <img src="/assets/images/143.jpg" class="wide" />
 

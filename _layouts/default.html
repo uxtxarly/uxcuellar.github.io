@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,400;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Webmentions -->
     <link rel="webmention" href="https://webmention.io/cuellar.fr/webmention" />
@@ -22,10 +22,11 @@
 
     <!-- RSS -->
     {% feed_meta %}
-  </head>
-  <body class="page {{page.bodyClass}} bg-zinc-50 bg-[url('/assets/images/bg-topo.svg')]" >
 
-    <div class="container mx-auto px-6 md:px-12 bg-white rounded-b-[2rem] mb-6">
+  </head>
+
+  <body class="page {{page.bodyClass}} bg-zinc-50 dark:bg-black bg-[url('/assets/images/bg-topo.svg')] text-zinc-800 dark:text-zinc-200" >
+    <div class="container mx-auto px-6 md:px-12 bg-white dark:bg-zinc-900 rounded-b-[2rem] mb-6">
       {% include header.html %}
       {{content}}
       {% include footer.html %}

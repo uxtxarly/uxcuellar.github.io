@@ -4,6 +4,7 @@ title: Portland, OR
 tags:
 - travel
 - oregon
+authors: ["carlos"]
 ---
 
 <p><img src="/assets/images/196.jpg"></p>

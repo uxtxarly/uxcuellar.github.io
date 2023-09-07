@@ -3,7 +3,7 @@ layout: post
 published: true
 title:  "Treasure Island, San Francisco"
 tags: travel, pictures
-description: 
+authors: ["carlos"]
 ---
 
 ![views from treasure island](/assets/images/sf_from_treasure_island.jpg)

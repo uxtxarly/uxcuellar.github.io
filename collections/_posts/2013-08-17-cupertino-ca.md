@@ -5,6 +5,7 @@ tags:
 - apple
 - travel
 - california
+authors: ["carlos"]
 ---
 <img src="/assets/images/181.jpg" />
 <!--more-->

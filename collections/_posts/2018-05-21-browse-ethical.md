@@ -4,7 +4,7 @@ published: true
 title:  "Browse ethical"
 link: 
 tags: tech, software
-description: 
+authors: ["carlos"]
 ---
 
 ![firefox billboard](/assets/images/browse_ethical.jpg)

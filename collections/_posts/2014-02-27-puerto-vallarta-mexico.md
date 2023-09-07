@@ -3,6 +3,7 @@ layout: post
 title: Puerto Vallarta, Mexico
 tags:
 - travel
+authors: ["carlos"]
 ---
 <img src="/assets/images/190.jpg" />
 <!--more-->

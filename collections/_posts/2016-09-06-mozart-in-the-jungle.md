@@ -4,6 +4,7 @@ published: true
 title:  "Mozart in the Jungle"
 link: http://chips.nyc/work/mozart-in-the-jungle-season-two/
 tags: animation, graphic design
+authors: ["carlos"]
 ---
 
 The opening titles of season 2 of _Mozart in the Jungle_ are animations of geometric shapes inspired in classical album covers from the 40s and 50s. These are just impressive.

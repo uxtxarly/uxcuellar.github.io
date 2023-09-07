@@ -4,6 +4,7 @@ title: Spanish vintage posters
 tags:
 - vintage
 - graphics
+authors: ["carlos"]
 ---
 <img src="/assets/images/144.jpg" />
 

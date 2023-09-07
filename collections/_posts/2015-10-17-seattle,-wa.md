@@ -4,7 +4,7 @@ published: true
 title:  "Seattle, WA"
 link: 
 tags: travel, pictures
-description: 
+authors: ["carlos"]
 ---
 
 ![seattle](/assets/images/seattle_1.jpg)

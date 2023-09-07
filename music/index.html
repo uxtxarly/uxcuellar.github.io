@@ -11,7 +11,7 @@ description: "Recent podcasts, records collectedd and songs listened."
   
 
   <div class="lg:w-2/3 pr-8"> 
-    <div class="prose">
+    <div class="prose dark:prose-invert">
       <blockquote>What came first, the music or the misery?</blockquote>
 
       <p>If you know where that quote comes from, we are going to be friends! I am a huge music fan, a record collector and a retired amateur DJ. Today, I spend my time listening to alternative rock, but my taste is quite eclectic.</p>
@@ -19,7 +19,7 @@ description: "Recent podcasts, records collectedd and songs listened."
     </div>
 
 
-    <div class="prose">
+    <div class="prose dark:prose-invert">
       <h2 class="text-2xl font-semibold mt-6">Experiment in Terror</h2>
       <p><strong>Experiment in Terror</strong> is a new podcast where I play music and I don't talk! I don't know if that makes this a podcast or just a collection of mixes, but it's fun to put together an hour of music I like. I started this project on <a href="https://www.mixcloud.com/txarly_spins" rel="me">Mixcloud</a> but I quickly realized that, for easier distribution, it's better to publish this as a regular show in <a href="https://podcasts.apple.com/us/podcast/experiment-in-terror/id1705297692" rel="me">Apple Podcasts</a>, <a href="https://open.spotify.com/show/35sLR8Yz2JWLwRSNnzISvH" rel="me">Spotify</a> and the rest of podcast platforms.</p>
       <p>You can listen to <em>Experiment in Terror</em> here, and if you like it and you want to follow me, please subscribe wherever you listen to your podcasts:</p>
@@ -32,9 +32,7 @@ description: "Recent podcasts, records collectedd and songs listened."
       {% endfor %}
     </ul>
 
-    <hr class="my-9">
-
-    <main class="">
+    <main class="mt-16">
       {% for show in site.shows reversed %}
       <div class="mb-12">
         {% include summary-shows.html show=show %}

@@ -6,8 +6,7 @@ date: 2019-06-27T23:27:21.798Z
 link: https://www.frogdesign.com/gallery
 tags:
   - links
-ogtype: article
-bodyclass: post
+authors: ["carlos"]
 ---
 
 ![frog 50 exhibit](/assets/images/frog50.jpg)

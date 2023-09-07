@@ -3,6 +3,7 @@ layout: post
 title: Migrating to Jekyll
 published: True
 tags: [jekyll, development]
+authors: ["carlos"]
 ---
 
 <p>I just migrated the content of this blog to <a href="http://jekyllrb.com">Jekyll</a>. I’ve been using <a href="http://textpattern.com">Textpattern</a> as my <span class="caps">CMS</span> of choice for years, but I wanted to try something new and my blog is the perfect place to experiment.</p>
