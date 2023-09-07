@@ -14,13 +14,13 @@ description: This is a selection of case studies. If you have questions about th
 
 <div role="list" class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 mb-3">
   {% for case in site.cases %}
-  <article class="bg-slate-200 p-4 rounded hover:opacity-70 transition duration-300 ease-in-out">
+  <article class="bg-white/90 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-4 rounded transition duration-300 ease-in-out">
     {% if case.thumbnail %}
       <a href="{{ case.url | relative_url }}"><img width="80" height="45" class="rounded-md" alt="{{ case.title }}" src="/assets/images/{{ case.thumbnail | relative_url }}"/></a>
     {% endif %}
     <p class="mt-4 pb-2 font-bold">
       <a href="{{ case.url | relative_url }}">{{ case.title }}</a></p>
-    <p>{{ case.description | markdownify }}</p>
+    <p><a href="{{ case.url | relative_url }}">{{ case.description | markdownify }}</a></p>
   </article>
   {% endfor %}
 </div>

@@ -14,9 +14,11 @@ layout: default
       <p class="text-zinc-600 dark:text-zinc-400">In this site I collect notes and links about design, technology and music. I also like to share <a href="https://last.fm/user/txarly" class="underline">music I like</a>, my <a href="/music" class="underline">music podcast</a> and the <a href="/music/records" class="underline">vinyl records I collect</a>.</p>
       <p class="text-zinc-600 dark:text-zinc-400">You can also find me here: </p>
       <ul class="inline">
+        
         {% for item in site.data.social %}
           <li class="inline-block px-2 py-4">
-            <a rel="me" class="" href="{{ item.link }}"><img width="24" height="24" src="{{ item.image }}" alt="{{ item.name }}" /></a>
+            <a rel="me" class="" href="{{ item.link }}">
+              {{ item.image }}
           </li>
         {% endfor %}
       </ul>
