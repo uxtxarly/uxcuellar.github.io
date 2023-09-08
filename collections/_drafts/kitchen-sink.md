@@ -1,9 +1,10 @@
 ---
 layout: post
 title: kitchen sink
-published: True
-categories: []
-tags: []
+description: Sed scelerisque.Vivamus ut hendrerit lacus. Sed vel nisi sit amet sapien tincidunt tempus quis non nibh. Nulla facilisi. Fusce lectus erat, luctus sit amet metus at, laoreet ullamcorper justo. 
+tags: [tag1, tag2]
+authors: [carlos]
+image: https://placehold.co/1600x400
 ---
 
 # Big Big Header
@@ -77,15 +78,26 @@ Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
-### Images
+### Media
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](http://placeimg.com/800/400 "Large example image")
+![placeholder](https://placehold.co/800x400 "Large example image")
 
-![placeholder](http://placeimg.com/400/200 "Medium example image")
+![placeholder](https://placehold.co/500x250 "Medium example image")
 
-![placeholder](http://placeimg.com/200/200 "Small example image")
+![placeholder](https://placehold.co/200x100 "Small example image")
+
+<video controls>
+  <source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<audio controls>
+  <source src="https://www.ivoox.com/experiment-in-terror-1_mh_115249402_feed_1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 ### Tables
 

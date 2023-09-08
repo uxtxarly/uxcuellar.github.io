@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 
-published: True
+description: 
+tags: [tag1, tag2]
+authors: [carlos]
 ---
 
