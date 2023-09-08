@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Updates Archive"
+heading: "Updates Archive"
+description: Some of the things I did in the past
+sitemap: false
+---
+
+{% include heading.html heading=page.heading %}
+
+<section role="region" class="prose dark:prose-invert" itemscope itemtype="http://schema.org/CollectionPage">
+  <p>Some of the things I did in the past.</p>
+  <div itemprop="mainContentOfPage">
+    <ul>
+      {% for update in site.updates %}
+        {% capture update_month %}{{ update.date | date: "%B %Y" }}{% endcapture %}
+        {% unless update.link %}
+          {% unless month == update_month %}
+            {% assign month = update_month %}
+            <li>
+              <h3>{{ month }}</h3>
+          {% endunless %}
+        {% endunless %}
+        {% unless update.link %}
+          <div itemscope itemtype="http://schema.org/Article">
+            <time datetime="{{ update.date | date_to_xmlschema }}">{{ update.date | date: "%b %d" }}</time>:
+            <span itemprop="name"><a rel="bookmark" href="{{ update.url }}">{{ update.title }}</a></span>
+          </div>
+        {% endunless %}
+      {% endfor %}
+      </li>
+    </ul>
+  </div>
+</section>

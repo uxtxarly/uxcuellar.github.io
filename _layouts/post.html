@@ -48,10 +48,10 @@ layout: default
 
       <nav class="flex items-center justify-between py-6">
         {% if page.previous.url %}
-          <a rel="prev" href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+          <a class="" rel="prev" href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
         {% endif %}
         {% if page.next.url %}
-          <a rel="next" href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+          <a class="" rel="next" href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
         {% endif %}
       </nav>
       
