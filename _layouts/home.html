@@ -11,7 +11,7 @@ layout: default
   <div class="lg:w-2/3 lg:order-first lg:pr-12">
     <h2 class="text-3xl font-bold sm:text-4xl">My name is Carlos Cuéllar and I'm a Spanish-American UX Designer based in Portland, OR.</h2>
     <div class="mt-6 space-y-7 text-base">
-      <p class="text-zinc-600 dark:text-zinc-400">In this site I collect notes and links about design, technology and music. I also like to share <a href="https://last.fm/user/txarly" class="underline">music I like</a>, my <a href="/music" class="underline">music podcast</a> and the <a href="/music/records" class="underline">vinyl records I collect</a>.</p>
+      <p class="text-zinc-600 dark:text-zinc-400">In this site I collect notes and links about design, technology and music. I also like to share <a href="https://last.fm/user/txarly" class="text-teal-400">music I like</a>, my <a href="/music" class="text-teal-400">music podcast</a> and the <a href="/music/records" class="text-teal-400">vinyl records I collect</a>.</p>
       <p class="text-zinc-600 dark:text-zinc-400">You can also find me here: </p>
       <ul class="inline">
         
@@ -30,7 +30,7 @@ layout: default
   <main class="lg:w-1/2">
     <h3 class="text-2xl font-bold mb-2">Recent posts</h2>
     {% for post in site.posts limit:3 %}
-    <div class="mb-6 lg:border-l-2 border-gray-100 pl-3">
+    <div class="mb-6 md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
       <h4 class="text-base font-bold font-sans"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ post.description | markdownify }}</p>
     </div>
@@ -40,7 +40,7 @@ layout: default
   <main class="lg:w-1/2">
     <h3 class="text-2xl font-bold mb-2">Recent shows</h2>
     {% for show in site.shows reversed limit:3 %}
-    <div class="mb-6 lg:border-l-2 border-gray-100 pl-3">
+    <div class="mb-6 lmd:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
       <h4 class="text-base font-bold font-sans"><a href="{{ show.url | relative_url }}">{{ show.title }}</a></h4>
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ show.description | markdownify }}</p>
     </div>
