@@ -10,7 +10,6 @@ thumbnail: addevent-tn.jpg
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<hr>
 <a href="/assets/protos/add-an-event/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
 
 ### TLDR: A quick summary

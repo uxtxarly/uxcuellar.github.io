@@ -10,7 +10,6 @@ thumbnail: overview-tn.jpg
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<hr>
 ###  A quick summary
 - Designed a new dashboard page for Goldstar's Audience Marketing Platform.
 - Interviewed event organizers and venue advisors to understand current user flows.

@@ -30,7 +30,7 @@ layout: default
   <main class="lg:w-1/2">
     <h3 class="text-2xl font-bold mb-2">Recent posts</h2>
     {% for post in site.posts limit:3 %}
-    <div class="mb-6 md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+    <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
       <h4 class="text-base font-bold font-sans"><a href="{{ post.url | relative_url }}" class="hover:text-teal-400">{{ post.title }}</a></h4>
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ post.description | strip_html | truncatewords: 15 }}</p>
     </div>
@@ -40,7 +40,7 @@ layout: default
   <main class="lg:w-1/2">
     <h3 class="text-2xl font-bold mb-2">Recent shows</h2>
     {% for show in site.shows reversed limit:3 %}
-    <div class="mb-6 lmd:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+    <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
       <h4 class="text-base font-bold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-teal-400">{{ show.title }}</a></h4>
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ show.description | strip_html | truncatewords: 15 }}</p>
     </div>

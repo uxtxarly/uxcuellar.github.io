@@ -10,7 +10,6 @@ image: /assets/images/chart_shot.jpg
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<hr>
 <a href="/assets/protos/seat-mobile-proto/index.html#/screens" class="button">VIEW MOBILE PROTOTYPE</a>
 
 <a href="/assets/protos/seat-desktop-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>

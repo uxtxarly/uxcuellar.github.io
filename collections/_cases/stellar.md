@@ -10,7 +10,6 @@ thumbnail: st_logo.png
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<hr>
 <a href="/assets/protos/st-proto/index.html#/screens" class="">VIEW DESKTOP PROTOTYPE</a>
 
 ### The story behind this project
