@@ -1,13 +1,13 @@
 ---
 layout: basic
-title: "About Carlos"
+title: "About"
 permalink: "/about/"
-description: "About Carlos and this website"
+description: "Some basic info about me and this website"
 ---
 
 ## About me
 
-Hi, I'm Carlos Cuellar, a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and I have been creating experiences that simplify user's lives since 2006. Today, I work at Trimble where we craft software solutions for construction companies.
+Hi, I'm Carlos Cuéllar, a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and I have been creating experiences that simplify user's lives since 2006. Today, I work at Trimble where we craft software solutions for construction companies.
 
 Depending on the project I might wear different hats, but I always follow a user-centered process where I collaborate closely with users, product managers, developers, and other designers. 
 
