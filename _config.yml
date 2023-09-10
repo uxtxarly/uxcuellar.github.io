@@ -97,8 +97,8 @@ exclude:
 # Prose Config
 prose:
   siteurl: "http://cuellar.fr"
-  media: "images"
-  rooturl: "_posts"
+  media: "/assets/images"
+  rooturl: "/collections/_posts"
   metadata:
     _posts:
       - name: "layout"
