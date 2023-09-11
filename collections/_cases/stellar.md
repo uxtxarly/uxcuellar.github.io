@@ -10,7 +10,8 @@ thumbnail: st_logo.png
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<a href="/assets/protos/st-proto/index.html#/screens" class="">VIEW DESKTOP PROTOTYPE</a>
+
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/st-proto/index.html#/screens">View Desktop Prototype</a>
 
 ### The story behind this project
 
@@ -78,7 +79,6 @@ At that point, I was ready to start sketching wireframes and flows for the main 
     <img src="/assets/images/st-wire4.jpg" alt="wireframe of the desktop version">
     <img src="/assets/images/st-wire5.jpg" alt="wireframe of the desktop version">
   </div>
-  <br>
   <figcaption>Wireframes of the organizer site.</figcaption>
 </figure>
 
@@ -93,7 +93,6 @@ I created some mockups and prototypes that were tested by our launching partners
     <img src="/assets/images/st-mock3.jpg" alt="mockup of the desktop version">
     <img src="/assets/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
-  <br>
   <figcaption>Final mockups of the organizer site.</figcaption>
 </figure>
 

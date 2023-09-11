@@ -10,7 +10,8 @@ thumbnail: addevent-tn.jpg
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<a href="/assets/protos/add-an-event/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/add-an-event/index.html#/screens">View Desktop Prototype</a>
 
 ### TLDR: A quick summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
@@ -71,7 +72,6 @@ We also wanted users to be able to preview the events they build, and that's why
     <img src="/assets/images/amp_event_wire6.png" alt="wireframe of the event form">
     <img src="/assets/images/amp_event_wire7.png" alt="wireframe of the event form">
   </div>
-  <br>
   <figcaption>Wireframes</figcaption>
 </figure>
 
@@ -89,7 +89,6 @@ I created and iterated (after user testing) an inventory submission process that
     <img src="/assets/images/amp_event_mock4.png" alt="mockup of the event form">
     <img src="/assets/images/amp_event_mock5.png" alt="mockup of the event form">
   </div>
-  <br>
   <figcaption>Mockups</figcaption>
 </figure>
 

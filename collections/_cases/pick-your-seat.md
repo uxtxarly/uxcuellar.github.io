@@ -10,9 +10,10 @@ image: /assets/images/chart_shot.jpg
 sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
-<a href="/assets/protos/seat-mobile-proto/index.html#/screens" class="button">VIEW MOBILE PROTOTYPE</a>
 
-<a href="/assets/protos/seat-desktop-proto/index.html#/screens" class="button">VIEW DESKTOP PROTOTYPE</a>
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-mobile-proto/index.html#/screens">View Mobile Prototype</a>
+
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-desktop-proto/index.html#/screens">View Desktop Prototype</a>
 
 Since 2002, __Goldstar Events__ has sold discounted tickets for live entertainment. One of the things that made Goldstar different is that their customers don't select a specific seat at checkout and they instead let Goldstar pick the best seats available at a given price range. But in 2016 Goldstar decided that they were going to offer _premium_ tickets where users have the ability to select their seats. The technology that made this possible was created from scratch and it's still today a work in progress.
 

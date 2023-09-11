@@ -29,7 +29,6 @@ We included descriptions and instructions for each component in Sketch (for desi
 
 <figure>
   <img src="/assets/images/ds-0.jpg" alt="Storybook">
-  <br>
   <figcaption>Screenshot of Storybook.</figcaption>
 </figure>
 
@@ -45,7 +44,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/assets/images/ds-3.jpg" alt="Primitives: hand drawn patterns">
     <img src="/assets/images/ds-1.jpg" alt="Primitives: typography">
   </div>
-  </figure><br>
+  </figure>
 - **Level 1 / Foundation:** The foundation level included components that could not be broken down any further. These were the very basic building blocks of our products. As such, they could not contain nested components and overrides were minimal. Some foundational components were logos and avatars.<br><br>
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -54,7 +53,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/assets/images/ds-6.jpg" alt="L1: icons">
     <img src="/assets/images/ds-19.jpg" alt="L1: icons">
   </div>
-  </figure><br>
+  </figure>
 - **Level 2 / Lower-level blocks:** These were typically composed of a combination of primitives and level 1 components. Some UI elements included here were buttons and form elements.<br><br>
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -65,7 +64,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/assets/images/ds-11.jpg" alt="L2: navigation">
     <img src="/assets/images/ds-12.jpg" alt="L2: navigation">
   </div>
-  </figure><br>
+  </figure>
 - **Level 3 / Mid-level blocks:** Mid-level blocks were typically composed of a combination of primitives, level 1, and level 2 components. Modal windows, tables, and cards were all part of this level.<br><br>
   <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -76,7 +75,7 @@ The UI components of this system work like building blocks; we categorized our c
     <img src="/assets/images/ds-15.jpg" alt="L3: modal windows">
     <img src="/assets/images/ds-16.jpg" alt="L3: tables">
   </div>
-  </figure><br>
+  </figure>
 - **Level 4 / Full composition:** These elements were used mostly for demo purposes. They were full-screen compositions that include all other level components and primitives.
 
 And we also had **separate text and layer styles**. We had text styles available in multiple weights, colors, and alignments. The layer styles included predefined colors, gradients, form container states, and button states. These all helped create more flexible components in Sketch.
@@ -84,12 +83,9 @@ And we also had **separate text and layer styles**. We had text styles available
 ### Naming conventions
 
 It was important to put in place some naming conventions that reflected our component architecture. We ended up using this:
-
-`Level / Type of component / Component name / State or Pieces`
-
+  {% highlight js %}Level / Type of component / Component name / State or Pieces{% endhighlight %}
 An example would be:
-
-`L2/nav/breadcrumbs/_pieces/link`
+  {% highlight js %}L2/nav/breadcrumbs/_pieces/link{% endhighlight %}
 
 Keeping a consistent naming across components was also important because Sketch used these names in order to arrange them in menus and in order to display the right component overrides. Designers were able to use these overrides to customize components with different nested elements, making them a lot more powerful and flexible.
 

@@ -41,7 +41,6 @@ With that information, I paired with a visual designer and we created a number o
     <img src="/assets/images/amp_overview_wire3.png" alt="wireframe of amp overview">
     <img src="/assets/images/amp_overview_wire4.png" alt="wireframe of amp overview">
   </div>
-  <br>
   <figcaption>Some wireframes created for this project.</figcaption>
 </figure>
 
@@ -53,7 +52,6 @@ With that information, I paired with a visual designer and we created a number o
     <img src="/assets/images/amp_overview_mock2.png" alt="mockup of amp overview">
     <img src="/assets/images/amp_overview_mock3.png" alt="mockup of amp overview">
   </div>
-  <br>
   <figcaption>A couple of early mockups.</figcaption>
 </figure>
 

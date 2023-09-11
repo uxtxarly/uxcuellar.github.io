@@ -17,13 +17,13 @@ heading: "Blog"
 <!-- Pagination links -->
 <nav class="flex items-center justify-between py-6">
   {% if paginator.next_page %}
-    <a class="font-bold hover:text-teal-400" rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
+    <a class="font-bold hover:text-teal-500 dark:hover:text-teal-400" rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a class="font-bold hover:text-teal-400" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
+    <a class="font-bold hover:text-teal-500 dark:hover:text-teal-400" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
     {% else %}
-    <a class="font-bold hover:text-teal-400" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
+    <a class="font-bold hover:text-teal-500 dark:hover:text-teal-400" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
     {% endif %}
   {% endif %}
 </nav>
