@@ -1,8 +1,8 @@
 ---
 layout: post
 title: New home office
-tags: work
-description: Carlos talks about his new home office
+tags: work, home office
+description: Welcome to the Cuellar.fr corporate office
 authors: carlos
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: So now I'm on Pinterest
 tags: pinterest, resources
-description: I recently started using Pinterest to store screenshots of websites and user interfaces
+description: 
 authors: ["carlos"]
 ---
 As a digital designer I like to store screenshots of websites, apps and other user interfaces that I use later for inspiration. I've been doing this for a few years and I have changed my setup a few times.

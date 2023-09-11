@@ -2,7 +2,7 @@
 layout: post
 title:  "Building a component library in Sketch"
 tags: sketch, design systems, component libraries
-description: Some notes about building a component library in Sketch.
+description: 
 authors: ["carlos"]
 ---
 
