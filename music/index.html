@@ -45,10 +45,10 @@ description: "Recent podcasts, records collected and songs listened."
   </div> 
 
   <div class="lg:w-1/3">
-    <h3 class="text-2xl font-semibold mb-3 mt-6">Recently Played</h3>
+    <h3 class="text-2xl font-semibold py-6 border-t border-zinc-200 dark:border-zinc-700/80">Recently Played</h3>
     <a href="https://www.last.fm/user/txarly"><img src="https://lastfm-recently-played.vercel.app/api?user=txarly&amp;count=7&amp;width=360" height="auto" width="420px" loading="lazy" alt="list of my recently played tracks on last.fm"></a>
 
-    <h3 class="text-2xl font-semibold mb-3 mt-6"><a href="records">Records Collected <span>&rarr;</span></a></h3>
+    <h3 class="text-2xl font-semibold py-6 border-t border-zinc-200 dark:border-zinc-700/80 mt-12"><a href="records">Records Collected <span>&rarr;</span></a></h3>
     <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
       {% for item in site.data.records.main limit:6 %}
         <a href="#"><img src="/assets/images/records/{{ item.Thumbnail }}" alt="record by {{ item.Artist }}" width="160px" loading="lazy" class="rounded"></a>
