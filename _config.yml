@@ -11,9 +11,9 @@ sass:
   precision: 10
 
 logo:
-  logo_desktop_image: logo.svg
+  logo_desktop_image: /assets/images/logo/logo.svg
   logo_desktop_text: "cuellar.<strong>fr</strong>"
-  logo_mobile_image: logo.svg
+  logo_mobile_image: /assets/images/logo/logo.svg
   logo_mobile_text: ""
   logo_desktop_height: "36px"
   logo_desktop_width: "36px"
