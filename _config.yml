@@ -1,6 +1,8 @@
 baseurl: "/"
 permalink: pretty
-title: "cuellar.fr"
+title: Carlos Cuéllar
+tagline: 'cuellar.fr'
+description: 'UX Designer'
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -70,11 +72,15 @@ defaults:
     values:
       image: true
   - scope:
-      path: "categories"
+      path: "work"
     values:
-      layout: category
-      permalink: /category/:basename/
+      sitemap: false
 
+# GitHub info
+github:
+  repo: cuellarfr/cuellarfr.github.io
+  branch: master
+  
 # Exclude these files from your production _site
 exclude:
   - Gemfile
