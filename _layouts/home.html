@@ -4,7 +4,7 @@ layout: default
 
 {% include heading.html heading=page.heading %}
 
-<div class="lg:flex mb-12">
+<main class="lg:flex mb-12" role="main" aria-label="Main content">
   <div class="max-w-xs px-2.5 lg:max-w-none lg:w-1/3 mb-6">
     <img src="/assets/images/141.jpg" alt="portrait of carlos cuellar" class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" width="400" height="400">
   </div>
@@ -25,12 +25,12 @@ layout: default
       </ul>
     </div>
   </div>
-</div>
-<div class="lg:flex">
-  <main class="lg:w-1/2 pr-6">
+</main>
+<aside class="lg:flex">
+  <section class="lg:w-1/2 pr-6">
     <h3 class="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400 py-6 border-t border-zinc-200 dark:border-zinc-700/80"><a href="/blog">Recent posts and links</a></h2>
     {% for post in site.posts limit:3 %}
-    <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
+    <article class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
 
       {% if post.link %}
         <h4 class="text-base font-bold font-sans"><a rel="external" class="hover:text-teal-500 dark:hover:text-teal-400" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h4>
@@ -40,18 +40,18 @@ layout: default
 
       
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ post.content | strip_html | truncatewords: 16 }}</p>
-    </div>
+    </article>
     {% endfor %}
-  </main>
+  </section>
   
-  <main class="lg:w-1/2 pr-6">
+  <section class="lg:w-1/2 pr-6">
     <h3 class="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400 py-6 border-t border-zinc-200 dark:border-zinc-700/80"><a href="/music">Recent shows</a></h2>
     {% for show in site.shows reversed limit:3 %}
-    <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
+    <article class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
       <h4 class="text-base font-bold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-teal-500 dark:hover:text-teal-400">{{ show.title }}</a></h4>
       <p class="text-base text-zinc-600 dark:text-zinc-400">{{ show.content | strip_html | truncatewords: 16 }}</p>
-    </div>
+    </article>
     {% endfor %}
-  </main>
+  </section>
 
-</div>
+</aside>

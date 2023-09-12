@@ -5,9 +5,6 @@ heading: "Now"
 description: "This is what I'm up to lately!<br>This page was inspired by <a href='https://nownownow.com/about' class='text-teal-400' >Derek Sivers’ nownownow.com</a>. You can check previous updates <a href='/now/then' class='text-teal-400'>here</a>."
 ---
 
-<main class="py-6">
-  <article class="mb-12 prose dark:prose-invert">
-    <h2>{{ site.updates.last.title }}</h2>
-    {{ site.updates.last.content }} 
-  </article>
-</main>
+<h2>{{ site.updates.last.title }}</h2>
+{{ site.updates.last.content }} 
+

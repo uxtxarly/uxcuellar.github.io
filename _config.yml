@@ -39,7 +39,6 @@ plugins:
   - jekyll-postcss
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-admin
   - jekyll-postcss
@@ -80,7 +79,7 @@ defaults:
 github:
   repo: cuellarfr/cuellarfr.github.io
   branch: master
-  
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
