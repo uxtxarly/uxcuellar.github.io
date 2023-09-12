@@ -27,8 +27,8 @@ layout: default
   </div>
 </div>
 <div class="lg:flex">
-  <main class="lg:w-1/2">
-    <h3 class="text-2xl font-bold mb-2">Recent posts and links</h2>
+  <main class="lg:w-1/2 pr-6">
+    <h3 class="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400 py-6 border-t border-zinc-200 dark:border-zinc-700/80"><a href="/blog">Recent posts and links</a></h2>
     {% for post in site.posts limit:3 %}
     <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
 
@@ -39,17 +39,17 @@ layout: default
       {% endif %}
 
       
-      <p class="text-base text-zinc-600 dark:text-zinc-400">{{ post.description | strip_html | truncatewords: 15 }}</p>
+      <p class="text-base text-zinc-600 dark:text-zinc-400">{{ post.content | strip_html | truncatewords: 16 }}</p>
     </div>
     {% endfor %}
   </main>
   
-  <main class="lg:w-1/2">
-    <h3 class="text-2xl font-bold mb-2">Recent shows</h2>
+  <main class="lg:w-1/2 pr-6">
+    <h3 class="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400 py-6 border-t border-zinc-200 dark:border-zinc-700/80"><a href="/music">Recent shows</a></h2>
     {% for show in site.shows reversed limit:3 %}
     <div class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
       <h4 class="text-base font-bold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-teal-500 dark:hover:text-teal-400">{{ show.title }}</a></h4>
-      <p class="text-base text-zinc-600 dark:text-zinc-400">{{ show.description | strip_html | truncatewords: 15 }}</p>
+      <p class="text-base text-zinc-600 dark:text-zinc-400">{{ show.content | strip_html | truncatewords: 16 }}</p>
     </div>
     {% endfor %}
   </main>
