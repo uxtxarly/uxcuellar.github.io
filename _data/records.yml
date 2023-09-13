@@ -1,0 +1,1621 @@
+main:
+-
+    Artist: Felt
+    Title: Forever Breathes The Lonely Word
+    Label: Creation
+    Released: 1986
+    Thumbnail: felt.jpg
+-
+    Artist: Paul McCartney
+    Title: McCartney
+    Label: Apple
+    Released: 1970
+    Thumbnail: mccartney.jpg
+-
+    Artist: Bob Dylan
+    Title: Pat Garrett and Billy The Kid
+    Label: CBS
+    Released: 1973
+    Thumbnail: patgarret.jpg
+-
+    Artist: The Weather Station
+    Title: How Is It That I Should Look At The Stars
+    Label: Fat Possum
+    Released: 2022
+    Thumbnail: weather.jpg
+-
+    Artist: Gladys Knight and the Pips
+    Title: Gladys Knight and the Pips
+    Label: Maxx
+    Released: 1965
+    Thumbnail: record-placeholder.jpg
+-
+    Artist: The Clientele
+    Title: I Am Not There Anymore
+    Label: Merge
+    Released: 2023
+    Thumbnail: iamnotthere.jpg
+-
+    Artist: The Clientele
+    Title: God Save The Clientele
+    Label: Merge
+    Released: 2007
+    Thumbnail: godsave.jpg
+-
+    Artist: The Clientele
+    Title: Strange Geometry
+    Label: Merge
+    Released: 2005
+    Thumbnail: strangegeometry.jpg
+-
+    Artist: AC DC
+    Title: Who Made Who
+    Label: Atlantic
+    Released: 1986
+    Thumbnail: acdc.jpg
+-
+    Artist: Al Green
+    Title: 'Let''s Stay Together'
+    Label: Hi
+    Released: 1972
+    Thumbnail: staytogether.jpg
+-
+    Artist: Alex Chilton
+    Title: Live in Anvers
+    Label: Bar/None
+    Released: 2023
+    Thumbnail: chiltonanvers.jpg
+-
+    Artist: Andrew Bird
+    Title: Mysterious Production Of Eggs
+    Label: Righteous Babe
+    Released: 2005
+    Thumbnail: birdeggs.jpg
+-
+    Artist: Avalanches, The
+    Title: Since I Left You
+    Label: XL
+    Released: 2000
+    Thumbnail: avalanchessince.jpg
+-
+    Artist: 'B-52s, The'
+    Title: 'The B-52s'
+    Label: Warner
+    Released: 1979
+    Thumbnail: b52s.jpg
+-
+    Artist: Band of Horses
+    Title: Everything All The Time
+    Label: Sub Pop
+    Released: 2006
+    Thumbnail: bandofhorses.jpg
+-
+    Artist: Band, The
+    Title: The Band
+    Label: Capitol
+    Released: 1966
+    Thumbnail: theband.jpg
+-
+    Artist: Band, The
+    Title: Music From Big Pink
+    Label: Capitol
+    Released: 1968
+    Thumbnail: bandbigpink.jpg
+-
+    Artist: Barracudas
+    Title: Drop Out With The Barracudas
+    Label: Parlophone
+    Released: 1981
+    Thumbnail: barracudas.jpg
+-
+    Artist: Beach Boys, The
+    Title: 'Beach Boys'' Party!'
+    Label: Capitol
+    Released: 1965
+    Thumbnail: beachboysparty.jpg
+-
+    Artist: Beach Boys, The
+    Title: The Smile Sessions
+    Label: Capitol / EMI
+    Released: 2011
+    Thumbnail: smile.jpg
+-
+    Artist: Beach House
+    Title: Bloom
+    Label: Sub Pop
+    Released: 2012
+    Thumbnail: bloom.jpg
+-
+    Artist: Beachwood Sparks
+    Title: Beachwood Sparks
+    Label: Bomp
+    Released: 2000
+    Thumbnail: beachwood.jpg
+-
+    Artist: Beatles, The
+    Title: The Beatles, 1967-1970
+    Label: Apple
+    Released: 1973
+    Thumbnail: beatlesblue.jpg
+-
+    Artist: Beatles, The
+    Title: 'A Hard Day''s Night'
+    Label: Apple
+    Released: 1964
+    Thumbnail: aharddays.jpg
+-
+    Artist: Beatles, The
+    Title: Revolver
+    Label: Apple
+    Released: 1966
+    Thumbnail: revolver.jpg
+-
+    Artist: Beatles, The
+    Title: 'Sgt. Pepper''s Lonely Hearts Club Band'
+    Label: Apple
+    Released: 1967
+    Thumbnail: sgtpeppers.jpg
+-
+    Artist: Beatles, The
+    Title: Abbey Road
+    Label: Apple
+    Released: 1969
+    Thumbnail: abbeyroad.jpg
+-
+    Artist: Beatles, The
+    Title: Rubber Soul
+    Label: EMI
+    Released: 1965
+    Thumbnail: rubbersoul.jpg
+-
+    Artist: Beau Brummels, The
+    Title: Introducing The Beau Brummels
+    Label: Autumn
+    Released: 1965
+    Thumbnail: beau.jpg
+-
+    Artist: Belle and Sebastian
+    Title: 'If You''re Feeling Sinister'
+    Label: Jeepster
+    Released: 1996
+    Thumbnail: bssinister.jpg
+-
+    Artist: Beths, The
+    Title: Future Me Hates Me
+    Label: Carpark
+    Released: 2018
+    Thumbnail: beths.jpg
+-
+    Artist: Big Star
+    Title: 3rd
+    Label: 4 Men With Beards
+    Released: 1978
+    Thumbnail: bigstar3.jpg
+-
+    Artist: Big Star
+    Title: Number 1 Record
+    Label: Ardent
+    Released: 1972
+    Thumbnail: bigstar.jpg
+-
+    Artist: Big Star
+    Title: Radio City
+    Label: Ardent
+    Released: 1974
+    Thumbnail: radiocity.jpg
+-
+    Artist: Big Star
+    Title: Columbia (Live At Missouri University 4/25/93)
+    Label: BMG
+    Released: 1993
+    Thumbnail: columbia.jpg
+-
+    Artist: Big Thief
+    Title: Capacity
+    Label: Saddle Creek
+    Released: 2017
+    Thumbnail: capacity.jpg
+-
+    Artist: Bill Callahan
+    Title: Gold Record
+    Label: Drag City
+    Released: 2020
+    Thumbnail: goldrecord.jpg
+-
+    Artist: Blonde Redhead
+    Title: 23
+    Label: 4AD
+    Released: 2007
+    Thumbnail: br23.jpg
+-
+    Artist: Blondie
+    Title: Parallel Lines
+    Label: Chrysalis
+    Released: 1978
+    Thumbnail: blondie.jpg
+-
+    Artist: Bob Dylan
+    Title: Infidels
+    Label: Columbia
+    Released: 1983
+    Thumbnail: infidels.jpg
+-
+    Artist: Bob Dylan
+    Title: Bringing It All Back Home
+    Label: Columbia
+    Released: 1965
+    Thumbnail: bringingit.jpg
+-
+    Artist: Bob Dylan
+    Title: Slow Train Coming
+    Label: Columbia
+    Released: 1979
+    Thumbnail: slowtrain.jpg
+-
+    Artist: Bob Dylan
+    Title: Street Legal
+    Label: Columbia
+    Released: 1978
+    Thumbnail: streetlegal.jpg
+-
+    Artist: 'Bonnie ''Prince'' Billy'
+    Title: Ease Down The Road
+    Label: Palace
+    Released: 2001
+    Thumbnail: bonnie.jpg
+-
+    Artist: Brian Wilson
+    Title: Brian Wilson
+    Label: Sire / Reprise
+    Released: 1988
+    Thumbnail: brianwilson.jpg
+-
+    Artist: Broadcast
+    Title: The Noise Made By People
+    Label: Warp
+    Released: 2000
+    Thumbnail: broadcastnoise.jpg
+-
+    Artist: Bruce Springsteen
+    Title: Nebraska
+    Label: Columbia
+    Released: 1982
+    Thumbnail: nebraska.jpg
+-
+    Artist: Bruce Springsteen
+    Title: Born in the U.S.A.
+    Label: Columbia
+    Released: 1984
+    Thumbnail: bornusa.jpg
+-
+    Artist: Buck Owens and his Buckaroos
+    Title: Bridge Over Troubled Water
+    Label: Capitol
+    Released: 1971
+    Thumbnail: buckowensbridge.jpg
+-
+    Artist: Burt Bacharach
+    Title: Music From Butch Cassidy and The Sundance Kid
+    Label: A&M
+    Released: 1969
+    Thumbnail: bacharach.jpg
+-
+    Artist: Burt Bacharach
+    Title: Reach Out
+    Label: A&M
+    Released: 1967
+    Thumbnail: reachout.jpg
+-
+    Artist: Calexico
+    Title: The Black Light
+    Label: Quarterstick
+    Released: 1998
+    Thumbnail: blacklight.jpg
+-
+    Artist: Cánovas, Rodrigo, Adolfo y Guzmán
+    Title: Señora Azul
+    Label: Hispavox
+    Released: 1974
+    Thumbnail: senoraazul.jpg
+-
+    Artist: Carole King
+    Title: Tapestry
+    Label: Ode
+    Released: 1971
+    Thumbnail: tapestry.jpg
+-
+    Artist: Carole King
+    Title: Rhymes & Reasons
+    Label: Ode
+    Released: 1972
+    Thumbnail: rhymesreasons.jpg
+-
+    Artist: Caroline Rose
+    Title: The Art of Forgetting
+    Label: New West
+    Released: 2023
+    Thumbnail: carolinerose.jpg
+-
+    Artist: Cars, The
+    Title: Heartbeat City
+    Label: Elektra
+    Released: 1984
+    Thumbnail: thecars.jpg
+-
+    Artist: Cass McCombs
+    Title: Mangy love
+    Label: Sony
+    Released: 1984
+    Thumbnail: cass.jpg
+-
+    Artist: Cat Stevens
+    Title: Foreigner
+    Label: Island
+    Released: 1973
+    Thumbnail: foreigner.jpg
+-
+    Artist: Cinerama
+    Title: Valentina
+    Label: Scopitones
+    Released: 2015
+    Thumbnail: valentina.jpg
+-
+    Artist: Cream
+    Title: Disraeli Gears
+    Label: ATCO
+    Released: 1967
+    Thumbnail: disraeli.jpg
+-
+    Artist: Crosby, Stills, Nash and Young
+    Title: Deja Vu
+    Label: Atlantic
+    Released: 1970
+    Thumbnail: dejavu.jpg
+-
+    Artist: Crosby, Stills, Nash and Young
+    Title: So Far
+    Label: Atlantic
+    Released: 1974
+    Thumbnail: sofar.jpg
+-
+    Artist: David Bowie
+    Title: Aladdin Sane
+    Label: Parlophone
+    Released: 1973
+    Thumbnail: bowiealadin.jpg
+-
+    Artist: David Bowie
+    Title: Heroes
+    Label: RCA
+    Released: 1977
+    Thumbnail: heroes.jpg
+-
+    Artist: David Bowie
+    Title: The Rise and Fall of Ziggy Stardust and the Spiders from Mars
+    Label: RCA
+    Released: 1972
+    Thumbnail: ziggy.jpg
+-
+    Artist: David Bowie
+    Title: Young Americans
+    Label: RCA
+    Released: 1975
+    Thumbnail: youngamericans.jpg
+-
+    Artist: Depeche Mode
+    Title: Music For The Masses
+    Label: Sire
+    Released: 1987
+    Thumbnail: depechemode.jpg
+-
+    Artist: Destroyer
+    Title: Five Spanish Songs
+    Label: Merge
+    Released: 2013
+    Thumbnail: 5songs.jpg
+-
+    Artist: Destroyer
+    Title: ken
+    Label: Merge
+    Released: 2017
+    Thumbnail: ken.jpg
+-
+    Artist: Destroyer
+    Title: Have We Met
+    Label: Merge
+    Released: 2020
+    Thumbnail: havewemet.jpg
+-
+    Artist: Destroyer
+    Title: Kaputt
+    Label: Merge
+    Released: 2011
+    Thumbnail: kaputt.jpg
+-
+    Artist: Dionne Warwick
+    Title: Go With Love
+    Label: Scepter
+    Released: 1970
+    Thumbnail: dionne.jpg
+-
+    Artist: Divine Comedy, The
+    Title: Charmed Life
+    Label: Divine Comedy
+    Released: 2022
+    Thumbnail: divinecomedy.jpg
+-
+    Artist: Donovan
+    Title: Sunshine Superman
+    Label: Epic
+    Released: 1966
+    Thumbnail: donovan.jpg
+-
+    Artist: Doors, The
+    Title: Greatest Hits
+    Label: Elektra
+    Released: 1980
+    Thumbnail: doors.jpg
+-
+    Artist: Dr. John
+    Title: Gris-Gris
+    Label: ATCO
+    Released: 1968
+    Thumbnail: grisgris.jpg
+-
+    Artist: Duncan Dhu
+    Title: Autobiografia
+    Label: Gasa
+    Released: 1989
+    Thumbnail: duncandhu.jpg
+-
+    Artist: Dusty Springfield
+    Title: Dusty in Memphis
+    Label: Atlantic
+    Released: 1969
+    Thumbnail: dustymemphis.jpg
+-
+    Artist: Echo & The Bunnymen
+    Title: Songs to Learn & Sing
+    Label: Sire
+    Released: 1985
+    Thumbnail: echosongs.jpg
+-
+    Artist: Elliott Smith
+    Title: XO
+    Label: DreamWorks
+    Released: 1998
+    Thumbnail: elliottxo.jpg
+-
+    Artist: Elton John
+    Title: Tumbleweed Connection
+    Label: Uni
+    Released: 1970
+    Thumbnail: tumbleweed.jpg
+-
+    Artist: Elton John
+    Title: Greatest Hits
+    Label: MCA
+    Released: 1974
+    Thumbnail: elton.jpg
+-
+    Artist: Elvis Costello and the Attractions
+    Title: Armed Forces
+    Label: Columbia
+    Released: 1978
+    Thumbnail: armedforces.jpg
+-
+    Artist: Elvis Costello and the Attractions
+    Title: 'This Year''s Model'
+    Label: Columbia
+    Released: 1978
+    Thumbnail: thisyearsmodel.jpg
+-
+    Artist: Elvis Costello and the Attractions
+    Title: Get Happy
+    Label: Sony
+    Released: 1980
+    Thumbnail: gethappy.jpg
+-
+    Artist: Family
+    Title: Un soplo en el corazón
+    Label: Elefant
+    Released: 1993
+    Thumbnail: family.jpg
+-
+    Artist: Feelies, The
+    Title: The Good Earth
+    Label: Domino
+    Released: 1986
+    Thumbnail: feeliesearth.jpg
+-
+    Artist: Feelies, The
+    Title: Crazy Rhythms
+    Label: Domino
+    Released: 1980
+    Thumbnail: feelies.jpg
+-
+    Artist: 'Flamin'' Groovies'
+    Title: Shake Some Action
+    Label: Sire
+    Released: 1976
+    Thumbnail: shakesome.jpg
+-
+    Artist: Flaming Lips, The
+    Title: The Soft Bulletin
+    Label: Warner
+    Released: 1999
+    Thumbnail: softbulletin.jpg
+-
+    Artist: Fleet Foxes
+    Title: Fleet Foxes
+    Label: Sub Pop
+    Released: 2008
+    Thumbnail: fleetfoxes.jpg
+-
+    Artist: Fleetwood Mac
+    Title: Fleetwood Mac
+    Label: Reprise
+    Released: 1968
+    Thumbnail: fleetwood.jpg
+-
+    Artist: Fleetwood Mac
+    Title: Rumours
+    Label: Warner
+    Released: 1977
+    Thumbnail: fleetwoodrumours.jpg
+-
+    Artist: Foxygen
+    Title: We Are the 21st Century Ambassadors of Peace & Magic
+    Label: Jagjaguwar
+    Released: 2013
+    Thumbnail: foxygen.jpg
+-
+    Artist: Gigi
+    Title: Hundredth Time
+    Label: K Records
+    Released: 2010
+    Thumbnail: gigi.jpg
+-
+    Artist: Grand Archives
+    Title: Keep In Mind Frankenstein
+    Label: Sub Pop
+    Released: 2009
+    Thumbnail: grandarchives.jpg
+-
+    Artist: Grand Funk Railroad
+    Title: 'We''re An American Band'
+    Label: Capitol
+    Released: 1973
+    Thumbnail: grandfunk.jpg
+-
+    Artist: Grandaddy
+    Title: The Sophtware Slump
+    Label: V2
+    Released: 2000
+    Thumbnail: grandaddy.jpg
+-
+    Artist: Grian Chatten
+    Title: Chaos For The Fly
+    Label: Partisan
+    Released: 2023
+    Thumbnail: chaosfor.jpg
+-
+    Artist: Heavenly
+    Title: Space Manatee
+    Label: Elefant
+    Released: 1996
+    Thumbnail: heavenly.jpg
+-
+    Artist: Ibon Errazkin
+    Title: Ibon Errazkin
+    Label: Elefant
+    Released: 2004
+    Thumbnail: ibon.jpg
+-
+    Artist: Inspiral Carpets
+    Title: This Is How It Feels
+    Label: Wea
+    Released: 1991
+    Thumbnail: inspiralcarpetsthis.jpg
+-
+    Artist: Iron and Wine
+    Title: Ghost On Ghost
+    Label: Nonesuch
+    Released: 2013
+    Thumbnail: ghostonghost.jpg
+-
+    Artist: Iron and Wine
+    Title: Our Endless Numbered Days
+    Label: Sub Pop
+    Released: 2004
+    Thumbnail: ourendless.jpg
+-
+    Artist: Ivy
+    Title: Apartment Life Demos
+    Label: Bar/None
+    Released: 2023
+    Thumbnail: ivyapartment.jpg
+-
+    Artist: Jackie De Shannon
+    Title: Jackie De Shannon
+    Label: Liberty
+    Released: 1963
+    Thumbnail: jackie.jpg
+-
+    Artist: Jackson Browne
+    Title: The Pretender
+    Label: Asylum
+    Released: 1976
+    Thumbnail: jacksonpretender.jpg
+-
+    Artist: Jeff Buckley
+    Title: Grace
+    Label: Columbia
+    Released: 1994
+    Thumbnail: grace.jpg
+-
+    Artist: Jefferson Airplane
+    Title: Volunteers
+    Label: RCA
+    Released: 1969
+    Thumbnail: volunteers.jpg
+-
+    Artist: Jens Lekman
+    Title: Night Falls Over Kortedala
+    Label: Secretly Canadian
+    Released: 2007
+    Thumbnail: jenslekman.jpg
+-
+    Artist: Jesus and Mary Chain, The
+    Title: Psychocandy
+    Label: Reprise
+    Released: 1985
+    Thumbnail: psychocandy.jpg
+-
+    Artist: Jesus and Mary Chain, The
+    Title: Barbed Wire Kisses
+    Label: Warner
+    Released: 1988
+    Thumbnail: jmcbarbed.jpg
+-
+    Artist: Jesus and Mary Chain, The
+    Title: Darklands
+    Label: Warner
+    Released: 1987
+    Thumbnail: darklands.jpg
+-
+    Artist: Jimi Hendrix
+    Title: The Essential Jimi Hendrix
+    Label: Reprise
+    Released: 1978
+    Thumbnail: hendrix.jpg
+-
+    Artist: Joe Cocker
+    Title: Mad Dogs & Englishmen
+    Label: A&M
+    Released: 1970
+    Thumbnail: joecocker.jpg
+-
+    Artist: John Coltrane
+    Title: A Love Supreme
+    Label: Impulse
+    Released: 1965
+    Thumbnail: lovesupreme.jpg
+-
+    Artist: John Lennon
+    Title: Walls and Bridges
+    Label: Apple
+    Released: 1974
+    Thumbnail: wallsandbridges.jpg
+-
+    Artist: Johnny Cash
+    Title: Johnny Cash At San Quentin
+    Label: Columbia
+    Released: 1969
+    Thumbnail: cashquentin.jpg
+-
+    Artist: Jonathan Richman
+    Title: Jonathan Goes Country
+    Label: Rounder
+    Released: 1990
+    Thumbnail: jonathancountry.jpg
+-
+    Artist: Jonathan Richman & The Modern Lovers
+    Title: Jonathan Richman & The Modern Lovers
+    Label: Omnivore
+    Released: 1976
+    Thumbnail: jonathan.jpg
+-
+    Artist: Jonathan Richman & The Modern Lovers
+    Title: 'Rock ''n'' Roll With The Modern Lovers'
+    Label: Omnivore
+    Released: 1977
+    Thumbnail: rockmodern.jpg
+-
+    Artist: Joy Division
+    Title: Substance
+    Label: Factory
+    Released: 1988
+    Thumbnail: joydivisionsubstance.jpg
+-
+    Artist: Kevin Morby
+    Title: This Is A Photograph
+    Label: Dead Oceans
+    Released: 2022
+    Thumbnail: thisisaphotograph.jpg
+-
+    Artist: Kinks, The
+    Title: You Really Got Me
+    Label: Reprise
+    Released: 1964
+    Thumbnail: youreallygotme.jpg
+-
+    Artist: Kinks, The
+    Title: Something Else
+    Label: BMG
+    Released: 1967
+    Thumbnail: somethingelse.jpg
+-
+    Artist: Kinks, The
+    Title: Misfits
+    Label: Arista
+    Released: 1978
+    Thumbnail: misfits.jpg
+-
+    Artist: Kinks, The
+    Title: Low Budget
+    Label: Arista
+    Released: 1979
+    Thumbnail: kinkslow.jpg
+-
+    Artist: Kinks, The
+    Title: Village Green Preservation Society
+    Label: ABKCO
+    Released: 1968
+    Thumbnail: kinksvillage.jpg
+-
+    Artist: Kinks, The
+    Title: Part 1. Lola Versus Powerman And The Moneygoround
+    Label: ABKCO
+    Released: 1970
+    Thumbnail: lola.jpg
+-
+    Artist: Kinks, The
+    Title: Face to Face
+    Label: Reprise
+    Released: 1966
+    Thumbnail: facetoface.jpg
+-
+    Artist: Knack, The
+    Title: Get The Knack
+    Label: Capitol
+    Released: 1979
+    Thumbnail: gettheknack.jpg
+-
+    Artist: Kraftwerk
+    Title: The Man Machine
+    Label: Kling Klang
+    Released: 1978
+    Thumbnail: manmachine.jpg
+-
+    Artist: Lambchop
+    Title: What Another Man Spills
+    Label: Merge
+    Released: 1998
+    Thumbnail: lambchopman.jpg
+-
+    Artist: Le Mans
+    Title: Saudade
+    Label: Elefant
+    Released: 1996
+    Thumbnail: saudade.jpg
+-
+    Artist: Led Zeppelin
+    Title: Led Zeppelin IV - EX
+    Label: Atlantic
+    Released: 1971
+    Thumbnail: lz4.jpg
+-
+    Artist: Led Zeppelin
+    Title: Physical Graffiti
+    Label: Swan Song
+    Released: 1975
+    Thumbnail: physicalgraffiti.jpg
+-
+    Artist: Led Zeppelin
+    Title: Led Zeppelin
+    Label: Atlantic
+    Released: 1969
+    Thumbnail: lz1.jpg
+-
+    Artist: Led Zeppelin
+    Title: Presence
+    Label: Swan Song
+    Released: 1976
+    Thumbnail: presence.jpg
+-
+    Artist: Led Zeppelin
+    Title: In Through The Out Door
+    Label: Swan Song
+    Released: 1979
+    Thumbnail: inthrough.jpg
+-
+    Artist: Led Zeppelin
+    Title: Led Zeppelin III
+    Label: Atlantic
+    Released: 1970
+    Thumbnail: lz3.jpg
+-
+    Artist: Led Zeppelin
+    Title: Coda
+    Label: Swan Song
+    Released: 1982
+    Thumbnail: coda.jpg
+-
+    Artist: Led Zeppelin
+    Title: Led Zeppelin II
+    Label: Atlantic
+    Released: 1969
+    Thumbnail: lz2.jpg
+-
+    Artist: Led Zeppelin
+    Title: Houses of the Holy
+    Label: Atlantic
+    Released: 1973
+    Thumbnail: housesoftheholy.jpg
+-
+    Artist: Lloyd Cole and the Commotions
+    Title: Rattlesnakes
+    Label: Geffen
+    Released: 1984
+    Thumbnail: rattlesnakes.jpg
+-
+    Artist: Lou Reed
+    Title: Transformer
+    Label: RCA
+    Released: 1972
+    Thumbnail: transformer.jpg
+-
+    Artist: Lou Reed
+    Title: Berlin
+    Label: RCA
+    Released: 1973
+    Thumbnail: berlin.jpg
+-
+    Artist: Love
+    Title: Forever Changes
+    Label: Elektra
+    Released: 1967
+    Thumbnail: foreverchanges.jpg
+-
+    Artist: 'Lovin'' Spoonful'
+    Title: Do You Believe In Magic
+    Label: Kama Sutra
+    Released: 1965
+    Thumbnail: lovinspoonful.jpg
+-
+    Artist: Luna
+    Title: Bewitched
+    Label: Elektra
+    Released: 1994
+    Thumbnail: bewitched.jpg
+-
+    Artist: M. Ward
+    Title: More Rain
+    Label: Merge
+    Released: 2016
+    Thumbnail: morerain.jpg
+-
+    Artist: M. Ward
+    Title: Post-War
+    Label: Merge
+    Released: 2006
+    Thumbnail: postwar.jpg
+-
+    Artist: Magnetic Fields, The
+    Title: Get Lost
+    Label: Merge
+    Released: 1995
+    Thumbnail: mfgetlost.jpg
+-
+    Artist: Magnetic Fields, The
+    Title: 69 Love Songs
+    Label: Merge
+    Released: 1999
+    Thumbnail: mf69.jpg
+-
+    Artist: Magnolia Electric Co.
+    Title: Josephine
+    Label: Secretly Canadian
+    Released: 2009
+    Thumbnail: josephine.jpg
+-
+    Artist: Manta Ray
+    Title: Estratexa
+    Label: Acuarela
+    Released: 2003
+    Thumbnail: estratexa.jpg
+-
+    Artist: Marianne Faithfull
+    Title: Broken English
+    Label: Island
+    Released: 1979
+    Thumbnail: brokenenglish.jpg
+-
+    Artist: Marvin Gaye
+    Title: 'What''s Going On'
+    Label: Motown
+    Released: 1971
+    Thumbnail: marvin.jpg
+-
+    Artist: Massive Attack
+    Title: Massive Attack
+    Label: Wild Bunch
+    Released: 1991
+    Thumbnail: massiveattack.jpg
+-
+    Artist: Michael Kiwanuka
+    Title: Kiwanuka
+    Label: Interscope
+    Released: 2019
+    Thumbnail: kiwanuka.jpg
+-
+    Artist: Micheal Kiwanuka
+    Title: Love And Hate
+    Label: Interscope
+    Released: 2016
+    Thumbnail: lovehate.jpg
+-
+    Artist: Miles Davis
+    Title: Kind of Blue
+    Label: Columbia
+    Released: 1959
+    Thumbnail: milesblue.jpg
+-
+    Artist: Mitch Ryder
+    Title: Breakout
+    Label: Sundazed
+    Released: 1966
+    Thumbnail: breakout.jpg
+-
+    Artist: Modern Lovers, The
+    Title: The Modern Lovers
+    Label: Castle Us
+    Released: 1976
+    Thumbnail: modernlovers.jpg
+-
+    Artist: Morrissey
+    Title: Viva Hate
+    Label: Sire
+    Released: 1988
+    Thumbnail: vivahate.jpg
+-
+    Artist: My Morning Jacket
+    Title: Z
+    Label: Ato
+    Released: 2005
+    Thumbnail: z.jpg
+-
+    Artist: National, The
+    Title: High Violet
+    Label: 4AD
+    Released: 2010
+    Thumbnail: highviolet.jpg
+-
+    Artist: Neil Young
+    Title: Harvest
+    Label: Reprise
+    Released: 1972
+    Thumbnail: harvest.jpg
+-
+    Artist: Neil Young
+    Title: Everybody Knows This Is Nowhere
+    Label: Reprise
+    Released: 1969
+    Thumbnail: nyeverybody.jpg
+-
+    Artist: Neutral Milk Hotel
+    Title: In The Aeroplane Over The Sea
+    Label: Merge
+    Released: 1998
+    Thumbnail: neutralmilk.jpg
+-
+    Artist: New Order
+    Title: Low-Life
+    Label: Warner
+    Released: 1985
+    Thumbnail: neworderlow.jpg
+-
+    Artist: New Order
+    Title: World in Motion
+    Label: Factory
+    Released: 1990
+    Thumbnail: neworderworld.jpg
+-
+    Artist: New Pornographers, The
+    Title: Electric Version
+    Label: Matador
+    Released: 2003
+    Thumbnail: electricversion.jpg
+-
+    Artist: Nick Cave and the Bad Seeds
+    Title: Murder Ballads
+    Label: Mute
+    Released: 1995
+    Thumbnail: murderballads.jpg
+-
+    Artist: Nick Cave and the Bad Seeds
+    Title: The Good Son
+    Label: BMG
+    Released: 1990
+    Thumbnail: thegoodson.jpg
+-
+    Artist: Nick Cave and the Bad Seeds
+    Title: 'The Boatman''s Call'
+    Label: Mute
+    Released: 1997
+    Thumbnail: boatmanscall.jpg
+-
+    Artist: Nick Drake
+    Title: Pink Moon
+    Label: Island
+    Released: 1972
+    Thumbnail: pinkmoon.jpg
+-
+    Artist: Nick Lowe
+    Title: Jesus of Cool
+    Label: Yep Roc
+    Released: 1978
+    Thumbnail: jesusofcool.jpg
+-
+    Artist: Nosoträsh
+    Title: Mi vida en un fin de semana
+    Label: Elefant
+    Released: 2004
+    Thumbnail: nosotrashvida.jpg
+-
+    Artist: Ocean Colour Scene
+    Title: Hundred Mile High City
+    Label: MCA
+    Released: 1997
+    Thumbnail: ocs.jpg
+-
+    Artist: Otis Redding
+    Title: The Dock of the Bay
+    Label: Sundazed
+    Released: 1968
+    Thumbnail: otis.jpg
+-
+    Artist: Patrullero Mancuso
+    Title: Tortilla Estatal
+    Label: Elefant
+    Released: 1997
+    Thumbnail: tortilla.jpg
+-
+    Artist: Patrullero Mancuso
+    Title: Bodegon Musical
+    Label: Elefant
+    Released: 1999
+    Thumbnail: bodegon.jpg
+-
+    Artist: Patti Smith
+    Title: Horses
+    Label: Arista
+    Released: 1975
+    Thumbnail: horses.jpg
+-
+    Artist: Pavement
+    Title: Slanted & Enchanted
+    Label: Matador
+    Released: 1992
+    Thumbnail: slanted.jpg
+-
+    Artist: Pavement
+    Title: Brighten the Corners
+    Label: Matador
+    Released: 1997
+    Thumbnail: pavementbrighten.jpg
+-
+    Artist: Pernice Brothers, The
+    Title: Yours, Mine & Ours
+    Label: Ashmont
+    Released: 2003
+    Thumbnail: perniceyours.jpg
+-
+    Artist: Pernice Brothers, The
+    Title: Overcome By Happiness
+    Label: New West
+    Released: 2023
+    Thumbnail: perniceovercome.jpg
+-
+    Artist: Phosphorescent
+    Title: Muchacho
+    Label: DEAD OCEANS
+    Released: 2013
+    Thumbnail: muchacho.jpg
+-
+    Artist: Pink Floyd
+    Title: A Nice Pair
+    Label: EMI
+    Released: 1973
+    Thumbnail: pinkfloydpair.jpg
+-
+    Artist: Pixies
+    Title: Doolittle
+    Label: 4AD
+    Released: 1989
+    Thumbnail: doolittle.jpg
+-
+    Artist: PJ Harvey
+    Title: Rid Of Me
+    Label: Island
+    Released: 1992
+    Thumbnail: ridofme.jpg
+-
+    Artist: Plushgun
+    Title: Pins & Panzers
+    Label: Tommy Boy
+    Released: 2009
+    Thumbnail: plushgun.jpg
+-
+    Artist: Portishead
+    Title: Dummy
+    Label: Go! Beat
+    Released: 1994
+    Thumbnail: portisheaddummy.jpg
+-
+    Artist: Prefab Sprout
+    Title: Steve McQueen
+    Label: Sub Pop
+    Released: 2012
+    Thumbnail: steve.jpg
+-
+    Artist: Prefab Sprout
+    Title: Steve McQueen Acoustic
+    Label: Kitchenware
+    Released: 2023
+    Thumbnail: steveacoustic.jpg
+-
+    Artist: Prince & the Revolution
+    Title: Purple Rain
+    Label: Warner
+    Released: 1984
+    Thumbnail: purplerain.jpg
+-
+    Artist: R.E.M.
+    Title: Out of Time
+    Label: Warner
+    Released: 1991
+    Thumbnail: outoftime.jpg
+-
+    Artist: R.E.M.
+    Title: Automatic For The People
+    Label: Warner
+    Released: 1992
+    Thumbnail: remautomatic.jpg
+-
+    Artist: R.E.M.
+    Title: Murmur
+    Label: IRS
+    Released: 1983
+    Thumbnail: murmur.jpg
+-
+    Artist: Raincoats, The
+    Title: The Raincoats
+    Label: Rough Trade
+    Released: 1979
+    Thumbnail: raincoats.jpg
+-
+    Artist: Ramones
+    Title: Ramones
+    Label: Sire
+    Released: 1976
+    Thumbnail: ramones.jpg
+-
+    Artist: Randy Newman
+    Title: Sail Away
+    Label: Reprise
+    Released: 1972
+    Thumbnail: sailaway.jpg
+-
+    Artist: Rare Earth
+    Title: Get Ready
+    Label: Motown
+    Released: 1969
+    Thumbnail: getready.jpg
+-
+    Artist: Replacements, The
+    Title: Pleased to Meet Me
+    Label: Sire
+    Released: 1990
+    Thumbnail: pleasedto.jpg
+-
+    Artist: Replacements, The
+    Title: Let It Be
+    Label: Twin/Tone
+    Released: 1984
+    Thumbnail: replacementslet.jpg
+-
+    Artist: Richmond Fontaine
+    Title: The Fitzgerald
+    Label: El Cortez
+    Released: 2005
+    Thumbnail: fitzgerald.jpg
+-
+    Artist: Rickie Lee Jones
+    Title: Rickie Lee Jones
+    Label: Warner
+    Released: 1979
+    Thumbnail: rljones.jpg
+-
+    Artist: Rockpile
+    Title: Seconds of Pleasure
+    Label: Yep Roc
+    Released: 1980
+    Thumbnail: rockpile.jpg
+-
+    Artist: Rodriguez
+    Title: Cold Fact
+    Label: Light In The Attic
+    Released: 1970
+    Thumbnail: rodriguez.jpg
+-
+    Artist: Rolling Stones
+    Title: Some Girls
+    Label: Rolling Stones Rec
+    Released: 1978
+    Thumbnail: somegirls.jpg
+-
+    Artist: Rolling Stones
+    Title: Beggars Banquet
+    Label: ABKCO
+    Released: 1968
+    Thumbnail: beggars.jpg
+-
+    Artist: Rolling Stones
+    Title: Greatest Hits
+    Label: ABKCO
+    Released: 1977
+    Thumbnail: stoneshits.jpg
+-
+    Artist: Rolling Stones
+    Title: Sticky Fingers
+    Label: ABKCO
+    Released: 1971
+    Thumbnail: sticky.jpg
+-
+    Artist: Ryan Adams
+    Title: Gimme Something Good
+    Label: Blue Note
+    Released: 2014
+    Thumbnail: gimme.jpg
+-
+    Artist: Ryan Adams
+    Title: 1984
+    Label: Caroline
+    Released: 2014
+    Thumbnail: ryan84.jpg
+-
+    Artist: Ryan Adams
+    Title: Gold
+    Label: Lost Highway
+    Released: 2001
+    Thumbnail: gold.jpg
+-
+    Artist: Serge Gainsbourg
+    Title: Histoire de Melody Nelson
+    Label: Philips
+    Released: 1971
+    Thumbnail: melodynelson.jpg
+-
+    Artist: She & Him
+    Title: A Very She & Him Christmas
+    Label: Merge
+    Released: 2011
+    Thumbnail: shehim.jpg
+-
+    Artist: Shins, The
+    Title: Chutes Too Narrow
+    Label: Sub Pop
+    Released: 2003
+    Thumbnail: chutes.jpg
+-
+    Artist: Shirelles, The
+    Title: 'Baby It''s You'
+    Label: Sundazed
+    Released: 1962
+    Thumbnail: shirelles.jpg
+-
+    Artist: Smithereens, The
+    Title: Green Thoughts
+    Label: Capitol
+    Released: 1988
+    Thumbnail: greenthoughts.jpg
+-
+    Artist: Smog
+    Title: Knock Knock
+    Label: Drag City
+    Released: 2008
+    Thumbnail: knockknock.jpg
+-
+    Artist: Sonic Youth
+    Title: Evol
+    Label: SST
+    Released: 1986
+    Thumbnail: evol.jpg
+-
+    Artist: Spiritualized
+    Title: Ladies and gentlemen we are floating in space
+    Label: Dedicated
+    Released: 1997
+    Thumbnail: spiritualized.jpg
+-
+    Artist: Spring
+    Title: Last Goodbye
+    Label: Elefant
+    Released: 2000
+    Thumbnail: springlast.jpg
+-
+    Artist: Sr. Chinarro
+    Title: El mundo según
+    Label: Mushroom Pillow
+    Released: 2006
+    Thumbnail: chinarro.jpg
+-
+    Artist: Stephen Stills
+    Title: Stephen Stills 2
+    Label: Atlantic
+    Released: 1971
+    Thumbnail: stills2.jpg
+-
+    Artist: Stephen Stills
+    Title: Stephen Stills
+    Label: Atlantic
+    Released: 1970
+    Thumbnail: stills.jpg
+-
+    Artist: Stereolab
+    Title: Emperor Tomato Ketchup
+    Label: Duophonic
+    Released: 1996
+    Thumbnail: stereolab.jpg
+-
+    Artist: Stevie Nicks & Lindsey Buckingham
+    Title: Buckingham Nicks
+    Label: Polydor
+    Released: 1973
+    Thumbnail: buckingham.jpg
+-
+    Artist: Stevie Wonder
+    Title: Innervisions
+    Label: Motown
+    Released: 1973
+    Thumbnail: innervisions.jpg
+-
+    Artist: Stone Roses, The
+    Title: Stone Roses, The
+    Label: Silvertone
+    Released: 1989
+    Thumbnail: stoneroses.jpg
+-
+    Artist: Sufjan Stevens
+    Title: Illinoise
+    Label: Ahthmatic Kitty
+    Released: 2005
+    Thumbnail: illinoise.jpg
+-
+    Artist: Suicide
+    Title: Suicide
+    Label: Red Star
+    Released: 1973
+    Thumbnail: suicide.jpg
+-
+    Artist: Talking Heads
+    Title: 77
+    Label: Sire
+    Released: 1977
+    Thumbnail: talkingheads77.jpg
+-
+    Artist: Talking Heads
+    Title: True Stories
+    Label: Sire
+    Released: 1986
+    Thumbnail: thtrue.jpg
+-
+    Artist: Teenage Fanclub
+    Title: Songs From Northern Britain
+    Label: Creation
+    Released: 1997
+    Thumbnail: teenagenorthern.jpg
+-
+    Artist: Television
+    Title: Marquee Moon
+    Label: Elektra
+    Released: 1977
+    Thumbnail: marqueemoon.jpg
+-
+    Artist: Tindersticks
+    Title: First Album
+    Label: This Way Up
+    Released: 1993
+    Thumbnail: tindersticks1.jpg
+-
+    Artist: Tom Tom Club
+    Title: Tom Tom Club
+    Label: Sire
+    Released: 1981
+    Thumbnail: tomtomclub.jpg
+-
+    Artist: Tom Waits
+    Title: The Heart of Saturday Night
+    Label: Asylum
+    Released: 1974
+    Thumbnail: waitssaturday.jpg
+-
+    Artist: Turtles, The
+    Title: Happy Together Again!
+    Label: Sire
+    Released: 1979
+    Thumbnail: turtles.jpg
+-
+    Artist: U2
+    Title: War
+    Label: Island
+    Released: 1983
+    Thumbnail: u2war.jpg
+-
+    Artist: U2
+    Title: The Joshua Tree
+    Label: Island
+    Released: 1987
+    Thumbnail: joshua.jpg
+-
+    Artist: Urusei Yatsura
+    Title: Plastic Ashtray
+    Label: Che
+    Released: 1995
+    Thumbnail: yatsura.jpg
+-
+    Artist: Vainica Doble
+    Title: En Familia
+    Label: Elefant
+    Released: 2000
+    Thumbnail: vainica.jpg
+-
+    Artist: Van Morrison
+    Title: Moondance
+    Label: Warner
+    Released: 1970
+    Thumbnail: moondance.jpg
+-
+    Artist: Van Morrison
+    Title: 'Saint Dominic''s Preview'
+    Label: Warner
+    Released: 1972
+    Thumbnail: saintdominics.jpg
+-
+    Artist: Van Morrison
+    Title: Tupelo Honey
+    Label: Warner
+    Released: 1971
+    Thumbnail: tupelo.jpg
+-
+    Artist: Various Artists
+    Title: Nuggets - Original Artyfacts From The First Psychedelic Era
+    Label: Elektra
+    Released: 1972
+    Thumbnail: nuggets.jpg
+-
+    Artist: Velvet Underground, The
+    Title: Loaded
+    Label: Cotillion
+    Released: 1970
+    Thumbnail: loaded.jpg
+-
+    Artist: Violent Femmes
+    Title: Violent Femmes
+    Label: Slash
+    Released: 1983
+    Thumbnail: violentfemmes.jpg
+-
+    Artist: Warren Zevon
+    Title: The Wind
+    Label: Artemis
+    Released: 2003
+    Thumbnail: zevonwind.jpg
+-
+    Artist: Wedding Present, The
+    Title: Take Fountain
+    Label: Scopitones
+    Released: 2005
+    Thumbnail: takefountain.jpg
+-
+    Artist: Who, The
+    Title: 'Who''s Next'
+    Label: Decca
+    Released: 1971
+    Thumbnail: whosnext.jpg
+-
+    Artist: Wilco
+    Title: Summerteeth
+    Label: Reprise
+    Released: 1999
+    Thumbnail: summerteeth.jpg
+-
+    Artist: Wilco
+    Title: Yankee Hotel Foxtrot
+    Label: Nonesuch
+    Released: 2002
+    Thumbnail: yankee.jpg
+-
+    Artist: Wilco
+    Title: A Ghost Is Born
+    Label: Nonesuch
+    Released: 2004
+    Thumbnail: aghost.jpg
+-
+    Artist: Wilco
+    Title: Schmilco
+    Label: dBpm
+    Released: 2016
+    Thumbnail: schmilco.jpg
+-
+    Artist: Wilco
+    Title: Crosseyed Strangers - An Alternate Yankee Hotel Foxtrot
+    Label: Nonesuch
+    Released: 2023
+    Thumbnail: wilcocrosseyed.jpg
+-
+    Artist: Willie Nelson
+    Title: Stardust
+    Label: Columbia
+    Released: 1978
+    Thumbnail: stardust.jpg
+-
+    Artist: Willie Nile
+    Title: Willie Nile
+    Label: Arista
+    Released: 1980
+    Thumbnail: willienile.jpg
+-
+    Artist: XTC
+    Title: English Settlement
+    Label: Columbia
+    Released: 1982
+    Thumbnail: xtc.jpg
+-
+    Artist: Yo La Tengo
+    Title: Fade
+    Label: Matador
+    Released: 2013
+    Thumbnail: fade.jpg
+-
+    Artist: Yo La Tengo
+    Title: Fakebook
+    Label: Bar/None
+    Released: 1990
+    Thumbnail: fakebook.jpg
+-
+    Artist: Yo La Tengo
+    Title: I Can Hear The Heart Beating As One
+    Label: Matador
+    Released: 1997
+    Thumbnail: icanheartheheart.jpg
+-
+    Artist: Yo La Tengo
+    Title: And Then Nothing Turned Itself Inside-Out
+    Label: Matador
+    Released: 2000
+    Thumbnail: andthennothing.jpg
+-
+    Artist: Yo La Tengo
+    Title: This Stupid World
+    Label: Matador
+    Released: 2022
+    Thumbnail: thisstupidworld.jpg
+-
+    Artist: Zombies, The
+    Title: Odessey & Oracle
+    Label: Marquis Ltd
+    Released: 1968
+    Thumbnail: zombies.jpg

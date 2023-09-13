@@ -1,0 +1,13 @@
+main:
+  - name: "Blog"
+    url: "/blog/"
+    weight: 1
+  - name: "Music"
+    url: "/music/"
+    weight: 2
+  - name: "Now"
+    url: "/now/"
+    weight: 3
+  - name: "About"
+    url: "/about/"
+    weight: 4

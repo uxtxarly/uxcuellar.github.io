@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Music"
+heading: "Music"
+description: "Recent podcasts, records collected and songs listened."
+---
+
+<main>
+  {% include heading.html heading=page.heading %}
+  <div class="lg:flex mb-3">
+    <main class="lg:w-2/3 pr-8"> 
+      <article class="prose dark:prose-invert">
+        <blockquote>What came first, the music or the misery?</blockquote>
+        <p>If you know where that quote comes from, we are going to be friends! I am a huge music nerd, a record collector and a retired amateur DJ. Today, I spend my time listening to alternative rock, but my taste is quite eclectic.</p>
+      </article>
+      <article class="prose dark:prose-invert">
+        <h2 class="text-2xl font-semibold mt-6">Experiment in Terror</h2>
+        <p><strong>Experiment in Terror</strong> is a new podcast where I play music and I don't talk! I don't know if that makes this a podcast or just a collection of mixes, but it's fun to put together an hour of music I like. I started this project on <a href="https://www.mixcloud.com/txarly_spins" rel="me">Mixcloud</a> but I quickly realized that, for easier distribution, it's better to publish this as a regular show in <a href="https://podcasts.apple.com/us/podcast/experiment-in-terror/id1705297692" rel="me">Apple Podcasts</a>, <a href="https://open.spotify.com/show/35sLR8Yz2JWLwRSNnzISvH" rel="me">Spotify</a> and the rest of podcast platforms.</p>
+        <p>You can listen to <em>Experiment in Terror</em> here, and if you like it and you want to follow me, please subscribe wherever you listen to your podcasts:</p>
+      </article>
+      <ul class="inline">
+        {% for item in site.data.podcasts %}
+          <li class="inline-block px-2 py-4">
+            <a rel="me" href="{{ item.link }}">
+              {{ item.image }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <section class="mt-16">
+        {% for show in site.shows reversed %}
+          {% include summary-shows.html show=show %}
+        {% endfor %}
+      </section>
+    </main> 
+    <aside class="lg:w-1/3">
+      <section>
+        <h3 class="text-2xl font-semibold py-6 border-t border-zinc-200 dark:border-zinc-700/80">Recently Played</h3>
+        <a href="https://www.last.fm/user/txarly"><img src="https://lastfm-recently-played.vercel.app/api?user=txarly&amp;count=7&amp;width=360" height="auto" width="420px" loading="lazy" alt="list of my recently played tracks on last.fm"></a>
+      </section>
+      <section>
+        <h3 class="text-2xl font-semibold py-6 border-t border-zinc-200 dark:border-zinc-700/80 mt-12"><a href="records">Records Collected <span>&rarr;</span></a></h3>
+        <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
+          {% for item in site.data.records.main limit:6 %}
+            <img src="/assets/images/records/{{ item.Thumbnail }}" alt="record by {{ item.Artist }}" width="160px" loading="lazy" class="rounded">
+          {% endfor %}
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
