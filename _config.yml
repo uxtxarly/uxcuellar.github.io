@@ -102,7 +102,7 @@ exclude:
 
 # Prose Config
 prose:
-  siteurl: "http://cuellar.fr"
+  siteurl: "https://cuellar.fr"
   media: "/assets/images"
   rooturl: "/collections/_posts"
   metadata:
