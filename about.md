@@ -21,6 +21,8 @@ You can check the source code at this [Github](https://github.com/cuellarfr/cuel
 
 Both the [content](https://creativecommons.org/licenses/by-sa/4.0/) and the [code](https://github.com/cuellarfr/cuellarfr.github.io/blob/master/LICENSE.md) created by me in this website is open source. Any other external content shared here is property of their respective owners.
 
+**THIS WEBSITE DOESN'T TRACK YOU**. There are no third-party cookies here, and your data isn’t collected while browsing this site.
+
 ## Get in touch
 - Send me an email: [carlos@cuellar.fr](mailto:carlos@cuellar.fr)
 - Follow me on [Mastodon](https://social.vivaldi.net/@cuellarfr), [Threads](https://www.threads.net/@cuellarfr) or [LinkedIn](https://www.linkedin.com/in/cuellarfr).
