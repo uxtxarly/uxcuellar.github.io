@@ -1,0 +1,26 @@
+---
+layout: default
+description: A personal blog about design, technology, music and procrastination.
+---
+
+<section>
+  <header class="hero p-note">
+    <h1>¡Hola!</h1>
+    <h2 class="h4">I'm Carlos Cuéllar, a Spanish-American UX Designer based in Portland, OR.</h2>
+    <br>
+    <p>In this site I collect <a href="/blog">notes and links</a> about design, technology and music. I also show some of <a href="/work">my work.</a></p>
+  </header>
+  <div class="intro">
+    <h2>Recent posts and links:</h2>
+    <ul class="listing">
+    {% for post in site.posts limit:5 %}
+      {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+        <li class="" itemscope itemtype="http://schema.org/Article">
+          <time datetime="{{ post.date | date_to_xmlschema }}" >{{ post.date | date: "%b %d, %y " }}</time>:
+          <span itemprop="name" class="is-bold"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+        </li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</section>
