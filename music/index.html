@@ -42,7 +42,7 @@ description: "Recent podcasts, records collected and songs listened."
         <h3 class="text-2xl font-bold hover:text-teal-500 dark:hover:text-teal-400 py-6 py-6 border-t border-zinc-200 dark:border-zinc-700/80 mt-12"><a href="records">Records Collected</a></h3>
         <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
           {% for item in site.data.records.main limit:6 %}
-            <img src="/assets/images/records/{{ item.Thumbnail }}" alt="record by {{ item.Artist }}" width="160px" loading="lazy" class="rounded">
+            <a href="records"><img src="/assets/images/records/{{ item.Thumbnail }}" alt="record by {{ item.Artist }}" width="160px" loading="lazy" class="rounded"></a>
           {% endfor %}
         </div>
       </section>
