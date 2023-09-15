@@ -94,7 +94,7 @@ Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliqua
 Your browser does not support the video tag.
 </video>
 
-<audio controls>
+<audio controls preload="none">
   <source src="https://www.ivoox.com/experiment-in-terror-1_mh_115249402_feed_1.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
