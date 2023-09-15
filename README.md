@@ -10,7 +10,7 @@ If this is your first time using Jekyll, please follow the [Jekyll docs](https:/
 
 Download or clone this repository
 
-To run the theme locally, navigate to the theme directory and run:
+To run the website locally, navigate to the directory and run:
 
 To use Tailwind and PostCSS:
 
