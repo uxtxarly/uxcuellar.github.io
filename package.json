@@ -5,7 +5,8 @@
   "dependencies": {
     "cssnano": "^5.0.6",
     "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6"
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.3.3"
   },
   "author": "carlos@cuellar.fr",
   "license": "MIT",
