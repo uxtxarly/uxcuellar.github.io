@@ -27,7 +27,7 @@
   </p>
   <p>Tags:
   {% for tags in page.tags %}
-    <em class="p-category">{{ tags }}</em>
+    <a href="/blog/archive#{{ tags }}">{{ tags }}</a>
   {% endfor %}
   </p>
 </div>

@@ -7,28 +7,72 @@ sitemap: false
 ---
 
 {% include heading.html heading=page.heading %}
+<main class="lg:flex">
 
-<section role="region" class="prose dark:prose-invert" itemscope itemtype="http://schema.org/CollectionPage">
-  <p>This is a list of all the <strong>posts</strong> published on this site, listed by date.</p>
-  <div itemprop="mainContentOfPage">
-    <ul>
-      {% for post in site.posts %}
-        {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
-        {% unless post.link %}
-          {% unless month == post_month %}
-            {% assign month = post_month %}
-            <li>
-              <h3>{{ month }}</h3>
+  <section class="lg:w-1/2 pr-8 prose dark:prose-invert" role="region" itemscope itemtype="http://schema.org/CollectionPage">
+    <h2 class="text-3xl font-bold py-6 border-t border-zinc-200 dark:border-zinc-700/80">Posts by date</h2>
+    <div itemprop="mainContentOfPage">
+      <ul>
+        {% for post in site.posts %}
+          {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+          {% unless post.link %}
+            {% unless month == post_month %}
+              {% assign month = post_month %}
+              <li class="list-none mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80"> 
+                <h3>{{ month }}</h3>
+            {% endunless %}
           {% endunless %}
-        {% endunless %}
-        {% unless post.link %}
-          <div itemscope itemtype="http://schema.org/Article">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
-            <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
-          </div>
-        {% endunless %}
+          {% unless post.link %}
+            <div itemscope itemtype="http://schema.org/Article">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
+              <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+            </div>
+          {% endunless %}
+        {% endfor %}
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lg:w-1/2 prose dark:prose-invert" role="region"  itemscope itemtype="http://schema.org/CollectionPage">
+    <h2 class="text-3xl font-bold py-6 border-t border-zinc-200 dark:border-zinc-700/80" id="tag-cloud">Posts by tag</h2>
+    {% assign tags_max = 0 %}
+    {% for tag in site.tags %}
+      {% if tag[1].size > tags_max %}
+        {% assign tags_max = tag[1].size %}
+      {% endif %}
+    {% endfor %}
+
+    <p class="text-center leading-10">
+      {% for i in (1..tags_max) reversed %}
+        {% for tag in site.tags %}
+          {% if tag[1].size == i %}
+              <a href="#{{ tag[0] | slugify }}" class="inline-block px-4 py-1 m-1 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 rounded-full transition duration-300 ease-in-out">
+                {{ tag[0] }} &middot; {{ i }}
+              </a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-      </li>
-    </ul>
-  </div>
-</section>
+    </p>
+
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    {% for i in (1..tags_max) reversed %}
+      {% for tag in site.tags %}
+        {% if tag[1].size == i %}
+          <article id="{{ tag[0] | slugify | downcase }}" class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
+            <h3>{{ tag[0] }}</h3>
+            <div class="entries-{{ entries_layout }}">
+              {% for post in tag.last %}
+              <div itemscope itemtype="http://schema.org/Article">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
+                <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
+              </div>
+              {% endfor %}
+            </div>
+            <a href="#tag-cloud" class="text-sm pt-3">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </section>
+</main>
