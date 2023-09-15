@@ -1,5 +1,9 @@
 This is the source code for my personal website, [cuellar.fr](https://cuellar.fr).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a6afc40-2a80-4427-9ae3-89136fa8bbe3/deploy-status)](https://app.netlify.com/sites/cuellarfr/deploys)
+
+---
+
 ## Installation
 
 ### Installing Ruby & Jekyll
