@@ -10,7 +10,7 @@ This is the source code for my personal website, [cuellar.fr](https://cuellar.fr
  
 If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
 
-### Installing Theme
+### Installing the repo
 
 Download or clone this repository
 
