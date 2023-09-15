@@ -1,8 +1,7 @@
 ---
 layout: post
 title: To blog or not to blog
-tags:
-- blogs
+tags: [blogs]
 authors: ["carlos"]
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Las Vegas, NV
-tags:
-- travel
+tags: [travel]
 authors: ["carlos"]
 ---
 <img src="/assets/images/184.jpg" />

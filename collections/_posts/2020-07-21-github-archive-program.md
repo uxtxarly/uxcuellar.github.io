@@ -4,8 +4,7 @@ published: true
 title: "GitHub Archive Program" 
 date: 2020-07-21T15:51:41.536Z 
 link: https://github.blog/2020-07-16-github-archive-program-the-journey-of-the-worlds-open-source-code-to-the-arctic/ 
-tags:
-  - links
+tags: [social]
 image: /assets/images/github_archive.png
 authors: ["carlos"]
 ---

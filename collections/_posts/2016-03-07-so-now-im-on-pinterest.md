@@ -1,7 +1,7 @@
 ---
 layout: post
 title: So now I'm on Pinterest
-tags: pinterest, resources
+tags: [social]
 description: 
 authors: ["carlos"]
 ---

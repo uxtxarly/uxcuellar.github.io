@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Portland, OR
-tags:
-- travel
-- oregon
+tags: [travel]
 authors: ["carlos"]
 ---
 

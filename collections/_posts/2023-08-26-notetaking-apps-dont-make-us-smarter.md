@@ -2,7 +2,7 @@
 layout: post
 title: Why note-taking apps don't make us smarter
 link: 'https://www.platformer.news/p/why-note-taking-apps-dont-make-us'
-tags: pkm, productivity, apps
+tags: [productivity, software]
 description:
 authors: ["carlos"]
 ---

@@ -2,8 +2,7 @@
 layout: post
 published: true
 title:  "Seattle, WA"
-link: 
-tags: travel, pictures
+tags: [travel]
 authors: ["carlos"]
 ---
 

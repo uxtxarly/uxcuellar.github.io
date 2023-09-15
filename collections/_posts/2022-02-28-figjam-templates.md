@@ -3,7 +3,7 @@ layout: post
 published: true
 title: FigJam Templates
 link: 'https://www.figma.com/@cuellarfr'
-tags: ux, resources, figjam
+tags: [software, resources]
 description: A small collection of templates for FigJam
 authors: ["carlos"]
 ---

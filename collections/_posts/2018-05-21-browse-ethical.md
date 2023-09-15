@@ -3,7 +3,7 @@ layout: post
 published: true
 title:  "Browse ethical"
 link: 
-tags: tech, software
+tags: [tools, software]
 authors: ["carlos"]
 ---
 

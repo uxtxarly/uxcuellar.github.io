@@ -3,7 +3,7 @@ layout: post
 title: How they got there
 link: http://howtheygotthere.us/
 published: True
-tags: design, careers
+tags: [design]
 authors: ["carlos"]
 ---
 

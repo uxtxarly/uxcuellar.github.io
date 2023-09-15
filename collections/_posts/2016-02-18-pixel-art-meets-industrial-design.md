@@ -2,7 +2,7 @@
 title: Pixel Art Meets Industrial Design
 layout: post
 link: https://www.instagram.com/jung_soo_park/
-tags: design
+tags: [design]
 authors: ["carlos"]
 ---
 

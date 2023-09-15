@@ -1,10 +1,7 @@
 ---
 layout: post
 title: I refactored CSS for 9 months and I survived
-tags:
-- css
-- refactor
-- web development
+tags: [development]
 authors: ["carlos"]
 ---
 

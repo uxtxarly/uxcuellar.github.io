@@ -4,8 +4,7 @@ published: true
 title: "50 years of frog design"
 date: 2019-06-27T23:27:21.798Z
 link: https://www.frogdesign.com/gallery
-tags:
-  - links
+tags: [design]
 authors: ["carlos"]
 ---
 

@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Eames Timeline
-tags:
-- eames
-- product design
-- architecture
+tags: [product, architecture]
 authors: ["carlos"]
 image: /assets/images/146.png
 ---

@@ -3,7 +3,7 @@ layout: post
 published: true
 title:  "Mozart in the Jungle"
 link: http://chips.nyc/work/mozart-in-the-jungle-season-two/
-tags: animation, graphic design
+tags: [animation, graphics]
 authors: ["carlos"]
 ---
 

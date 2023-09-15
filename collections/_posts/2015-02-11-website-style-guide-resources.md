@@ -3,7 +3,7 @@ layout: post
 title: Website Style Guide Resources
 link: "http://styleguides.io/"
 published: True
-tags: design, resources
+tags: [design, resources]
 authors: ["carlos"]
 ---
 

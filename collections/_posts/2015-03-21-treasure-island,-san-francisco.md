@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "Treasure Island, San Francisco"
-tags: travel, pictures
+tags: [travel]
 authors: ["carlos"]
 ---
 

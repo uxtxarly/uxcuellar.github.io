@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Cupertino, CA
-tags:
-- apple
-- travel
-- california
+tags: [travel]
 authors: ["carlos"]
 ---
 <img src="/assets/images/181.jpg" />

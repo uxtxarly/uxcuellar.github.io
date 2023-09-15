@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Next Chapter
-tags: 'work, ux'
+tags: [design, me]
 description: 
 authors: ["carlos"]
 ---

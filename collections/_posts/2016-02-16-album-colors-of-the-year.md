@@ -2,7 +2,7 @@
 title: Album Colors Of The Year
 layout: post
 link: http://albumcolors.com/
-tags: music, graphic design
+tags: [music, graphics]
 authors: ["carlos"]
 ---
 ![album colors](/assets/images/albumcolors.jpg)

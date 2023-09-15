@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Spanish vintage posters
-tags:
-- vintage
-- graphics
+tags: [graphics]
 authors: ["carlos"]
 ---
 <img src="/assets/images/144.jpg" />

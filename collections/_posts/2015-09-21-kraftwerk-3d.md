@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "Kraftwerk 3D"
-tags: music, concert, pictures
+tags: [music]
 authors: ["carlos"]
 image: /assets/images/kraftwerk_1.jpg
 ---

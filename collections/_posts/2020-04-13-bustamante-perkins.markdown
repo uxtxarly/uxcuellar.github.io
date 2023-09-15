@@ -3,7 +3,7 @@ layout: post
 title: "Bustamante Perkins"
 date: "2020-04-13 17:32:56 -0700"
 link: https://vimeo.com/89725380
-tags: music
+tags: [music, video]
 authors: ["carlos"]
 ---
 

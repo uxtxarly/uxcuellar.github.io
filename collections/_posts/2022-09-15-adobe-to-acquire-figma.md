@@ -2,7 +2,7 @@
 layout: post
 title: Adobe to acquire Figma in a deal worth $20 billion
 link: 'https://www.theverge.com/2022/9/15/23354532/adobe-figma-acquisition-20-billion-official'
-tags: figma, adobe, design, resources
+tags: [design, software]
 authors: ["carlos"]
 ---
 

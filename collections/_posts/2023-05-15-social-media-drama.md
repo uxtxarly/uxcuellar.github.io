@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social media drama
-tags: twitter, mastodon, activitypub, social media
+tags: [social]
 description: Some thoughts about the death of my Twitter account and where to go next.
 authors: ["carlos"]
 ---

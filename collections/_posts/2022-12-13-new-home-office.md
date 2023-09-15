@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New home office
-tags: work, home office
+tags: [me, setup]
 description: Welcome to the Cuellar.fr corporate office
 authors: carlos
 ---
