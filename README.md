@@ -14,7 +14,7 @@ If this is your first time using Jekyll, please follow the [Jekyll docs](https:/
 
 Download or clone this repository
 
-To run the website locally, navigate to the directory and run:
+To run the website locally, navigate to its directory and run:
 
 To use Tailwind and PostCSS:
 
@@ -32,7 +32,7 @@ To start the Jekyll local development server.
 bundle exec jekyll serve
 ``` 
 
-To build the theme.
+To build the website.
  
 ```
 bundle exec jekyll build
