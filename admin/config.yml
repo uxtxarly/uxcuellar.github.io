@@ -25,7 +25,7 @@ collections:
   - name: 'shows'
     label: 'Shows'
     label_singular: 'Show'
-    folder: 'collections/_posts/'
+    folder: 'collections/_shows/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
