@@ -101,36 +101,6 @@ exclude:
   - tailwind.config.js
   - netlify.toml
 
-# Prose Config
-prose:
-  siteurl: "https://cuellar.fr"
-  media: "/assets/images"
-  rooturl: "/collections/_posts"
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "link"
-        field:
-          element: "text"
-          label: "link"
-      - name: "tags"
-        field:
-          element: "text"
-          label: "tags"
-          help: "separated by commas"
-      - name: "description"
-        field:
-          element: "textarea"
-          label: "description"
-          help: "no more than 160 characters, use primary keywords for SEO"
-
 # Mastodon Webfinger
 mastodon:
   username: cuellarfr
