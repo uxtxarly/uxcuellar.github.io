@@ -5,32 +5,17 @@ media_folder: 'assets/images'
 collections:
   - name: 'posts'
     label: 'Posts'
-    folder: 'collections/_posts'
+    folder: 'collections/_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'hidden', default: 'carlos' }
-      - { label: 'Link', name: 'link', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'image', widget: 'image'}
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-    - name: 'shows'
-      label: 'Shows'
-      folder: 'collections/_shows'
-      create: true
-      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-      editor:
-        preview: false
-      fields:
-        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Author', name: 'author', widget: 'hidden', default: 'carlos' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-        - { label: 'Featured Image', name: 'image', widget: 'image'}
-        - { label: 'Body', name: 'body', widget: 'markdown' }
