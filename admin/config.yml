@@ -20,6 +20,7 @@ collections:
       - { label: 'Featured Image', name: 'image', widget: 'image'}
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       
   - name: 'shows'
@@ -38,4 +39,19 @@ collections:
       - { label: 'Featured Image', name: 'image', widget: 'image'}
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'updates'
+    label: 'Updates'
+    label_singular: 'Update'
+    folder: 'collections/_updates/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
