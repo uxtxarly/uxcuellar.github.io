@@ -19,9 +19,9 @@ heading: "Blog"
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
+    <a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
     {% else %}
-    <a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
+    <a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
     {% endif %}
   {% endif %}
 </nav>
