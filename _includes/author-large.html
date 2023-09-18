@@ -8,14 +8,14 @@
   {% endif %}
   <div>
     <span class="font-medium text-sm ml-1 block">{{ author_object.name }}</span>
-    <a class="text-sm ml-1 block text-teal-400" href="https://social.vivaldi.net/{{ author_object.twitter }}">{{ author_object.twitter }}</a>
+    <a class="text-sm ml-1 block text-teal-700 dark:text-teal-500 hover:text-teal-600 dark:hover:text-teal-400" href="https://social.vivaldi.net/{{ author_object.twitter }}">{{ author_object.twitter }}</a>
   </div>
 
 {% endif %}
   
 </div>
 
-<div class="font-medium text-sm ml-1 pl-12 text-slate-400 dark:text-slate-500"> 
+<div class="font-medium text-sm ml-1 pl-12 text-slate-600 dark:text-slate-400"> 
   <p class="reading-time" title="Estimated read time">
     Reading time:
     {% assign words = content | number_of_words %}
@@ -27,7 +27,7 @@
   </p>
   <p>Tags:
   {% for tags in page.tags %}
-    <a class="text-teal-400" href="/archive#{{ tags }}">{{ tags }}</a>
+    <a class="text-teal-700 dark:text-teal-500 hover:text-teal-600 dark:hover:text-teal-400" href="/archive#{{ tags }}">{{ tags }}</a>
   {% endfor %}
   </p>
 </div>

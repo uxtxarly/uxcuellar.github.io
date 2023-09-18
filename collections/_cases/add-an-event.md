@@ -11,7 +11,7 @@ sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
 
-<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/add-an-event/index.html#/screens">View Desktop Prototype</a>
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/add-an-event/index.html#/screens">View Desktop Prototype</a>
 
 ### TLDR: A quick summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
@@ -99,4 +99,4 @@ This was a big project for everybody: designers, front-end and back-end develope
 Developers are your friends! It doesn't matter how good your design is if it can't be implemented. Keep fluid communication with all the actors involved and validate your designs early and often.
 
 <hr>
-<a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-zinc-800/90 ring-1 ring-zinc-900/5 dark:ring-white/10 hover:ring-zinc-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
