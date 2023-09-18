@@ -1,6 +1,6 @@
 <article class="lg:flex mb-12" role="article" itemscope itemtype="http://schema.org/Article">
   <aside class="lg:w-1/4 lg:px-4 lg:py-2 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80 mb-3">
-    <div class="text-sm text-zinc-400 dark:text-zinc-500"><a href="{{ post.url | relative_url }}" class="hover:text-teal-500 dark:hover:text-teal-400">{{ post.date | date_to_long_string }}</a> &middot; <a href="{{ post.url | relative_url }}" class="hover:text-teal-400" itemprop="url" title="Permalink">∞</a>
+    <div class="text-sm text-slate-400 dark:text-slate-500"><a href="{{ post.url | relative_url }}" class="hover:text-teal-500 dark:hover:text-teal-400">{{ post.date | date_to_long_string }}</a> &middot; <a href="{{ post.url | relative_url }}" class="hover:text-teal-400" itemprop="url" title="Permalink">∞</a>
     </div>
   </aside>
   <main class="lg:w-2/4">
@@ -11,6 +11,6 @@
         <h2 class="text-xl  font-bold mb-1">{{ post.title }}</h2>
       </a>
     {% endif %}
-    <p class="text-base text-zinc-600 dark:text-zinc-500 mb-4">{{ post.content | strip_html | truncatewords: 25 }}</p>
+    <p class="text-base text-slate-600 dark:text-slate-500 mb-4">{{ post.content | strip_html | truncatewords: 25 }}</p>
   </main>
 </article>
