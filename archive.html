@@ -29,6 +29,49 @@ sitemap: false
       </ul>
     </div>
     <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
+
+    <h2 class="text-3xl font-bold py-6 border-t border-zinc-200 dark:border-zinc-700/80" id="date-list">Shows by date</h2>
+    <div itemprop="mainContentOfPage">
+      <ul class="pl-0">
+        {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
+        {% for show in sorted_shows %}
+          {% capture show_month %}{{ show.date | date: "%B %Y" }}{% endcapture %}
+            {% unless month == show_month %}
+              {% assign month = show_month %}
+              <li class="list-none mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80"> 
+                <h3>{{ month }}</h3>
+            {% endunless %}
+            <div itemscope itemtype="http://schema.org/Article">
+              <time datetime="{{ show.date | date_to_xmlschema }}">{{ show.date | date: "%b %d" }}</time>:
+              <span itemprop="name"><a rel="bookmark" href="{{ show.url }}">{{ show.title }}</a></span>
+            </div>
+        {% endfor %}
+        </li>
+      </ul>
+    </div>
+    <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
+
+    <h2 class="text-3xl font-bold py-6 border-t border-zinc-200 dark:border-zinc-700/80" id="date-list">Updates by date</h2>
+    <div itemprop="mainContentOfPage">
+      <ul class="pl-0">
+        {% assign sorted_updates = site.updates | sort: 'date' | reverse %}
+        {% for update in sorted_updates %}
+          {% capture update_month %}{{ update.date | date: "%B %Y" }}{% endcapture %}
+            {% unless month == update_month %}
+              {% assign month = update_month %}
+              <li class="list-none mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80"> 
+                <h3>{{ month }}</h3>
+            {% endunless %}
+            <div itemscope itemtype="http://schema.org/Article">
+              <time datetime="{{ update.date | date_to_xmlschema }}">{{ update.date | date: "%b %d" }}</time>:
+              <span itemprop="name"><a rel="bookmark" href="{{ update.url }}">{{ update.title }}</a></span>
+            </div>
+        {% endfor %}
+        </li>
+      </ul>
+    </div>
+    <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
+
   </section>
 
   <section class="lg:w-1/2 prose dark:prose-invert" role="region"  itemscope itemtype="http://schema.org/CollectionPage">
@@ -61,7 +104,7 @@ sitemap: false
             <div class="entries-{{ entries_layout }}">
               {% for post in tag.last %}
               <div itemscope itemtype="http://schema.org/Article">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d %Y" }}</time>:
                 <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
               </div>
               {% endfor %}
