@@ -118,14 +118,14 @@ sitemap: false
         {% if tag[1].size == i %}
           <article id="{{ tag[0] | slugify | downcase }}" class="mb-6 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/80">
             <h3>{{ tag[0] }}</h3>
-            <div class="entries-{{ entries_layout }}">
+            <ul class="entries-{{ entries_layout }} list-none pl-0">
               {% for post in tag.last %}
-              <div itemscope itemtype="http://schema.org/Article">
+              <li itemscope itemtype="http://schema.org/Article">
                 <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d %Y" }}</time>:
                 <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
-              </div>
+              </li>
               {% endfor %}
-            </div>
+            </ul>
             <a href="#tag-cloud" class="text-sm pt-3">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
           </article>
         {% endif %}
