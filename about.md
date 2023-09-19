@@ -1,23 +1,23 @@
 ---
 layout: basic
-title: "About"
+title: "About Me"
 permalink: "/about/"
-description: "Some basic info about me and this website"
+description: "I'm a User Experience Designer based in Portland, OR"
 ---
 
-## About me
+<img src="/assets/images/141.jpg" alt="picture with my dog" class="portrait of carlos cuellar" class="aspect-square rotate-3 rounded-2xl bg-slate-100 object-cover dark:bg-slate-800" width="200" height="200" style="float:right;margin-left:1rem">
 
-Hi, I'm Carlos Cuéllar, a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and I have been creating experiences that simplify user's lives since 2006. Today, I work at Trimble where we craft software solutions for construction companies.
+Hello, this is Carlos Cuéllar. Let me introduce myself. I'm a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and some love for all tech things. I'm obsessed with music and I used to DJ a long long time ago in a club in Valencia, Spain, the city where I'm from. In 2014 I moved to the Portland OR area, where I live with my wife, two kids, and an annoying chihuahua mix called Tamale (naming pets is one of my other talents).
+
+Now, the work stuff. I've been creating digital experiences that simplify user's lives since 2006. I started working at marketing agencies in Spain, and after moving to the US in 2011 I became an in-house UX Designer specialized in B2B applications. I currently work at a [Trimble Inc.](https://construction.trimble.com/en) where we craft software solutions for construction companies.
 
 Depending on the project I might wear different hats, but I always follow a user-centered process where I collaborate closely with users, product managers, developers, and other designers. 
-
-Originally from Valencia, Spain, I live now in the Portland area with my wife and two kids.
 
 ## About this website
 
 This is the latest iteration of a personal website I started in the early 2000s. There are random notes about design, music, and technology, and also links to resources I find interesting. In this new version, I'm also adding links to my music podcast.
 
-You can check the source code at this [Github](https://github.com/cuellarfr/cuellarfr.github.io) repository. The site is built using [Jekyll](https://jekyllrb.com/) and it's hosted in [Netlify](https://netlify.com/). If you want to follow the blog, you can [subscribe to the RSS feed](/atom).
+You can check the source code at this [Github repository](https://github.com/cuellarfr/cuellarfr.github.io). The site is built using [Jekyll](https://jekyllrb.com/) and it's hosted in [Netlify](https://netlify.com/). If you want to follow the blog, you can [subscribe to the RSS feed](/atom/index.xml).
 
 Both the [content](https://creativecommons.org/licenses/by-sa/4.0/) and the [code](https://github.com/cuellarfr/cuellarfr.github.io/blob/master/LICENSE.md) created by me on this website are open source. Any other external content shared here is the property of their respective owners.
 
