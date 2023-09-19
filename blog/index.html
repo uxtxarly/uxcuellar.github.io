@@ -6,7 +6,7 @@ heading: "Blog"
 
 {% include heading.html heading=page.heading %}
 
-<main class="py-6">
+<main class="py-6" id="main">
   {% for post in paginator.posts %}
     {% include summary.html post=post %}
   {% endfor %}

@@ -12,6 +12,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 /* responsive videos */
 .embed {
     position:relative;
