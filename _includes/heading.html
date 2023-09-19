@@ -3,16 +3,16 @@
 {% assign align = include.align %}
 {% assign date = include.date %}
 
-<div class="py-6 md:py-12 lg:w-10/12 {% if align == "center" %}md:text-center mx-auto{% endif %}" role="banner">
+<div class="py-6 md:py-12 lg:w-10/12 {% if align == "center" %}md:text-center mx-auto{% endif %}" >
   {% if date %}
   <div class="font-medium text-slate-600 dark:text-slate-400">{{ date | date_to_long_string }}</div>
   {% endif %}
 
 
   {% if page.link %}
-    <h1 class="heading text-4xl md:text-6xl font-bold md:leading-tight" itemprop="name"><a rel="external" class="hover:text-teal-600 dark:hover:text-teal-400" href="{{ page.link }}">{{ page.title }}</a></h1>
+    <h1 class="heading text-4xl md:text-6xl font-bold md:leading-tight"><a rel="external" class="hover:text-teal-600 dark:hover:text-teal-400" href="{{ page.link }}">{{ page.title }}</a></h1>
     {% else %}
-    <h1 class="heading text-4xl md:text-6xl font-bold md:leading-tight" itemprop="name">
+    <h1 class="heading text-4xl md:text-6xl font-bold md:leading-tight">
       {{ heading }}
     </h1>
   {% endif %}

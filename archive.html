@@ -9,8 +9,7 @@ sitemap: false
 {% include heading.html heading=page.heading %}
 <main class="lg:flex" id="main">
 
-
-  <section class="lg:w-1/2 pr-8 prose prose-slate dark:prose-invert" role="region" itemscope itemtype="http://schema.org/CollectionPage">
+  <section class="lg:w-1/2 pr-8 prose prose-slate dark:prose-invert">
     <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Search posts</h2>
     <input type="text" id="search-input" placeholder="Search..." class="block w-full rounded-md border-0 py-3 pl-7 pr-20 mb-12 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-slate-600 sm:text-sm sm:leading-6 dark:bg-slate-200">
     <ul class="pl-0" id="results-container"></ul>
@@ -28,7 +27,7 @@ sitemap: false
     </script>
 
     <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Posts by date</h2>
-    <div itemprop="mainContentOfPage">
+    <div>
       <ul class="pl-0">
         {% for post in site.posts %}
           {% capture post_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
@@ -37,10 +36,10 @@ sitemap: false
               <li class="list-none mb-6 md:border-l md:border-slate-200 md:pl-6 md:dark:border-slate-700/80"> 
                 <h3>{{ month }}</h3>
             {% endunless %}
-            <div itemscope itemtype="http://schema.org/Article">
+            <article>
               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time>:
               <span itemprop="name"><a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a></span>
-            </div>
+            </article>
         {% endfor %}
         </li>
       </ul>
@@ -48,7 +47,7 @@ sitemap: false
     <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
     <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Shows by date</h2>
-    <div itemprop="mainContentOfPage">
+    <div>
       <ul class="pl-0">
         {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
         {% for show in sorted_shows %}
@@ -58,10 +57,10 @@ sitemap: false
               <li class="list-none mb-6 md:border-l md:border-slate-200 md:pl-6 md:dark:border-slate-700/80"> 
                 <h3>{{ month }}</h3>
             {% endunless %}
-            <div itemscope itemtype="http://schema.org/Article">
+            <article>
               <time datetime="{{ show.date | date_to_xmlschema }}">{{ show.date | date: "%b %d" }}</time>:
               <span itemprop="name"><a rel="bookmark" href="{{ show.url }}">{{ show.title }}</a></span>
-            </div>
+            </article>
         {% endfor %}
         </li>
       </ul>
@@ -69,7 +68,7 @@ sitemap: false
     <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
     <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Updates by date</h2>
-    <div itemprop="mainContentOfPage">
+    <div>
       <ul class="pl-0">
         {% assign sorted_updates = site.updates | sort: 'date' | reverse %}
         {% for update in sorted_updates %}
@@ -79,10 +78,10 @@ sitemap: false
               <li class="list-none mb-6 md:border-l md:border-slate-200 md:pl-6 md:dark:border-slate-700/80"> 
                 <h3>{{ month }}</h3>
             {% endunless %}
-            <div itemscope itemtype="http://schema.org/Article">
+            <article>
               <time datetime="{{ update.date | date_to_xmlschema }}">{{ update.date | date: "%b %d" }}</time>:
               <span itemprop="name"><a rel="bookmark" href="{{ update.url }}">{{ update.title }}</a></span>
-            </div>
+            </article>
         {% endfor %}
         </li>
       </ul>
@@ -91,7 +90,7 @@ sitemap: false
 
   </section>
 
-  <section class="lg:w-1/2 prose prose-slate dark:prose-invert" role="region"  itemscope itemtype="http://schema.org/CollectionPage">
+  <section class="lg:w-1/2 prose prose-slate dark:prose-invert">
     <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="tag-cloud">Posts by tag</h2>
     {% assign tags_max = 0 %}
     {% for tag in site.tags %}
