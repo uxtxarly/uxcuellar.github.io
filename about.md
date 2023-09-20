@@ -17,7 +17,7 @@ Depending on the project I might wear different hats, but I always follow a user
 
 This is the latest iteration of a personal website I started in the early 2000s. There are random notes about design, music, and technology, and also links to resources I find interesting. In this new version, I'm also adding links to my music podcast.
 
-You can check the source code at this [Github repository](https://github.com/cuellarfr/cuellarfr.github.io). The site is built using [Jekyll](https://jekyllrb.com/) and it's hosted in [Netlify](https://netlify.com/). If you want to follow the blog, you can [subscribe to the RSS feed](/atom/index.xml).
+You can check the source code at this [Github repository](https://github.com/cuellarfr/cuellarfr.github.io). The site is built using [Jekyll](https://jekyllrb.com/) and it's hosted in [Netlify](https://netlify.com/). If you want to follow the blog, you can [subscribe to the RSS feed](/feed.xml).
 
 Both the [content](https://creativecommons.org/licenses/by-sa/4.0/) and the [code](https://github.com/cuellarfr/cuellarfr.github.io/blob/master/LICENSE.md) created by me on this website are open source. Any other external content shared here is the property of their respective owners.
 
