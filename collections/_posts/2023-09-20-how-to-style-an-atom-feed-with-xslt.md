@@ -2,7 +2,7 @@
 layout: post
 author: carlos
 title: How to Style an Atom Feed with XSLT
-draft: true
+draft: false
 link: https://andrewstiefel.com/style-atom-xsl/
 tags:
   - jekyll
