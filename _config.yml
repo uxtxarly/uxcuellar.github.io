@@ -3,7 +3,7 @@ url: "https://cuellar.fr"
 permalink: pretty
 title: Carlos Cuéllar
 tagline: 'cuellar.fr'
-description: 'UX Designer'
+description: "Carlos Cuéllar's personal site about design, technology and music."
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -28,10 +28,6 @@ seo:
   meta_twitter_creator: "@cuellarfr"
   meta_og_image: "/assets/images/author/carlos.png"
 
-# Config for atom feed
-feed:
-  path: atom/index.xml
-
 # Config for post's excerpts
 excerpt_separator: <!--more-->
 
@@ -40,7 +36,6 @@ plugins:
   - jekyll-postcss
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-feed
   - jekyll-admin
   - jekyll-postcss
   - jekyll/mastodon_webfinger
