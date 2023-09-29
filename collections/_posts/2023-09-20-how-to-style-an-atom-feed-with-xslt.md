@@ -1,6 +1,6 @@
 ---
 layout: post
-author: carlos
+authors: carlos
 title: How to Style an Atom Feed with XSLT
 draft: false
 link: https://andrewstiefel.com/style-atom-xsl/
