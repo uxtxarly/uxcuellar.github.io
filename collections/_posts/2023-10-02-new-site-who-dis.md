@@ -12,7 +12,7 @@ tags:
 
 But shortly after, 8 years ago, I stopped doing front-end at work. And I didn't write here because, well, I didn't have much time. I'm trying to change that now.
 
-### A personal playground.
+### A personal playground
 
 I don't expect a lot of people to read this, and that's totally ok. I'm building this new personal site because I want it to be my own digital playground, the place where I can experiment with things with no fear of breaking them, a corner where I can write short notes and share what I'm doing, or what music I'm liking lately. Some people call it a [digital garden](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/), but you get the idea.
 
