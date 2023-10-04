@@ -5,10 +5,10 @@ layout: null
 <?xml-stylesheet href="{{ site.url }}/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
+ <title>Carlos Cuéllar | Music</title>
  <link href="{{ site.url }}/feed.xml" rel="self"/>
  <link href="{{ site.url }}" rel="alternate"/>
- <subtitle>{{ site.description }}</subtitle>
+ <subtitle>Show episodes</subtitle>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}/</id>
  <author>
