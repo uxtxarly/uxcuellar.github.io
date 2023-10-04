@@ -1,5 +1,11 @@
 main:
 -
+    Artist: The Clean
+    Title: Mister Pop
+    Label: Merge
+    Released: 2009
+    Thumbnail: theclean.jpg
+-
     Artist: Felt
     Title: Forever Breathes The Lonely Word
     Label: Creation
