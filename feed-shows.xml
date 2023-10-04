@@ -1,0 +1,30 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="{{ site.url }}/feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>{{ site.title }}</title>
+ <link href="{{ site.url }}/feed.xml" rel="self"/>
+ <link href="{{ site.url }}" rel="alternate"/>
+ <subtitle>{{ site.description }}</subtitle>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site.url }}/</id>
+ <author>
+   <name>Carlos Cuéllar</name>
+   <email>carlos@cuellar.fr</email>
+ </author>
+
+ {% for show in site.shows reversed limit:10 %}
+ <entry>
+   <title>{{ show.title }}</title>
+   <link rel="alternate" href="{{ site.url }}{{ show.url }}"/>
+   <updated>{{ show.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ show.url }}</id>
+   <summary>{{ show.description }}</summary>
+   <content type="html">{{ show.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
