@@ -1,5 +1,16 @@
 main:
 -
+    Artist: Songs Ohia
+    Title: Magnolia Electric Co.
+    Label: Secretly Canadian
+    Released: 2003
+    Thumbnail: magnoliaco.jpg
+-
+    Artist: Sufjan Stevens
+    Title: Javelin
+    Released: 2023
+    Thumbnail: javelin.png
+-
     Artist: The Clean
     Title: Mister Pop
     Label: Merge
