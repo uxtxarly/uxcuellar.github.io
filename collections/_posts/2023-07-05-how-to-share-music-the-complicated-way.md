@@ -2,7 +2,7 @@
 layout: post
 title: How to share music (the complicated way)
 tags: [music, me]
-description: Because creating a playlist in Spotify is way too easy.
+description: Because creating a playlist on Spotify is way too easy.
 authors: carlos
 ---
 
