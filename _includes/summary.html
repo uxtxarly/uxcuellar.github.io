@@ -11,6 +11,6 @@
         <h2 class="text-xl font-bold mb-1">{{ post.title }}</h2>
       </a>
     {% endif %}
-    <p class="text-base text-slate-600 dark:text-slate-400 mb-4">{{ post.content | strip_html | truncatewords: 25 }}</p>
+    <p class="text-base text-slate-600 dark:text-slate-400 mb-4">{{ post.content | strip_html | truncatewords: 50 }}</p>
   </main>
 </article>
