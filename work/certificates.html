@@ -9,7 +9,7 @@ description: "Licenses and certifications."
 
   <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-8 mb-3">
     {% assign sorted_items = site.data.certificates.main | sort: 'date' %}
-    {% for item in sorted_items %}
+    {% for item in sorted_items reversed %}
       <article class="bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-4 rounded transition duration-300 ease-in-out">
         <a href="/assets/certificates/{{ item.file }}" class="float-left mr-1">
           <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
