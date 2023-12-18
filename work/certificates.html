@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Certificates"
+heading: "Certificates"
+description: "Licenses and certifications."
+---
+<main id="main">
+  {% include heading.html heading=page.heading %}
+
+  <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-8 mb-3">
+    {% assign sorted_items = site.data.certificates.main | sort: 'date' %}
+    {% for item in sorted_items %}
+      <article class="bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-4 rounded transition duration-300 ease-in-out"><img src="/assets/images/medal.svg" alt="" width="80px" height="80px" loading="lazy" class="rounded">
+        <p class="text-sm font-semibold pt-1"><a href="/assets/certificates/{{ item.file }}">{{ item.name }}</a></p>
+        <p class="text-sm">{{ item.issuer }} | {{ item.date }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</main>
