@@ -36,8 +36,7 @@ Our final prototype included several features that we weren't technically able t
     <img src="/assets/images/seat_desktop3.jpg" alt="mockup of the desktop version">
     <img src="/assets/images/seat_desktop4.jpg" alt="mockup of the desktop version">
   </div>
-  <br>
-  <figcaption>Early mockups of key screens.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Early mockups of key screens.</figcaption>
 </figure>
 
 <hr>

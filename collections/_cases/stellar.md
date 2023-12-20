@@ -35,7 +35,7 @@ This project was very different than anything else I did before at Goldstar. We 
 <a href="#_" class="lightbox" id="img0">
   <img src="/assets/images/stellar_persona.jpg">
 </a>
-<figcaption>One of the personas we used for the organizer site.</figcaption>
+<figcaption style="margin-top:-1.5em;">One of the personas we used for the organizer site.</figcaption>
 </figure>
 
 ### Ideation
@@ -52,7 +52,7 @@ Product managers, developers, and designers sat together and created an initial 
 <a href="#_" class="lightbox" id="img1">
   <img src="/assets/images/stellar-storymap.jpg">
 </a>
-<figcaption>Initial story map</figcaption>
+<figcaption style="margin-top:-1.5em;">Initial story map</figcaption>
 </figure>
 
 One important decision that was made was to rely on third party solutions to manage payments and transactions (Stripe), marketing and analytics (Mailchimp, Toneden).
@@ -68,7 +68,7 @@ At that point, I was ready to start sketching wireframes and flows for the main 
   <a href="#_" class="lightbox" id="img11">
     <img src="/assets/images/st-onboarding_flow.jpg">
   </a>
-  <figcaption>Onboarding flow.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Onboarding flow.</figcaption>
 </figure>
 
 <figure>
@@ -79,7 +79,7 @@ At that point, I was ready to start sketching wireframes and flows for the main 
     <img src="/assets/images/st-wire4.jpg" alt="wireframe of the desktop version">
     <img src="/assets/images/st-wire5.jpg" alt="wireframe of the desktop version">
   </div>
-  <figcaption>Wireframes of the organizer site.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Wireframes of the organizer site.</figcaption>
 </figure>
 
 ### Test and feedback
@@ -93,7 +93,7 @@ I created some mockups and prototypes that were tested by our launching partners
     <img src="/assets/images/st-mock3.jpg" alt="mockup of the desktop version">
     <img src="/assets/images/st-mock5.jpg" alt="mockup of the desktop version">
   </div>
-  <figcaption>Final mockups of the organizer site.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Final mockups of the organizer site.</figcaption>
 </figure>
 
 ### Things I learned
