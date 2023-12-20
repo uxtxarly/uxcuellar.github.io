@@ -634,3 +634,7 @@ main:
         issuer: "Code School"
         date: "2012/10"
         file: "#"
+    -   name: "Interaction Design: Beyond the Wireframe"
+        issuer: "Future Insights Live"
+        date: "2013/04"
+        file: "#"
