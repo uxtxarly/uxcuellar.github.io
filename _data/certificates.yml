@@ -598,3 +598,7 @@ main:
         issuer: "Interaction Design Foundation"
         date: "2023/10"
         file: "masterclass-certificate-ux-magic-design-10-times-better-with-semantic-interaction-design.jpg"
+    -   name: "AI for Designers"
+        issuer: "Interaction Design Foundation"
+        date: "2023/12"
+        file: "course-certificate-ai-for-designers.jpg"
