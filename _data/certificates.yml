@@ -308,7 +308,7 @@ main:
         file: "learninggraphicdesignhistory_certificateofcompletion.pdf"
     -   name: "Learning Static Site Building with Jekyll"
         issuer: "Lynda.com"
-        date: "2021/02"
+        date: "2018/09"
         file: "learningstaticsitebuildingwithjekyll_certificateofcompletion.pdf"
     -   name: "Learning Sublime Text 3"
         issuer: "Lynda.com"
