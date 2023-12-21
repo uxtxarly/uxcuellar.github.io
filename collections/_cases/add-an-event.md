@@ -54,7 +54,8 @@ With all this information, we already knew how we wanted our form to work. With 
 <a href="#_" class="lightbox" id="img1">
   <img src="/assets/images/amp_event-map.jpg">
 </a>
-<figcaption>Story Map</figcaption></figure>
+<figcaption style="margin-top:-1.5em;">Story Map</figcaption>
+</figure>
 
 We wanted the form to be divided into non-linear logical steps, so users could start anywhere the submission process and save it as a draft if needed. There's a lot of information that needs to be added to the form and it's common to not have all the information ready when organizers start filling the form.
 
@@ -72,7 +73,7 @@ We also wanted users to be able to preview the events they build, and that's why
     <img src="/assets/images/amp_event_wire6.png" alt="wireframe of the event form">
     <img src="/assets/images/amp_event_wire7.png" alt="wireframe of the event form">
   </div>
-  <figcaption>Wireframes</figcaption>
+  <figcaption style="margin-top:-1.5em;">Wireframes</figcaption>
 </figure>
 
 
@@ -89,7 +90,7 @@ I created and iterated (after user testing) an inventory submission process that
     <img src="/assets/images/amp_event_mock4.png" alt="mockup of the event form">
     <img src="/assets/images/amp_event_mock5.png" alt="mockup of the event form">
   </div>
-  <figcaption>Mockups</figcaption>
+  <figcaption style="margin-top:-1.5em;">Mockups</figcaption>
 </figure>
 
 ### Implementation (Yes, it's hard)
