@@ -71,6 +71,14 @@ defaults:
       path: "work"
     values:
       sitemap: false
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "admin"
+    values:
+      sitemap: false
 
 # GitHub info
 github:

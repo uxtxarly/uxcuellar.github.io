@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: 
-Disallow: /work/
-Disallow: /assets/certificates/
-Disallow: /assets/protos/
+Disallow: /admin/*
+Disallow: /work/*
+Disallow: /assets/certificates/*
+Disallow: /assets/protos/*
 Sitemap: https://cuellar.fr/sitemap.xml
