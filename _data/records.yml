@@ -1,5 +1,155 @@
 main:
 -
+    Artist: Paul McCartney
+    Title: McCartney II
+    Label: MPL
+    Released: 1980
+    Thumbnail: mccartney2.jpg
+-
+    Artist: Sigur Rós
+    Title: Ágætis Byrjun
+    Label: Krunk
+    Released: 1999
+    Thumbnail: agaetis.jpg
+-
+    Artist: Sly and The Family Stone
+    Title: There's a Riot Goin' On
+    Label: Epic
+    Released: 1971
+    Thumbnail: slyriot.jpg
+-
+    Artist: Santigold
+    Title: Santigold
+    Label: Downtown
+    Released: 2008
+    Thumbnail: santigold.jpg
+-
+    Artist: Darkside
+    Title: Psychic
+    Label: Matador
+    Released: 2013
+    Thumbnail: darkside.jpg
+-
+    Artist: Destroyer
+    Title: Labyrinthitis
+    Label: Merge
+    Released: 2022
+    Thumbnail: labyrinthitis.jpg
+-
+    Artist: Aretha Franklin
+    Title: Spirit In The Dark
+    Label: Atlantic
+    Released: 1970
+    Thumbnail: spiritdark.jpg
+-
+    Artist: Aretha Franklin
+    Title: I Never Loved A Man The Way I Love You
+    Label: Atlantic
+    Released: 1967
+    Thumbnail: arethaneverloved.jpg
+-
+    Artist: Kevin Morby
+    Title: City Music
+    Label: Dead Oceans
+    Released: 2017
+    Thumbnail: citymusic.jpg
+-
+    Artist: Bob Dylan
+    Title: Blonde On Blonde
+    Label: Columbia
+    Released: 1966
+    Thumbnail: blondeonblonde.jpg
+-
+    Artist: Andrew Bird
+    Title: HARK!
+    Label: Loma Vista
+    Released: 2020
+    Thumbnail: hark.jpg
+-
+    Artist: Jackson Browne
+    Title: Jackson Browne
+    Label: Asylum
+    Released: 1972
+    Thumbnail: jacksonbrowne.jpg
+-
+    Artist: Blues Brothers
+    Title: Briefcase Full of Blues
+    Label: Atlantic
+    Released: 1978
+    Thumbnail: bluesbrothers.jpg
+-
+    Artist: Hollies, The
+    Title: Bus Stop
+    Label: Imperial
+    Released: 1966
+    Thumbnail: busstop.jpg
+-
+    Artist: Jefferson Airplane
+    Title: Surrealistic Pillow
+    Label: RCA
+    Released: 1967
+    Thumbnail: surrealistic.jpg
+-
+    Artist: George Harrison
+    Title: Living In The Material World
+    Label: Apple
+    Released: 1973
+    Thumbnail: materialworld.jpg
+-
+    Artist: Beatles, The
+    Title: Yellow Submarine
+    Label: Apple
+    Released: 1969
+    Thumbnail: yellowsubmarine.jpg
+-
+    Artist: Cat Stevens
+    Title: Teaser and the Firecat
+    Label: Island
+    Released: 1971
+    Thumbnail: teaser.jpg
+-
+    Artist: Paul McCartney
+    Title: RAM
+    Label: Capitol
+    Released: 1971
+    Thumbnail: ram.jpg
+-
+    Artist: Simon and Garfunkel
+    Title: Parsley, Sage, Rosemary and Thyme
+    Label: Columbia
+    Released: 1966
+    Thumbnail: parsley.jpg
+-
+    Artist: Simon and Garfunkel
+    Title: Bookends
+    Label: Columbia
+    Released: 1968
+    Thumbnail: bookends.jpg
+-
+    Artist: Neil Young
+    Title: Decade
+    Label: Warner
+    Released: 1973
+    Thumbnail: decade.jpg
+-
+    Artist: Stephen Stills
+    Title: Manassas
+    Label: Atlantic
+    Released: 1972
+    Thumbnail: manassas.jpg
+-
+    Artist: Crosby, Still & Nash
+    Title: Crosby, Still & Nash
+    Label: Atlantic
+    Released: 1969
+    Thumbnail: csn.jpg
+-
+    Artist: George Harrison
+    Title: All Things Must Pass
+    Label: Apple
+    Released: 1970
+    Thumbnail: allthings.jpg
+-
     Artist: Songs Ohia
     Title: Magnolia Electric Co.
     Label: Secretly Canadian
@@ -46,7 +196,7 @@ main:
     Title: Gladys Knight and the Pips
     Label: Maxx
     Released: 1965
-    Thumbnail: record-placeholder.jpg
+    Thumbnail: gladys.webp
 -
     Artist: The Clientele
     Title: I Am Not There Anymore
