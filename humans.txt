@@ -9,6 +9,6 @@
 
 
 /* SITE */
-  Standards: HTML5, CSS3 (SCSS)
-  Components: Jekyll, GitHub Pages
+  Standards: HTML5, CSS3, Tailwind CSS
+  Components: Jekyll, GitHub, Netlify
   Software: VS Code, Acorn, Figma
