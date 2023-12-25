@@ -29,17 +29,17 @@ layout: default
 <aside class="lg:flex">
   <section class="lg:w-1/2 pr-6">
     <h3 class="text-2xl font-bold hover:text-teal-600 dark:hover:text-teal-400 py-6 border-t border-slate-200 dark:border-slate-700/80"><a href="/blog">Recent posts and links</a></h2>
-    {% for post in site.posts limit:3 %}
+    {% for post in site.posts limit:4 %}
     <article class="mb-6 md:border-l md:border-slate-200 md:pl-6 md:dark:border-slate-700/80">
 
       {% if post.link %}
-        <h4 class="text-base font-bold font-sans"><a rel="external" class="hover:text-teal-600 dark:hover:text-teal-400" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h4>
+        <h4 class="text-base font-semibold font-sans"><a rel="external" class="hover:text-teal-600 dark:hover:text-teal-400" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h4>
         {% else %}
-        <h4 class="text-base font-bold font-sans"><a href="{{ post.url | relative_url }}" class="hover:text-teal-600 dark:hover:text-teal-400">{{ post.title }}</a></h4>
+        <h4 class="text-base font-semibold font-sans"><a href="{{ post.url | relative_url }}" class="hover:text-teal-600 dark:hover:text-teal-400">{{ post.title }}</a></h4>
       {% endif %}
 
       
-      <p class="text-base text-slate-600 dark:text-slate-400">{{ post.content | strip_html | truncatewords: 16 }}</p>
+      <p class="text-base text-sm text-slate-600 dark:text-slate-400">{{ post.content | strip_html | truncatewords: 16 }}</p>
     </article>
     {% endfor %}
   </section>
@@ -47,10 +47,10 @@ layout: default
   <section class="lg:w-1/2 pr-6">
     <h3 class="text-2xl font-bold hover:text-teal-600 dark:hover:text-teal-400 py-6 border-t border-slate-200 dark:border-slate-700/80"><a href="/music">Recent shows</a></h2>
     {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
-    {% for show in sorted_shows limit:3 %}
+    {% for show in sorted_shows limit:4 %}
     <article class="mb-6 md:border-l md:border-slate-200 md:pl-6 md:dark:border-slate-700/80">
-      <h4 class="text-base font-bold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-teal-600 dark:hover:text-teal-400">{{ show.title }}</a></h4>
-      <p class="text-base text-slate-600 dark:text-slate-400">{{ show.content | strip_html | truncatewords: 16 }}</p>
+      <h4 class="text-base font-semibold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-teal-600 dark:hover:text-teal-400">{{ show.title }}</a></h4>
+      <p class="text-base text-sm text-slate-600 dark:text-slate-400">{{ show.content | strip_html | truncatewords: 16 }}</p>
     </article>
     {% endfor %}
   </section>
