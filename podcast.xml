@@ -1,0 +1,59 @@
+---
+layout: null
+---
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <itunes:author>
+      <![CDATA[ txarly_spins ]]>
+    </itunes:author>
+    <copyright>© 2023 txarly_spins</copyright>
+    <title>
+      <![CDATA[ Experiment in Terror ]]>
+    </title>
+    <itunes:owner>
+      <itunes:name>
+      <![CDATA[ txarly_spins ]]>
+      </itunes:name>
+      <itunes:email>
+      <![CDATA[ carlos@cuellar.fr ]]>
+      </itunes:email>
+    </itunes:owner>
+    <link>https://cuellar.fr/music</link>
+    <description>
+    <![CDATA[ "What came first, the music or the misery?" Carlos Cu&eacute;llar (a.k.a. @txarly_spins) shares a monthly selection of favorite tracks. There's new indie and alternative rock, but also pop, surf, lounge... ]]>
+    </description>
+    <language>en</language>
+    <generator>Jekyll</generator>
+    <image>
+      <url>https://cuellar.fr/assets/images/txarly_spins.jpg</url>
+      <title>
+      <![CDATA[ Experiment in Terror ]]>
+      </title>
+      <link>https://cuellar.fr/music</link>
+    </image>
+    <atom:link href="https://cuellar.fr/podcast.xml" rel="self" type="application/rss+xml"/>
+    <itunes:image href="https://cuellar.fr/assets/images/txarly_spins.jpg"/>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:category text="Music"/>
+
+    {% for show in site.shows reversed %}
+    <item>
+      <title>
+        <![CDATA[ {{ show.title }} ]]>
+      </title>
+      <link>{{ site.url }}{{ show.url }}</link>
+      <enclosure url="{{ show.file }}" type="audio/mpeg" length="{{ show.length }}"/>
+      <description>
+        <![CDATA[ {{ show.description }} ]]>
+      </description>
+      <pubDate>{{ show.date | date_to_xmlschema }}</pubDate>
+      <itunes:duration>{{ show.duration }}</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid>{{ site.url }}{{ show.url }}</guid>
+      <itunes:image href="{{ show.image }}"/>
+    </item>
+    {% endfor %}
+    
+  </channel>
+</rss>
