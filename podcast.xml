@@ -47,10 +47,10 @@ layout: null
       <description>
         <![CDATA[ {{ show.description }} ]]>
       </description>
-      <pubDate>{{ show.date | date_to_xmlschema }}</pubDate>
+      <pubDate>{{ show.date | date_to_rfc822 }}</pubDate>
       <itunes:duration>{{ show.duration }}</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
-      <guid>{{ site.url }}{{ show.url }}</guid>
+      <guid isPermaLink="true">{{ show.url | prepend: site.baseurl | prepend: site.url }}</guid>
       <itunes:image href="{{ show.image }}"/>
     </item>
     {% endfor %}
