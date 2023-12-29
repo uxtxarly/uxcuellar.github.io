@@ -5,7 +5,7 @@
 
 <div class="py-6 md:py-12 lg:w-10/12 {% if align == "center" %}md:text-center mx-auto{% endif %}" >
   {% if date %}
-  <div class="font-medium text-slate-600 dark:text-slate-400">{{ date | date_to_long_string }}</div>
+  <div class="font-medium text-slate-600 dark:text-slate-400">{{ date | date: "%B %d, %Y" }}</div>
   {% endif %}
 
 

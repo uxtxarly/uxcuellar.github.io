@@ -46,7 +46,7 @@ sitemap: false
     </div>
     <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
-    <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Shows by date</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="shows-date-list">Shows by date</h2>
     <div>
       <ul class="pl-0">
         {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
@@ -67,7 +67,7 @@ sitemap: false
     </div>
     <a href="#date-list" class="text-sm pt-3 mb-6 inline-block">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
-    <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="date-list">Updates by date</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-slate-200 dark:border-slate-700/80" id="updates-date-list">Updates by date</h2>
     <div>
       <ul class="pl-0">
         {% assign sorted_updates = site.updates | sort: 'date' | reverse %}
