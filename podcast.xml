@@ -51,7 +51,7 @@ layout: null
       <itunes:duration>{{ show.duration }}</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <guid isPermaLink="true">{{ show.url | prepend: site.baseurl | prepend: site.url }}</guid>
-      <itunes:image href="{{ show.image }}"/>
+      <itunes:image href="{{ site.url }}{{ show.image }}"/>
     </item>
     {% endfor %}
     
