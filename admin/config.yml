@@ -37,10 +37,10 @@ collections:
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ["indie"] }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'File', name: 'file', widget: 'string' }
       - { label: 'Duration', name: 'duration', widget: 'string' }
       - { label: 'Length', name: 'length', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'updates'
     label: 'Updates'
