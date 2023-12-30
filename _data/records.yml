@@ -1,5 +1,29 @@
 main:
 -
+    Artist: Todd Rundgren
+    Title: Something Anything
+    Label: Bearsville
+    Released: 1972
+    Thumbnail: something.jpg
+-
+    Artist: Shangri-las, The
+    Title: The Best of The Red Bird and Mercury Recordings
+    Label: Red Gone Music
+    Released: 2021
+    Thumbnail: shangrilas.jpg
+-
+    Artist: Stephen Stills
+    Title: Down The Road
+    Label: Atlantic
+    Released: 1973
+    Thumbnail: downroad.jpg
+-
+    Artist: Walkabouts, The
+    Title: Rag And Bone
+    Label: Sub Pop
+    Released: 1989
+    Thumbnail: walkabouts.jpg
+-
     Artist: Melenas
     Title: Ahora
     Label: Trouble In Mind
