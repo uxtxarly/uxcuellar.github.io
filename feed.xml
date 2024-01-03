@@ -19,7 +19,11 @@ layout: null
  {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+   {% if post.link %}
+    <link rel="alternate" href="{{ post.link }}"/>
+    {% else %}
+    <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+   {% endif %}
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.url }}</id>
    <summary>{{ post.description }}</summary>
