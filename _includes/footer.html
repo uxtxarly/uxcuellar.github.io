@@ -1,5 +1,5 @@
 <footer class="flex items-center justify-between py-6 my-12 text-sm md:border-t md:border-slate-200 md:dark:border-slate-700/80">
-  <nav class="flex">
+  <nav class="flex print:invisible">
     <ul class="inline"> 
       {% for item in site.data.menu.main %}
         <li class="inline-block px-1"><a href="{{ item.url }}" class="hover:text-teal-500 dark:hover:text-teal-400">{{ item.name }}</a></li>
