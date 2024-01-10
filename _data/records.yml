@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Badfinger
+    Title: No Dice
+    Label: Apple
+    Released: 1970
+    Thumbnail: nodice.jpg
+-
     Artist: Todd Rundgren
     Title: Something Anything
     Label: Bearsville
