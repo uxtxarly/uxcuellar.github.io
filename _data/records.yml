@@ -1,5 +1,17 @@
 main:
 -
+    Artist: La Lupe
+    Title: Queen Of Latin Soul
+    Label: Tico
+    Released: 1968
+    Thumbnail: lalupe.jpg
+-
+    Artist: R.E.M.
+    Title: Up
+    Label: Warner
+    Released: 1998
+    Thumbnail: remup.jpg
+-
     Artist: Badfinger
     Title: No Dice
     Label: Apple
