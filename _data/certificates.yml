@@ -1,4 +1,8 @@
 main:
+    -   name: "Object Oriented UX"
+        issuer: "Interaction Design Foundation"
+        date: "2024/01"
+        file: "masterclass-certificate-how-to-fix-ux-fails-with-object-oriented-ux.jpg"
     -   name: "Spectrum Overview"
         issuer: "Viewpoint Academy"
         date: "2022/03"
