@@ -1,5 +1,41 @@
 main:
 -
+    Artist: M. Ward
+    Title: Transfiguration of Vincent
+    Label: Merge
+    Released: 2003
+    Thumbnail: transfiguration.jpg
+-
+    Artist: Replacements, The
+    Title: Hootenanny
+    Label: Twin Tone
+    Released: 1983
+    Thumbnail: hootenanny.jpg
+-
+    Artist: Nina Simone
+    Title: Nina Simone Sings the Blues
+    Label: RCA
+    Released: 1967
+    Thumbnail: ninablues.jpg
+-
+    Artist: Simon and Garfunkel
+    Title: Bridge Over Troubled Water
+    Label: Columbia
+    Released: 1970
+    Thumbnail: troubledwater.jpg
+-
+    Artist: Mitski
+    Title: The Land Is Inhospitable and So Are We
+    Label: Dead Oceans
+    Released: 2023
+    Thumbnail: landinhospitable.jpg
+-
+    Artist: Cocteau Twins
+    Title: Stars and Topsoil - A Collection
+    Label: 4AD
+    Released: 2000
+    Thumbnail: starstopsoil.jpg
+-
     Artist: La Lupe
     Title: Queen Of Latin Soul
     Label: Tico
