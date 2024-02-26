@@ -1,5 +1,11 @@
 main:
 -
+    Artist: New Order
+    Title: Substance
+    Label: Factory
+    Released: 1987
+    Thumbnail: newordersubstance.jpg
+-
     Artist: M. Ward
     Title: Transfiguration of Vincent
     Label: Merge
