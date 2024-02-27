@@ -7,7 +7,7 @@ description: "I'm a User Experience Designer based in Portland, OR"
 
 <img src="/assets/images/141.jpg" alt="picture with my dog" class="portrait of carlos cuellar" class="aspect-square rotate-3 rounded-2xl bg-slate-100 object-cover dark:bg-slate-800" width="200" height="200" style="float:right;margin-left:1rem">
 
-Hello, this is Carlos Cuéllar. Let me introduce myself. I'm a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and some love for all tech things. Originally from Valencia, Spain, I moved to the Pacific Northwest in 2014 where I live now with my wife, two kids, and an annoying chihuahua mix called Tamale (naming pets is one of my other talents). When not staring at a screen, I listen to classic alternative rock music records and I try to find good food in downtown Portland.
+Hello, this is Carlos Cuéllar. Let me introduce myself. I'm a [certified User Experience Designer](/assets/certificates/nng-ux-certificate-cuellar.pdf) with an industrial design background and some love for all tech things. When not staring at a screen, I listen to classic alternative rock music records and I try to find good food in downtown Portland.
 
 Now, the work stuff. I've been creating digital experiences that simplify user's lives since 2006. I started working at marketing agencies in Spain, and after moving to the US in 2011 I became an in-house UX Designer specialized in B2B applications. I currently work at [Trimble Inc.](https://construction.trimble.com/en) where we craft software solutions for construction companies.
 
