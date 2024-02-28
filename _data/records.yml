@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Matt Berry
+    Title: Kill The Wolf
+    Label: Acid Jazz
+    Released: 2013
+    Thumbnail: killwolf.jpg
+-
     Artist: New Order
     Title: Substance
     Label: Factory
