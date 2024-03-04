@@ -2,7 +2,6 @@
 layout: null
 redirect_from:
   - /atom
-  - /atom/index.xml
   - /rss
 ---
 <?xml version="1.0" encoding="utf-8"?>
