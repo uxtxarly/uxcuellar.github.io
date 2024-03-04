@@ -1,9 +1,5 @@
 ---
 layout: null
-redirect_from:
-  - /atom
-  - /atom/index.xml
-  - /rss
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="{{ site.url }}/feed.xsl" type="text/xsl"?>
