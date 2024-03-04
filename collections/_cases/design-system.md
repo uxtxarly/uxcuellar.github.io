@@ -109,4 +109,4 @@ Every time a new component was created, it had to be shared with the rest of the
 The most exciting part of this project was that we were not just documenting some UI components, we were creating a new workflow for an entire team. There was a lot of trial and error in the process and I found some Sketch bugs (setting resizing constraints in nested symbols is definitely tricky) but this first library was quickly adopted by the entire team and we ended up creating additional libraries for our consumer site, newsletters, and wireframes.
 
 <hr>
-<a class="px-6 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
