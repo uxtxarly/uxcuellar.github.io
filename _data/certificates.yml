@@ -1,4 +1,8 @@
 main:
+    -   name: "Accessible and Inclusive Design Patterns"
+        issuer: "Interaction Design Foundation"
+        date: "2024/03"
+        file: "masterclass-certificate-accessible-and-inclusive-design-patterns.jpg"
     -   name: "Object Oriented UX"
         issuer: "Interaction Design Foundation"
         date: "2024/01"
