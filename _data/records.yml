@@ -1,5 +1,17 @@
 main:
 -
+    Artist: Nina Simone
+    Title: Silk And Soul
+    Label: RCA
+    Released: 1967
+    Thumbnail: silksoul.jpg
+-
+    Artist: Mazzy Star
+    Title: So Tonight That I Might See
+    Label: Capitol
+    Released: 1993
+    Thumbnail: mazzy.jpg
+-
     Artist: Matt Berry
     Title: Kill The Wolf
     Label: Acid Jazz
