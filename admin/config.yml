@@ -32,7 +32,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'show' }
       - { label: 'Author', name: 'authors', widget: 'hidden', default: 'carlos' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }

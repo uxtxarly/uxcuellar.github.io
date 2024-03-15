@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<main id="main">
+  {% include heading.html heading=page.title description=page.description align="center" date=page.date %}
+
+  {% if page.authors %}
+    <div class="flex flex-col pb-3 md:hidden">
+      {% for author in page.authors %}
+        {% include author-large.html
+          author=author
+        %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.image %}
+    <div class="-mx-6 md:-mx-12"><img class="w-full" src="{{ page.image }}" alt="" /></div>
+  {% endif %}
+
+  <div class="flex flex-col md:flex-row py-6 md:py-12">
+
+    <div class="w-full md:w-3/12 pr-3">
+      {% if page.authors %}
+        <div class="flex flex-col hidden md:flex mb-3 md:mb-6">
+          {% for author in page.authors %}
+            {% include author-large.html
+          author=author
+          %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="w-full md:w-9/12">
+      <div class="prose prose-slate dark:prose-invert">
+        {{ content }}
+        <hr>
+        <p><strong>Listen here:</strong></p>
+        <audio controls preload="none">
+          <source src="{{ page.file }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <br>
+        <p><strong>Or subscribe:</strong></p>
+        <ul class="inline pl-0">
+          {% for item in site.data.podcasts %}
+            <li class="inline-block px-2">
+              <a rel="me" href="{{ item.link }}">
+                {{ item.image }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <hr>
+        <script src="https://giscus.app/client.js"
+          data-repo="cuellarfr/cuellar.fr"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkyNTk0MzE2Nw=="
+          data-category="Announcements"
+          data-category-id="DIC_kwDOAYvcf84CZSQu"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+        </script>
+        <hr>
+        <nav class="flex items-center justify-between py-6 print:invisible">
+          {% if page.previous.url %}
+            <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="{{page.previous.url}}">&laquo;&nbsp;{{ page.previous.title | truncate:18 }}</a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="next" href="{{page.next.url}}">{{ page.next.title | truncate:18 }}&nbsp;&raquo;</a>
+          {% endif %}
+        </nav>
+        
+      </div>
+    </div>
+
+  </div>
+</main>
