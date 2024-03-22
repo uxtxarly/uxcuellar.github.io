@@ -1,0 +1,32 @@
+---
+layout: show
+authors: carlos
+title: "Experiment #9 - 45 (Part 3)"
+image: /assets/images/45.png
+description: Looking back 45 years and selecting one song per year. Not the best
+  song necessarily, just a random selection of favorites. In this last part, we
+  have songs from 2009 to 2023.
+tags:
+  - indie
+file: https://archive.org/download/eit09/2024-03-22_22h36m57s.mp3
+duration: 01:00:06
+length: "116987360"
+published: false
+---
+**Playlist:**
+
+1 Cass McCombs - Dreams Come True Girl
+2 John Grant - I Wanna Go To Marz
+3 St. Vincent - Cruel
+4 The Magnetic Fields - God Wants Us To Wait
+5 Foxygen - No Destruction
+6 Temples - Shelter Song
+7 Courtney Barnett - Pedestrian At Best
+8 The Avalanches - Subways
+9 Charlotte Gainsbourg - Sylvia Says
+10 The Beths - Little Death
+11 Purple Mountains - All My Happiness Is Gone
+12 A Girl Called Eddy - Jody
+13 Helado Negro - There Must Be a Song Like You
+14 Andrew Bird - Make a Picture
+15 Caroline Rose - Everywhere I Go I Bring the Rain
