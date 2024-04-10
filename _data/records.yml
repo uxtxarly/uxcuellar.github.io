@@ -1,5 +1,17 @@
 main:
 -
+    Artist: Ovidi Montllor
+    Title: A Alcoi
+    Label: Edigsa
+    Released: 1974
+    Thumbnail: ovidi.jpg
+-
+    Artist: Fangoria
+    Title: La Mano En El Fuego
+    Label: Gasa
+    Released: 2004
+    Thumbnail: fangoria.jpg
+-
     Artist: Nina Simone
     Title: Silk And Soul
     Label: RCA
