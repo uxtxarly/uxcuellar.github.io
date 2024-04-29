@@ -1,5 +1,89 @@
 main:
 -
+    Artist: Blur
+    Title: Parklife
+    Label: Food
+    Released: 1994
+    Thumbnail: parklife.jpg
+-
+    Artist: R.Crumb and the Cheap Suit Serenade
+    Title: Singing in the Bathtub
+    Label: Blue Goose
+    Released: 1978
+    Thumbnail: rcrumb.jpg
+-
+    Artist: Replacements, The
+    Title: Not Ready for Prime Time Live At The Cabaret Metro
+    Label: Rhino
+    Released: 2024
+    Thumbnail: replacementsnotready.jpg
+-
+    Artist: Dr. John
+    Title: Gris-Gris Gumbo Ya-Ya Singles 1968-1974
+    Label: Omnivore
+    Released: 2024
+    Thumbnail: gumbo.jpg
+-
+    Artist: Buena Vista Social Club
+    Title: Buena Vista Social Club
+    Label: EGREM
+    Released: 1997
+    Thumbnail: bvsc.jpg
+-
+    Artist: Dean and Britta
+    Title: L'Avventura
+    Label: Jet Set
+    Released: 2003
+    Thumbnail: deanavventura.jpg
+-
+    Artist: Gram Parsons
+    Title: Grievous Angel
+    Label: Reprise
+    Released: 1974
+    Thumbnail: grievous.jpg
+-
+    Artist: Gil Scott-Heron
+    Title: Winter in America
+    Label: Strata-East
+    Released: 1974
+    Thumbnail: gilwinter.jpg
+-
+    Artist: Todd Rundgren
+    Title: Liars
+    Label: Sanctuary
+    Released: 2004
+    Thumbnail: toddliars.jpg
+-
+    Artist: Todd Rundgren
+    Title: Todd
+    Label: Bearsville
+    Released: 1974
+    Thumbnail: todd.jpg
+-
+    Artist: Todd Rundgren
+    Title: Hermit of Mink Hollow
+    Label: Bearsville
+    Released: 1978
+    Thumbnail: toddhermit.jpg
+-
+    Artist: Zombies, The
+    Title: Oddities and Extras
+    Label: Craft
+    Released: 2021
+    Thumbnail: zombiesextras.jpg
+-
+    Artist: Nancy Sinatra and Lee Hazlewood
+    Title: Nancy and Lee
+    Label: Reprise
+    Released: 1968
+    Thumbnail: nancylee.jpg
+-
+    Artist: Nancy Sinatra
+    Title: How Does That Grab You?
+    Label: Reprise
+    Released: 1966
+    Thumbnail: nancy.jpg
+-
     Artist: Ovidi Montllor
     Title: A Alcoi
     Label: Edigsa
@@ -65,6 +149,30 @@ main:
     Label: Dead Oceans
     Released: 2023
     Thumbnail: landinhospitable.jpg
+-
+    Artist: Minnie Riperton
+    Title: The Best of Minnie Riperton
+    Label: EMI
+    Released:  
+    Thumbnail: minnie.jpg
+-
+    Artist: Thelonius Monk
+    Title: Blue Monk
+    Label: Jazz Masterworks
+    Released:  
+    Thumbnail: bluemonk.jpg
+-
+    Artist: Mitchell-Ruff Trio
+    Title: The Catbird Seat
+    Label: Atlantic
+    Released:  
+    Thumbnail: catbird.jpg
+-
+    Artist: Harry Nilsson
+    Title: A little touch of Schmilsson in the night
+    Label: RCA
+    Released: 1973
+    Thumbnail: schmilssonnight.jpg
 -
     Artist: Cocteau Twins
     Title: Stars and Topsoil - A Collection
