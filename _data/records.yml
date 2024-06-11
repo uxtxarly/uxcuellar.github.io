@@ -276,12 +276,6 @@ main:
     Released: 1967
     Thumbnail: arethaneverloved.jpg
 -
-    Artist: Kevin Morby
-    Title: City Music
-    Label: Dead Oceans
-    Released: 2017
-    Thumbnail: citymusic.jpg
--
     Artist: Bob Dylan
     Title: Blonde On Blonde
     Label: Columbia
@@ -443,12 +437,6 @@ main:
     Label: Merge
     Released: 2005
     Thumbnail: strangegeometry.jpg
--
-    Artist: AC DC
-    Title: Who Made Who
-    Label: Atlantic
-    Released: 1986
-    Thumbnail: acdc.jpg
 -
     Artist: Al Green
     Title: 'Let''s Stay Together'
@@ -846,12 +834,6 @@ main:
     Released: 1966
     Thumbnail: donovan.jpg
 -
-    Artist: Doors, The
-    Title: Greatest Hits
-    Label: Elektra
-    Released: 1980
-    Thumbnail: doors.jpg
--
     Artist: Dr. John
     Title: Gris-Gris
     Label: ATCO
@@ -869,12 +851,6 @@ main:
     Label: Atlantic
     Released: 1969
     Thumbnail: dustymemphis.jpg
--
-    Artist: Echo & The Bunnymen
-    Title: Songs to Learn & Sing
-    Label: Sire
-    Released: 1985
-    Thumbnail: echosongs.jpg
 -
     Artist: Elliott Smith
     Title: XO
@@ -1069,12 +1045,6 @@ main:
     Thumbnail: psychocandy.jpg
 -
     Artist: Jesus and Mary Chain, The
-    Title: Barbed Wire Kisses
-    Label: Warner
-    Released: 1988
-    Thumbnail: jmcbarbed.jpg
--
-    Artist: Jesus and Mary Chain, The
     Title: Darklands
     Label: Warner
     Released: 1987
@@ -1133,12 +1103,6 @@ main:
     Label: Factory
     Released: 1988
     Thumbnail: joydivisionsubstance.jpg
--
-    Artist: Kevin Morby
-    Title: This Is A Photograph
-    Label: Dead Oceans
-    Released: 2022
-    Thumbnail: thisisaphotograph.jpg
 -
     Artist: Kinks, The
     Title: You Really Got Me
@@ -1205,60 +1169,6 @@ main:
     Label: Elefant
     Released: 1996
     Thumbnail: saudade.jpg
--
-    Artist: Led Zeppelin
-    Title: Led Zeppelin IV - EX
-    Label: Atlantic
-    Released: 1971
-    Thumbnail: lz4.jpg
--
-    Artist: Led Zeppelin
-    Title: Physical Graffiti
-    Label: Swan Song
-    Released: 1975
-    Thumbnail: physicalgraffiti.jpg
--
-    Artist: Led Zeppelin
-    Title: Led Zeppelin
-    Label: Atlantic
-    Released: 1969
-    Thumbnail: lz1.jpg
--
-    Artist: Led Zeppelin
-    Title: Presence
-    Label: Swan Song
-    Released: 1976
-    Thumbnail: presence.jpg
--
-    Artist: Led Zeppelin
-    Title: In Through The Out Door
-    Label: Swan Song
-    Released: 1979
-    Thumbnail: inthrough.jpg
--
-    Artist: Led Zeppelin
-    Title: Led Zeppelin III
-    Label: Atlantic
-    Released: 1970
-    Thumbnail: lz3.jpg
--
-    Artist: Led Zeppelin
-    Title: Coda
-    Label: Swan Song
-    Released: 1982
-    Thumbnail: coda.jpg
--
-    Artist: Led Zeppelin
-    Title: Led Zeppelin II
-    Label: Atlantic
-    Released: 1969
-    Thumbnail: lz2.jpg
--
-    Artist: Led Zeppelin
-    Title: Houses of the Holy
-    Label: Atlantic
-    Released: 1973
-    Thumbnail: housesoftheholy.jpg
 -
     Artist: Lloyd Cole and the Commotions
     Title: Rattlesnakes
@@ -1669,46 +1579,16 @@ main:
     Thumbnail: beggars.jpg
 -
     Artist: Rolling Stones
-    Title: Greatest Hits
-    Label: ABKCO
-    Released: 1977
-    Thumbnail: stoneshits.jpg
--
-    Artist: Rolling Stones
     Title: Sticky Fingers
     Label: ABKCO
     Released: 1971
     Thumbnail: sticky.jpg
--
-    Artist: Ryan Adams
-    Title: Gimme Something Good
-    Label: Blue Note
-    Released: 2014
-    Thumbnail: gimme.jpg
--
-    Artist: Ryan Adams
-    Title: 1984
-    Label: Caroline
-    Released: 2014
-    Thumbnail: ryan84.jpg
--
-    Artist: Ryan Adams
-    Title: Gold
-    Label: Lost Highway
-    Released: 2001
-    Thumbnail: gold.jpg
 -
     Artist: Serge Gainsbourg
     Title: Histoire de Melody Nelson
     Label: Philips
     Released: 1971
     Thumbnail: melodynelson.jpg
--
-    Artist: She & Him
-    Title: A Very She & Him Christmas
-    Label: Merge
-    Released: 2011
-    Thumbnail: shehim.jpg
 -
     Artist: Shins, The
     Title: Chutes Too Narrow
@@ -1854,18 +1734,6 @@ main:
     Released: 1979
     Thumbnail: turtles.jpg
 -
-    Artist: U2
-    Title: War
-    Label: Island
-    Released: 1983
-    Thumbnail: u2war.jpg
--
-    Artist: U2
-    Title: The Joshua Tree
-    Label: Island
-    Released: 1987
-    Thumbnail: joshua.jpg
--
     Artist: Urusei Yatsura
     Title: Plastic Ashtray
     Label: Che
@@ -1925,12 +1793,6 @@ main:
     Label: Scopitones
     Released: 2005
     Thumbnail: takefountain.jpg
--
-    Artist: Who, The
-    Title: 'Who''s Next'
-    Label: Decca
-    Released: 1971
-    Thumbnail: whosnext.jpg
 -
     Artist: Wilco
     Title: Summerteeth
