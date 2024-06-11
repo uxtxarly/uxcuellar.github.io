@@ -462,12 +462,6 @@ main:
     Released: 2000
     Thumbnail: avalanchessince.jpg
 -
-    Artist: 'B-52s, The'
-    Title: 'The B-52s'
-    Label: Warner
-    Released: 1979
-    Thumbnail: b52s.jpg
--
     Artist: Band of Horses
     Title: Everything All The Time
     Label: Sub Pop
@@ -785,12 +779,6 @@ main:
     Label: RCA
     Released: 1975
     Thumbnail: youngamericans.jpg
--
-    Artist: Depeche Mode
-    Title: Music For The Masses
-    Label: Sire
-    Released: 1987
-    Thumbnail: depechemode.jpg
 -
     Artist: Destroyer
     Title: Five Spanish Songs
