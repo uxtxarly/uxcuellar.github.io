@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Weezer
+    Title: Weezer
+    Label: Geffen
+    Released: 1994
+    Thumbnail: weezerblue.jpg
+-
     Artist: Blur
     Title: Parklife
     Label: Food
