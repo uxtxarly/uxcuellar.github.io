@@ -1,5 +1,17 @@
 main:
 -
+    Artist: Stereolab
+    Title: Dots and Loops
+    Label: Duophonic
+    Released: 1997
+    Thumbnail: dotsloops.jpg
+-
+    Artist: T-Rex
+    Title: T-Rex
+    Label: Reprixe
+    Released: 1970
+    Thumbnail: trex.jpg
+-
     Artist: Weezer
     Title: Weezer
     Label: Geffen
