@@ -1,5 +1,17 @@
 main:
 -
+    Artist: Alice Coltrane
+    Title: Transfiguration
+    Label: Warner
+    Released: 1978
+    Thumbnail: alicetrans.jpg
+-
+    Artist: Alice Coltrane
+    Title: Eternity
+    Label: Warner
+    Released: 1975
+    Thumbnail: aliceeter.jpg
+-
     Artist: Police, The
     Title: Synchronicity
     Label: A&M
