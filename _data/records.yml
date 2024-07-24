@@ -1,5 +1,29 @@
 main:
 -
+    Artist: Police, The
+    Title: Synchronicity
+    Label: A&M
+    Released: 1983
+    Thumbnail: police.jpg
+-
+    Artist: Various Artists
+    Title: Nuggets Vol.2
+    Label: Rhino
+    Released: 2024
+    Thumbnail: nuggets2.jpg
+-
+    Artist: Bravos, Los
+    Title: Black Is Black
+    Label: Press
+    Released: 1966
+    Thumbnail: bravos.jpg
+-
+    Artist: Curtis Mayfield
+    Title: Curtis
+    Label: Warner
+    Released: 1970
+    Thumbnail: curtis.jpg	
+-
     Artist: Stereolab
     Title: Dots and Loops
     Label: Duophonic
