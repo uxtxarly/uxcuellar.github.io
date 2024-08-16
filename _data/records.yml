@@ -1,5 +1,17 @@
 main:
 -
+    Artist: Gal Costa
+    Title: India
+    Label: Philips
+    Released: 1973
+    Thumbnail: gal.jpg
+-
+    Artist: Os Mutantes
+    Title: Os Mutantes
+    Label: Polydor
+    Released: 1968
+    Thumbnail: mutantes.jpg
+-
     Artist: Alice Coltrane
     Title: Transfiguration
     Label: Warner
