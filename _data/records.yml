@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Aretha Franklin
+    Title: Aretha Now
+    Label: Atlantic
+    Released: 1968
+    Thumbnail: arethanow.jpg
+-
     Artist: Gal Costa
     Title: India
     Label: Philips
