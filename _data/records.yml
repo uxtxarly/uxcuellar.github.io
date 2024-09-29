@@ -1,5 +1,23 @@
 main:
 -
+    Artist: Harry Nilsson
+    Title: Nilsson Schmilsson
+    Label: RCA
+    Released: 1971
+    Thumbnail: nilssonschmilsson.jpg
+-
+    Artist: Caetano Veloso
+    Title: Caetano Veloso
+    Label: Philipos
+    Released: 1968
+    Thumbnail: caetamp.jpg
+-
+    Artist: Junior Wells
+    Title: It's My Life, Baby
+    Label: Vanguard
+    Released: 1966
+    Thumbnail: juniorwells.jpg
+-
     Artist: Aretha Franklin
     Title: Aretha Now
     Label: Atlantic
