@@ -19,7 +19,7 @@ redirect_from:
    <email>carlos@cuellar.fr</email>
  </author>
 
- {% for post in site.posts limit:10 %}
+ {% for post in site.posts limit:20 %}
  <entry>
    <title>{{ post.title }}</title>
    {% if post.link %}
