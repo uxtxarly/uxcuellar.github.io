@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: basic2
 title: Add an Event
 description: An interactive form that allows event organizers to build, preview and submit events.
 tags: user research, wireframing, prototyping, usability testing.

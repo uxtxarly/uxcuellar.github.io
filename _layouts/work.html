@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#0F172A" />
+
+    {% include meta.html %}
+
+    <!-- Webfonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=dm-sans:400,400i,700|dm-serif-display:400&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.png">
+
+    <!-- Webmentions -->
+    <link rel="webmention" href="https://webmention.io/cuellar.fr/webmention" />
+
+    <!-- RSS -->
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Blog Feed" />
+    <link type="application/atom+xml" rel="alternate" href="/podcast.xml" title="Podcast Feed" />
+
+    <!-- Mastodon -->
+    <link name="mastodon" href="https://social.vivaldi.net/@cuellarfr" rel="me">
+
+    <!-- Netlify Identify -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	
+	<!-- Clicky -->
+	<script async data-id="101466015" src="//static.getclicky.com/js"></script>
+	
+  </head>
+
+  <body class="antialiased page {{page.bodyClass}} bg-slate-100 dark:bg-slate-900 bg-[url('/assets/images/bg-topo.svg')] text-slate-800 dark:text-slate-200" >
+    <div class="wrapper container mx-auto px-6 md:px-12 bg-slate-50/80 dark:bg-slate-900/90 rounded-b-[2rem] mb-6">
+      <a href="#main" class="skip text-xs">Skip to content</a>
+      
+	  <header class="flex items-center justify-between py-6">
+	    
+		<div class="logo hidden md:block">
+		  <a class="flex items-center" rel="me" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">
+		    <svg width="604px" height="602px" viewBox="0 0 604 602" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-9 h-9 mr-3 rounded-full">
+		      <title>Go to home</title>
+		      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+		        <g id="topo" class="fill-slate-600 dark:fill-slate-400 hover:fill-teal-600 dark:hover:fill-teal-400 transition duration-300 ease-in-out">
+		          <path d="M0,0 L604,0 L604,602 L0,602 L0,0 Z M188.696264,428.48 C248.216264,428.48 276.376264,395.2 287.896264,347.52 L238.936264,336.64 C230.616264,368.96 216.856264,386.56 189.016264,386.56 C153.176264,386.56 133.336264,355.2 133.336264,305.28 C133.336264,256.32 152.536264,225.92 188.376264,225.92 C216.216264,225.92 227.736264,244.48 235.416264,271.68 L284.696264,257.28 C274.456264,214.72 248.536264,182.72 188.696264,182.72 C128.856264,182.72 81.1762637,223.04 81.1762637,305.28 C81.1762637,388.8 126.936264,428.48 188.696264,428.48 Z M419.04,428.48 C478.56,428.48 506.72,395.2 518.24,347.52 L469.28,336.64 C460.96,368.96 447.2,386.56 419.36,386.56 C383.52,386.56 363.68,355.2 363.68,305.28 C363.68,256.32 382.88,225.92 418.72,225.92 C446.56,225.92 458.08,244.48 465.76,271.68 L515.04,257.28 C504.8,214.72 478.88,182.72 419.04,182.72 C359.2,182.72 311.52,223.04 311.52,305.28 C311.52,388.8 357.28,428.48 419.04,428.48 Z" id="logo"></path>
+		        </g>
+		      </g>
+		    </svg>
+		    {% if site.logo.logo_desktop_text %}
+		    <h2 class="text-2xl font-sans text-slate-600 dark:text-slate-400 font-bold hover:opacity-70 transition duration-300 ease-in-out">cuellar.fr<strong>/work</strong></h2>
+		    {% endif %}
+		  </a>
+		</div>
+		<div class="logo block md:hidden">
+		  <a class="flex items-center" rel="me" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">
+		    <svg width="604px" height="602px" viewBox="0 0 604 602" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-9 h-9 mr-3 rounded-full">
+		      <title>Go to home</title>
+		      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+		        <g id="topo" class="fill-slate-600 dark:fill-slate-400 hover:fill-teal-600 dark:hover:fill-teal-400 transition duration-300 ease-in-out">
+		          <path d="M0,0 L604,0 L604,602 L0,602 L0,0 Z M188.696264,428.48 C248.216264,428.48 276.376264,395.2 287.896264,347.52 L238.936264,336.64 C230.616264,368.96 216.856264,386.56 189.016264,386.56 C153.176264,386.56 133.336264,355.2 133.336264,305.28 C133.336264,256.32 152.536264,225.92 188.376264,225.92 C216.216264,225.92 227.736264,244.48 235.416264,271.68 L284.696264,257.28 C274.456264,214.72 248.536264,182.72 188.696264,182.72 C128.856264,182.72 81.1762637,223.04 81.1762637,305.28 C81.1762637,388.8 126.936264,428.48 188.696264,428.48 Z M419.04,428.48 C478.56,428.48 506.72,395.2 518.24,347.52 L469.28,336.64 C460.96,368.96 447.2,386.56 419.36,386.56 C383.52,386.56 363.68,355.2 363.68,305.28 C363.68,256.32 382.88,225.92 418.72,225.92 C446.56,225.92 458.08,244.48 465.76,271.68 L515.04,257.28 C504.8,214.72 478.88,182.72 419.04,182.72 C359.2,182.72 311.52,223.04 311.52,305.28 C311.52,388.8 357.28,428.48 419.04,428.48 Z" id="logo"></path>
+		        </g>
+		      </g>
+		    </svg>
+		    {% if site.logo.logo_mobile_text %}
+		    <h2 class="text-2xl font-sans text-slate-600 dark:text-slate-400 font-bold hover:opacity-70 transition duration-300 ease-in-out">cuellar.fr<strong>/work</strong></h2>
+		    {% endif %}
+		  </a>
+		</div>
+		
+		
+	    <!-- <nav class="print:invisible">
+	      <ul class="flex rounded-full bg-white/60 px-2 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-slate-900/5 backdrop-blur dark:bg-slate-800/90 dark:text-slate-200 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 transition duration-300 ease-in-out">
+	        {% for item in site.data.menu.main %}
+	          <li class="inline-block px-1"><a class="relative block px-2 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ item.url }}">{{ item.name }}</a></li>
+	        {% endfor %}
+	        <li class="inline-block px-1">
+	          <a rel="me" class="relative block px-2 py-3" href="/feed.xml">
+	            <svg role="img" viewBox="0 0 24 24" class="h-3 w-3 transition fill-slate-800 dark:fill-slate-200  hover:fill-teal-600 dark:hover:fill-teal-400" xmlns="http://www.w3.org/2000/svg"><title>Web Feed</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+	          </a>
+	        </li>
+	      </ul>
+	    </nav> -->
+	  </header>
+	  
+	  
+	  
+	  
+      {{content}}
+      {% include footer.html %}
+    </div>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
+  </body>
+</html>

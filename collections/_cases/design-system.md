@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: basic2
 title: Goldstar's Design System
 description: A design system that brings consistency and structure across multiple platforms.
 tags: design research, visual design.

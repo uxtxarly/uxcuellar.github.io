@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: basic2
 title: Pick Your Seat
 description: A new mobile-first interactive seating chart UI for a ticketing company.
 tags: user research, prototyping, usability testing.

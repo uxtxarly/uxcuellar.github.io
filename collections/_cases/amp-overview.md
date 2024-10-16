@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: basic2
 title: AMP Overview
 description: A new dashboard page for an event organizer's marketing platform.
 tags: user research, wireframing, prototyping, usability testing.

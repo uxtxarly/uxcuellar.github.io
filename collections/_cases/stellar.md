@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: basic2
 title: Stellar
 description: A new ticketing platform for live entertainment, focused on online events.
 tags: user research, flows, wireframing, prototyping.
