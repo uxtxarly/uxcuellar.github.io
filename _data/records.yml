@@ -1,5 +1,35 @@
 main:
 -
+    Artist: Dr. John
+    Title: Things Happen That Way
+    Label: Rounder
+    Released: 2022
+    Thumbnail: drjohnthings.jpg
+-
+    Artist: Lemon Twigs
+    Title: Everything Harmony
+    Label: Captured Tracks
+    Released: 2023
+    Thumbnail: twigsharmony.jpg
+-
+    Artist: Sleater-Kinney
+    Title: The Hot Rock
+    Label: Sub Pop
+    Released: 1999
+    Thumbnail: hotrock.jpg
+-
+    Artist: Bon Iver
+    Title: Bon Iver
+    Label: Jagjaguwar
+    Released: 2011
+    Thumbnail: boniver.jpg
+-
+    Artist: Joni Mitchell
+    Title: Blue
+    Label: Reprise
+    Released: 1971
+    Thumbnail: joniblue.jpg
+-
     Artist: Harry Nilsson
     Title: Nilsson Schmilsson
     Label: RCA
