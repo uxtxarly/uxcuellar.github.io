@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Little Richard
+    Title: Here's Little Richard
+    Label: Craft
+    Released: 1957
+    Thumbnail: hereslittle.jpg
+-
     Artist: Dr. John
     Title: Things Happen That Way
     Label: Rounder
