@@ -36,8 +36,6 @@ plugins:
   - jekyll-postcss
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-admin
-  - jekyll-postcss
   - jekyll/mastodon_webfinger
   - jekyll-redirect-from
 
@@ -83,7 +81,7 @@ defaults:
 
 # GitHub info
 github:
-  repo: cuellarfr/cuellarfr.github.io
+  repo: cuellarfr/cuellar.fr
   branch: master
 
 # Exclude these files from your production _site
