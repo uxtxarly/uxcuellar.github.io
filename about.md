@@ -25,4 +25,4 @@ Both the [content](https://creativecommons.org/licenses/by-sa/4.0/) and the [cod
 
 ## Get in touch
 - You can send me an email: [carlos@cuellar.fr](mailto:carlos@cuellar.fr)
-- Or you can follow me on [Mastodon](https://social.vivaldi.net/@cuellarfr) or [LinkedIn](https://www.linkedin.com/in/cuellarfr).
+- Or you can follow me on [Mastodon](https://social.vivaldi.net/@cuellarfr), [Bluesky](https://bsky.app/profile/cuellar.fr) or [LinkedIn](https://www.linkedin.com/in/cuellarfr).
