@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flickity-button:hover {
-    background: #2DD4BF;
+    background: rgb(253 186 116);
+	transition-duration: 600ms;
     cursor: pointer;
 }
 

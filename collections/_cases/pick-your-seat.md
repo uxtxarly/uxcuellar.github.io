@@ -11,9 +11,9 @@ sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
 
-<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-mobile-proto/index.html#/screens">View Mobile Prototype</a>
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-mobile-proto/index.html#/screens">View Mobile Prototype</a>
 
-<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-desktop-proto/index.html#/screens">View Desktop Prototype</a>
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/seat-desktop-proto/index.html#/screens">View Desktop Prototype</a>
 
 Since 2002, __Goldstar Events__ has sold discounted tickets for live entertainment. One of the things that made Goldstar different is that their customers don't select a specific seat at checkout and they instead let Goldstar pick the best seats available at a given price range. But in 2016 Goldstar decided that they were going to offer _premium_ tickets where users have the ability to select their seats. The technology that made this possible was created from scratch and it's still today a work in progress.
 
@@ -40,4 +40,4 @@ Our final prototype included several features that we weren't technically able t
 </figure>
 
 <hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>

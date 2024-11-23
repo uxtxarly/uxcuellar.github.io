@@ -15,13 +15,13 @@ heading: "Blog"
 <!-- Pagination links -->
 <nav class="flex items-center justify-between py-6 print:invisible">
   {% if paginator.next_page %}
-    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
+    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="next" href="/blog/page{{ paginator.next_page }}/" title="Older entries">&laquo; Older</a>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
+    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog" title="Newer entries">Newer  &raquo;</a>
     {% else %}
-    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
+    <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" rel="prev" href="/blog/page{{ paginator.previous_page }}/" title="Newer entries">Newer &raquo;</a>
     {% endif %}
   {% endif %}
 </nav>

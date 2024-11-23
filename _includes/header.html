@@ -1,13 +1,13 @@
 <header class="flex items-center justify-between py-6">
   {% include logo.html %}
   <nav class="print:invisible">
-    <ul class="flex rounded-full bg-white/60 px-2 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-slate-900/5 backdrop-blur dark:bg-slate-800/90 dark:text-slate-200 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 transition duration-300 ease-in-out"> 
+    <ul class="flex rounded-full bg-white/60 px-2 text-sm font-medium text-stone-800 shadow-lg shadow-stone-800/5 ring-1 ring-stone-900/5 backdrop-blur dark:bg-stone-800/90 dark:text-stone-200 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 transition duration-300 ease-in-out"> 
       {% for item in site.data.menu.main %}
-        <li class="inline-block px-1"><a class="relative block px-2 py-2 transition hover:text-teal-500 dark:hover:text-teal-400" href="{{ item.url }}">{{ item.name }}</a></li>
+        <li class="inline-block px-1"><a class="relative block px-2 py-2 transition hover:text-orange-500 dark:hover:text-orange-400" href="{{ item.url }}">{{ item.name }}</a></li>
       {% endfor %}
       <li class="inline-block px-1">
         <a rel="me" class="relative block px-2 py-3" href="/feed.xml">
-          <svg role="img" viewBox="0 0 24 24" class="h-3 w-3 transition fill-slate-800 dark:fill-slate-200  hover:fill-teal-600 dark:hover:fill-teal-400" xmlns="http://www.w3.org/2000/svg"><title>Web Feed</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+          <svg role="img" viewBox="0 0 24 24" class="h-3 w-3 transition fill-stone-800 dark:fill-stone-200  hover:fill-orange-600 dark:hover:fill-orange-400" xmlns="http://www.w3.org/2000/svg"><title>Web Feed</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
         </a>
       </li>
     </ul>

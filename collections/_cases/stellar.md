@@ -11,7 +11,7 @@ sitemap: false
 ---
 <script src="/assets/js/flickity.js"></script>
 
-<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/st-proto/index.html#/screens">View Desktop Prototype</a>
+<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/st-proto/index.html#/screens">View Desktop Prototype</a>
 
 ### The story behind this project
 
@@ -101,4 +101,4 @@ I created some mockups and prototypes that were tested by our launching partners
 The pandemic and its consequences forced us to work like a startup: roles were fluid and everybody had a voice in the development process. That wasn't an issue, and the collaboration between teammates was great. 8 months later, I can say that was the foundation of a solid product that is going to be an important part of Goldstar's future.
 
 <hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
