@@ -67,4 +67,4 @@ A gradual implementation process was planned. Different parts of the new design 
 Don't break things. Observe the users and help them improve their workflows, don't disrupt them.
 
 <hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-slate-800/90 ring-1 ring-slate-900/5 dark:ring-white/10 hover:ring-slate-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>

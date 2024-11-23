@@ -107,3 +107,7 @@ exclude:
 mastodon:
   username: cuellarfr
   instance: vivaldi.net
+
+# PostCSS Cache 
+postcss:
+  cache: false
