@@ -28,9 +28,6 @@
 
     <!-- Mastodon -->
     <link name="mastodon" href="https://social.vivaldi.net/@cuellarfr" rel="me">
-
-    <!-- Netlify Identify -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	
 	<!-- Clicky -->
 	<script async data-id="101466015" src="//static.getclicky.com/js"></script>
@@ -44,18 +41,6 @@
       {{content}}
       {% include footer.html %}
     </div>
-
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
     
   </body>
 </html>
