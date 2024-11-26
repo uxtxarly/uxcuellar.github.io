@@ -7,6 +7,7 @@ tags:
   - tools
   - design
 description: How we deal with Figma files at work
+bluesky: 3lbtjlukr4k2f
 ---
 
 I had been working on this project (a new ERP for construction companies) for about a year when I had to stop and address some issues with Figma's project and file organization. The team had been scaling up in a significant way and our (pretty anarchic) initial approach wasn't working anymore. The size of the files was making them difficult to manage for people with slower machines, and finding the right design for something was becoming a challenge for stakeholders. It was time to work on our file organization.
