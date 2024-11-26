@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Bluesky Comments Web Component"
+title:  Bluesky Comments Web Component
 authors: carlos
 link: https://gist.github.com/LoueeD/b7dec10b2ea56c825cbb0b3a514720ed
-tags: 
-	- blogs
-	- jekyll
+tags: jekyll
 bluesky: 3lbtjzyc3gk2o
 ---
 
