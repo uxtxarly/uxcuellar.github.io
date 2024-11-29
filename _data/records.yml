@@ -1,5 +1,23 @@
 main:
 -
+    Artist: Cowboy Junkies
+    Title: The Trinity Session
+    Label: RCA
+    Released: 1988
+    Thumbnail: trinity.jpg
+-
+    Artist: Buck Owens
+    Title: I've Got A Tiger By The Tail
+    Label: Capitol
+    Released: 1965
+    Thumbnail: bucktail.jpg
+-
+    Artist: Roxy Music
+    Title: Siren
+    Label: ATCO
+    Released: 1975
+    Thumbnail: roxysiren.jpg
+-
     Artist: Teenage Fanclub
     Title: Endless Arcade
     Label: Merge
