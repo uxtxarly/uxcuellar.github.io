@@ -1,5 +1,23 @@
 main:
 -
+    Artist: Teenage Fanclub
+    Title: Endless Arcade
+    Label: Merge
+    Released: 2021
+    Thumbnail: endlessarcade.jpg
+-
+    Artist: De La Soul
+    Title: Three Feet High and Rising
+    Label: Tommy Boy
+    Released: 1979
+    Thumbnail: 3feet.jpg
+-
+    Artist: Paul McCartney
+    Title: Band On The Run
+    Label: Apple
+    Released: 1973
+    Thumbnail: bandrun.jpg
+-
     Artist: Lucinda Williams
     Title: Car Wheels On A Gravel Road
     Label: Mercury
