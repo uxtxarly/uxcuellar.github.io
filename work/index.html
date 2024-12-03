@@ -33,7 +33,6 @@
                 box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
                 border-radius: 3px;
                 min-width: 300px;
-
             }
             .protected__content {
                 padding: 24px 28px;
@@ -86,6 +85,12 @@
                 background-color: rgb(41 37 36);
 				transition-duration: 600ms;
             }
+            p {
+                font-size: 12px;
+            }
+            a {
+                color: #fff;
+            }
 
         </style>
 		<!-- Clicky -->
@@ -99,6 +104,7 @@
             <div class="protected__alert" data-id="alert">You entered the wrong password</div>
             <div class="protected__content">
                 <h1 class="protected__content__heading">This content is password protected.</h1>
+                <p>If you don't have the password, please <a href="mailto:carlos@cuellar.fr?subject=Portfolio Password">email me</a>.</p>
                 <input class="protected__content__input" data-id="password" type="password" placeholder="Enter Password"/>
                 <button data-id="button" type="button" class="protected__content__btn">Submit</button>
             </div>
