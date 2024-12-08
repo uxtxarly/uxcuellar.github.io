@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Morrissey
+    Title: Beethoven Was Deaf
+    Label: HMV
+    Released: 1993
+    Thumbnail: beethovendeaf.jpg
+-
     Artist: Cowboy Junkies
     Title: The Trinity Session
     Label: RCA
