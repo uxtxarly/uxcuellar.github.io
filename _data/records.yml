@@ -1,5 +1,23 @@
 main:
 -
+    Artist: Ladybug Transistor, The
+    Title: The Albemarle Sound
+    Label: Merge
+    Released: 1999
+    Thumbnail: albemarle.gif
+-
+    Artist: Vince Guaraldi
+    Title: A Charlie Brown Christmas
+    Label: Fantasy
+    Released: 1965
+    Thumbnail: christmas_charlie.jpg
+-
+    Artist: Phil Spector
+    Title: A Christmas Gift For You
+    Label: Philies
+    Released: 1963
+    Thumbnail: christmas_phil.jpg
+-
     Artist: Morrissey
     Title: Beethoven Was Deaf
     Label: HMV
@@ -154,7 +172,7 @@ main:
     Title: Curtis
     Label: Warner
     Released: 1970
-    Thumbnail: curtis.jpg	
+    Thumbnail: curtis.jpg
 -
     Artist: Stereolab
     Title: Dots and Loops
@@ -327,19 +345,19 @@ main:
     Artist: Minnie Riperton
     Title: The Best of Minnie Riperton
     Label: EMI
-    Released:  
+    Released:
     Thumbnail: minnie.jpg
 -
     Artist: Thelonius Monk
     Title: Blue Monk
     Label: Jazz Masterworks
-    Released:  
+    Released:
     Thumbnail: bluemonk.jpg
 -
     Artist: Mitchell-Ruff Trio
     Title: The Catbird Seat
     Label: Atlantic
-    Released:  
+    Released:
     Thumbnail: catbird.jpg
 -
     Artist: Harry Nilsson
