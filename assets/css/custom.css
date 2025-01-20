@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     a:hover {
         text-decoration: underline;
     }
-    h2, h3 {
+    h2, h3, h4 {
         font-weight: 400;
         -webkit-font-smoothing: auto;
     }
@@ -214,6 +214,3 @@ h1, h2, h3, h4, h5, h6 {
 .flickity-page-dots .dot.is-selected {
     opacity: 1;
 }
-
-
-

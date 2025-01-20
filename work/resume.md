@@ -76,7 +76,7 @@ Prototype, Interaction Design, Figma, Sketch, Axure RP, Photoshop, Illustrator, 
 ## Contact
 
 - Email: [carlos@cuellar.fr](mailto:carlos@cuellar.fr)
-- Phone: +1 (661) 717-8201
+- Phone: [+1 (661) 717-8201](tel:+16617178201)
 - Portfolio: [cuellar.fr/work](https://cuellar.fr/work)
 - LinkedIn: [linkedin.com/in/cuellarfr](https://www.linkedin.com/in/cuellarfr)
 
