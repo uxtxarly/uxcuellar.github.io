@@ -5,23 +5,23 @@ description: My Big Campus is a Learning Management System for K-12 schools deve
 tags: user research, scenarios, prototyping, front-end development, visual design.
 duration: 3 Years, March 2015.
 sponsor: Lightspeed Systems.
-img: /assets/images/mbc-home-small.png
+image: /assets/images/mbc-home-small.png
 thumbnail: mbc-tn.gif
 sitemap: false
+published: false
 ---
-<script src="/flickity.js"></script>
-<hr>
-<p>I spent about 80% of my time at Lightspeed working for <a href="http://www.mybigcampus.com/">My Big Campus</a> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.</p>
+<script src="/assets/js/flickity.js"></script>
+
+<p>I spent about 80% of my time at Lightspeed working for <strong>My Big Campus</strong> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.</p>
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-    <img src="/images/mbc_wire1.png" alt="Wireframe of My Big Campus">
-    <img src="/images/mbc_wire2.png" alt="Wireframe of My Big Campus">
-    <img src="/images/mbc_wire3.png" alt="Wireframe of My Big Campus">
-    <img src="/images/mbc_wire4.png" alt="Wireframe of My Big Campus">
-    <img src="/images/mbc_wire5.png" alt="Wireframe of My Big Campus">
+    <img src="/assets/images/mbc_wire1.png" alt="Wireframe of My Big Campus">
+    <img src="/assets/images/mbc_wire2.png" alt="Wireframe of My Big Campus">
+    <img src="/assets/images/mbc_wire3.png" alt="Wireframe of My Big Campus">
+    <img src="/assets/images/mbc_wire4.png" alt="Wireframe of My Big Campus">
+    <img src="/assets/images/mbc_wire5.png" alt="Wireframe of My Big Campus">
   </div>
-  <br>
   <figcaption>Wireframes of My Big Campus.</figcaption>
 </figure>
 
@@ -31,10 +31,11 @@ sitemap: false
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-    <img src="/images/mbc_mock1.png" alt="mockup of My Big Campus">
-    <img src="/images/mbc_mock2.png" alt="mockup of My Big Campus">
-    <img src="/images/mbc_mock3.png" alt="mockup of My Big Campus">
+    <img src="/assets/images/mbc_mock1.png" alt="mockup of My Big Campus">
+    <img src="/assets/images/mbc_mock2.png" alt="mockup of My Big Campus">
+    <img src="/assets/images/mbc_mock3.png" alt="mockup of My Big Campus">
   </div>
-  <br>
   <figcaption>Mockups of My Big Campus.</figcaption>
 </figure>
+<hr>
+<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>

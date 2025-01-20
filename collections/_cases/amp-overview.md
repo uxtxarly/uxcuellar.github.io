@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 image: /assets/images/overview-header.jpg
 thumbnail: overview-tn.jpg
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 ###  A quick summary

@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 image: /assets/images/st_preview.jpg
 thumbnail: st_logo.png
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 

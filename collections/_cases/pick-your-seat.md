@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 thumbnail: chart-tn.jpg
 image: /assets/images/chart_shot.jpg
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 

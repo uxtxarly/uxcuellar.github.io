@@ -1,0 +1,1496 @@
+<!doctype html>
+<!--[if lt IE 9]>
+	<html id="ng-app" ng-app="InVision" ng-controller="AppController" inv-key-combos class="lt-ie9 ng-app:InVision" lang="en">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html ng-app="InVision" ng-controller="AppController" inv-key-combos lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title ng-bind="windowTitle">
+		InVision
+	</title>
+
+	<!-- Custom webfonts -->
+	<style>
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 300;
+		src: local('Open Sans Light'), local('OpenSans-Light'), url(assets/fonts/open_sans/OpenSans-light.woff) format('woff');
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Sans'), local('OpenSans'), url(assets/fonts/open_sans/OpenSans.woff) format('woff');
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(assets/fonts/open_sans/OpenSans-semibold.woff) format('woff');
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		src: local('Open Sans Bold'), local('OpenSans-Bold'), url(assets/fonts/open_sans/OpenSans-bold.woff) format('woff');
+	}
+	</style>
+	<!-- Interface styles -->
+	<link type="text/css" rel="stylesheet" href="assets/jquery-ui-1.9.2.custom/css/no-theme/jquery-ui-1.9.2.custom.min.css">
+	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/uniform.default.css">
+	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/intlTelInput.css">
+	<link type="text/css" rel="stylesheet" href="assets/apps/share/css/share-offline.css">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="/assets/html5shim/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<script src="/assets/json2/json2.js"></script>
+	<![endif]-->
+</head>
+<body
+	class="branding-invision"
+	ng-class="bodyClass"
+	ng-style="bodyStyle">
+
+
+	<!--
+		This is the initial loading sequence. We need to be able to display this BEFORE the AngularJS
+		framework loads in order to give the user some sence of activity. But, when the framework kicks
+		in, it will be able to use the bound ng-controller.
+	-->
+	<!-- BEGIN: Loading Sequence. -->
+	<div ng-if="isLoadingOpen" ng-controller="loading.LoadingController" inv-loading-sequence class="m-loading">
+
+		<!-- BEGIN: Loading Indicator. -->
+		
+
+			<div class="loading-backdrop">
+
+				<div class="loading-container">
+
+					<div class="status-container">
+
+						<div class="status"></div>
+						<div class="logo"></div>
+
+					</div> <!-- status-container -->
+
+					<h2>Loading Experience</h2>
+
+					<p>
+						Powered by <a href="http://www.InVisionApp.com/" target="_blank">InVision</a>
+
+						
+							, the best way to share and collaborate on design.
+						
+
+					</p>
+
+				</div> <!-- loading-container -->
+
+				<div class="loading-footer">
+
+					<div class="logo"></div>
+
+					<h3><a href="http://www.InVisionApp.com/" target="_blank">Powered by InVision</a></h3>
+
+					
+						<p><em>Prototyping, Collaboration &amp; Workflow for Designers</em></p>
+					
+
+				</div> <!-- loading-footer -->
+
+			</div> <!-- loading-backdrop -->
+
+		
+		<!-- END: Loading Indicator. -->
+
+	</div>
+	<!-- END: Loading Sequence. -->
+
+	<!-- preload images -->
+	<div ng-include=" '/assets/apps/share/views/partials/preload.htm' "></div>
+
+	<!-- Toolbar, if available. -->
+	<div ng-include=" '/assets/apps/share/views/toolbar/toolbar.htm' "></div>
+
+	<!-- Powered By Tag, if available -->
+	<div ng-include=" '/assets/apps/share/views/powered-by/powered-by.htm' "></div>
+
+	<!-- Jump-to-screen, if available. -->
+	<div ng-if="isBrowseOpen" ng-include=" '/assets/apps/share/views/browse/browse.htm' "></div>
+
+
+	<!--
+		Include the primary view. There are other widgets that may be visible - but these views
+		are all mutually exclusive.  We have two different views.  Desktop and Mobile
+	-->
+
+	
+	<div ng-if="!project.isMobile"
+	     class="desktopWrapper"
+	     ng-style="{ marginLeft: desktopWrapperOffset + 'px', height: screen.height * screen.displayScale + 'px' }" >
+
+		<!-- Optional header slice for desktop -->
+		<div
+				ng-if=" !project.isMobile && subview == 'preview' && screen.fixedHeaderHeight > 0"
+				class="desktopHeaderSliceContainer"
+				ng-style="{height: getFixedDesktopHeaderHeight(), marginLeft: desktopWrapperOffset }"
+				inv-slice-helper
+				>
+			<div class="background-helper" ng-style="headerStyle" ng-class="bodyClass">
+
+
+				<div
+						class="headerSlice screen"
+						ng-style="{height: screen.fixedHeaderHeight * screen.displayScale}">
+
+					<div ng-include=" '/assets/apps/share/views/preview/preview.htm' "></div>
+
+					<!-- Screens is always being displayed. -->
+					<div ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Desktop Projects get a simpler view -->
+		<div ng-if=" !project.isMobile ">
+
+			<div ng-if="subview == 'comments'" ng-include=" '/assets/apps/share/views/comments/comments.htm' "></div>
+
+			<div ng-if="subview == 'preview'" ng-include=" '/assets/apps/share/views/preview/preview.htm' " inv-preview-auto-redirect-listener
+			     is-share-loaded = "{{!isLoadingOpen}}"></div>
+
+		</div>
+
+		<!-- Screens is always being displayed. -->
+		<div ng-if=" !project.isMobile " ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+
+	</div>
+
+
+	
+	
+
+	<!-- Mobile Projects get a skinWrapper and more elements -->
+
+	<!-- Mobile Preview Mode -->
+	<div
+		ng-if=" project.isMobile && subview == 'preview' "
+		class="skinWrapper"
+		ng-class="{ mobile: project.isMobile && subview == 'preview' } ">
+
+		<div id="topContainerForMobile" ng-if=" project.isMobile && subview == 'preview' ">
+
+			<div id="appIconContainerForMobile">
+				<img ng-click=" goToShareStart() " ng-if=" appIcon.imageUrl != '' " class="appIcon" ng-src="{{appIcon.imageUrl}}">
+				<img ng-click=" goToShareStart() " ng-if=" appIcon.imageUrl == '' " class="appIcon" ng-src="assets/apps/share/img/icon.png">
+				<span ng-click=" goToShareStart() " class="appName">{{project.name}}</span>
+			</div>
+
+		</div>
+
+		<div
+			inv-mobile-skin
+			class="mobile-skin"
+			ng-class=" appliedClass() ">
+
+			<div
+				inv-mobile-slideshow-nav
+				ng-show="project.isMobile">
+
+				<a
+					class="preview-nav prev visible"
+					ng-if=" ( isShowingMobileSlideshowNav || ( isLiveShare && isPresenter ) ) "
+					ng-click="showPreviousScreen()">
+					<img src="assets/apps/share/img/preview-arrow-prev.png" alt="Previous Screen">
+				</a>
+
+				<a
+					class="preview-nav next visible"
+					ng-if=" ( isShowingMobileSlideshowNav || ( isLiveShare && isPresenter ) ) "
+					ng-click="showNextScreen()">
+					<img src="assets/apps/share/img/preview-arrow-next.png" alt="Next Screen">
+				</a>
+
+			</div>
+
+			<div
+				class="mobile-status-bar no-hover"
+				ng-show=" project.mobileStatusbarIsVisible "
+				ng-style="{ backgroundColor: project.mobileStatusbarBackgroundColor }"
+				ng-class="{
+					dark : project.mobileStatusbarFontColor == 'black',
+					light : project.mobileStatusbarFontColor == 'white'
+				}"></div>
+
+			<div
+				inv-mobile-simulated-loading-screen
+				is-share-loaded = "{{isLoadingOpen}}"
+				ng-if="loadingScreen.imageUrl"
+				class="simulated-loading-screen"
+				ng-style="{
+					width: ( ( deviceTemplate.viewportWidth * 1 ) + 1 ) + 'px',
+					background: '#' + loadingScreen.backgroundColor
+				}">
+
+					<img ng-src="{{ loadingScreen.imageUrl }}" />
+
+			</div> <!-- simulated-loading-screen -->
+
+			<div
+				inv-mobile-transition-layer
+				id="mobile_transition_layer"></div>
+
+			<!-- optional header slice -->
+			<div
+				ng-if=" screen.fixedHeaderHeight > 0"
+				class="header-slice"
+				ng-style="{height: screen.fixedHeaderHeight * screen.displayScale}">
+
+				<div ng-include=" '/assets/apps/share/views/preview/preview.htm' "></div>
+
+				<!-- Screens is always being displayed. -->
+				<div ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+
+			</div> <!-- header-slice -->
+
+			<!-- main viewport for mobile -->
+			<div
+				inv-mobile-skins-viewport
+				class="mobile-viewport"
+				ng-class=" appliedClass() "
+				ng-style=" {
+					'background-color': screen.fixedFooterBgColor,
+					width: deviceTemplate.viewportWidth + 'px'
+				}">
+
+				<div
+					class="fixedHeaderColorShim"
+					ng-style="{
+						height: screen.fixedHeaderHeight * screen.displayScale,
+						'background-color': screen.extended.fixedHeaderBackground
+					}"></div>
+
+				<div ng-include=" '/assets/apps/share/views/preview/preview.htm' " inv-preview-auto-redirect-listener is-share-loaded = "{{!isLoadingOpen}}"></div>
+
+				<!-- Screens is always being displayed. -->
+				<div ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+
+				<div
+					class="fixedFooterColorShim"
+					ng-style="{
+						height: Math.round(screen.fixedFooterHeight * screen.displayScale),
+						top: Math.round((screen.height - screen.fixedFooterHeight) * screen.displayScale),
+						'background-color': screen.extended.fixedFooterBackground
+					}"></div>
+
+			</div> <!-- mobile-viewport -->
+
+			<!-- optional footer slice -->
+			<div
+				ng-if=" screen.fixedFooterHeight > 0"
+				class="footer-slice"
+				ng-style="{height: (screen.fixedFooterHeight * screen.displayScale)}">
+
+				<div class="slice-container" ng-style="{height: (screen.height * screen.displayScale)}">
+
+					<div ng-include=" '/assets/apps/share/views/preview/preview.htm' "></div>
+
+					<!-- Screens is always being displayed. -->
+					<div ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+
+				</div> <!-- slice-container -->
+
+			</div> <!-- footer-slice -->
+
+		</div> <!-- mobile-skin -->
+
+	</div> <!-- skinWrapper -->
+
+	<!-- Mobile Comment Mode -->
+	<div ng-if=" project.isMobile && subview == 'comments' ">
+
+		<div ng-include=" '/assets/apps/share/views/comments/comments.htm' " class="mobile"></div>
+		<div ng-include=" '/assets/apps/share/views/screens/screens.htm' "></div>
+
+	</div>
+
+
+
+
+
+	
+	
+
+
+
+	
+	
+		<script type="text/javascript" src="assets/scripts.js"></script>
+	
+
+		<script type="text/javascript">
+
+			(function( ng, app ){
+
+				"use strict";
+
+				app.value(
+					"config",
+					{
+						user: {
+							id: 11824389,
+							name: "Sam",
+							email: "sbible@lightspeedsystems.com",
+							avatarID: "965B9170-90B1-1C4B-9DDD3AFDFB1B6C9B",
+							isAccountAuthenticated: true,
+							isAnonymous: false,
+							hasSeenCommentToolTip: true
+						},
+						shouldShowPoweredBy: false,
+						share: {"screenID":0,"showToolbarIntroduction":false,"hasClosedShareIntro":true,"isLoadAllScreens":true},
+						project: {"mobileStatusbarFontColor":"white","isProcessed":true,"lastAccessedAt":1409161872000,"sortTypeID":1,"mobileDeviceWidth":0,"isInGracePeriod":false,"id":1569416,"defaultbackgroundframe":"0","mobileStatusbarIsVisible":true,"isSample":false,"defaultAlignment":"left","isSnap":false,"defaultBackgroundImageID":"","name":"Classroom Orchestration","isOverQuota":false,"isArchived":false,"mobileDeviceID":0,"createdAt":1409161872000,"defaultbackgroundimageposition":"tile-horizontally","homeScreenID":35208948,"defaultbackgroundautostretch":"0","mobileStatusbarBackgroundColor":"#000000","defaultZoomScrollBehavior":1,"defaultBackgroundColor":"EBEBEB","mobileStatusbarIsOpaque":false,"isMobile":false,"updatedAt":1416413291000,"companyID":0,"userID":11824389},
+						screens: [{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":768,"imageUrl":"assets\/classroom_orchestration-wf1_Login.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":1,"serverFileName":"35208948.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Login.png","id":35208948,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Login","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":4,"unreadCommentCount":1,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409249597000,"backgroundImageWidth":"","width":1366,"commentCount":1,"clientFilename":"classroom_orchestration-wf1_Login.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":768,"imageUrl":"assets\/classroom_orchestration-wf1_Groups Overview.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":2,"serverFileName":"35208942.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Groups Overview.png","id":35208942,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Groups Overview","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409249590000,"backgroundImageWidth":"","width":1366,"commentCount":2,"clientFilename":"classroom_orchestration-wf1_Groups Overview.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":768,"imageUrl":"assets\/classroom_orchestration-wf1_Group Detail.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":3,"serverFileName":"35208941.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Group Detail.png","id":35208941,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Group Detail","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":7,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409249579000,"backgroundImageWidth":"","width":1366,"commentCount":4,"clientFilename":"classroom_orchestration-wf1_Group Detail.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":769,"imageUrl":"assets\/classroom_orchestration-wf1_Group Actions Dropdown.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":4,"serverFileName":"35871848.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Group Actions Dropdown.png","id":35871848,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Group Actions Dropdown","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":2,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409774508000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"classroom_orchestration-wf1_Group Actions Dropdown.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":957,"imageUrl":"assets\/classroom_orchestration-wf1_Student Detail - Lightbox.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":5,"serverFileName":"35222502.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Student Detail - Lightbox.png","id":35222502,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Student Detail - Lightbox","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":3,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409256038000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"classroom_orchestration-wf1_Student Detail - Lightbox.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1185,"imageUrl":"assets\/classroom_orchestration-wf1_Student Detail - More screens.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":6,"serverFileName":"35222500.png","thumbnailUrl":"assets\/thumb_classroom_orchestration-wf1_Student Detail - More screens.png","id":35222500,"fixedHeaderHeight":0,"extended":{},"name":"Classroom Orchestration-Wf1 Student Detail - More Screens","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":2,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409256040000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"classroom_orchestration-wf1_Student Detail - More screens.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1412016153000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/Master Mockup.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":7,"serverFileName":"48035944.png","thumbnailUrl":"assets\/thumb_Master Mockup.png","id":48035944,"fixedHeaderHeight":0,"extended":{},"name":"Master Mockup","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":10,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009488000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"Master Mockup.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442108000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/Master @ 800px wide.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":8,"serverFileName":"48036027.png","thumbnailUrl":"assets\/thumb_Master @ 800px wide.png","id":48036027,"fixedHeaderHeight":0,"extended":{},"name":"Master @ 800px Wide","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009497000,"backgroundImageWidth":"","width":800,"commentCount":0,"clientFilename":"Master @ 800px wide.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442107000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/Master Mockup 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":9,"serverFileName":"48036026.png","thumbnailUrl":"assets\/thumb_Master Mockup 2.png","id":48036026,"fixedHeaderHeight":0,"extended":{},"name":"Master Mockup 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009477000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"Master Mockup 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442095000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":768,"imageUrl":"assets\/mockup - login.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":10,"serverFileName":"36065803.png","thumbnailUrl":"assets\/thumb_mockup - login.png","id":36065803,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Login","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":11,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869376000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - login.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442115000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":11,"serverFileName":"36065805.png","thumbnailUrl":"assets\/thumb_mockup - groups grid.png","id":36065805,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":13,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869394000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442108000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid sorting.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":12,"serverFileName":"36065809.png","thumbnailUrl":"assets\/thumb_mockup - groups grid sorting.png","id":36065809,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid Sorting","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":14,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869403000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid sorting.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442113000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid options.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":13,"serverFileName":"36065812.png","thumbnailUrl":"assets\/thumb_mockup - groups grid options.png","id":36065812,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid Options","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":14,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869404000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid options.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442096000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups list.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":14,"serverFileName":"36065804.png","thumbnailUrl":"assets\/thumb_mockup - groups list.png","id":36065804,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups List","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":18,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869389000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups list.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442109000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups list sorting.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":15,"serverFileName":"36065810.png","thumbnailUrl":"assets\/thumb_mockup - groups list sorting.png","id":36065810,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups List Sorting","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":18,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869395000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups list sorting.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442108000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":16,"serverFileName":"42417236.png","thumbnailUrl":"assets\/thumb_mockup - group start session.png","id":42417236,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":12,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1413399208000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442096000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session options.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":17,"serverFileName":"45156100.png","thumbnailUrl":"assets\/thumb_mockup - group start session options.png","id":45156100,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session Options","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":7,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1414706612000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session options.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442094000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session options user.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":18,"serverFileName":"45156318.png","thumbnailUrl":"assets\/thumb_mockup - group start session options user.png","id":45156318,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session Options User","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":7,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1414706740000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session options user.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441980000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":19,"serverFileName":"36065808.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard.png","id":36065808,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":19,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869396000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442110000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (recording).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":20,"serverFileName":"38134274.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (recording).png","id":38134274,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (recording)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":17,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1411070220000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (recording).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441981000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (processing).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":21,"serverFileName":"39621784.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (processing).png","id":39621784,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (processing)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":16,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1411771294000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (processing).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442102000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (record options).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":22,"serverFileName":"38134272.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (record options).png","id":38134272,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (record Options)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":16,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1411070200000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (record options).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441982000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (tooltip).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":23,"serverFileName":"39911893.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (tooltip).png","id":39911893,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (tooltip)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":16,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1412015463000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (tooltip).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442115000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (options).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":24,"serverFileName":"42652764.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (options).png","id":42652764,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (options)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":13,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1413494710000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (options).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442102000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (options2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":25,"serverFileName":"45159360.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (options2).png","id":45159360,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (options2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":7,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1414707857000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (options2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441979000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group lightbox.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":26,"serverFileName":"36065807.png","thumbnailUrl":"assets\/thumb_mockup - group lightbox.png","id":36065807,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Lightbox","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":16,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1409869393000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group lightbox.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442103000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - saved sessions (list of students).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":27,"serverFileName":"42665850.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions (list of students).png","id":42665850,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions (list Of Students)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":26,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1413501675000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions (list of students).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442108000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - saved sessions  (student sessions).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":28,"serverFileName":"42665852.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions  (student sessions).png","id":42665852,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions  (student Sessions)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":11,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1413501681000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions  (student sessions).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442102000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1440,"imageUrl":"assets\/mockup - saved sessions (student shots).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":29,"serverFileName":"42665843.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions (student shots).png","id":42665843,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions (student Shots)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":26,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1413501670000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions (student shots).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442102000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":768,"imageUrl":"assets\/mockup - login (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":30,"serverFileName":"48926690.png","thumbnailUrl":"assets\/thumb_mockup - login (2).png","id":48926690,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Login (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413078000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - login (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413078000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":31,"serverFileName":"48926719.png","thumbnailUrl":"assets\/thumb_mockup - groups grid (2).png","id":48926719,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413112000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413112000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid sorting (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":32,"serverFileName":"48926811.png","thumbnailUrl":"assets\/thumb_mockup - groups grid sorting (2).png","id":48926811,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid Sorting (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413131000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid sorting (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413131000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups grid options (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":33,"serverFileName":"48926910.png","thumbnailUrl":"assets\/thumb_mockup - groups grid options (2).png","id":48926910,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Grid Options (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413149000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups grid options (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413149000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups list (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":34,"serverFileName":"48926968.png","thumbnailUrl":"assets\/thumb_mockup - groups list (2).png","id":48926968,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups List (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413172000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups list (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413172000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups list sorting (2).png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":35,"serverFileName":"48927239.png","thumbnailUrl":"assets\/thumb_mockup - groups list sorting (2).png","id":48927239,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups List Sorting (2)","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416413217000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups list sorting (2).png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1416413217000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":36,"serverFileName":"48036118.png","thumbnailUrl":"assets\/thumb_mockup - group start session 2.png","id":48036118,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009500000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441979000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session options 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":37,"serverFileName":"48036122.png","thumbnailUrl":"assets\/thumb_mockup - group start session options 2.png","id":48036122,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session Options 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009532000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session options 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442095000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group start session options user 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":38,"serverFileName":"48036123.png","thumbnailUrl":"assets\/thumb_mockup - group start session options user 2.png","id":48036123,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Start Session Options User 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009513000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group start session options user 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441980000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (tooltip) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":39,"serverFileName":"48036124.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (tooltip) 2.png","id":48036124,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (tooltip) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009540000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (tooltip) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441980000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (processing) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":40,"serverFileName":"48036128.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (processing) 2.png","id":48036128,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (processing) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":7,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009581000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (processing) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442096000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (record options) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":41,"serverFileName":"48036125.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (record options) 2.png","id":48036125,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (record Options) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009567000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (record options) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442103000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (recording) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":42,"serverFileName":"48036129.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (recording) 2.png","id":48036129,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (recording) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009592000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (recording) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428441979000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (options) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":43,"serverFileName":"48036132.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (options) 2.png","id":48036132,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (options) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009603000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (options) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442096000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (options) 3.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":44,"serverFileName":"48036133.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (options) 3.png","id":48036133,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (options) 3","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":6,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009614000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (options) 3.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442095000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group dashboard (options2) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":45,"serverFileName":"48036160.png","thumbnailUrl":"assets\/thumb_mockup - group dashboard (options2) 2.png","id":48036160,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Dashboard (options2) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":4,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009613000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group dashboard (options2) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442109000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - group lightbox 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":46,"serverFileName":"48036216.png","thumbnailUrl":"assets\/thumb_mockup - group lightbox 2.png","id":48036216,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Group Lightbox 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":4,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009638000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - group lightbox 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442114000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - saved sessions (list of students) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":47,"serverFileName":"48036217.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions (list of students) 2.png","id":48036217,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions (list Of Students) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":14,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009634000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions (list of students) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442100000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - saved sessions  (student sessions) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":48,"serverFileName":"48036220.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions  (student sessions) 2.png","id":48036220,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions  (student Sessions) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":11,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009651000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions  (student sessions) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442112000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Sam","isProcessed":true,"height":1440,"imageUrl":"assets\/mockup - saved sessions (student shots) 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":49,"serverFileName":"48036222.png","thumbnailUrl":"assets\/thumb_mockup - saved sessions (student shots) 2.png","id":48036222,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Saved Sessions (student Shots) 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":18,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1416009637000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - saved sessions (student shots) 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1428442101000,"backgroundFrame":false,"userID":11824389},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups admin 1.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":50,"serverFileName":"58364232.png","thumbnailUrl":"assets\/thumb_mockup - groups admin 1.png","id":58364232,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Admin 1","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1421865576000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups admin 1.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1421865576000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups admin 2.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":51,"serverFileName":"58364239.png","thumbnailUrl":"assets\/thumb_mockup - groups admin 2.png","id":58364239,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Admin 2","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1421865583000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups admin 2.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1421865583000,"backgroundFrame":false,"userID":3434417},{"updatedByUserName":"Carlos Cuellar","isProcessed":true,"height":1280,"imageUrl":"assets\/mockup - groups admin 3.png","projectID":1569416,"backgroundImageHeight":"","backgroundimageversion":"1","sort":52,"serverFileName":"58364249.png","thumbnailUrl":"assets\/thumb_mockup - groups admin 3.png","id":58364249,"fixedHeaderHeight":0,"extended":{},"name":"Mockup - Groups Admin 3","backgroundImageID":0,"isArchived":false,"alignment":"left","backgroundImagePosition":"tile-horizontally","imageVersion":1,"unreadCommentCount":0,"fixedFooterHeight":0,"backgroundimageserverfilename":"","createdAt":1421865594000,"backgroundImageWidth":"","width":1366,"commentCount":0,"clientFilename":"mockup - groups admin 3.png","backgroundImageUrl":"","screenTypeID":1,"zoomScrollBehavior":1,"backgroundAutostretch":false,"backgroundColor":"EBEBEB","backgroundImageClientFilename":"","updatedAt":1421865594000,"backgroundFrame":false,"userID":3434417}],
+						dividers: [{"sort":3,"label":"MOCKUPS","projectID":1569416,"dividerID":334973,"position":9,"type":"divider"},{"sort":1,"label":"OLD WIREFRAMES","projectID":1569416,"dividerID":334983,"position":0,"type":"divider"},{"sort":2,"label":"MASTERS","projectID":1569416,"dividerID":412482,"position":6,"type":"divider"},{"sort":4,"label":"ALT NAV","projectID":1569416,"dividerID":435019,"position":29,"type":"divider"},{"sort":5,"label":"District Admin Pages","projectID":1569416,"dividerID":520734,"position":49,"type":"divider"}],
+						metaScreens: {"icon":{"relation":"apple-touch-icon-precomposed","imageUrl":"","sameOriginImageUrl":""},"splash":{"relation":"apple-touch-startup-image","backgroundColor":"","imageUrl":"","sameOriginImageUrl":""}},
+						hotspots: [{"isScrollTo":false,"eventTypeID":1,"height":26,"targetTypeID":1,"createdAt":1409774823000,"targetScreenID":35208942,"width":97,"transitionTypeID":1,"screenID":35871848,"id":155708326,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774823000,"y":44,"x":193},{"isScrollTo":false,"eventTypeID":1,"height":47,"targetTypeID":1,"createdAt":1409774830000,"targetScreenID":35208948,"width":48,"transitionTypeID":1,"screenID":35871848,"id":155708330,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774830000,"y":35,"x":1249},{"isScrollTo":false,"eventTypeID":1,"height":29,"targetTypeID":1,"createdAt":1409774693000,"targetScreenID":35222500,"width":170,"transitionTypeID":1,"screenID":35871848,"id":155707476,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774693000,"y":422,"x":292},{"isScrollTo":false,"eventTypeID":1,"height":202,"targetTypeID":1,"createdAt":1409774805000,"targetScreenID":35222502,"width":392,"transitionTypeID":1,"screenID":35871848,"id":155707932,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774805000,"y":181,"x":77},{"isScrollTo":false,"eventTypeID":1,"height":27,"targetTypeID":1,"createdAt":1409257144000,"targetScreenID":35208942,"width":99,"transitionTypeID":1,"screenID":35208941,"id":153076228,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257144000,"y":41,"x":191},{"isScrollTo":false,"eventTypeID":1,"height":82,"targetTypeID":1,"createdAt":1409257189000,"targetScreenID":35208942,"width":88,"transitionTypeID":1,"screenID":35208941,"id":153076631,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257189000,"y":14,"x":75},{"isScrollTo":false,"eventTypeID":1,"height":47,"targetTypeID":1,"createdAt":1409257579000,"targetScreenID":35208948,"width":45,"transitionTypeID":1,"screenID":35208941,"id":153078364,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257579000,"y":31,"x":1253},{"isScrollTo":false,"eventTypeID":1,"height":202,"targetTypeID":1,"createdAt":1409774777000,"targetScreenID":35222502,"width":393,"transitionTypeID":1,"screenID":35208941,"id":155707912,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774777000,"y":181,"x":77},{"isScrollTo":false,"eventTypeID":1,"height":24,"targetTypeID":1,"createdAt":1409774784000,"targetScreenID":35222502,"width":164,"transitionTypeID":1,"screenID":35208941,"id":155707916,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774784000,"y":392,"x":73},{"isScrollTo":false,"eventTypeID":1,"height":23,"targetTypeID":1,"createdAt":1409774764000,"targetScreenID":35871848,"width":26,"transitionTypeID":1,"screenID":35208941,"id":155707522,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774764000,"y":391,"x":440},{"isScrollTo":false,"eventTypeID":1,"height":200,"targetTypeID":1,"createdAt":1409257112000,"targetScreenID":35208941,"width":390,"transitionTypeID":1,"screenID":35208942,"id":153075831,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774729000,"y":217,"x":79},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1409257569000,"targetScreenID":35208948,"width":52,"transitionTypeID":1,"screenID":35208942,"id":153078357,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257569000,"y":29,"x":1249},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1409257082000,"targetScreenID":35208942,"width":148,"transitionTypeID":1,"screenID":35208948,"id":153075438,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257082000,"y":506,"x":680},{"isScrollTo":false,"eventTypeID":1,"height":182,"targetTypeID":1,"createdAt":1409870989000,"targetScreenID":36065803,"width":235,"transitionTypeID":1,"screenID":35208948,"id":156498489,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409870989000,"y":40,"x":1058},{"isScrollTo":false,"eventTypeID":1,"height":174,"targetTypeID":1,"createdAt":1409775252000,"targetScreenID":35208941,"width":1364,"transitionTypeID":1,"screenID":35222502,"id":155710293,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409775252000,"y":4,"x":5},{"isScrollTo":false,"eventTypeID":1,"height":77,"targetTypeID":1,"createdAt":1409775267000,"targetScreenID":35208941,"width":1361,"transitionTypeID":1,"screenID":35222502,"id":155710309,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409775267000,"y":874,"x":4},{"isScrollTo":false,"eventTypeID":1,"height":697,"targetTypeID":1,"createdAt":1409775277000,"targetScreenID":35208941,"width":69,"transitionTypeID":1,"screenID":35222502,"id":155711455,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409775277000,"y":181,"x":5},{"isScrollTo":false,"eventTypeID":1,"height":692,"targetTypeID":1,"createdAt":1409775290000,"targetScreenID":35208941,"width":78,"transitionTypeID":1,"screenID":35222502,"id":155711846,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409775290000,"y":181,"x":1290},{"isScrollTo":false,"eventTypeID":1,"height":26,"targetTypeID":1,"createdAt":1409257245000,"targetScreenID":35208941,"width":90,"transitionTypeID":1,"screenID":35222500,"id":153076661,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257245000,"y":45,"x":296},{"isScrollTo":false,"eventTypeID":1,"height":76,"targetTypeID":1,"createdAt":1409257228000,"targetScreenID":35208942,"width":88,"transitionTypeID":1,"screenID":35222500,"id":153076650,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257228000,"y":21,"x":75},{"isScrollTo":false,"eventTypeID":1,"height":26,"targetTypeID":1,"createdAt":1409257236000,"targetScreenID":35208942,"width":90,"transitionTypeID":1,"screenID":35222500,"id":153076656,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257236000,"y":45,"x":197},{"isScrollTo":false,"eventTypeID":1,"height":41,"targetTypeID":1,"createdAt":1409257595000,"targetScreenID":35208948,"width":49,"transitionTypeID":1,"screenID":35222500,"id":153078374,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257595000,"y":36,"x":1249},{"isScrollTo":false,"eventTypeID":1,"height":51,"targetTypeID":1,"createdAt":1409257271000,"targetScreenID":35222500,"width":1209,"transitionTypeID":1,"screenID":35222500,"id":153077046,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409257271000,"y":1010,"x":76},{"isScrollTo":false,"eventTypeID":1,"height":233,"targetTypeID":1,"createdAt":1409257221000,"targetScreenID":35222502,"width":389,"transitionTypeID":1,"screenID":35222500,"id":153076646,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409774959000,"y":228,"x":76},{"isScrollTo":false,"eventTypeID":1,"height":48,"targetTypeID":1,"createdAt":1413494839000,"targetScreenID":36065803,"width":88,"transitionTypeID":1,"screenID":42652764,"id":183308355,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711631000,"y":1230,"x":0},{"isScrollTo":false,"eventTypeID":1,"height":49,"targetTypeID":1,"createdAt":1413494831000,"targetScreenID":36065805,"width":90,"transitionTypeID":1,"screenID":42652764,"id":183307965,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413494831000,"y":8,"x":108},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1415124638000,"targetScreenID":38134272,"width":32,"transitionTypeID":1,"screenID":42652764,"id":196914709,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124638000,"y":340,"x":479},{"isScrollTo":false,"eventTypeID":1,"height":188,"targetTypeID":1,"createdAt":1415124723000,"targetScreenID":39911893,"width":385,"transitionTypeID":1,"screenID":42652764,"id":196915938,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127393000,"y":144,"x":125},{"isScrollTo":false,"eventTypeID":1,"height":30,"targetTypeID":1,"createdAt":1413502103000,"targetScreenID":42417236,"width":65,"transitionTypeID":1,"screenID":42652764,"id":183358629,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502103000,"y":89,"x":1242},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1415124621000,"targetScreenID":42417236,"width":66,"transitionTypeID":1,"screenID":42652764,"id":196914288,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124621000,"y":12,"x":1272},{"isScrollTo":false,"eventTypeID":1,"height":32,"targetTypeID":1,"createdAt":1415124593000,"targetScreenID":42665850,"width":133,"transitionTypeID":1,"screenID":42652764,"id":196914255,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124593000,"y":51,"x":204},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1415124613000,"targetScreenID":45159360,"width":79,"transitionTypeID":1,"screenID":42652764,"id":196914277,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124613000,"y":11,"x":1188},{"isScrollTo":false,"eventTypeID":1,"height":50,"targetTypeID":1,"createdAt":1414711643000,"targetScreenID":36065803,"width":86,"transitionTypeID":1,"screenID":45159360,"id":193612426,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711643000,"y":1229,"x":4},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1415124668000,"targetScreenID":36065805,"width":107,"transitionTypeID":1,"screenID":45159360,"id":196915503,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124668000,"y":2,"x":96},{"isScrollTo":false,"eventTypeID":1,"height":145,"targetTypeID":1,"createdAt":1415124791000,"targetScreenID":36065808,"width":147,"transitionTypeID":1,"screenID":45159360,"id":196916012,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124791000,"y":64,"x":1120},{"isScrollTo":false,"eventTypeID":1,"height":40,"targetTypeID":1,"createdAt":1415124698000,"targetScreenID":38134272,"width":42,"transitionTypeID":1,"screenID":45159360,"id":196915853,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124698000,"y":340,"x":470},{"isScrollTo":false,"eventTypeID":1,"height":244,"targetTypeID":1,"createdAt":1415124713000,"targetScreenID":39911893,"width":397,"transitionTypeID":1,"screenID":45159360,"id":196915928,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127399000,"y":91,"x":119},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1415124661000,"targetScreenID":42417236,"width":74,"transitionTypeID":1,"screenID":45159360,"id":196915495,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124661000,"y":12,"x":1268},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1415124677000,"targetScreenID":42652764,"width":123,"transitionTypeID":1,"screenID":45159360,"id":196915512,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124677000,"y":5,"x":211},{"isScrollTo":false,"eventTypeID":1,"height":51,"targetTypeID":1,"createdAt":1411772078000,"targetScreenID":36065803,"width":120,"transitionTypeID":1,"screenID":39621784,"id":171075597,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711592000,"y":1228,"x":-32},{"isScrollTo":false,"eventTypeID":1,"height":51,"targetTypeID":1,"createdAt":1411772054000,"targetScreenID":36065805,"width":119,"transitionTypeID":1,"screenID":39621784,"id":171075590,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1411772054000,"y":4,"x":93},{"isScrollTo":true,"eventTypeID":9,"height":0,"targetTypeID":1,"createdAt":1411772101000,"targetScreenID":38134274,"width":0,"transitionTypeID":1,"screenID":39621784,"id":171075605,"metaData":{"redirectAfter":2000},"templateID":"","isBottomAligned":false,"updatedAt":1415124272000,"y":-10,"x":-10},{"isScrollTo":false,"eventTypeID":1,"height":37,"targetTypeID":1,"createdAt":1413501986000,"targetScreenID":42417236,"width":68,"transitionTypeID":1,"screenID":39621784,"id":183358178,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711779000,"y":12,"x":1269},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1415124264000,"targetScreenID":42652764,"width":113,"transitionTypeID":1,"screenID":39621784,"id":196910945,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124264000,"y":5,"x":217},{"isScrollTo":false,"eventTypeID":1,"height":37,"targetTypeID":1,"createdAt":1415124256000,"targetScreenID":45159360,"width":79,"transitionTypeID":1,"screenID":39621784,"id":196910937,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124256000,"y":13,"x":1186},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1411073291000,"targetScreenID":36065803,"width":87,"transitionTypeID":1,"screenID":38134272,"id":164940411,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711612000,"y":1224,"x":-1},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1411072952000,"targetScreenID":36065808,"width":32,"transitionTypeID":1,"screenID":38134272,"id":164937952,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124455000,"y":342,"x":479},{"isScrollTo":false,"eventTypeID":1,"height":56,"targetTypeID":1,"createdAt":1411072979000,"targetScreenID":36065808,"width":102,"transitionTypeID":1,"screenID":38134272,"id":164938344,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124362000,"y":1,"x":99},{"isScrollTo":false,"eventTypeID":1,"height":73,"targetTypeID":1,"createdAt":1411072922000,"targetScreenID":38134274,"width":134,"transitionTypeID":1,"screenID":38134272,"id":164937925,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124417000,"y":381,"x":381},{"isScrollTo":false,"eventTypeID":1,"height":242,"targetTypeID":1,"createdAt":1415127389000,"targetScreenID":39911893,"width":394,"transitionTypeID":1,"screenID":38134272,"id":196953092,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127389000,"y":93,"x":121},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1413502048000,"targetScreenID":42417236,"width":63,"transitionTypeID":1,"screenID":38134272,"id":183358591,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711770000,"y":10,"x":1273},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1415124373000,"targetScreenID":42652764,"width":112,"transitionTypeID":1,"screenID":38134272,"id":196911413,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124373000,"y":4,"x":221},{"isScrollTo":false,"eventTypeID":1,"height":28,"targetTypeID":1,"createdAt":1413502025000,"targetScreenID":42665852,"width":132,"transitionTypeID":1,"screenID":38134272,"id":183358206,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124429000,"y":464,"x":379},{"isScrollTo":false,"eventTypeID":1,"height":35,"targetTypeID":1,"createdAt":1415124383000,"targetScreenID":45159360,"width":76,"transitionTypeID":1,"screenID":38134272,"id":196911424,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124383000,"y":13,"x":1190},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1411073303000,"targetScreenID":36065803,"width":86,"transitionTypeID":1,"screenID":38134274,"id":164940417,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711601000,"y":1224,"x":1},{"isScrollTo":false,"eventTypeID":1,"height":242,"targetTypeID":1,"createdAt":1411072875000,"targetScreenID":36065807,"width":393,"transitionTypeID":1,"screenID":38134274,"id":164937130,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124303000,"y":96,"x":119},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1411072986000,"targetScreenID":36065808,"width":103,"transitionTypeID":1,"screenID":38134274,"id":164938354,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1411072986000,"y":2,"x":100},{"isScrollTo":false,"eventTypeID":1,"height":37,"targetTypeID":1,"createdAt":1415124331000,"targetScreenID":38134272,"width":60,"transitionTypeID":1,"screenID":38134274,"id":196911370,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124331000,"y":341,"x":452},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1413501997000,"targetScreenID":42417236,"width":72,"transitionTypeID":1,"screenID":38134274,"id":183358186,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711775000,"y":12,"x":1272},{"isScrollTo":false,"eventTypeID":1,"height":55,"targetTypeID":1,"createdAt":1415124293000,"targetScreenID":42652764,"width":113,"transitionTypeID":1,"screenID":38134274,"id":196911343,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124357000,"y":2,"x":213},{"isScrollTo":false,"eventTypeID":1,"height":34,"targetTypeID":1,"createdAt":1415124345000,"targetScreenID":45159360,"width":84,"transitionTypeID":1,"screenID":38134274,"id":196911383,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124345000,"y":15,"x":1186},{"isScrollTo":false,"eventTypeID":1,"height":58,"targetTypeID":1,"createdAt":1412015537000,"targetScreenID":36065803,"width":91,"transitionTypeID":1,"screenID":39911893,"id":172277026,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711622000,"y":1220,"x":-3},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1415127327000,"targetScreenID":36065808,"width":66,"transitionTypeID":1,"screenID":39911893,"id":196951876,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127327000,"y":239,"x":994},{"isScrollTo":false,"eventTypeID":1,"height":78,"targetTypeID":1,"createdAt":1415127301000,"targetScreenID":39621784,"width":132,"transitionTypeID":1,"screenID":39911893,"id":196951089,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127301000,"y":648,"x":889},{"isScrollTo":false,"eventTypeID":1,"height":26,"targetTypeID":1,"createdAt":1415127318000,"targetScreenID":42665843,"width":132,"transitionTypeID":1,"screenID":39911893,"id":196951866,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127318000,"y":733,"x":891},{"isScrollTo":false,"eventTypeID":1,"height":47,"targetTypeID":1,"createdAt":1409870021000,"targetScreenID":36065803,"width":88,"transitionTypeID":1,"screenID":36065808,"id":156492373,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711585000,"y":1230,"x":0},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1409870012000,"targetScreenID":36065805,"width":99,"transitionTypeID":1,"screenID":36065808,"id":156492370,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1409870012000,"y":3,"x":101},{"isScrollTo":false,"eventTypeID":1,"height":39,"targetTypeID":1,"createdAt":1415124205000,"targetScreenID":38134272,"width":38,"transitionTypeID":1,"screenID":36065808,"id":196910901,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124205000,"y":337,"x":473},{"isScrollTo":false,"eventTypeID":1,"height":243,"targetTypeID":1,"createdAt":1415124223000,"targetScreenID":39911893,"width":390,"transitionTypeID":1,"screenID":36065808,"id":196910912,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415127370000,"y":90,"x":122},{"isScrollTo":false,"eventTypeID":1,"height":35,"targetTypeID":1,"createdAt":1413501975000,"targetScreenID":42417236,"width":64,"transitionTypeID":1,"screenID":36065808,"id":183358172,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711781000,"y":11,"x":1272},{"isScrollTo":false,"eventTypeID":1,"height":51,"targetTypeID":1,"createdAt":1415123538000,"targetScreenID":42652764,"width":114,"transitionTypeID":1,"screenID":36065808,"id":196900704,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123543000,"y":4,"x":215},{"isScrollTo":false,"eventTypeID":1,"height":34,"targetTypeID":1,"createdAt":1415123507000,"targetScreenID":45159360,"width":82,"transitionTypeID":1,"screenID":36065808,"id":196900668,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123507000,"y":12,"x":1187},{"isScrollTo":false,"eventTypeID":1,"height":41,"targetTypeID":1,"createdAt":1409870261000,"targetScreenID":36065808,"width":44,"transitionTypeID":1,"screenID":36065807,"id":156492512,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124803000,"y":73,"x":1282},{"isScrollTo":false,"eventTypeID":1,"height":43,"targetTypeID":1,"createdAt":1414711576000,"targetScreenID":36065803,"width":84,"transitionTypeID":1,"screenID":45156318,"id":193611647,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711576000,"y":1233,"x":5},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1415123421000,"targetScreenID":36065805,"width":111,"transitionTypeID":1,"screenID":45156318,"id":196898666,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123421000,"y":4,"x":95},{"isScrollTo":false,"eventTypeID":1,"height":40,"targetTypeID":1,"createdAt":1415123449000,"targetScreenID":36065808,"width":68,"transitionTypeID":1,"screenID":45156318,"id":196899080,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123449000,"y":10,"x":1271},{"isScrollTo":false,"eventTypeID":1,"height":34,"targetTypeID":1,"createdAt":1415123463000,"targetScreenID":42665852,"width":137,"transitionTypeID":1,"screenID":45156318,"id":196899100,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124440000,"y":381,"x":378},{"isScrollTo":false,"eventTypeID":1,"height":33,"targetTypeID":1,"createdAt":1415123440000,"targetScreenID":45156100,"width":78,"transitionTypeID":1,"screenID":45156318,"id":196899069,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123440000,"y":14,"x":1187},{"isScrollTo":false,"eventTypeID":1,"height":49,"targetTypeID":1,"createdAt":1414711563000,"targetScreenID":36065803,"width":84,"transitionTypeID":1,"screenID":45156100,"id":193611639,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711563000,"y":1227,"x":4},{"isScrollTo":false,"eventTypeID":1,"height":55,"targetTypeID":1,"createdAt":1415123381000,"targetScreenID":36065805,"width":116,"transitionTypeID":1,"screenID":45156100,"id":196897112,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123381000,"y":1,"x":92},{"isScrollTo":false,"eventTypeID":1,"height":35,"targetTypeID":1,"createdAt":1415123392000,"targetScreenID":36065808,"width":69,"transitionTypeID":1,"screenID":45156100,"id":196897500,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123392000,"y":14,"x":1271},{"isScrollTo":false,"eventTypeID":1,"height":44,"targetTypeID":1,"createdAt":1415123404000,"targetScreenID":45156318,"width":38,"transitionTypeID":1,"screenID":45156100,"id":196897892,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123404000,"y":338,"x":472},{"isScrollTo":false,"eventTypeID":1,"height":50,"targetTypeID":1,"createdAt":1413409369000,"targetScreenID":36065803,"width":85,"transitionTypeID":1,"screenID":42417236,"id":182471203,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711546000,"y":1229,"x":0},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1413409359000,"targetScreenID":36065805,"width":123,"transitionTypeID":1,"screenID":42417236,"id":182471195,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123052000,"y":4,"x":92},{"isScrollTo":false,"eventTypeID":1,"height":40,"targetTypeID":1,"createdAt":1415123149000,"targetScreenID":36065808,"width":69,"transitionTypeID":1,"screenID":42417236,"id":196893489,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123149000,"y":10,"x":1271},{"isScrollTo":false,"eventTypeID":1,"height":34,"targetTypeID":1,"createdAt":1415123139000,"targetScreenID":45156100,"width":83,"transitionTypeID":1,"screenID":42417236,"id":196893108,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123139000,"y":13,"x":1185},{"isScrollTo":false,"eventTypeID":1,"height":37,"targetTypeID":1,"createdAt":1415123071000,"targetScreenID":45156318,"width":36,"transitionTypeID":1,"screenID":42417236,"id":196893042,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415123071000,"y":343,"x":472},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":36065803,"width":95,"transitionTypeID":1,"screenID":48926719,"id":208957640,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":1227,"x":-8},{"isScrollTo":false,"eventTypeID":1,"height":23,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":36065804,"width":31,"transitionTypeID":1,"screenID":48926719,"id":208957641,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":21,"x":1066},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":36065809,"width":32,"transitionTypeID":1,"screenID":48926719,"id":208957642,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":11,"x":1028},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":36065812,"width":39,"transitionTypeID":1,"screenID":48926719,"id":208957643,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":335,"x":368},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":42417236,"width":93,"transitionTypeID":1,"screenID":48926719,"id":208957645,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":335,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":242,"targetTypeID":1,"createdAt":1416413114000,"targetScreenID":42417236,"width":292,"transitionTypeID":1,"screenID":48926719,"id":208957646,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413114000,"y":89,"x":119},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":36065803,"width":86,"transitionTypeID":1,"screenID":48926910,"id":208958492,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":1224,"x":2},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":36065804,"width":58,"transitionTypeID":1,"screenID":48926910,"id":208958493,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":9,"x":1062},{"isScrollTo":false,"eventTypeID":1,"height":50,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":36065809,"width":45,"transitionTypeID":1,"screenID":48926910,"id":208958494,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":7,"x":1014},{"isScrollTo":false,"eventTypeID":1,"height":239,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":42417236,"width":284,"transitionTypeID":1,"screenID":48926910,"id":208958496,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":90,"x":122},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":42417236,"width":218,"transitionTypeID":1,"screenID":48926910,"id":208958497,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":332,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":32,"targetTypeID":1,"createdAt":1416413151000,"targetScreenID":42665850,"width":154,"transitionTypeID":1,"screenID":48926910,"id":208958498,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413151000,"y":384,"x":256},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1409869853000,"targetScreenID":36065803,"width":86,"transitionTypeID":1,"screenID":36065812,"id":156491550,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711505000,"y":1224,"x":2},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1415122810000,"targetScreenID":36065804,"width":58,"transitionTypeID":1,"screenID":36065812,"id":196890135,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122810000,"y":9,"x":1062},{"isScrollTo":false,"eventTypeID":1,"height":50,"targetTypeID":1,"createdAt":1415122822000,"targetScreenID":36065809,"width":45,"transitionTypeID":1,"screenID":36065812,"id":196890148,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122822000,"y":7,"x":1014},{"isScrollTo":false,"eventTypeID":1,"height":239,"targetTypeID":1,"createdAt":1415122764000,"targetScreenID":42417236,"width":284,"transitionTypeID":1,"screenID":36065812,"id":196889328,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122764000,"y":90,"x":122},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1415122774000,"targetScreenID":42417236,"width":218,"transitionTypeID":1,"screenID":36065812,"id":196889720,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122774000,"y":332,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":32,"targetTypeID":1,"createdAt":1415122740000,"targetScreenID":42665850,"width":154,"transitionTypeID":1,"screenID":36065812,"id":196888933,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122740000,"y":384,"x":256},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1416413133000,"targetScreenID":36065803,"width":85,"transitionTypeID":1,"screenID":48926811,"id":208958241,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413133000,"y":1223,"x":0},{"isScrollTo":false,"eventTypeID":1,"height":42,"targetTypeID":1,"createdAt":1416413133000,"targetScreenID":36065805,"width":31,"transitionTypeID":1,"screenID":48926811,"id":208958242,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413133000,"y":9,"x":997},{"isScrollTo":false,"eventTypeID":1,"height":39,"targetTypeID":1,"createdAt":1416413133000,"targetScreenID":36065810,"width":55,"transitionTypeID":1,"screenID":48926811,"id":208958243,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413133000,"y":13,"x":1061},{"isScrollTo":false,"eventTypeID":1,"height":47,"targetTypeID":1,"createdAt":1416413133000,"targetScreenID":36065812,"width":35,"transitionTypeID":1,"screenID":48926811,"id":208958244,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413133000,"y":334,"x":372},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1416413133000,"targetScreenID":42417236,"width":197,"transitionTypeID":1,"screenID":48926811,"id":208958245,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413133000,"y":335,"x":121},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1409869787000,"targetScreenID":36065803,"width":85,"transitionTypeID":1,"screenID":36065809,"id":156490398,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711495000,"y":1223,"x":0},{"isScrollTo":false,"eventTypeID":1,"height":42,"targetTypeID":1,"createdAt":1415118563000,"targetScreenID":36065805,"width":31,"transitionTypeID":1,"screenID":36065809,"id":196823694,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118563000,"y":9,"x":997},{"isScrollTo":false,"eventTypeID":1,"height":39,"targetTypeID":1,"createdAt":1415118577000,"targetScreenID":36065810,"width":55,"transitionTypeID":1,"screenID":36065809,"id":196824183,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118577000,"y":13,"x":1061},{"isScrollTo":false,"eventTypeID":1,"height":47,"targetTypeID":1,"createdAt":1415118619000,"targetScreenID":36065812,"width":35,"transitionTypeID":1,"screenID":36065809,"id":196825309,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118619000,"y":334,"x":372},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1415118612000,"targetScreenID":42417236,"width":197,"transitionTypeID":1,"screenID":36065809,"id":196825116,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118612000,"y":335,"x":121},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1409869739000,"targetScreenID":36065803,"width":95,"transitionTypeID":1,"screenID":36065805,"id":156490006,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711486000,"y":1227,"x":-8},{"isScrollTo":false,"eventTypeID":1,"height":23,"targetTypeID":1,"createdAt":1409869664000,"targetScreenID":36065804,"width":31,"transitionTypeID":1,"screenID":36065805,"id":156489610,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118524000,"y":21,"x":1066},{"isScrollTo":false,"eventTypeID":1,"height":36,"targetTypeID":1,"createdAt":1415118519000,"targetScreenID":36065809,"width":32,"transitionTypeID":1,"screenID":36065805,"id":196823246,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118519000,"y":11,"x":1028},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1409869686000,"targetScreenID":36065812,"width":39,"transitionTypeID":1,"screenID":36065805,"id":156489615,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118475000,"y":335,"x":368},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1409869701000,"targetScreenID":42417236,"width":93,"transitionTypeID":1,"screenID":36065805,"id":156489620,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118483000,"y":335,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":242,"targetTypeID":1,"createdAt":1409869715000,"targetScreenID":42417236,"width":292,"transitionTypeID":1,"screenID":36065805,"id":156489941,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415118458000,"y":89,"x":119},{"isScrollTo":false,"eventTypeID":1,"height":56,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":36065803,"width":87,"transitionTypeID":1,"screenID":48926968,"id":208958840,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":1221,"x":1},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":36065805,"width":51,"transitionTypeID":1,"screenID":48926968,"id":208958841,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":10,"x":1075},{"isScrollTo":false,"eventTypeID":1,"height":48,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":36065810,"width":50,"transitionTypeID":1,"screenID":48926968,"id":208958842,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":10,"x":1016},{"isScrollTo":false,"eventTypeID":1,"height":85,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":42417236,"width":91,"transitionTypeID":1,"screenID":48926968,"id":208958844,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":91,"x":117},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":42417236,"width":122,"transitionTypeID":1,"screenID":48926968,"id":208958845,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":95,"x":222},{"isScrollTo":false,"eventTypeID":1,"height":31,"targetTypeID":1,"createdAt":1416413174000,"targetScreenID":42665850,"width":130,"transitionTypeID":1,"screenID":48926968,"id":208958846,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413174000,"y":136,"x":228},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":36065804,"width":132,"transitionTypeID":1,"screenID":48927239,"id":208959758,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":1224,"x":-45},{"isScrollTo":false,"eventTypeID":1,"height":48,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":36065804,"width":36,"transitionTypeID":1,"screenID":48927239,"id":208959759,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":5,"x":992},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":36065809,"width":50,"transitionTypeID":1,"screenID":48927239,"id":208959760,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":11,"x":1073},{"isScrollTo":false,"eventTypeID":1,"height":42,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":42417236,"width":135,"transitionTypeID":1,"screenID":48927239,"id":208959761,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":95,"x":222},{"isScrollTo":false,"eventTypeID":1,"height":90,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":42417236,"width":89,"transitionTypeID":1,"screenID":48927239,"id":208959762,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":89,"x":118},{"isScrollTo":false,"eventTypeID":1,"height":27,"targetTypeID":1,"createdAt":1416413219000,"targetScreenID":42665850,"width":155,"transitionTypeID":1,"screenID":48927239,"id":208959763,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413219000,"y":142,"x":220},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1409869982000,"targetScreenID":36065804,"width":132,"transitionTypeID":1,"screenID":36065810,"id":156492363,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711534000,"y":1224,"x":-45},{"isScrollTo":false,"eventTypeID":1,"height":48,"targetTypeID":1,"createdAt":1415122951000,"targetScreenID":36065804,"width":36,"transitionTypeID":1,"screenID":36065810,"id":196892172,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122951000,"y":5,"x":992},{"isScrollTo":false,"eventTypeID":1,"height":45,"targetTypeID":1,"createdAt":1415122960000,"targetScreenID":36065809,"width":50,"transitionTypeID":1,"screenID":36065810,"id":196892184,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122960000,"y":11,"x":1073},{"isScrollTo":false,"eventTypeID":1,"height":42,"targetTypeID":1,"createdAt":1415122969000,"targetScreenID":42417236,"width":135,"transitionTypeID":1,"screenID":36065810,"id":196892194,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122969000,"y":95,"x":222},{"isScrollTo":false,"eventTypeID":1,"height":90,"targetTypeID":1,"createdAt":1415122986000,"targetScreenID":42417236,"width":89,"transitionTypeID":1,"screenID":36065810,"id":196892218,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122986000,"y":89,"x":118},{"isScrollTo":false,"eventTypeID":1,"height":27,"targetTypeID":1,"createdAt":1415122976000,"targetScreenID":42665850,"width":155,"transitionTypeID":1,"screenID":36065810,"id":196892210,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122976000,"y":142,"x":220},{"isScrollTo":false,"eventTypeID":1,"height":56,"targetTypeID":1,"createdAt":1409869939000,"targetScreenID":36065803,"width":87,"transitionTypeID":1,"screenID":36065804,"id":156491965,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711514000,"y":1221,"x":1},{"isScrollTo":false,"eventTypeID":1,"height":46,"targetTypeID":1,"createdAt":1415122890000,"targetScreenID":36065805,"width":51,"transitionTypeID":1,"screenID":36065804,"id":196891356,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122890000,"y":10,"x":1075},{"isScrollTo":false,"eventTypeID":1,"height":48,"targetTypeID":1,"createdAt":1415122881000,"targetScreenID":36065810,"width":50,"transitionTypeID":1,"screenID":36065804,"id":196890969,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122881000,"y":10,"x":1016},{"isScrollTo":false,"eventTypeID":1,"height":85,"targetTypeID":1,"createdAt":1415122910000,"targetScreenID":42417236,"width":91,"transitionTypeID":1,"screenID":36065804,"id":196891757,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122910000,"y":91,"x":117},{"isScrollTo":false,"eventTypeID":1,"height":38,"targetTypeID":1,"createdAt":1415122919000,"targetScreenID":42417236,"width":122,"transitionTypeID":1,"screenID":36065804,"id":196891762,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122919000,"y":95,"x":222},{"isScrollTo":false,"eventTypeID":1,"height":31,"targetTypeID":1,"createdAt":1415122903000,"targetScreenID":42665850,"width":130,"transitionTypeID":1,"screenID":36065804,"id":196891370,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415122903000,"y":136,"x":228},{"isScrollTo":false,"eventTypeID":1,"height":32,"targetTypeID":1,"createdAt":1416413086000,"targetScreenID":36065805,"width":249,"transitionTypeID":1,"screenID":48926690,"id":208957583,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1416413086000,"y":296,"x":559},{"isScrollTo":false,"eventTypeID":1,"height":32,"targetTypeID":1,"createdAt":1409869615000,"targetScreenID":36065805,"width":249,"transitionTypeID":1,"screenID":36065803,"id":156489600,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711799000,"y":296,"x":559},{"isScrollTo":false,"eventTypeID":1,"height":57,"targetTypeID":1,"createdAt":1413502419000,"targetScreenID":36065803,"width":119,"transitionTypeID":1,"screenID":42665852,"id":183360691,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711672000,"y":1222,"x":-30},{"isScrollTo":false,"eventTypeID":1,"height":53,"targetTypeID":1,"createdAt":1413502213000,"targetScreenID":36065805,"width":106,"transitionTypeID":1,"screenID":42665852,"id":183359442,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502213000,"y":3,"x":96},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1413502201000,"targetScreenID":36065808,"width":103,"transitionTypeID":1,"screenID":42665852,"id":183359436,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502201000,"y":6,"x":232},{"isScrollTo":false,"eventTypeID":1,"height":452,"targetTypeID":1,"createdAt":1413502184000,"targetScreenID":42665843,"width":1216,"transitionTypeID":1,"screenID":42665852,"id":183359046,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124839000,"y":90,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1413502193000,"targetScreenID":42665850,"width":138,"transitionTypeID":1,"screenID":42665852,"id":183359055,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124828000,"y":4,"x":351},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1413502411000,"targetScreenID":36065803,"width":88,"transitionTypeID":1,"screenID":42665850,"id":183360686,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711663000,"y":1223,"x":-2},{"isScrollTo":false,"eventTypeID":1,"height":56,"targetTypeID":1,"createdAt":1413502170000,"targetScreenID":36065805,"width":120,"transitionTypeID":1,"screenID":42665850,"id":183358660,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502170000,"y":2,"x":91},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1413502160000,"targetScreenID":36065808,"width":97,"transitionTypeID":1,"screenID":42665850,"id":183358655,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502160000,"y":4,"x":231},{"isScrollTo":false,"eventTypeID":1,"height":74,"targetTypeID":1,"createdAt":1413502127000,"targetScreenID":42665852,"width":285,"transitionTypeID":1,"screenID":42665850,"id":183358637,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124818000,"y":92,"x":112},{"isScrollTo":false,"eventTypeID":1,"height":60,"targetTypeID":1,"createdAt":1413502427000,"targetScreenID":36065803,"width":95,"transitionTypeID":1,"screenID":42665843,"id":183360693,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711697000,"y":1377,"x":-6},{"isScrollTo":false,"eventTypeID":1,"height":52,"targetTypeID":1,"createdAt":1413502234000,"targetScreenID":36065805,"width":108,"transitionTypeID":1,"screenID":42665843,"id":183359455,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502234000,"y":6,"x":93},{"isScrollTo":false,"eventTypeID":1,"height":288,"targetTypeID":1,"createdAt":1413502226000,"targetScreenID":36065807,"width":392,"transitionTypeID":1,"screenID":42665843,"id":183359448,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1414711688000,"y":133,"x":120},{"isScrollTo":false,"eventTypeID":1,"height":54,"targetTypeID":1,"createdAt":1413502242000,"targetScreenID":36065808,"width":101,"transitionTypeID":1,"screenID":42665843,"id":183359461,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502242000,"y":4,"x":228},{"isScrollTo":false,"eventTypeID":1,"height":57,"targetTypeID":1,"createdAt":1413502251000,"targetScreenID":42665850,"width":130,"transitionTypeID":1,"screenID":42665843,"id":183359465,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1413502251000,"y":3,"x":351},{"isScrollTo":false,"eventTypeID":1,"height":56,"targetTypeID":1,"createdAt":1413502257000,"targetScreenID":42665852,"width":113,"transitionTypeID":1,"screenID":42665843,"id":183359470,"metaData":{},"templateID":"","isBottomAligned":false,"updatedAt":1415124866000,"y":1,"x":504}],
+						branding: {
+							stub: "invision",
+							url: "http://www.InVisionApp.com/"
+						},
+						mobileDevices: [{"deviceType":"desktop","loadScreenResolution":"","mobileSkin":"any","orientation":"any","description":"desktop","embedIframeHeight":0,"mobileSkinColor":"","embedIframeWidth":0,"mobileDeviceID":0,"platform":"any","viewportWidth":"0","viewportHeight":"0","isDefaultDeviceType":true,"iconResolution":"","className":"desktop"},{"deviceType":"phone","loadScreenResolution":"640 x 1096","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 5 - Black","embedIframeHeight":834,"mobileSkinColor":"black","embedIframeWidth":396,"mobileDeviceID":1,"platform":"iOS","viewportWidth":"320","viewportHeight":"548","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone-portrait"},{"deviceType":"phone","loadScreenResolution":"640 x 1096","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 5 - Black","embedIframeHeight":464,"mobileSkinColor":"black","embedIframeWidth":818,"mobileDeviceID":2,"platform":"iOS","viewportWidth":"568","viewportHeight":"300","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone-landscape"},{"deviceType":"tablet","loadScreenResolution":"1536 x 2048","mobileSkin":"iPad","orientation":"portrait","description":"iPad - Black","embedIframeHeight":1042,"mobileSkinColor":"black","embedIframeWidth":682,"mobileDeviceID":3,"platform":"iOS","viewportWidth":"576","viewportHeight":"750","isDefaultDeviceType":true,"iconResolution":"152 x 152","className":"ipad-portrait"},{"deviceType":"tablet","loadScreenResolution":"2048 x 1496","mobileSkin":"iPad","orientation":"landscape","description":"iPad - Black","embedIframeHeight":732,"mobileSkinColor":"black","embedIframeWidth":992,"mobileDeviceID":4,"platform":"iOS","viewportWidth":"768","viewportHeight":"561","isDefaultDeviceType":true,"iconResolution":"152 x 152","className":"ipad-landscape"},{"deviceType":"phone","loadScreenResolution":"640 x 920","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 4 - Black","embedIframeHeight":868,"mobileSkinColor":"black","embedIframeWidth":414,"mobileDeviceID":5,"platform":"iOS","viewportWidth":"320","viewportHeight":"461","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone4-portrait"},{"deviceType":"phone","loadScreenResolution":"640 x 920","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 4 - Black","embedIframeHeight":445,"mobileSkinColor":"black","embedIframeWidth":704,"mobileDeviceID":6,"platform":"iOS","viewportWidth":"480","viewportHeight":"300","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone4-landscape"},{"deviceType":"phone","loadScreenResolution":"1080 x 1920","mobileSkin":"HTC One","orientation":"portrait","description":"HTC One - Black","embedIframeHeight":926,"mobileSkinColor":"black","embedIframeWidth":442,"mobileDeviceID":7,"platform":"Android","viewportWidth":"360","viewportHeight":"640","isDefaultDeviceType":true,"iconResolution":"192 x 192","className":"htcOne-portrait"},{"deviceType":"phone","loadScreenResolution":"1920 x 1080","mobileSkin":"HTC One","orientation":"landscape","description":"HTC One - Black","embedIframeHeight":492,"mobileSkinColor":"black","embedIframeWidth":876,"mobileDeviceID":8,"platform":"Android","viewportWidth":"640","viewportHeight":"360","isDefaultDeviceType":true,"iconResolution":"192 x 192","className":"htcOne-landscape"},{"deviceType":"phone","loadScreenResolution":"1080 x 1920","mobileSkin":"Samsung Galaxy S4","orientation":"portrait","description":"Samsung Galaxy S4 - Black","embedIframeHeight":876,"mobileSkinColor":"black","embedIframeWidth":446,"mobileDeviceID":9,"platform":"Android","viewportWidth":"360","viewportHeight":"640","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"samsungS4-portrait"},{"deviceType":"phone","loadScreenResolution":"1920 x 1080","mobileSkin":"Samsung Galaxy S4","orientation":"landscape","description":"Samsung Galaxy S4 - Black","embedIframeHeight":496,"mobileSkinColor":"black","embedIframeWidth":826,"mobileDeviceID":10,"platform":"Android","viewportWidth":"640","viewportHeight":"360","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"samsungS4-landscape"},{"deviceType":"phone","loadScreenResolution":"640 x 1096","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 5 - White","embedIframeHeight":834,"mobileSkinColor":"white","embedIframeWidth":396,"mobileDeviceID":11,"platform":"iOS","viewportWidth":"320","viewportHeight":"548","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone-portrait"},{"deviceType":"phone","loadScreenResolution":"640 x 1096","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 5 - White","embedIframeHeight":464,"mobileSkinColor":"white","embedIframeWidth":818,"mobileDeviceID":12,"platform":"iOS","viewportWidth":"568","viewportHeight":"300","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone-landscape"},{"deviceType":"tablet","loadScreenResolution":"1536 x 2048","mobileSkin":"iPad","orientation":"portrait","description":"iPad - White","embedIframeHeight":1042,"mobileSkinColor":"white","embedIframeWidth":682,"mobileDeviceID":13,"platform":"iOS","viewportWidth":"576","viewportHeight":"750","isDefaultDeviceType":false,"iconResolution":"152 x 152","className":"ipad-portrait"},{"deviceType":"tablet","loadScreenResolution":"2048 x 1496","mobileSkin":"iPad","orientation":"landscape","description":"iPad - White","embedIframeHeight":732,"mobileSkinColor":"white","embedIframeWidth":992,"mobileDeviceID":14,"platform":"iOS","viewportWidth":"768","viewportHeight":"561","isDefaultDeviceType":false,"iconResolution":"152 x 152","className":"ipad-landscape"},{"deviceType":"phone","loadScreenResolution":"640 x 920","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 4 - White","embedIframeHeight":868,"mobileSkinColor":"white","embedIframeWidth":414,"mobileDeviceID":15,"platform":"iOS","viewportWidth":"320","viewportHeight":"461","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone4-portrait"},{"deviceType":"phone","loadScreenResolution":"640 x 920","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 4 - White","embedIframeHeight":445,"mobileSkinColor":"white","embedIframeWidth":704,"mobileDeviceID":16,"platform":"iOS","viewportWidth":"480","viewportHeight":"300","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone4-landscape"},{"deviceType":"phone","loadScreenResolution":"1080 x 1920","mobileSkin":"HTC One","orientation":"portrait","description":"HTC One - White","embedIframeHeight":926,"mobileSkinColor":"white","embedIframeWidth":442,"mobileDeviceID":17,"platform":"Android","viewportWidth":"360","viewportHeight":"640","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"htcOne-portrait"},{"deviceType":"phone","loadScreenResolution":"1920 x 1080","mobileSkin":"HTC One","orientation":"landscape","description":"HTC One - White","embedIframeHeight":492,"mobileSkinColor":"white","embedIframeWidth":876,"mobileDeviceID":18,"platform":"Android","viewportWidth":"640","viewportHeight":"360","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"htcOne-landscape"},{"deviceType":"phone","loadScreenResolution":"1080 x 1920","mobileSkin":"Samsung Galaxy S4","orientation":"portrait","description":"Samsung Galaxy S4 - White","embedIframeHeight":876,"mobileSkinColor":"white","embedIframeWidth":446,"mobileDeviceID":19,"platform":"Android","viewportWidth":"360","viewportHeight":"640","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"samsungS4-portrait"},{"deviceType":"phone","loadScreenResolution":"1920 x 1080","mobileSkin":"Samsung Galaxy S4","orientation":"landscape","description":"Samsung Galaxy S4 - White","embedIframeHeight":496,"mobileSkinColor":"white","embedIframeWidth":826,"mobileDeviceID":20,"platform":"Android","viewportWidth":"640","viewportHeight":"360","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"samsungS4-landscape"},{"deviceType":"tablet","loadScreenResolution":"1080 x 1920","mobileSkin":"Nexus 7","orientation":"portrait","description":"Nexus 7","embedIframeHeight":962,"mobileSkinColor":"black","embedIframeWidth":574,"mobileDeviceID":21,"platform":"Android","viewportWidth":"450","viewportHeight":"685","isDefaultDeviceType":true,"iconResolution":"192 x 192","className":"nexus7-portrait"},{"deviceType":"tablet","loadScreenResolution":"1920 x 1080","mobileSkin":"Nexus 7","orientation":"landscape","description":"Nexus 7","embedIframeHeight":624,"mobileSkinColor":"black","embedIframeWidth":912,"mobileDeviceID":22,"platform":"Android","viewportWidth":"720","viewportHeight":"415","isDefaultDeviceType":true,"iconResolution":"192 x 192","className":"nexus7-landscape"},{"deviceType":"tablet","loadScreenResolution":"1080 x 1920","mobileSkin":"Nexus 10","orientation":"portrait","description":"Nexus 10","embedIframeHeight":1204,"mobileSkinColor":"black","embedIframeWidth":818,"mobileDeviceID":23,"platform":"Android","viewportWidth":"600","viewportHeight":"925","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"nexus10-portrait"},{"deviceType":"tablet","loadScreenResolution":"1920 x 1080","mobileSkin":"Nexus 10","orientation":"landscape","description":"Nexus 10","embedIframeHeight":868,"mobileSkinColor":"black","embedIframeWidth":1154,"mobileDeviceID":24,"platform":"Android","viewportWidth":"960","viewportHeight":"565","isDefaultDeviceType":false,"iconResolution":"192 x 192","className":"nexus10-landscape"},{"deviceType":"phone","loadScreenResolution":"750 x 1294","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 6 - Black","embedIframeHeight":940,"mobileSkinColor":"black","embedIframeWidth":456,"mobileDeviceID":25,"platform":"iOS","viewportWidth":"375","viewportHeight":"667","isDefaultDeviceType":true,"iconResolution":"120 x 120","className":"iphone6-portrait"},{"deviceType":"phone","loadScreenResolution":"750 x 1294","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 6 - Black","embedIframeHeight":506,"mobileSkinColor":"black","embedIframeWidth":890,"mobileDeviceID":26,"platform":"iOS","viewportWidth":"667","viewportHeight":"375","isDefaultDeviceType":true,"iconResolution":"120 x 120","className":"iphone6-landscape"},{"deviceType":"phone","loadScreenResolution":"750 x 1294","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 6 - White","embedIframeHeight":940,"mobileSkinColor":"white","embedIframeWidth":456,"mobileDeviceID":27,"platform":"iOS","viewportWidth":"375","viewportHeight":"667","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone6-portrait"},{"deviceType":"phone","loadScreenResolution":"750 x 1294","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 6 - White","embedIframeHeight":506,"mobileSkinColor":"white","embedIframeWidth":890,"mobileDeviceID":28,"platform":"iOS","viewportWidth":"667","viewportHeight":"375","isDefaultDeviceType":false,"iconResolution":"120 x 120","className":"iphone6-landscape"},{"deviceType":"phone","loadScreenResolution":"1242 x 2148","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 6 Plus - Black","embedIframeHeight":1010,"mobileSkinColor":"black","embedIframeWidth":494,"mobileDeviceID":29,"platform":"iOS","viewportWidth":"412","viewportHeight":"734","isDefaultDeviceType":false,"iconResolution":"180 x 180","className":"iphone6plus-portrait"},{"deviceType":"phone","loadScreenResolution":"1242 x 2148","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 6 Plus - Black","embedIframeHeight":544,"mobileSkinColor":"black","embedIframeWidth":960,"mobileDeviceID":30,"platform":"iOS","viewportWidth":"734","viewportHeight":"412","isDefaultDeviceType":false,"iconResolution":"180 x 180","className":"iphone6plus-landscape"},{"deviceType":"phone","loadScreenResolution":"1242 x 2148","mobileSkin":"iPhone","orientation":"portrait","description":"iPhone 6 Plus - White","embedIframeHeight":1010,"mobileSkinColor":"white","embedIframeWidth":494,"mobileDeviceID":31,"platform":"iOS","viewportWidth":"412","viewportHeight":"734","isDefaultDeviceType":false,"iconResolution":"180 x 180","className":"iphone6plus-portrait"},{"deviceType":"phone","loadScreenResolution":"1242 x 2148","mobileSkin":"iPhone","orientation":"landscape","description":"iPhone 6 Plus - White","embedIframeHeight":544,"mobileSkinColor":"white","embedIframeWidth":960,"mobileDeviceID":32,"platform":"iOS","viewportWidth":"734","viewportHeight":"412","isDefaultDeviceType":false,"iconResolution":"180 x 180","className":"iphone6plus-landscape"}]
+					}
+				);
+
+			})( angular, InVision );
+
+		</script>
+
+	<script type="text/ng-template" id="/assets/apps/share/views/browse/browse.htm">
+<div
+ng-controller="browse.BrowseController"
+inv-browse-key-combos
+class="m-browse"
+ng-class="{
+mobile: project.isMobile,
+phone: deviceTemplate.deviceType == 'phone',
+tablet: isTabletPortrait
+} ">
+<!-- BEGIN: Header. -->
+<div class="header">
+<span ng-if=" project.isMobile ">
+<img ng-if=" !! appIcon.imageUrl " class="appIcon" ng-src="{{ appIcon.imageUrl }}" alt="{{ project.name }}">
+<img ng-if=" ! appIcon.imageUrl " class="appIcon" ng-src="assets/apps/share/img/icon.png">
+</span>
+<h2>
+{{ project.name }}
+</h2>
+<a class="btnClose" href="javascript:;" ng-click=" toggleBrowse() ">x</a>
+</div>
+<!-- END: Header. -->
+<!-- BEGIN: Screens. -->
+<div class="screens">
+<div ng-include=" '/assets/apps/share/views/browse/thumbnails.htm' "></div>
+</div>
+<!-- END: Screens. -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/browse/list.htm">
+<div class="name-list" ng-class="{ 'without-comments': excludeComments }">
+<!-- BEGIN: Header Row. -->
+<div class="header-row">
+<span class="col name-col">
+<a ng-click class="name">
+Name
+</a>
+</span>
+<span class="col comments-col">
+<a ng-click class="comments">
+Comments
+</a>
+</span>
+<span class="col version-col">
+<a ng-click class="version">
+Version
+</a>
+</span>
+<span class="col updated-at-col">
+<a ng-click class="updated-at">
+Last Updated
+</a>
+</span>
+<span class="col updated-by-col">
+<a ng-click class="updated-by">
+Updated By
+</a>
+</span>
+</div>
+<!-- END: Header Row. -->
+<!-- BEGIN: Data Rows. -->
+<div ng-repeat="displayItem in displayObjects | filter:search" class="data-row">
+<div ng-if=" displayItem.type == 'divider' " class="divider">
+<div class="line">
+<span class="dividerLabel">{{displayItem.label}}</span>
+</div>
+</div>
+<a ng-if="displayItem.type == 'screenObj' "
+ng-click="applyScreenNavigation( displayItem )"
+class="item"
+ng-class="{ selected: ( displayItem == selectedScreen ) }">
+<span class="col name-col">
+<span class="name">
+{{ displayItem.name }}
+</span>
+</span>
+<span class="col comments-col">
+<span class="comments" ng-class="{ new: displayItem.unreadCommentCount, old: ( displayItem.commentCount && ! displayItem.unreadCommentCount ) }">
+<span class="unread">{{ displayItem.unreadCommentCount }}</span>
+<span class="total">{{ displayItem.commentCount }}</span>
+</span>
+</span>
+<span class="col version-col">
+<span class="version">
+{{ displayItem.imageVersion }}
+</span>
+</span>
+<span class="col updated-at-col">
+<span class="updated-at">
+{{ displayItem.updatedAtDateLabel }}
+</span>
+</span>
+<span class="col updated-by-col">
+<span class="updated-by">
+{{ displayItem.updatedByUserName }}
+</span>
+</span>
+</a>
+</div>
+<!-- END: Data Rows. -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/browse/thumbnails.htm">
+<div class="thumbnail-list" ng-class="{ 'without-comments': excludeComments }">
+<div ng-repeat="displayItem in displayObjects" class="{{displayItem.type}}">
+<div ng-if=" displayItem.type == 'divider' " class="divider">
+<p class="dividerLabel">
+<span class="title">{{ displayItem.label }}</span>
+<span class="count">{{ displayItem.screenCount }}</span>
+</p>
+</div>
+<a  ng-if="displayItem.type == 'screenObj' "
+ng-click="applyScreenNavigation( displayItem )"
+class="item"
+ng-class="{ selected: ( displayItem == selectedScreen ) }">
+<span class="thumbnail-viewport " style="background: #{{displayItem.backgroundColor}}">
+<img ng-src="{{ displayItem.thumbnailUrl }}" />
+</span>
+<span class="name">
+{{ displayItem.name }}
+</span>
+<span class="hasComments" ng-if=" displayItem.unreadCommentCount ">&bull;</span>
+</a>
+</div>
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/comments/catchup-toolbar.htm"><div ng-controller="comments.CatchupToolbarController" inv-comments-catchup-toolbar-helper class="comments-catchup-toolbar">
+<div class="markers-container" class="{ unread-comments: unreadConversations.length, no-unread-comments: !unreadConversations.length }">
+<p ng-show="unreadConversations.length">
+{{ unreadConversations.length }} unread 
+<span ng-pluralize count="unreadConversations.length" when="{ one: 'conversation', other: 'conversations' }"></span>:
+</p>
+<p ng-hide="unreadConversations.length">No unread comments on this page...</p>
+<!-- unread markers -->
+<div class="markers" ng-show="unreadConversations.length">
+<a 
+ng-repeat="conversation in visibleUnreadConversations"
+href="#/screens/{{ screenID }}/comments/{{ conversation.id }}"
+class="marker"
+ng-click="markCommentsAsRead( conversation )"
+ng-class="{ development: conversation.isForDevelopment, read: ! conversation.isUnread, completed: conversation.isComplete }">
+{{ conversation.label }}
+</a>
+</div>
+<div ng-show="hiddenUnreadConversations.length" class="overflow-count">
++ {{ hiddenUnreadConversations.length }} more
+</div>
+</div> <!-- markers-container -->
+<!-- BEGIN: Filters. -->
+<div class="filters">
+<p>View:</p>
+<div class="type-filter">
+<div class="dropdown">
+<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+<span class="text">{{ filters.type.label }} ({{ filters.type.count }})</span>
+<span class="drop"></span>
+</a>
+<ul class="dropdown-menu">
+<li ng-repeat="option in typeFilterOptions">
+<a ng-click="changeTypeFilter( option )">{{ option.label }} ({{ option.count }})</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="status-filter">
+<label for="filterShowCompleted">
+<input type="checkbox" id="filterShowCompleted" ng-model="filters.showCompleted.value" ng-change="changeShowCompletedFilter()" inv-uniform /> 
+Show Completed ({{ filters.showCompleted.count }})
+</label>
+</div>
+</div>
+<!-- END: Filters. -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/comments/comments.htm"><div
+ng-controller="comments.CommentsController" 
+inv-comments-key-combos 
+class="m-comments" 
+ng-class="{ mobile: project.isMobile }">
+<!-- Context. -->
+<div ng-if="!isPresentation && (isLiveShare || !project.isSnap)" ng-include=" '/assets/apps/share/views/comments/context.htm' "></div>
+<!-- Catchup Toolbar. -->
+<div ng-if="!isPresentation && (isLiveShare || !project.isSnap)" ng-include=" '/assets/apps/share/views/comments/catchup-toolbar.htm' "></div>
+<!-- Markers. -->
+<div ng-include=" '/assets/apps/share/views/comments/markers.htm' "></div>
+<!--  View controlled by switch to overlay everything -->
+<div inv-share-sketch-builder
+ng-if=" isShowingSketchBuilder " >
+</div>
+<!-- Sketch viewer modal-->
+<div inv-share-sketch-viewer
+ng-if=" isShowingSketchViewer ">
+</div>
+<div id="cursor-tooltip"
+inv-comments-cursor-tooltip
+ng-show="isHoveringViewport && !( isHoveringHotspot || isShowingConversationMenu)"
+>
+Click to leave a comment
+</div>
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/comments/context.htm"><!-- BEGIN: Context. -->
+<div class="context">
+<a ng-href="#/screens/{{ screenID }}">
+<span ng-show=" !isLiveShare ">Comment Mode</span>
+<span ng-show=" isLiveShare ">Your LiveShare experience is paused while in Comment Mode</span>
+</a>
+<!-- Borders. -->
+<div class="border n"></div>
+<div class="border e"></div>
+<div class="border s"></div>
+<div class="border w"></div>
+</div>
+<!-- END: Context. --></script><script type="text/ng-template" id="/assets/apps/share/views/comments/form.htm"><form
+ng-controller="comments.FormController"
+ng-submit="submitForm()"
+inv-comments-form-key-combos
+inv-comments-form
+class="conversation comment-thread-container"
+ng-class="{ teaser: ( isShowingTeaser && !tempSketches.length ) }"
+ng-style="{ 
+left: ( conversation.x * screen.displayScale + 'px' ), 
+top: ( conversation.y * screen.displayScale + 'px' ) 
+}">
+<div class="comment-thread">
+<header>
+<span ng-hide=" conversation.id == 0 ">
+<input
+id="conversationIsComplete"
+type="checkbox"
+ng-model="conversation.isComplete"
+ng-change="updateConversationStatus( conversation )"
+ng-disabled="( conversation.id == 0 )"  
+inv-uniform
+/>
+</span>	
+<label for="conversationIsComplete" class="mark-complete" 
+ng-hide=" conversation.id == 0 "
+ng-class="{ disabled: ( conversation.id == 0 ) }" ng-switch="conversation.isComplete">
+<span ng-switch-when="true">Marked complete</span>
+<span ng-switch-when="false">Mark as complete</span>
+</label>
+<span ng-hide=" conversation.id != 0 " class="start-conversation">
+{{ conversationTitle }}
+</span>
+<button 
+class="close" 
+type="button" 
+ng-click="closeConversation()">
+&times;
+</button>
+<div 
+class="dropdown type-dropdown" 
+ng-show="showInternalOptions && !project.isSnap">
+<a data-toggle="dropdown" class="dropdown-toggle">
+<span class="text pink" ng-show="!conversation.isForDevelopment && !conversation.isPrivate"><span class="dot"></span>Everyone</span>
+<span class="text grey" ng-show="!conversation.isForDevelopment && conversation.isPrivate"><span class="dot"></span>Collaborators</span>
+<span class="text blue" ng-show="conversation.isForDevelopment"><span class="dot"></span>Dev Note</span>
+<span class="drop"></span>
+</a>
+<ul class="dropdown-menu">
+<li class="title">Visible to:</li>
+<li>
+<a ng-click="setTypeAsComment()" class="pink"><span class="dot"></span> Everyone</a>
+</li>
+<li>
+<a ng-click="setTypeAsPrivateComment()" class="grey"><span class="dot"></span> Collaborators</a>
+</li>
+<li>
+<a ng-click="setTypeAsDevNote()" class="blue"><span class="dot"></span> Dev Note</a>
+</li>
+</ul>
+</div>
+</header>
+<!-- BEGIN: Comments. -->
+<div 
+ng-repeat="comment in comments"
+ng-init=" showDeleteCommentConfirmation = false ; "
+class="comment-item comment"
+ng-class="{ 
+unread: comment.isUnread, 
+collapsed: comment.isCollapsed, 
+'first-collapsed': comment.isFirstCollapsed,
+last: $last
+}"
+inv-fade-show="!comment.isCollapsed || ( comment.isCollapsed && comment.isFirstCollapsed )">
+<!-- Special section for collapsed area -->
+<div ng-if=" comment.isCollapsed " class="collapsed-comments">
+<span ng-click="expandComments( )">View All {{ comments.length }} Comments</span>
+</div>
+<div class="m-avatar" ng-class="{ 'system-avatar': comment.userHasSystemAvatar }">
+<span class="rendering">{{ comment.userInitials }}</span>
+<img ng-src="/avatars/{{ comment.userAvatarID }}" class="rendering" />
+<!-- Status -->
+<span 
+class="online-status" 
+ng-class="{ online: ( comment.userOnlineStatus == 'Online' ), away: ( comment.userOnlineStatus == 'Away' ) }">
+{{ comment.userOnlineStatus }}
+</span>
+</div>
+<div class="post-content">
+<h2>
+<span>{{ comment.userName }}</span>
+<span class="created-at">{{ comment.dateLabel }}</span>
+</h2>
+<div class="post-options" ng-show=" !comment.isEditing ">
+<ul class="tools">
+<li 
+class="view-history hidden"
+ng-show="( ! comment.isEditing && ( comment.screenImageVersion != screen.imageVersion ) && comment.imageUrl )">
+<a>View History</a>
+</li>
+<li 
+class="edit-comment hidden"
+ng-show=" comment.isOwnedByUser || project.isOwnedByUser ">
+<a 
+ng-click="editComment( comment )"
+inv-tooltip="Edit comment">
+Edit
+</a>
+</li>
+<li 
+class="delete-comment hidden"
+ng-show=" comment.isOwnedByUser || project.isOwnedByUser ">
+<a  
+ng-click="showDeleteConfirmation( comment, $first )"
+inv-tooltip="Delete comment">
+Delete
+</a>
+</li>
+</ul>
+<div inv-history-overlay class="history-overlay" ng-if="( ( comment.screenImageVersion != screen.imageVersion ) && comment.imageUrl )">
+<div class="history-overlay-image-container">
+<img 	inv-screen-version-image-scaler
+ng-src="{{ comment.imageUrl }}"
+ng-style="{
+top: - ( ( conversation.y * screen.displayScale ) - 130 ) + 'px',
+left: - ( ( conversation.x * screen.displayScale ) - 270 )+ 'px'
+}" />
+</div>
+<div class="hover-buffer"></div>
+</div> <!-- history-overlay -->
+</div> <!-- post-options -->
+<a class="thumbs-up" 
+ng-show=" canLike "
+ng-class="{ 'liked': comment.numberOfLikes, 'by-user': comment.hasUserLiked  }"
+ng-click="toggleLike( comment )"
+inv-tooltip="{{ comment.likedByList }}">
+<i class="icon thumbs up"></i>
+{{comment.numberOfLikes}}
+</a>
+<div 
+ng-show="! comment.isEditing"
+ng-bind-html="comment.html"
+class="post-comment">
+</div>
+<textarea 
+inv-autofocus 
+inv-autosize 
+ng-model="comment.comment" 
+ng-show="comment.isEditing" 
+tabindex="101" 
+class="existing"></textarea>
+<div class="sketchList" ng-show="comment.sketches.length > 0">
+<div ng-repeat="sketch in comment.sketches" class="sketch">
+<a 
+class="text" 
+ng-click=" startSketchViewer( sketch , false, conversation ) "
+ng-class="{
+editing: comment.isEditing
+}">
+<strong>{{ comment.userFirstName }}&rsquo;s attached a sketch.</strong> View?
+<span inv-tooltip="delete" class="delete" ng-show="comment.isEditing" ng-click=" deleteSketch( sketch.id )">x</span>
+</a>
+</div> <!-- sketch -->
+</div> <!-- sketchList -->
+<div class="post-buttons" ng-show="( comment.isEditing )">
+<button type="button" class="save" ng-show="comment.isEditing" tabindex="102" ng-click="saveComment( comment, false )">Save</button>
+<button type="button" class="cancel" ng-show="comment.isEditing" tabindex="103" ng-click="cancelCommentEdit( comment )">Cancel</button>
+</div>
+</div> <!-- post-content -->
+<!-- Delete confirmation for single comment. -->
+<div inv-fade-show="comment.isDeleting" class="delete-confirmation">
+<p>Delete this comment?</p>
+<div class="action">
+<a ng-click="deleteComment( comment )" class="confirm">Yes, Delete</a>
+<a ng-click="hideDeleteConfirmation( comment )" class="cancel">Cancel</a>
+</div>
+</div>
+</div>
+<!-- END: Comments. -->
+<div class="comment-item post-new-comment">
+<div class="post">
+<div class="post-comment">
+<textarea 
+inv-autosize 
+name="post-comment" 
+ng-model="newComment" 
+tabindex="201" 
+placeholder="Leave a comment..."
+inv-focus="showCommentInput()"
+ng-class="{ 
+'has-sketch': tempSketches.length > 0,
+open: isCommentInputVisible
+}"></textarea>
+<div class="sketchList" ng-show="tempSketches.length > 0">
+<div ng-repeat="sketch in tempSketches" class="sketch">
+<a ng-click=" startSketchViewer( sketch , true, conversation ) ">
+<strong>Your sketch is attached.</strong> View?
+<span class="delete" inv-tooltip="delete" ng-click=" deleteTempSketch(sketch.tempID) ">
+&times;
+</span>
+</a>
+</div> <!-- sketch -->
+</div> <!-- sketchList -->
+<div class="add-sketch" ng-show="tempSketches.length == 0 && isCommentInputVisible">
+<a ng-click=" startSketchBuilder() " inv-tooltip="Attach a sketch"></a>
+</div> 
+</div> <!-- post-comment -->
+</div> <!-- post -->
+</div>
+<div ng-show="isCommentInputVisible">
+<div class="comment-item notify">
+<div class="notify-top">
+<p>
+<span 
+inv-notify-text
+names="{{ getUsersToBeNotified() }}"
+others="{{ getNotifyCount() }}"></span>
+<a ng-click="toggleUserList()" class="toggle">
+<span ng-hide="isShowingUserList">(change)</span>
+<span ng-show="isShowingUserList">(hide)</span>
+</a>
+</p>
+</div> <!-- notify-top -->
+<div 
+class="notify_drop"
+ng-class="{ 
+closed: ! isShowingUserList, 
+open: isShowingUserList 
+}">
+<div 
+ng-show="isShowingUserList" 
+class="user-lists" 
+ng-class="{ 'members-only': isInternalConversation }">
+<div class="notify_all" ng-show="members.length || affiliates.length">
+<div class="notify_all_team">
+<div class="checker">
+<span 
+ng-class="{ 
+'checked': getNotifyCount() > 0,
+'partial': getNotifyCount() > 0 && getNotifyCount() < ( members.length + affiliates.length )
+}">
+<input 
+type="checkbox" 
+ng-click="toggleNotifyOption()" />
+</span>
+</div> <!-- checker -->
+<div class="dropdown">
+<a data-toggle="dropdown" class="dropdown-toggle">
+{{notifyOptionSelected}}
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a ng-click="selectAll()">All</a></li>
+<li><a ng-click="selectCollaborators()">Collaborators</a></li>
+</ul>
+</div> <!-- dropdown -->
+</div> <!-- notify_all_team -->
+</div> <!-- notify_all -->
+<ul class="notify_person_list">
+<li ng-repeat="user in members">
+<label ng-class="{ 'checked': user.isSelected }" ng-show="user.id != shareUser.id">
+<input type="checkbox" ng-model="user.isSelected" ng-click="toggleUserSelection( user )" inv-uniform> 
+<strong>{{ user.name }}</strong> 
+<span ng-show="isTeamMember">(Collaborator)</span>
+</label>
+</li>
+</ul>
+<ul class="notify_person_list" ng-show="isStakeholdersShowing()">
+<li ng-repeat="user in affiliates">
+<label ng-class="{ 'checked': user.isSelected }"  ng-show="user.id != shareUser.id">
+<input type="checkbox" ng-model="user.isSelected" ng-click="toggleUserSelection( user )" inv-uniform> 
+<strong inv-tooltip="{{user.email}}">{{ user.name }}</strong>
+<a class="remove-stakeholder" ng-show="isTeamMember" inv-confirm-popover="Remove forever?" on-confirm="removeStakeholder( user )"><img src="assets/apps/d/img/delete.png" /></a>
+</label>
+</li>			
+</ul>
+</div>
+<div ng-show="( isShowingUserList && ! isInternalConversation )">
+<span ng-hide="showNotifyOthers == true" class="add-emails">
+<a ng-click="showNotifyOthers = true">
+Add others to the conversation&hellip;
+</a>
+</span>
+<div class="add-emails-input" ng-show="showNotifyOthers">
+<input type="text"
+ng-model="emailAddresses"
+id="notify_others"
+placeholder="Add others via email (separated by comma)">
+</div>
+</div>
+</div> <!-- notify_drop -->
+</div> <!-- comment-item notify -->
+<div class="error-message" ng-show="hasUnauthorizedEmail">
+<p>The administrator of the {{ enterpriseConfig.name }} InVision account has disabled sharing to users outside of the account.</p>
+</div>
+<div class="comment-item footer submit">
+<button 
+class="button" 
+tabindex="202" 
+type="submit"
+inv-success-button
+after-success="closeJustThisConversationPanel(conversation.id)"
+delay="1400">Post Comment</button>
+<button class="close" type="button" ng-click="closeConversation()">cancel</button>
+</div> <!-- footer -->
+</div> <!-- isCommentInputVisible toggle -->
+<!-- Delete confirmation for entire conversation. -->
+<div inv-fade-show="isDeleting" class="delete-confirmation delete-conversation">
+<p>Delete this <strong>entire</strong> conversation?</p>
+<div class="action">
+<a ng-click="deleteConversation( conversation )" class="btn btn-small flat dkgray">Yes, Delete</a>
+<a ng-click="hideDeleteConfirmation()" class="cancel">Cancel</a>
+</div>
+</div>
+<div inv-fade-show="isIdentifying" class="overlay identification">
+<div class="form">
+<h2>Please Identify Yourself</h2>
+<p>In order to participate, we need to know who you are.</p>
+<div ng-show="errorMessage" class="alert alert-error">
+<strong>Oops</strong>: {{ errorMessage }}
+</div>
+<div class="field">
+<label>Name:</label>
+<input type="text" ng-model="identity.name" inv-autofocus tabindex="301" placeholder="Name" />
+</div>
+<div class="field">
+<label>Email:</label>
+<input type="text" ng-model="identity.email" tabindex="302" placeholder="Email Address" />
+</div>
+<div class="actions">
+<button class="button" type="submit" tabindex="303">Post Comment</button>
+<button class="close" type="button" ng-click="closeConversation()">cancel</button>
+</div>
+</div> <!-- form -->
+</div> <!-- identification -->
+<!-- This adds bototm-margin to the form so the page will scroll adequately. -->
+<div class="bottom-buffer">
+<br />
+</div>
+</div> <!-- comment-thread-container -->	
+</form>
+</script><script type="text/ng-template" id="/assets/apps/share/views/comments/markers.htm"><div ng-controller="comments.MarkersController" inv-comments-markers class="markers" >
+<div ng-class="{ mobile: project.isMobile }"
+class="viewport {{ viewport.alignment }}"
+ng-style="{ width: ( viewport.width + 'px' ), height: ( viewport.height + 'px' ) }"
+ng-mouseenter=" setIsHoveringViewport(true) "
+ng-mouseleave=" setIsHoveringViewport(false) ">
+<!-- Output the conversation markers. -->
+<a 
+ng-repeat="conversation in conversations"
+ng-href="#/screens/{{ screenID }}/comments/{{ conversation.id }}"
+class="marker"
+ng-class="{ complete: conversation.isComplete, development: conversation.isForDevelopment, active: ( conversation == selectedConversation ), 'active-private': conversation.isPrivate }"
+ng-style="{ left: ( conversation.x * screen.displayScale + 'px' ), top: ( conversation.y * screen.displayScale + 'px' ) }"
+unselectable="on"
+ng-mouseenter=" setIsHoveringHotspot(true) "
+ng-mouseleave=" setIsHoveringHotspot(false) "
+ng-show=" ( conversation.isShown || project.isSnap ) || (conversation.id == selectedConversation.id )">
+{{ conversation.label }}
+</a>
+<!-- Show the new conversation marker, if necessary. -->
+<a
+ng-show="newConversation"
+ng-href="#/screens/{{ screenID }}/comments"
+class="marker new-marker active"
+ng-class="{ development: newConversation.isForDevelopment }"
+ng-style="{ left: ( newConversation.x * screen.displayScale + 'px' ), top: ( newConversation.y * screen.displayScale + 'px' ) }"
+unselectable="on"
+ng-mouseenter=" setIsHoveringHotspot(true) "
+ng-mouseleave=" setIsHoveringHotspot(false) ">
+{{ newConversation.label }}
+</a>
+<!-- Only include the form if a conversation has been selected. -->
+<div 
+ng-if="( selectedConversation || newConversation )"
+ng-include=" '/assets/apps/share/views/comments/form.htm' "></div>
+</div>
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/directives/share-sketch-builder.htm"><div id="shareSketchBuilder">
+<div id="builderWindow">
+<div id="sketchToolbar">
+<div class="whiteboard_tools">
+<a ng-click="setWhiteboardOpacity(0, 'none')" id="whiteboard_none" class="whiteboard_tool none overlay" ng-class="{ active: whiteboardSelected == 'none'}"><span>Transparent</span></a>
+<a ng-click="setWhiteboardOpacity(.7, 'half')" id="whiteboard_half" class="whiteboard_tool half overlay" ng-class="{ active: whiteboardSelected == 'half'}"><span>50%</span></a>
+<a ng-click="setWhiteboardOpacity(1, 'full')" id="whiteboard_full" class="whiteboard_tool full overlay" ng-class="{ active: whiteboardSelected == 'full'}"><span>100%</span></a>
+</div> <!-- whiteboard_tools -->
+<div class="tools">
+<a id="pencil" class="sketch_tool pencil">
+<i class="tool_icon tool_pencil"></i>
+</a>
+<a id="rect" class="sketch_tool square">
+<i class="tool_icon tool_square"></i>
+</a>
+<a id="circle" class="sketch_tool circle">
+<i class="tool_icon tool_circle"></i>
+</a>
+<a id="line" class="sketch_tool line">
+<i class="tool_icon tool_line"></i>
+</a>
+<!--
+<a id="arrow" class="sketch_tool arrow">
+<i class="tool_icon tool_arrow"></i>
+</a>
+-->
+<a id="text" class="sketch_tool text">
+<i class="tool_icon tool_text"></i>
+</a>
+<a id="move" class="sketch_tool move">
+<i class="tool_icon tool_move"></i>
+</a>
+<div class="actions_toolbar">
+<a id="undo" rel="tooltip" data-placement="bottom" title="Undo action" class="sketch_action undo inactive">
+<i class="tool_icon tool_undo"></i>
+</a>
+<a id="redo" rel="tooltip" data-placement="bottom" title="Redo action" class="sketch_action redo inactive">
+<i class="tool_icon tool_redo"></i>
+</a>
+<a id="delete" rel="tooltip"  data-placement="bottom" title="Remove element" class="sketch_action delete inactive">
+<i class="tool_icon tool_delete"></i>
+</a>
+</div>
+</div>
+<div class="sketch_btns">
+<a ng-click=" hideSketchBuilder() " class="btn cancel">Cancel</a>
+<a ng-click=" saveSketch() " class="btn save">I'm Done</a>
+</div>
+</div>
+<div class="scroll-wrap">
+<div class="sketchImage_wrapper">
+<img  
+ng-src="{{ screen.imageUrl }}"
+ng-style="{ width: screen.width * screen.displayScale + 'px',
+height: screen.height * screen.displayScale + 'px'}"
+class="sketch_image"
+/>
+</div>
+<div id="whiteboard_overlay" ng-class="whiteboardSelected"></div>
+</div> <!-- scroll-wrap -->
+</div> <!-- end builderWindow -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/directives/share-sketch-viewer.htm"><div id="shareSketchViewer"  ng-show=" isShowingSketchViewer ">
+<div class="modalOverlay">
+<div  class="sketchViewer">
+<div class="closeViewer" ng-click=" closeSketchViewer() "></div>
+<div ng-show=" sketchImageIsProcessing " class="isProcessing">
+<p>
+<img src="assets/apps/share/img/draw.png"/><br/>
+This sketch is currently being processed.<br/>
+<span class="sub">It'll be available shortly!</span>
+</p>
+</div>
+<!-- Non-Temporaray sketches here -->
+<div ng-if=" !sketchViewerSketchIsTemp " class="imageContainer">
+<img ng-src="/api/comments/{{sketchViewerSketch.commentID}}/sketch/{{sketchViewerSketch.id}}"
+inv-console-sketch-viewer-image
+ng-style="{	width: screen.width * screen.displayScale + 'px',
+height: screen.height * screen.displayScale + 'px'
+}"/>
+</div>
+<!-- Temporary sketches here -->
+<div ng-if=" sketchViewerSketchIsTemp " class="imageContainer">
+<img 	ng-src="{{ screen.imageUrl }}"
+ng-style="{	width: screen.width * screen.displayScale + 'px',
+height: screen.height * screen.displayScale + 'px'
+}" />
+<div class="whiteOverlay" ng-style="{ opacity : sketchViewerSketch.opacity }"></div>
+<div class="tempSketchOverlay" ng-bind-html=" sketchViewerSketch.svg ">
+</div>
+</div>
+</div>
+</div>
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/directives/toggle.htm">
+<div class="m-toggle off">	
+<!-- BEGIN: Labels Track. -->
+<div class="toggle-labels-track">
+<div class="toggle-labels">
+<div class="toggle-label on">
+<span class="text">On</span>
+</div>
+<div class="toggle-label off">
+<span class="text">Off</span>
+</div>
+</div>
+</div>
+<!-- END: Labels Track. -->
+<!-- BEGIN: Thumb Track. -->
+<div class="toggle-thumb-track">
+<a href="" class="toggle-thumb">
+<span class="toggle-end">
+<br />
+</span>
+</a>
+</div>
+<!-- END: Thumb Track. -->
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/layouts/modal.htm"><div ng-controller="layouts.ModalController" class="l-modal">
+<div ng-if="subview == 'error'" ng-include=" '/assets/apps/share/views/modal/error.htm' "></div>
+<div ng-if="subview == 'shareTour'" ng-include=" '/assets/apps/share/views/modal/share-tour.htm' "></div>
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/modal/error.htm"><div ng-controller="modal.ErrorController" inv-modal class="modal errorModal">
+<div class="modal-header">
+<a ng-click="closeModalWindow()" class="close" aria-hidden="true">&times;</a>
+<h3>
+Oops!
+</h3>
+</div>
+<div class="modal-body">
+{{ errorMessage }}
+</div>
+<div class="modal-footer">
+<a ng-click="closeModalWindow()" class="btn btn-primary">Close</a>
+</div>
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/modal/share-tour.htm"><div ng-controller="modal.ShareTour" inv-modal class="modal animate" id="shareTour">
+<div class="modal-body">
+<div class="video-container"
+inv-video-overlay
+id="video_share_tour"
+player-id="video_share_tour"
+video-id="n7kgs97nk4"
+video-width="701"
+video-height="394">
+<div class="play-overlay">
+<a href=""></a>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<h2>Get Started in 30 Seconds</h2>
+</div>
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/notification-bar/notification-bar.htm"><div ng-if="!isLiveShare && !share.isEmbed"
+ng-controller="notificationsBar.notificationsBarController"
+ng-class="{ in: isChangingNotifications, out: !isChangingNotifications, reverse: !isChangingNotifications }"
+class="email-notifications">
+<img src="assets/apps/share/img/email@2x.png" class="ico-email" width="20" height="12p" />
+<p ng-show="!wantsEmailNotifications">You have been <strong>unsubscribed</strong> from email notifications for this project. <a href="" ng-click="reSubscribeUser();">Undo</a></p>
+<p ng-show="wantsEmailNotifications">You have <strong>resubscribed</strong> to all email notifications for this project.</p>
+<img src="assets/apps/share/img/close2@2x.png" class="ico-close" width="10" height="10" ng-click="closeEmailNotification();" />
+</div></script><script type="text/ng-template" id="/assets/apps/share/views/partials/preload.htm">	<!--
+BEGIN: HACKY CSS PRELOAD. 
+Until we have better sprite technology, let's at least pre-load the images this way so that 
+the parallel loading of Screen images is less likely to conflict. 
+-->
+<div style="height: 1px ; left: -100px ; overflow: hidden ; position: absolute ; top: -100px ; width: 1px ;">
+<img src="assets/apps/share/img/app-switch.png" />
+<img src="assets/apps/share/img/browse-background.png" />
+<img src="assets/apps/share/img/browse-pillnav-icons.png" />
+<img src="assets/apps/share/img/browse-pillnav.png" />
+<img src="assets/apps/share/img/close3.png" />
+<img src="assets/apps/share/img/comments-context-tab.png" />
+<img src="assets/apps/share/img/comments-vrule.png" />
+<img src="assets/apps/share/img/grey-screen-divider.png" />
+<img src="assets/apps/share/img/loader-sprite.png?v=06112014" />
+<img src="assets/apps/share/img/marker.png?v=2" />
+<img src="assets/apps/share/img/screens-search.png" />
+<img src="assets/apps/share/img/scrollbar-mid.png" />
+<img src="assets/apps/share/img/sketch-viewer-close.png" />
+<img src="assets/apps/share/img/sketch_tools.png" />
+<img src="assets/apps/share/img/share-lite-sprites.png" />
+<img src="assets/apps/share/img/share-lite-sprites@2x.png" />
+<img src="assets/apps/share/img/share-loading-sprites.png" />
+<img src="assets/apps/share/img/share-loading-sprites@2x.png" />
+</div>
+<!-- END: Hacky CSS Preload. </script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by-mobile.htm"><div
+ng-controller="poweredBy.poweredByController"
+ng-mouseenter="announceActivityChange(true)"
+ng-mouseleave="announceActivityChange(false)">
+<!-- BEGIN: Powered By Tag -->
+<a
+class="mobile-powered-by"
+ng-class="{ 'active': isActive }"
+href="http://www.invisionapp.com/?utm_medium=virality&utm_source=Share%20CTA"
+target="_blank">
+made with InVision
+</a>
+<!-- END: Powered By Tag -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/powered-by/powered-by.htm"><!-- Hide this object for all Shopify Enterprise project shares. ( companyID 71 ).  Everyone else should see it. -->
+<div
+ng-controller="poweredBy.poweredByController"
+ng-mouseenter="announceActivityChange(true)"
+ng-mouseleave="announceActivityChange(false)"
+ng-hide="project.companyID == 71"
+>
+<!-- BEGIN: Powered By Tag -->
+<a
+ng-if=" ! project.isMobile || share.isEmbed "
+class="powered-by"
+ng-class="{ 'active': isActive }"
+href="http://www.invisionapp.com/?utm_medium=virality&utm_source=Share%20CTA"
+target="_blank">
+<img src="assets/apps/share/img/logo-icon.png" />
+</a>
+<!-- END: Powered By Tag -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/presentations/slides.htm"><div ng-switch on="subview">
+<div ng-switch-when="comments">
+<div 
+id="comments_bar" 
+ng-controller="toolbar.ToolbarController"
+ng-hide="isShowingSketchBuilder">
+<h2>Click anywhere on the image to leave a comment</h2>
+<p class="close"><a ng-click="switchToPreview()">Close</a></p>
+</div> <!-- share_bar -->
+</div>
+</div>
+<!-- desktop projects -->
+<div 	
+ng-if=" !project.isMobile || subview == 'comments' "
+inv-screens
+ng-controller="screens.ScreensController"
+class="m-screens desktop"
+ng-style="bodyStyle"
+ng-class="{ 
+isScaledCommentMode: project.isMobile,
+'comment-mode': subview == 'comments'
+}">
+<div 
+class="screen visible {{ screen.alignment }}"
+ng-style="{ 
+width: ( (screen.width * screen.displayScale) + 'px' ), 
+height: ( (screen.height * screen.displayScale) + 'px' ) 
+}">
+<img 
+ng-src="{{ getScreenUrl() }}"
+ng-style="{ 
+width: ( (screen.width * screen.displayScale) + 'px' ), 
+height: ( (screen.height * screen.displayScale) + 'px' ) 
+}" />
+</div>
+</div>
+<!-- mobile projects-->
+<div 	
+ng-if=" project.isMobile && subview == 'preview' "
+class="m-screens" >
+<div class="screen mobile visible {{ screen.alignment }}">
+<img ng-src="{{ getScreenUrl() }}" />
+</div> <!-- screen mobile visible -->
+</div> <!-- m-screens -->
+</script><script type="text/ng-template" id="/assets/apps/share/views/preview/preview.htm"><div ng-controller="preview.PreviewController"
+inv-preview-helper
+class="m-preview"
+ng-class="{ mobile: project.isMobile }"
+ng-hide="!isLiveShare && project.isSnap">
+<!-- desktop projects -->
+<div ng-if=" !project.isMobile "
+class="viewport {{ viewport.alignment }}"
+ng-class="{ visible: isShowingHotspots && ( !isLiveShare || isPresenter ) }"
+ng-style="{ width: ( Math.round(viewport.width * screen.displayScale) + 'px' ), height: ( Math.round(viewport.height * screen.displayScale) + 'px' ) }">
+<a
+ng-repeat="hotspot in hotspots"
+ng-click="applyHotspotNavigation( hotspot )"
+ng-mouseover="applyHotspotNavigation ( hotspot, 'hover', $event )"
+ng-mouseleave="hideOverlay($event)"
+class="hotspot"
+ng-class="{ template: hotspot.templateID }"
+ng-show=" !isLiveShare || isPresenter"
+ng-style="{ left: ( Math.round(hotspot.x * screen.displayScale) + 'px' ), top: ( Math.round(hotspot.y * screen.displayScale) + 'px' ), width: ( Math.round(hotspot.width * screen.displayScale) + 'px' ), height: ( Math.round(hotspot.height * screen.displayScale) + 'px' ) }">
+{{ hotspot.screenID }}
+</a>
+<!-- For mouseover navigation where we stay on the screen -->
+<img
+ng-src="{{ overlayImage }}"
+class="overlayScreen"
+ng-show=" hasOverlay() "
+ng-style="{ width: ( Math.round(overlayScreen.width * overlayScreen.displayScale) + 'px' ),
+height: ( Math.round(overlayScreen.height * overlayScreen.displayScale) + 'px' ) }"
+/>
+<!-- only for desktop projects -->
+<div class="overlayHotspots"
+ng-show=" !project.isMobile && hasOverlay() "
+ng-class="{ visible: isShowingHotspots}"
+ng-style="{ width: ( Math.round(viewport.width * overlayScreen.displayScale) + 'px' ), height: ( Math.round(viewport.height * overlayScreen.displayScale) + 'px' ) }">
+<a
+ng-repeat="hotspot in overlayHotspots"
+ng-mouseleave="hideOverlay($event)"
+ng-click="applyHotspotNavigation( hotspot, 'clickFromOverlay', $event )"
+ng-style="{ left: ( Math.round(hotspot.x * overlayScreen.displayScale)  + 'px' ), top: ( Math.round(hotspot.y * overlayScreen.displayScale)  + 'px' ), width: ( Math.round(hotspot.width * overlayScreen.displayScale)  + 'px' ), height: ( Math.round(hotspot.height * overlayScreen.displayScale)  + 'px' ) }"
+class="hotspot"
+ng-class="{ template: hotspot.templateID }">
+{{ hotspot.screenID }}
+</a>
+</div>
+</div>
+<!-- mobile projects -->
+<div ng-if=" project.isMobile "
+class="viewport"
+ng-class="{ visible: isShowingHotspots && ( !isLiveShare || isPresenter ), mobile: project.isMobile}"
+ng-style="{ width: ( Math.round(viewport.width * deviceTemplate.viewportWidth/viewport.width) + 'px' ), height: ( Math.round(viewport.height * deviceTemplate.viewportWidth/viewport.width) + 'px' ) }">
+<a
+ng-repeat="hotspot in hotspots"
+ng-mousedown="applyHotspotNavigation( hotspot, 'click', $event )"
+ng-mouseup="applyHotspotNavigation( hotspot, 'click', $event )"
+class="hotspot"
+ng-class="{ template: hotspot.templateID }"
+ng-show=" !isLiveShare || isPresenter"
+ng-style="{ left: ( Math.round(hotspot.x * deviceTemplate.viewportWidth/viewport.width) + 'px' ), top: ( Math.round(hotspot.y * deviceTemplate.viewportWidth/viewport.width) + 'px' ), width: ( Math.round(hotspot.width * deviceTemplate.viewportWidth/viewport.width) + 'px' ), height: ( Math.round(hotspot.height * deviceTemplate.viewportWidth/viewport.width) + 'px' ) }">
+{{ hotspot.screenID }}
+</a>
+</div>
+<div ng-show="share.isNavigateAllowed && (( share.project.isMobile && isShowingMobileSlideshowNav ) || isShowingSlideshowNav || ( isLiveShare && isPresenter )) " class="slideshow-nav">
+<a ng-click="showPreviousScreen()" ng-show=" ! project.isMobile " class="nav-left">
+<div class="button-left">
+<img src="assets/apps/share/img/slideshow-arrow-left.png">
+</div>
+</a>
+<a ng-click="showNextScreen()" ng-show=" ! project.isMobile " class="nav-right">
+<div class="button-right">
+<img src="assets/apps/share/img/slideshow-arrow-right.png">
+</div>
+</a>
+<div class="slideshow-status">{{ currentScreenIndex }} of {{ screenCount }}</div>
+</div>
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/screens/screens.htm"><div ng-if="!isLiveShare && project.isSnap">
+<div ng-if="subview == 'comments'" ng-include=" '/assets/apps/share/views/share-lite/comment-bar.htm' "></div>
+<div ng-include=" '/assets/apps/share/views/share-lite/share-bar.htm' "></div>
+</div>
+<!-- desktop projects -->
+<div
+ng-if=" !project.isMobile || subview == 'comments' "
+ng-controller="screens.ScreensController"
+inv-screens
+inv-add-padding-on-scroll
+class="m-screens desktop"
+ng-class="{ isScaledCommentMode: project.isMobile }">
+<div class="refreshingData" inv-progress-bar control-value="! selectedScreen.isImageLoaded"></div>
+<div
+ng-repeat="screen in screens"
+data-distance="{{ screen.distanceFromStartScreen }}"
+class="screen {{ screen.alignment }}"
+ng-class="{ visible: (screen.id == selectedScreen.id) }"
+ng-style="{ width: ( Math.round(screen.width * screen.displayScale) + 'px' ), height: ( Math.round(screen.height * screen.displayScale) + 'px' ) }"
+data-displayScale="{{screen.displayScale}}">
+<img 	inv-screen
+ng-src="{{ screen.imageUrl }}"
+ng-style="{ width: ( Math.round(screen.width * screen.displayScale) + 'px' ), height: ( Math.round(screen.height * screen.displayScale) + 'px' ) }" />
+</div>
+</div>
+<!-- mobile projects-->
+<div
+ng-if=" project.isMobile && subview == 'preview' "
+ng-controller="screens.ScreensController"
+inv-screens
+data-distance="{{ screen.distanceFromStartScreen }}"
+class="m-screens" >
+<div
+ng-repeat="screen in screens"
+class="screen mobile {{ screen.alignment }}"
+ng-class="{ visible: (screen.id == selectedScreen.id) }">
+<img inv-screen ng-src="{{ screen.imageUrl }}" />
+</div>
+</div>
+</script><script type="text/ng-template" id="/assets/apps/share/views/share-lite/comment-bar.htm"><div id="comments_bar" ng-controller="toolbar.ToolbarController">
+<h2>Click anywhere on the image to leave a comment</h2>
+<p class="close"><a ng-click="isShowingComments = !isShowingComments">Close</a></p>
+</div> <!-- share_bar --></script><script type="text/ng-template" id="/assets/apps/share/views/share-lite/share-bar.htm"><div id="share_bar" ng-controller="toolbar.ToolbarController">
+<a class="icon" href="{{HomeURI}}">InVision App</a>
+<h2>{{ displayFilename }}</h2>
+<div class="copied">Link copied to clipboard</div>
+<ul>
+<li><a ng-click="toggleShareModal()">Share</a></li>
+<li><a ng-href="/api/snaps/download/{{share.key}}">Download</a></li>
+<li class="feedback"><a ng-click="isShowingComments = !isShowingComments">Comment <span>{{ commentCount }}</span></a></li>
+</ul>
+<div class="share-modal" ng-show="isShowingShareModal">
+<h2>Share link to <strong>{{ displayFilename }}</strong></h2>
+<form inv-copy-to-clipboard>
+<input type="text" name="copy" id="share_link" value="{{share.shareUrl}}{{share.key}}" />
+<div class="button-container">
+<button name="copy" data-clipboard-text="{{share.shareUrl}}{{share.key}}">Copy Link</button>
+</div> <!-- button-container -->
+</form>
+<a ng-click="toggleShareModal()" class="close">Close</a>
+</div> <!-- share-modal -->
+</div> <!-- share_bar --></script><script type="text/ng-template" id="/assets/apps/share/views/toolbar/toolbar.htm">
+<div
+ng-controller="toolbar.ToolbarController"
+ng-show="( includeBrowseTool || includeCommentsTool )"
+ng-mouseenter="updateIsUserOverToolbar( true )"
+ng-mouseleave="updateIsUserOverToolbar( false )"
+ng-hide="!isLiveShare && project.isSnap || share.isEmbed"
+ng-class="{ 'tour-is-running': isShareTourRunning }"
+class="m-toolbar">
+<!-- iPhone projects (on share, not liveshare) only -->
+<div
+id="shareSMS"
+inv-fade-show="isShowingSmsForm"
+ng-if=" deviceTemplate.deviceType == 'phone' && ! isLiveShare && !! shareUrl "
+ng-class="{
+'no-comments': ! includeCommentsTool,
+'no-browse': ! includeBrowseTool
+}">
+<div class="smsForm" inv-fade-show="isShowingSmsForm" duration="slow" >
+<a ng-click="toggleSmsShareForm()" class="closeButton"><img src="assets/apps/share/img/close4.png" alt="Close" /></a>
+<h2>Install "{{ project.name }}" on your phone</h2>
+<p>Visit <a ng-href="{{ shareUrl }}">{{shareUrl}}</a> on your phone or SMS the link to your number:</p>
+<input 	inv-i8n-telephone
+type="text"
+class="phoneNumber"
+country-code="share.countryCode"
+ng-class="{ messageSent: sms.messageSent }"
+ui-keypress="{13:'sendShareSms()'}"
+name="phoneNumber"
+placeholder="Enter mobile number"
+ng-model="sms.phoneNumber">
+<button ng-click="sendShareSms()">
+Send
+</button>
+<div class="message">
+{{sms.message}}
+</div>
+</div>
+</div>
+<!-- BEGIN: Toolbar. -->
+<div
+inv-toolbar
+class="toolbar"
+ng-class="{
+active: isActive,
+'highlight-tour': !hasSeenTour
+}">
+<!-- helper -->
+<div
+class="begin-share-tour"
+ng-show=" shouldShowHelpQuestionMark() "
+>
+<!-- bouncy tooltip -->
+<div 
+class="comment-tip-wrapper"
+ng-show="shouldShowBounceToolTip()">
+<span
+inv-bouncy-tooltip
+msg="Learn how to explore this design"
+callback="hasSeenCommentTooltip()"></span>
+</div> <!-- comment-tip-wrapper -->
+<div class="helper" ng-class="{'hasSeenCommentsTooltip': hasSeenCommentsTooltip}" ng-click="showShareTour()">?</div>
+</div> <!-- begin-share-tour -->
+<div class="tools">
+<div ng-if=" ! isLiveShare && deviceTemplate.deviceType == 'phone' && !! shareUrl " class="tool share-sms-tool">
+<a ng-click="toggleSmsShareForm()"></a>
+</div>
+<div
+ng-show="includeBrowseTool"
+ng-class="{ active: tourSubView == 'thumbnails' }"
+class="tool browse-toggle-tool">
+<a ng-click="toggleBrowse()" ng-class="{ on: isBrowseOpen }">Browse</a>
+</div>
+<div
+ng-show="includeCommentsTool"
+ng-class="{
+active: tourSubView == 'comments',
+'no-browse': !includeBrowseTool && ( deviceTemplate.deviceType != 'phone' || !! isLiveshare )
+}"
+class="tool comments-toggle-tool">
+<div class="clickable"></div>
+<span class="comments" ng-class="{ new: unreadCommentCount, old: ( commentCount && ! unreadCommentCount ) }">
+<span class="unread">{{ unreadCommentCount }}</span>
+<span class="total">{{ commentCount }}</span>
+</span>
+<span class="description">
+Comments
+</span>
+<div ng-model="isShowingComments" inv-toggle></div>
+</div>
+</div>
+</div>
+<!-- END: Toolbar. -->
+</div>
+</script><script type="text/ng-template" id="/assets/apps/common/views/directives/mobile-transition-layer.htm"><div
+class="inner">
+<div class="inner2">
+<div
+id="transition-picture-{{picture.id}}"
+ng-repeat="picture in transitionScreens"
+ng-style="{
+'background-color': getBackgroundColor(picture)
+}"
+ng-class="{
+'current-screen': picture.id == transitionScreen.id,
+'target-screen': picture.id == transitionData.targetScreen.id
+}"
+class="transition-picture">
+<img
+ng-src="{{ picture.imageUrl }}"
+height="{{ Math.round(picture.height * (picture.displayScale || screen.displayScale)) }}"
+width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScale)) }}" />
+<div
+class="fixed-header"
+ng-style="{
+height: (picture.fixedHeaderHeight * (picture.displayScale || screen.displayScale))
+}">
+<img
+ng-src="{{ picture.imageUrl }}"
+height="{{ Math.round(picture.height * (picture.displayScale || screen.displayScale)) }}"
+width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScale)) }}" />
+</div> <!-- fixed-header -->
+<div
+class="fixed-footer"
+ng-style="{
+height: (picture.fixedFooterHeight * (picture.displayScale || screen.displayScale))
+}">
+<img
+ng-src="{{ picture.imageUrl }}"
+height="{{ Math.round(picture.height * (picture.displayScale || screen.displayScale)) }}"
+width="{{ Math.round(picture.width * (picture.displayScale || screen.displayScale)) }}" />
+</div> <!-- fixed-footer -->
+</div> <!-- current-picture -->
+</div><!-- inner2 -->
+</div> <!-- inner -->
+</script> 
+
+
+</body>
+</html>

@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 image: /assets/images/addevent-storyboard.jpg
 thumbnail: addevent-tn.jpg
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 

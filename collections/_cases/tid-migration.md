@@ -8,6 +8,7 @@ sponsor: Trimble
 image: /assets/images/st_preview.jpg
 thumbnail: overview-tb2.png
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 

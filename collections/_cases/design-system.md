@@ -8,6 +8,7 @@ sponsor: Goldstar Events
 image: /assets/images/ds-header.jpg
 thumbnail: ds-tn.jpg
 sitemap: false
+published: true
 ---
 <script src="/assets/js/flickity.js"></script>
 ---
@@ -18,13 +19,13 @@ In order to bring logic, consistency, and structure to our designs across multip
 
 ### Steps
 
-1. **Visual audit.**  
+1. **Visual audit.**
 The first step was to do a visual audit of the current design, compiling all existing UI elements in order to find duplicities. We reviewed not only Goldstar's main consumer site but all the different apps, marketing, and internal tools used in the company.
-2. **Creation of visual design language.**  
+2. **Creation of visual design language.**
 The visual design language is the core of any design system, and it includes things like colors, typography, spacers, separators, and patterns. All these elements were based on Goldstar's new corporate branding.
-3. **Creation of component libraries.**  
+3. **Creation of component libraries.**
 The design team decided that we would have separate component libraries for each product and we would start by building the one for our B2B marketing platform. This product is smaller than our consumer site and it was perfect for testing the new libraries architecture, naming conventions, etc. My job was to build this first library and find the best way to put together everything using [Sketch](https://www.sketch.com/) and [Abstract](https://www.abstract.com/).
-4. **Documentation of components.**  
+4. **Documentation of components.**
 We included descriptions and instructions for each component in Sketch (for designer's reference) and in [Storybook](https://storybook.js.org) (a React UI component explorer used by our front-end developers).
 
 <figure>
