@@ -1,5 +1,5 @@
 ---
-layout: case
+layout: basic-w
 title: "Carlos Cuéllar"
 description: "Senior UX Designer in Portland, OR"
 sitemap: false
