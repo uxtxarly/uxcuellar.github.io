@@ -1,5 +1,5 @@
 ---
-layout: basic2
+layout: case
 title: MBC Photo App
 description: A safe Instagram-like iOS photo app for students, teachers and parents that allows collaboration in the classroom.
 tags: user research, scenarios, task flows, prototyping.
@@ -7,10 +7,10 @@ duration: 2 Months, February 2014.
 sponsor: Lightspeed Systems.
 image: /assets/images/mbc-photo-login.png
 thumbnail: mbc-photo-tn.jpg
+prototype: /assets/protos/photoapp_proto-student_v2.pdf
 sitemap: false
 published: false
 ---
-<a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/photoapp_proto-student_v2.pdf">View Mobile Prototype</a>
 
 Smartphones are an essential part of modern life and today they are integrated into many classrooms. This project maximized the potential of the smartphone at school, turning it into an educational tool.
 
@@ -42,5 +42,3 @@ We generated ideas around the possible uses of smartphones by our personas, then
 </figure>
 
 The final result was a safe and monitored app, similar to Instagram and used by students to share pictures with the rest of their classmates.
-<hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>

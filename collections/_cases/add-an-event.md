@@ -1,18 +1,16 @@
 ---
-layout: basic2
+layout: case
 title: Add an Event
 description: An interactive form that allows event organizers to build, preview and submit events.
-tags: user research, wireframing, prototyping, usability testing.
-duration: 8 Months, January 2019.
+tags: user research, wireframing, prototyping, usability testing
+duration: 8 Months, January 2019
 sponsor: Goldstar Events
 image: /assets/images/addevent-storyboard.jpg
+prototype: /assets/protos/add-an-event/index.html#/screens
 thumbnail: addevent-tn.jpg
 sitemap: false
 published: true
 ---
-<script src="/assets/js/flickity.js"></script>
-
-<a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/add-an-event/index.html#/screens">View Desktop Prototype</a>
 
 ### TLDR: A quick summary
 * Designed a new form that submits events and ticket inventory to Goldstar.
@@ -100,5 +98,4 @@ This was a big project for everybody: designers, front-end and back-end develope
 ### Things I learned
 Developers are your friends! It doesn't matter how good your design is if it can't be implemented. Keep fluid communication with all the actors involved and validate your designs early and often.
 
-<hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+<script src="/assets/js/flickity.js"></script>

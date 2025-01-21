@@ -1,18 +1,16 @@
 ---
-layout: basic2
+layout: case
 title: Horsepower
 description: Horsepower is an ag-oriented e-commerce website that connects farmers and buyers.
 tags: visual design, user research, information architecture, prototyping, front-end development.
 duration: 9 Months, July 2012.
 sponsor: HP Agrisystems.
 image: /assets/images/horsepower-home-small.png
+prototype: /assets/protos/hp_doc_identityguide.pdf
 thumbnail: hp_tn.png
 sitemap: false
 published: false
 ---
-<script src="/assets/js/flickity.js"></script>
-
-<a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/hp_doc_identityguide.pdf">View Identity Guide</a>
 
 <p>When I joined <a href="http://www.horsepower.com">Horsepower</a>, the development team already had a functional website with all the core features available and a minimalist style. My first task consisted of creating a new corporate brand showing the company's values, and I also wrote a style guide that was used by the rest of the developers and marketing team.</p>
 <figure>
@@ -55,5 +53,5 @@ published: false
   </div>
   <figcaption>Screen captures of a HTML prototype</figcaption>
 </figure>
-<hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+
+<script src="/assets/js/flickity.js"></script>

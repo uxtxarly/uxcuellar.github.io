@@ -1,5 +1,5 @@
 ---
-layout: basic2
+layout: case
 title: My Big Campus
 description: My Big Campus is a Learning Management System for K-12 schools developed by Lightspeed Systems.
 tags: user research, scenarios, prototyping, front-end development, visual design.
@@ -10,7 +10,6 @@ thumbnail: mbc-tn.gif
 sitemap: false
 published: false
 ---
-<script src="/assets/js/flickity.js"></script>
 
 <p>I spent about 80% of my time at Lightspeed working for <strong>My Big Campus</strong> doing user research, creating personas, scenarios, prototypes, etc. as well as implementing interfaces.</p>
 
@@ -37,5 +36,5 @@ published: false
   </div>
   <figcaption>Mockups of My Big Campus.</figcaption>
 </figure>
-<hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+
+<script src="/assets/js/flickity.js"></script>

@@ -1,0 +1,54 @@
+---
+layout: work
+body_classes: page-basic
+---
+<main id="main">
+  {% include heading.html heading=page.title description=page.description align="center" %}
+
+  {% if page.sponsor %}
+    <div class="flex flex-col pb-3 md:hidden font-medium text-sm text-stone-600 dark:text-stone-400">
+        <p>Sponsor: {{ page.sponsor }}</p>
+        <p>Duration: {{ page.duration }}</p>
+        <p>Tags: {% for tags in page.tags %}
+          <a class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400" href="/archive#{{ tags }}">{{ tags }}</a>
+        {% endfor %}</p>
+        {% if page.prototype %}
+        <br>
+        <p><a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="{{ page.prototype }}">View Prototype <span class="link-arrow">→</span></a></p>
+        <br>
+        {% endif %}
+    </div>
+  {% endif %}
+
+  {% if page.image %}
+    <div class="-mx-6 md:-mx-12"><img class="w-full sepia-[.25]" src="{{ page.image }}" alt="" /></div>
+  {% endif %}
+
+
+  <div class="flex flex-col md:flex-row py-6 md:py-12">
+
+    <div class="w-full md:w-3/12 pr-3">
+    {% if page.sponsor %}
+        <div class="flex flex-col hidden md:flex mb-3 md:mb-6 font-medium text-sm text-stone-600 dark:text-stone-400 py-6 border-t border-stone-200 dark:border-stone-700/80">
+            <p>Sponsor: {{ page.sponsor }}</p>
+            <p>Duration: {{ page.duration }}</p>
+            <p>Tags: {% for tags in page.tags %}
+              <a class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400" href="/archive#{{ tags }}">{{ tags }}</a>
+            {% endfor %}</p>
+            {% if page.prototype %}
+            <p class="mt-8"><a class="text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 px-3 py-2 rounded transition duration-300 ease-in-out" href="{{ page.prototype }}">View Prototype <span class="link-arrow">→</span></a></p>
+            {% endif %}
+        </div>
+    {% endif %}
+    </div>
+
+    <div class="w-full mx-auto md:w-9/12">
+      <div class="prose case prose-stone dark:prose-invert py-6 border-t border-stone-200 dark:border-stone-700/80">
+        {{ content }}
+        <hr>
+        <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+      </div>
+    </div>
+
+  </div>
+</main>
