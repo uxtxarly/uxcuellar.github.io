@@ -2,8 +2,9 @@
 layout: case
 title: MBC Photo App
 description: A safe Instagram-like iOS photo app for students, teachers and parents that allows collaboration in the classroom.
-tags: user research, scenarios, task flows, prototyping.
-duration: 2 Months, February 2014.
+tags: user research, scenarios, task flows, prototyping
+duration: 2 Months, February 2014
+year: 2014
 sponsor: Lightspeed Systems.
 image: /assets/images/mbc-photo-login.png
 thumbnail: mbc-photo-tn.jpg

@@ -2,8 +2,9 @@
 layout: case
 title: Horsepower
 description: Horsepower is an ag-oriented e-commerce website that connects farmers and buyers.
-tags: visual design, user research, information architecture, prototyping, front-end development.
-duration: 9 Months, July 2012.
+tags: visual design, user research, information architecture, prototyping, front-end development
+duration: 9 Months, July 2012
+year: 2012
 sponsor: HP Agrisystems.
 image: /assets/images/horsepower-home-small.png
 prototype: /assets/protos/hp_doc_identityguide.pdf

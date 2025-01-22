@@ -4,6 +4,7 @@ title: Add an Event
 description: An interactive form that allows event organizers to build, preview and submit events.
 tags: user research, wireframing, prototyping, usability testing
 duration: 8 Months, January 2019
+year: 2019
 sponsor: Goldstar Events
 image: /assets/images/addevent-storyboard.jpg
 prototype: /assets/protos/add-an-event/index.html#/screens

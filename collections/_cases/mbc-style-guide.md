@@ -2,8 +2,9 @@
 layout: case
 title: MBC Style Guide
 description: Live style guide used across several MBC products. It contains visual examples, explanations of use and snippets of code.
-tags: design research, front-end development.
-duration: 9 Months, June 2014.
+tags: design research, front-end development
+duration: 9 Months, June 2014
+year: 2014
 sponsor: Lightspeed Systems.
 image: /assets/images/styleguide-home-small.png
 thumbnail: mbc-style-tn.gif

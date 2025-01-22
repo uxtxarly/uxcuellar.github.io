@@ -2,8 +2,9 @@
 layout: case
 title: Stellar
 description: A new ticketing platform for live entertainment, focused on online events.
-tags: user research, flows, wireframing, prototyping.
-duration: 2 Months, June 2020.
+tags: user research, flows, wireframing, prototyping
+duration: 2 Months, June 2020
+year: 2020
 sponsor: Goldstar Events
 image: /assets/images/st_preview.jpg
 thumbnail: st_logo.png

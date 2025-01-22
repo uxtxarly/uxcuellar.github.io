@@ -2,8 +2,9 @@
 layout: case
 title: MBC Windows App
 description: A light version of the My Big Campus app for Windows 8 devices.
-tags: design research, information architecture, visual design.
-duration: 3 Months, February 2015.
+tags: design research, information architecture, visual design
+duration: 3 Months, February 2015
+year: 2015
 sponsor: Lightspeed Systems.
 image: /assets/images/mbc_win-mockup.png
 thumbnail: mbc-win-tn.gif
