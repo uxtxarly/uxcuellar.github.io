@@ -30,17 +30,41 @@ We decided that the first phase of the migration would only affect the VPID user
 
 UX and Product worked closely on mapping everything that could happen before, during and after the migration
 
+
 #### Before the migration
 
 We planned
 
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/assets/images/tid-case1_2.png" alt="migration flow">
+    <img src="/assets/images/tid-case3.png" alt="migration flow">
+    <img src="/assets/images/tid-case4.png" alt="migration flow">
+    <img src="/assets/images/tid-case4b.png" alt="migration flow">
+    <img src="/assets/images/tid-case5.png" alt="migration flow">
+    <img src="/assets/images/tid-case6.png" alt="migration flow">
+    <img src="/assets/images/tid-case7.png" alt="migration flow">
+  </div>
+  <figcaption style="margin-top:-1.5em;">Migration flows for each case</figcaption>
+</figure>
+
 ### Ideation
 
-jljkjkj
-
+<figure>
+  <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+    <img src="/assets/images/tid-mock1.png" alt="login mock">
+    <img src="/assets/images/tid-mock2.png" alt="login mock">
+    <img src="/assets/images/tid-mock3.png" alt="login mock">
+    <img src="/assets/images/tid-mock4.png" alt="login mock">
+    <img src="/assets/images/tid-mock5.png" alt="login mock">
+    <img src="/assets/images/tid-mock6.png" alt="login mock">
+  </div>
+  <figcaption style="margin-top:-1.5em;">Migration mockups</figcaption>
+</figure>
 ### Test and feedback
 
-jkjkjkj
+<figure><img src="/assets/images/tid-usabilitytest.webp" alt="Internal usability test"><figcaption>
+Remote usability test.</figcaption></figure>
 
 ### Things I learned
 
