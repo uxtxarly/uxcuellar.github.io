@@ -2,7 +2,11 @@
 layout: case
 title: Add an Event
 description: An interactive form that allows event organizers to build, preview and submit events.
-tags: user research, wireframing, prototyping, usability testing
+tags: 
+  - user research
+  - wireframing
+  - prototyping
+  - usability testing
 duration: 8 Months, January 2019
 year: 2019
 sponsor: Goldstar Events
