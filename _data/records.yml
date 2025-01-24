@@ -1,5 +1,23 @@
 main:
 -
+    Artist: Nick Lowe
+    Title: Labour of Lust
+    Label: Columbia
+    Released: 1978
+    Thumbnail: lowelust.jpg
+-
+    Artist: Pretenders
+    Title: Pretenders
+    Label: Sire
+    Released: 1979
+    Thumbnail: pretenders.jpg
+-
+    Artist: Tom Verlaine
+    Title: Words From The Front
+    Label: Warner
+    Released: 1982
+    Thumbnail: verlaine.jpg
+-
     Artist: Big Star
     Title: Live On WLIR
     Label: Ardent
