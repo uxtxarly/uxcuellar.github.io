@@ -79,7 +79,7 @@ After analyzing all potential scenarios, we developed six core use cases for Pha
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/assets/images/tid-mock1.png" alt="login mock">
     <img src="/assets/images/tid-mock2.png" alt="login mock">
-    <img src="/assets/images/tid-mock3.png" alt="login mock">
+    <img src="/assets/images/tid-mock3.jpg" alt="login mock">
     <img src="/assets/images/tid-mock4.png" alt="login mock">
     <img src="/assets/images/tid-mock5.png" alt="login mock">
     <img src="/assets/images/tid-mock6.png" alt="login mock">
