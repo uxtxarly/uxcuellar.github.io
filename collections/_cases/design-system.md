@@ -90,7 +90,7 @@ And we also implemented **separate text and layer styles**. We had text styles a
 It was important to put in place some naming conventions that reflected our component architecture. We ended up using this:
   {% highlight js %}Level / Type of component / Component name / State or Pieces{% endhighlight %}
 An example would be:
-  {% highlight js %}L2/nav/breadcrumbs/_pieces/link{% endhighlight %}
+  {% highlight js %}L2 / nav / breadcrumbs / _pieces / link {% endhighlight %}
 
 Keeping a consistent naming across components was also important because Sketch used these names in order to arrange them in menus and in order to display the right component overrides. Designers were able to use these overrides to customize components with different nested elements, making them a lot more powerful and flexible.
 
