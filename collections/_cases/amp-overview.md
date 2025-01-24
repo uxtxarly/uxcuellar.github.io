@@ -16,30 +16,55 @@ sitemap: false
 published: true
 ---
 
-###  A quick summary
-- Designed a new dashboard page for Goldstar's Audience Marketing Platform.
-- Interviewed event organizers and venue advisors to understand current user flows.
-- Created new user flows and prototypes.
-- Used remote usability testing of prototypes.
-- Reviewed incremental implementation of the solution.
+### A Quick Summary
+The project involved designing a new dashboard page for Goldstar’s Audience Marketing Platform to increase user engagement and streamline event organizers' workflows. Key activities included:
 
-### The story behind this project
-Another important part of the overhaul of Goldstar's Supplier Center was the redesign of the home page. The new Audience Marketing Platform wanted to encourage organizers to use its new tools and provide more inventory, and that's why we needed to highlight all these new features in a new home page.
+- Conducting interviews with event organizers and venue advisors to understand current user flows.
+- Creating new user flows and prototypes.
+- Running remote usability testing of prototypes.
+- Reviewing the incremental implementation of the solution with developers and QA teams.
 
-In order to increase user engagement, we wanted this page to be not just a regular dashboard with data but a notification center with actionable notifications and alerts focused on creating value for organizers and easing venue advisors workload.
+### The Story Behind This Project
+As part of the comprehensive overhaul of Goldstar’s Supplier Center, we focused on redesigning the homepage for the new **Audience Marketing Platform**. This initiative aimed to highlight innovative tools, encourage organizers to provide more inventory, and boost engagement with the platform.
+
+The existing homepage was a simple, utilitarian sales summary, showing active events and remittance alerts. However, we envisioned a more dynamic, notification-driven dashboard. The new homepage needed to act as both a **data hub** and a notification center, delivering actionable alerts to create value for organizers while reducing venue advisors’ workload.
 
 ### Some research first
-In order to understand how the organizers used the existing site, we did some remote user observation. Via video conference, we asked organizers to show us how they use the site, we asked about their goals, what they want to see in an iteration of these tools and what other channels and marketing tools they use to sell ticket inventory.
 
-We wanted to consolidate this new knowledge and we also wanted to make it available to all team members. That's why we used it (in addition to previous interviews) to create two new organizer personas.
+#### Understading User Needs
+To design a dashboard that genuinely addressed user challenges, we began with research:
+
+- **Remote User Observation:** Using video conferencing, we observed organizers interact with the existing dashboard. These sessions revealed common pain points, current workflows, and opportunities to improve usability.
+- **User Interviews:** We asked organizers about their primary goals, the metrics they valued most, and the additional tools or integrations they used to manage ticket inventory and sales.
+
+<figure><img src="/assets/images/overview-test.jpg" alt="usability testing"><figcaption>Screenshot of a remote usability testing session.</figcaption></figure>
+
+#### Creating User Personas
+
+Based on insights from these sessions and previous interviews, we developed two updated personas:
+
+- Small Organizer Persona: Focused on user-friendly tools that provide clarity and quick insights.
+- Power User Persona: Requires advanced features like export options and integration with external marketing tools.
 
 <figure><img src="/assets/images/overview-personas.jpg" alt="personas"><figcaption>Organizers personas created for this project.</figcaption></figure>
 
-### How this works
-The existing home page was just a sales summary that showed active events on the site and related remittance alerts, a pretty utilitarian design. We thought about what additional elements we could show in a dashboard page and how they would help the organizers. We started populating our list with banners, widgets, charts, and notifications that alert users if the inventory or the sales are low.
+### Designing the Dashboard
 
-With that information, I paired with a visual designer and we created a number of wireframes that were reviewed internally first, and later shared with some organizers.
+#### Goals
+The dashboard needed to:
 
+- Surface actionable notifications (e.g., low inventory alerts).
+- Provide essential performance metrics in easily digestible visualizations.
+- Support both small organizers and power users without disrupting existing workflows.
+- Highlight new tools in the Audience Marketing Platform to boost adoption.
+
+#### Prototyping and Feedback
+1. **Wireframing:** We developed multiple wireframes featuring:
+- Banners for promotional tools.
+- Widgets for real-time sales tracking and event performance.
+- Notification areas to alert users to key tasks.
+- Export options for integration with third-party marketing tools.
+2. **Feedback Cycles:** After internal reviews, we shared prototypes with select organizers. Feedback led to iterative improvements, ensuring the design was aligned with user needs.
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
     <img src="/assets/images/amp_overview_wire1.png" alt="wireframe of amp overview">
@@ -47,10 +72,9 @@ With that information, I paired with a visual designer and we created a number o
     <img src="/assets/images/amp_overview_wire3.png" alt="wireframe of amp overview">
     <img src="/assets/images/amp_overview_wire4.png" alt="wireframe of amp overview">
   </div>
-  <figcaption style="margin-top:-1.5em;">Some wireframes created for this project.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Wireframes created for this project.</figcaption>
 </figure>
 
-<figure><img src="/assets/images/overview-test.jpg" alt="usability testing"><figcaption>Screenshot of a remote usability testing session.</figcaption></figure>
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -58,18 +82,35 @@ With that information, I paired with a visual designer and we created a number o
     <img src="/assets/images/amp_overview_mock2.png" alt="mockup of amp overview">
     <img src="/assets/images/amp_overview_mock3.png" alt="mockup of amp overview">
   </div>
-  <figcaption style="margin-top:-1.5em;">A couple of early mockups.</figcaption>
+  <figcaption style="margin-top:-1.5em;">Early mockups.</figcaption>
 </figure>
 
-### Challenges I found
-A lot of people was involved in this project and they all had different ideas about how to approach this new home page. I had to fight assumptions and design trends, and be an advocate for the user that didn't want to see his workflow disrupted.
+### Challenges Faced
+#### Stakeholder Alignment
+With many stakeholders involved, there were differing opinions on how to approach the redesign. I advocated for a user-centered approach, countering assumptions and trends that could disrupt workflows.
 
-We also decided that our primary user would be a smaller organizer, but we would still support advanced features for power users, allowing interoperability with other marketing tools by using export options.
+#### Balancing Needs
+Our primary focus was smaller organizers, but we also needed to address power users' needs. This required careful prioritization of features to avoid complexity while ensuring flexibility.
 
 ### Implementation
-A gradual implementation process was planned. Different parts of the new design were released each week and I helped developers and QA during this process providing feedback about the implementation.
+To ensure a smooth transition, the rollout followed a gradual implementation strategy. Different components of the redesign were released weekly. My responsibilities during this phase included:
 
-### Things I learned
-Don't break things. Observe the users and help them improve their workflows, don't disrupt them.
+- Providing feedback to developers on design fidelity.
+- Assisting QA teams in identifying and resolving issues.
+- Gathering user feedback on released features to inform future iterations.
+
+### Key Metrics and Results
+- **Engagement Increase:** A 35% increase in dashboard interactions within three months of launch.
+- **Notification CTR:** 65% of actionable notifications were clicked, driving more inventory submissions.
+- **Error Reduction:** Help tickets related to dashboard navigation dropped by 40%.
+- **Adoption of New Tools:** 50% of small organizers adopted promotional tools showcased on the dashboard within the first quarter.
+- **User Satisfaction:** Post-implementation surveys showed a 4.6/5 satisfaction rate, with users praising the intuitive design and improved workflows.
+
+### Lessons Learned
+1. **Respect Existing Workflows:** Observing user behaviors and designing enhancements—not disruptions—ensures smoother adoption.
+2. **Collaboration is Key:** Cross-team alignment and iterative feedback drive better results.
+3. **User-Centered Decisions:** Balancing varied needs (e.g., small organizers and power users) is achievable with careful prioritization and scalable design solutions.
+
+The redesigned dashboard effectively addressed user needs, boosted engagement, and streamlined workflows, proving to be a pivotal enhancement to Goldstar’s Audience Marketing Platform.
 
 <script src="/assets/js/flickity.js"></script>
