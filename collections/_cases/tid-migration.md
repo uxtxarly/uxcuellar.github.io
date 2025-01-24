@@ -7,7 +7,7 @@ tags:
   - wireframing
   - prototyping
   - usability testing
-duration: 2 Months, February 2022
+duration: 3 Months, January 2022
 year: 2022
 sponsor: Trimble
 image: /assets/images/tid-header.webp
@@ -16,24 +16,38 @@ sitemap: false
 published: true
 ---
 
-### The story behind this project
+### The Story Behind This Project
 
-Trimble Construction One is a suite of software solutions for construction companies that includes two well-established ERPs: Spectrum and Vista. These two applications have slightly different capabilities and they target different markets, but in 2022 they had one thing in common: outdated login systems. In order to comply with internal security requirements and provide a unified UX across other Trimble products, the company decided to start using a new authentication system called Trimble ID (TID). This project provided a migration path for all the users of Spectrum and Vista.
+Trimble Construction One is a suite of software solutions designed for construction companies, which includes two well-established ERPs: Spectrum and Vista. While both applications serve different markets and have slightly different capabilities, they shared one common issue in 2022: outdated login systems. To meet internal security requirements and offer a unified user experience across Trimble products, the company decided to implement a new authentication system called Trimble ID (TID). This project aimed to migrate all Spectrum and Vista users to TID.
 
-One thing that is common in software that has been around for decades is that you find a lot of baggage, different technologies implemented over time that make the planning of a project like this more complicated, with a lot of different scenarios to cover. We found out that 92% of the ERP users were still logging in using a legacy system that we called ERPID. Then we had 8% using a more modern system called Viewpoint ID (VPID). Some of those VPID users also had a federated AAD (Microsoft) login, and some others had 2 Factor Authentication (2FA) enabled. And they all required different migration strategies.
+Legacy software often comes with its share of complications, such as different technologies and systems that were implemented over time. This can make project planning more complex, as there are various scenarios to account for. We discovered that 92% of ERP users were still logging in using an older system called ERPID, while 8% had already transitioned to the more modern Viewpoint ID (VPID). Some VPID users also had a federated AAD (Microsoft) login or enabled 2-factor authentication (2FA), each requiring different migration strategies.
 
 <figure><img src="/assets/images/tid-old_login.png" alt="old login screens"><figcaption>Screen captures of the old authentication systems.</figcaption></figure>
 
-We decided that the first phase of the migration would only affect the VPID users (around 60,000). This was a number that we all felt comfortable with. Our goal was to have a seamless migration for all of these users, but if something went wrong we didn't want to overwhelm our customer service department. Months later, with all the lessons learnt from this first phase, we would start a second phase with the ERPID users. Technically, they needed to be migrated first to VPID, and then to TID, but this ended up being a complexity that was hidden to the users.
+The decision was made to tackle the migration in two phases:
 
-### Mapping all scenarios
+- Phase 1: Migrate the VPID users (around 60,000). This number felt manageable, and the goal was to ensure a smooth migration. If issues arose, we didn't want to overwhelm customer support.
+- Phase 2: Migrate the ERPID users. Technically, they needed to be first moved to VPID, then TID—but this process would be largely transparent to the users.
 
-UX and Product worked closely on mapping everything that could happen before, during and after the migration
+### Mapping and Designing Scenarios
 
+The UX and Product teams worked closely to identify and map out all possible scenarios before and during the migration.
 
-#### Before the migration
+#### Pre-Migration
 
-We planned
+We created a comprehensive communication plan to prepare users well in advance. This included several touchpoints:
+
+- Help Pages and Video Tutorials: The IX department created an introductory landing page, followed by detailed help pages and video tutorials explaining the migration process.
+- Email Campaign: The first batch of emails was sent to the 60,000 users announcing the migration date. Additional emails followed weekly with more specific details.
+- Login Page: Both the Spectrum and Vista login pages featured banners announcing the migration and links to help pages.
+- Customer Forum: We provided detailed information about the migration and responded to user questions on the customer forum.
+- Phone Support: Customer support teams were trained to assist users throughout the process.
+
+<figure><img src="/assets/images/tid-persona.png" alt="CFO persona"><figcaption>One of the user personas used in this project</figcaption></figure>
+
+#### During Migration
+
+After analyzing all potential scenarios, we developed six core use cases for Phase 1, plus an additional one for Phase 2. These scenarios were mapped out in flowcharts. After validating the flows with the team, I created mockups and interactive prototypes for each case.
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -45,10 +59,8 @@ We planned
     <img src="/assets/images/tid-case6.png" alt="migration flow">
     <img src="/assets/images/tid-case7.png" alt="migration flow">
   </div>
-  <figcaption style="margin-top:-1.5em;">Migration flows for each case</figcaption>
+  <figcaption style="margin-top:-1.5em;">Migration flows for each case.</figcaption>
 </figure>
-
-### Ideation
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -59,15 +71,20 @@ We planned
     <img src="/assets/images/tid-mock5.png" alt="login mock">
     <img src="/assets/images/tid-mock6.png" alt="login mock">
   </div>
-  <figcaption style="margin-top:-1.5em;">Migration mockups</figcaption>
+  <figcaption style="margin-top:-1.5em;">Migration mockups for one of the cases.</figcaption>
 </figure>
-### Test and feedback
+
+### Internal Testing and Release
+
+We used the interactive prototypes for internal usability testing. No major issues were identified, and stakeholders decided to proceed with the planned migration.
 
 <figure><img src="/assets/images/tid-usabilitytest.webp" alt="Internal usability test"><figcaption>
 Remote usability test.</figcaption></figure>
 
-### Things I learned
+The results exceeded our expectations. 99.5% of the 60,000 VPID users successfully migrated to Trimble ID without any issues. Only 0.5% required assistance from customer support.
 
-jkjkjk;
+### Key Learnings
+
+Migrating users between systems is a daunting task for most teams. After all, users are our most valuable asset, and acquiring them takes both time and money. Our goal was a fast, smooth migration with minimal disruption for customers. Achieving this required meticulous planning, clear communication, and seamless collaboration across teams.
 
 <script src="/assets/js/flickity.js"></script>
