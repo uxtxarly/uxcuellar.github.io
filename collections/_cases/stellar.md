@@ -1,6 +1,6 @@
 ---
 layout: case
-title: Stellar
+title: Stellar Tickets
 description: A new ticketing platform for live entertainment, focused on online events.
 tags: 
   - user research
@@ -17,17 +17,17 @@ sitemap: false
 published: true
 ---
 
-### The story behind this project
+### The Story Behind This Project
 
-In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry early and hard, and my employer Goldstar Events was no exception. We stopped selling tickets for live events and our revenue plummeted. With no certainties about when and how we would get back to regular sales, we had to pivot and find new paths for the company.
+In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry hard, and Goldstar Events —where I was working— was no exception. We stopped selling tickets for live events, and our revenue plummeted. With no clear timeline for when we could return to regular sales, we had to pivot quickly and explore new opportunities.
 
-It is in this context that we discovered a market opportunity in the streaming of online events. In the last few months, we have seen a surge of online, home produced events, but they use streaming platforms that were not designed for this use case, and the user experience is far from smooth. We found that we could provide a professional platform for event organizers that would allow them to sell tickets, manage marketing and customer service, and produce premium quality streams, all in one place.
+This is when we identified a gap in the market for streaming online events. While there had been a rise in home-produced virtual events, they were often streamed on platforms not designed for this specific use case, resulting in a subpar user experience. We saw an opportunity to provide a professional platform for event organizers—one that allowed them to sell tickets, manage marketing and customer service, and stream high-quality events, all in one place.
 
-I contributed to this project by **designing the events organizer site**, where organizers create events and inventories, manage ticket transactions, and produce a professional streaming signal for their customers.
+My role in the project was to design the **event organizer site**, where organizers could create events, manage inventories, handle ticket transactions, and stream professional-quality broadcasts.
 
-### Some research first
+### Doing Our Research
 
-This project was very different than anything else I did before at Goldstar. We were in a situation of emergency and we had to move fast, very fast. We took a few days to interview some of our closest partners and that allowed us to learn more about their workflows producing and selling online events, pain points, and needs. We also did a competitive analysis of similar services offered by other companies and we reused some of our existing personas.
+This project was unlike anything I had worked on before at Goldstar. The urgency of the situation meant we had to move quickly—very quickly. We spent a few days interviewing eight of our closest partners to understand their workflows for producing and selling online events, as well as their pain points and needs. Additionally, we conducted a competitive analysis of similar services offered by other companies and reused some of our existing user personas.
 
 <figure>
 <!-- thumbnail image wrapped in a link -->
@@ -44,7 +44,7 @@ This project was very different than anything else I did before at Goldstar. We 
 
 ### Ideation
 
-Product managers, developers, and designers sat together and created an initial story map, prioritizing features for an MVP release that we needed to complete in less than three months. Some of our decisions here were based on user research, but we also had to make decisions based on stakeholder assumptions and our previous experience at Goldstar. We were lucky to work with some close partners that helped validate some of those assumptions.
+Product managers, developers, and designers came together to create an initial story map, prioritizing features for an MVP (Minimum Viable Product) that we needed to launch in under three months. While some decisions were driven by user research, others were based on stakeholder assumptions and our prior experience at Goldstar. We were fortunate to work with partners who helped validate many of those assumptions.
 
 <figure>
 <!-- thumbnail image wrapped in a link -->
@@ -59,9 +59,9 @@ Product managers, developers, and designers sat together and created an initial 
 <figcaption style="margin-top:-1.5em;">Initial story map</figcaption>
 </figure>
 
-One important decision that was made was to rely on third party solutions to manage payments and transactions (Stripe), marketing and analytics (Mailchimp, Toneden).
+One key decision was to integrate third-party solutions to handle payments and transactions (via Stripe), as well as marketing and analytics (using Mailchimp and Toneden).
 
-At that point, I was ready to start sketching wireframes and flows for the main sections of the organizer site.
+With this groundwork in place, I started sketching wireframes and flows for the main sections of the organizer site.
 
 <figure>
   <!-- thumbnail image wrapped in a link -->
@@ -86,9 +86,9 @@ At that point, I was ready to start sketching wireframes and flows for the main 
   <figcaption style="margin-top:-1.5em;">Wireframes of the organizer site.</figcaption>
 </figure>
 
-### Test and feedback
+### Testing and Release
 
-I created some mockups and prototypes that were tested by our launching partners. From there, we first moved quickly to a working prototype, and then to beta versions of our MVP. We were able to do a soft launch in June, and we have been iterating and improving the platform since then.
+I created mockups and prototypes, which we tested with our launch partners. We quickly iterated from these initial prototypes to a working version and then moved into beta. We were able to do a soft launch in June, and after that we kept iterating and improving the platform.
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -100,8 +100,10 @@ I created some mockups and prototypes that were tested by our launching partners
   <figcaption style="margin-top:-1.5em;">Final mockups of the organizer site.</figcaption>
 </figure>
 
-### Things I learned
+Seven of the eight initial partners migrated to our platform, and in the following months, **more than 300 new partners started streaming their shows on Stellar**.
 
-The pandemic and its consequences forced us to work like a startup: roles were fluid and everybody had a voice in the development process. That wasn't an issue, and the collaboration between teammates was great. 8 months later, I can say that was the foundation of a solid product that is going to be an important part of Goldstar's future.
+### Key Takeaways
+
+The pandemic forced us to operate like a startup: roles were fluid, and everyone had a voice in the development process. This wasn’t a problem—it made collaboration easier and more effective. Looking back after eight months, I can confidently say that this fast-paced, collaborative approach laid the foundation for a solid product that will be a key part of Goldstar's future.
 
 <script src="/assets/js/flickity.js"></script>
