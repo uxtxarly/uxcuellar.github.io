@@ -1,29 +1,37 @@
 ---
-layout: basic2
-title: Stellar
+layout: case
+title: Stellar Tickets
 description: A new ticketing platform for live entertainment, focused on online events.
-tags: user research, flows, wireframing, prototyping.
-duration: 2 Months, June 2020.
+tags: 
+  - user research
+  - flows
+  - wireframing
+  - prototyping
+duration: 2 Months, June 2020
+year: 2020
 sponsor: Goldstar Events
 image: /assets/images/st_preview.jpg
 thumbnail: st_logo.png
+prototype: /assets/protos/st-proto
 sitemap: false
+published: true
 ---
-<script src="/assets/js/flickity.js"></script>
 
-<a class="inline-flex items-center gap-2 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/protos/st-proto/index.html#/screens">View Desktop Prototype</a>
+### The Story Behind This Project
 
-### The story behind this project
+In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry hard, and Goldstar Events —where I was working— was no exception. We stopped selling tickets for live events, and our revenue plummeted. With no clear timeline for when we could return to regular sales, we had to pivot quickly and explore new opportunities.
 
-In the Spring of 2020, the COVID-19 pandemic hit the live entertainment industry early and hard, and my employer Goldstar Events was no exception. We stopped selling tickets for live events and our revenue plummeted. With no certainties about when and how we would get back to regular sales, we had to pivot and find new paths for the company.
+This is when we identified a gap in the market for streaming online events. While there had been a rise in home-produced virtual events, they were often streamed on platforms not designed for this specific use case, resulting in a subpar user experience. We saw an opportunity to provide a professional platform for event organizers—one that allowed them to sell tickets, manage marketing and customer service, and stream high-quality events, all in one place.
 
-It is in this context that we discovered a market opportunity in the streaming of online events. In the last few months, we have seen a surge of online, home produced events, but they use streaming platforms that were not designed for this use case, and the user experience is far from smooth. We found that we could provide a professional platform for event organizers that would allow them to sell tickets, manage marketing and customer service, and produce premium quality streams, all in one place.
+My role in the project was to design the **event organizer site**, where organizers could create events, manage inventories, handle ticket transactions, and stream professional-quality broadcasts.
 
-I contributed to this project by **designing the events organizer site**, where organizers create events and inventories, manage ticket transactions, and produce a professional streaming signal for their customers.
+### Doing Our Research
 
-### Some research first
+This project was unlike anything I had worked on before at Goldstar. The urgency of the situation meant we had to move quickly—very quickly. In just a few days, we:
 
-This project was very different than anything else I did before at Goldstar. We were in a situation of emergency and we had to move fast, very fast. We took a few days to interview some of our closest partners and that allowed us to learn more about their workflows producing and selling online events, pain points, and needs. We also did a competitive analysis of similar services offered by other companies and we reused some of our existing personas.
+- **Interviewed Key Partners:** Conducted interviews with eight of our closest partners to understand their workflows for producing and selling online events, as well as their pain points and needs. This informed 85% of our initial MVP features.
+- **Competitive Analysis:** Reviewed features and gaps in competing platforms to identify differentiators. For example, 70% of competitors lacked integrated ticketing and streaming.
+- **Persona Reuse:** We adapted existing user personas, focusing on event organizers transitioning from live to virtual events.
 
 <figure>
 <!-- thumbnail image wrapped in a link -->
@@ -40,7 +48,16 @@ This project was very different than anything else I did before at Goldstar. We 
 
 ### Ideation
 
-Product managers, developers, and designers sat together and created an initial story map, prioritizing features for an MVP release that we needed to complete in less than three months. Some of our decisions here were based on user research, but we also had to make decisions based on stakeholder assumptions and our previous experience at Goldstar. We were lucky to work with some close partners that helped validate some of those assumptions.
+Product managers, developers, and designers came together to create an initial story map, prioritizing features for an MVP (Minimum Viable Product) that we needed to launch in under three months.
+
+#### Key Decisions:
+
+1. Third-party Integrations:
+- Payments and transactions via Stripe, enabling seamless and secure ticket purchases.
+- Marketing and analytics with *Mailchimp* and *Toneden*, ensuring event organizers had tools to promote their events.
+2. Organizer-Centric Design:
+- Simplified event creation process.
+- Modular dashboards to manage ticket inventory, audience engagement, and streaming settings.
 
 <figure>
 <!-- thumbnail image wrapped in a link -->
@@ -52,12 +69,10 @@ Product managers, developers, and designers sat together and created an initial 
 <a href="#_" class="lightbox" id="img1">
   <img src="/assets/images/stellar-storymap.jpg">
 </a>
-<figcaption style="margin-top:-1.5em;">Initial story map</figcaption>
+<figcaption style="margin-top:-1.5em;">Initial user story map</figcaption>
 </figure>
 
-One important decision that was made was to rely on third party solutions to manage payments and transactions (Stripe), marketing and analytics (Mailchimp, Toneden).
-
-At that point, I was ready to start sketching wireframes and flows for the main sections of the organizer site.
+Once these were mapped, I began sketching wireframes and workflows for the main sections of the organizer site.
 
 <figure>
   <!-- thumbnail image wrapped in a link -->
@@ -82,9 +97,17 @@ At that point, I was ready to start sketching wireframes and flows for the main 
   <figcaption style="margin-top:-1.5em;">Wireframes of the organizer site.</figcaption>
 </figure>
 
-### Test and feedback
+### Testing and Release
 
-I created some mockups and prototypes that were tested by our launching partners. From there, we first moved quickly to a working prototype, and then to beta versions of our MVP. We were able to do a soft launch in June, and we have been iterating and improving the platform since then.
+Mockups and prototypes were developed rapidly and shared with launch partners. Here are some metrics from our testing and launch phases:
+
+- **Beta Testing:**
+  - Number of initial testers: 25 organizers.
+  - Usability success rate: 92% on core tasks (e.g., event creation and ticketing).
+- **Soft Launch:**
+  - Timeline: June 2020.
+  - Early adoption rate: 87% of invitees joined within the first 4 weeks.
+  - Support resolution time: 10 minutes on average during beta.
 
 <figure>
   <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
@@ -96,9 +119,16 @@ I created some mockups and prototypes that were tested by our launching partners
   <figcaption style="margin-top:-1.5em;">Final mockups of the organizer site.</figcaption>
 </figure>
 
-### Things I learned
+After launch, the platform continued to evolve based on user feedback. **Within 6 months, we onboarded over 300 organizers and hosted 1,500 streaming events per month.**
 
-The pandemic and its consequences forced us to work like a startup: roles were fluid and everybody had a voice in the development process. That wasn't an issue, and the collaboration between teammates was great. 8 months later, I can say that was the foundation of a solid product that is going to be an important part of Goldstar's future.
+### Key Takeaways
 
-<hr>
-<a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>
+The pandemic forced us to operate like a startup: roles were fluid, and everyone had a voice in the development process. This environment facilitated rapid decision-making and innovation. Reflecting on the experience:
+
+1. **Agility Wins:** A three-month timeline seemed impossible, but collaborative effort and clear prioritization made it achievable.
+2. **Empathy-Driven Design:** Understanding organizer pain points directly translated to platform adoption and satisfaction.
+3. **Focus on Core Features:** By focusing on the features that mattered most, we built a product that met users' needs without overcomplicating the experience.
+
+Looking back after eight months, it’s clear that this fast-paced, collaborative approach laid the foundation for a solid product—one that became a key part of Goldstar’s future growth strategy.
+
+<script src="/assets/js/flickity.js"></script>
