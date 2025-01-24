@@ -58,7 +58,7 @@ With all the gathered information, we had a clear idea of how the form should fu
 <a href="#_" class="lightbox" id="img1">
   <img src="/assets/images/amp_event-map.jpg">
 </a>
-<figcaption style="margin-top:-1.5em;">Story Map</figcaption>
+<figcaption style="margin-top:-1.5em;">User story map</figcaption>
 </figure>
 
 The form was designed to be divided into non-linear, logical steps. This allowed users to start at any point in the submission process and save their progress as a draft if needed. Since organizers often don’t have all the information ready when they begin, the form needed to be flexible.

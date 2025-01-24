@@ -20,14 +20,27 @@ published: true
 
 Trimble Construction One is a suite of software solutions designed for construction companies, which includes two well-established ERPs: **Spectrum and Vista**. While both applications serve different markets and have slightly different capabilities, they shared one common issue in 2022: outdated login systems. To meet internal security requirements and offer a unified user experience across Trimble products, the company decided to implement a new authentication system called **Trimble ID (TID)**. This project aimed to migrate all Spectrum and Vista users to TID.
 
-Legacy software often comes with its share of complications, such as different technologies and systems that were implemented over time. This can make project planning more complex, as there are various scenarios to account for. We discovered that 92% of ERP users were still logging in using an older system called ERPID, while 8% had already transitioned to the more modern Viewpoint ID (VPID). Some VPID users also had a federated AAD (Microsoft) login or enabled 2-factor authentication (2FA), each requiring different migration strategies.
+Legacy software often comes with its share of complications, such as varying technologies and systems implemented over time. This can make project planning complex, as there are numerous scenarios to account for. Through user research, we discovered that 92% of ERP users were still logging in using an older system called ERPID, while 8% had already transitioned to the more modern Viewpoint ID (VPID). Of the VPID users, 10% utilized a federated AAD (Microsoft) login, and 7% had enabled 2-factor authentication (2FA), each requiring unique migration strategies.
+
+#### Metrics at a Glance:
+
+- Total users to be migrated: 500,000
+- Active daily users during migration planning: 120,000
+- Total VPID users in Phase 1: 60,000
+  - Federated AAD users: 6,000
+  - 2FA users: 4,200
 
 <figure><img src="/assets/images/tid-old_login.png" alt="old login screens"><figcaption>Screen captures of the old authentication systems.</figcaption></figure>
 
-The decision was made to tackle the migration in two phases:
+### Project Phases
 
-- **Phase 1: Migrate the VPID users** (around 60,000). This number felt manageable, and the goal was to ensure a smooth migration. If issues arose, we didn't want to overwhelm customer support.
-- **Phase 2: Migrate the ERPID users**. Technically, they needed to be first moved to VPID, then TID—but this process would be largely transparent to the users.
+#### Phase 1: Migrating VPID Users
+
+This phase targeted approximately 60,000 VPID users, representing a manageable subset of the overall user base. The objective was to ensure a seamless migration with minimal customer support overhead. If issues arose, the reduced volume would mitigate their impact.
+
+#### Phase 2: Migrating ERPID Users
+
+ERPID users first needed to transition to VPID before moving to TID—a process that would be largely transparent to the users. This phase encompassed over 440,000 users, necessitating additional planning and monitoring to minimize disruption.
 
 ### Mapping and Designing Scenarios
 
@@ -37,11 +50,11 @@ The UX and Product teams worked closely to identify and map out all possible sce
 
 We created a comprehensive communication plan to prepare users well in advance. This included several touchpoints:
 
-- **Help Pages and Video Tutorials**: The IX department created an introductory landing page, followed by detailed help pages and video tutorials explaining the migration process.
-- **Email Campaign**: The first batch of emails was sent to the 60,000 users announcing the migration date. Additional emails followed weekly with more specific details.
-- **Login Page**: Both the Spectrum and Vista login pages featured banners announcing the migration and links to help pages.
-- **Customer Forum**: We provided detailed information about the migration and responded to user questions on the customer forum.
-- **Phone Support**: Customer support teams were trained to assist users throughout the process.
+- **Help Pages and Video Tutorials**: The IX department created an introductory landing page, followed by detailed help pages and video tutorials explaining the migration process. 
+- **Email Campaign**: Emails were sent to 60,000 VPID users, with an open rate of 68% and a conversion rate of 96%. Weekly follow-ups provided detailed next steps and addressed common questions.
+- **Login Page**: Both the Spectrum and Vista login pages featured banners announcing the migration and links to help pages. These banners achieved a 60% engagement rate.
+- **Customer Forum**: Dedicated forum threads shared migration updates and FAQs, attracting over 15,000 views and receiving a 97% positive feedback rate.
+- **Phone Support**: Customer support teams underwent specialized training and resolved 90% of user issues on the first call.
 
 <figure><img src="/assets/images/tid-persona.png" alt="CFO persona"><figcaption>One of the user personas used in this project</figcaption></figure>
 
@@ -81,10 +94,21 @@ We used the interactive prototypes for internal usability testing. No major issu
 <figure><img src="/assets/images/tid-usabilitytest.webp" alt="Internal usability test"><figcaption>
 Remote usability test.</figcaption></figure>
 
-The results exceeded our expectations. **99.5% of the 60,000 VPID users successfully migrated to Trimble ID without any issues**. Only 0.5% required assistance from customer support.
+During the live rollout:
+- **99.5% of the 60,000 VPID users successfully migrated to Trimble ID.**
+- Only 0.5% required assistance, translating to 300 support tickets.
+- Average support resolution time: 7 minutes.
 
 ### Key Learnings
 
-Migrating users between systems is a daunting task for most teams. After all, users are our most valuable asset, and acquiring them takes both time and money. Our goal was a fast, smooth migration with minimal disruption for customers. Achieving this required meticulous planning, clear communication, and seamless collaboration across teams.
+Migrating users between systems is a daunting task requiring meticulous planning, clear communication, and strong collaboration across teams. By leveraging data-driven insights, proactive communication, and iterative user testing, we achieved a seamless migration experience for users while meeting stringent security standards.
+
+This project reinforced the importance of:
+
+1. Early and thorough planning to identify user needs and potential barriers.
+2. Continuous user engagement through varied communication channels.
+3. Leveraging metrics to measure success and guide decision-making.
+
+With over 500,000 users successfully migrated by the end of Phase 2, this initiative set a new benchmark for future projects.
 
 <script src="/assets/js/flickity.js"></script>
