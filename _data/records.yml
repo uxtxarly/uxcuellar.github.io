@@ -1,5 +1,11 @@
 main:
 -
+    Artist: Beach Boys, The
+    Title: Pet Sounds
+    Label: Capitol
+    Released: 1966
+    Thumbnail: petsounds.jpg
+-
     Artist: Nick Lowe
     Title: Labour of Lust
     Label: Columbia
