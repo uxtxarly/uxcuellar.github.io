@@ -11,7 +11,7 @@ Hello, this is Carlos Cuéllar. Let me introduce myself. I'm a [certified User E
 
 Now, the work stuff. I've been creating digital experiences that simplify user's lives since 2006. I started working at marketing agencies in Spain, and after moving to the US in 2011 I became an in-house UX Designer specialized in B2B applications. I currently work at [Trimble Inc.](https://construction.trimble.com/en) where we craft software solutions for construction companies.
 
-Depending on the project I might wear different hats, but I always follow a user-centered process where I collaborate closely with users, product managers, developers, and other designers. 
+Depending on the project I might wear different hats, but I always follow a user-centered process where I collaborate closely with users, product managers, developers, and other designers.
 
 ## About this website
 
@@ -23,4 +23,4 @@ Both the [content](https://creativecommons.org/licenses/by-sa/4.0/) and the [cod
 
 ## Get in touch
 - You can send me an email: [carlos@cuellar.fr](mailto:carlos@cuellar.fr)
-- Or you can follow me on [Mastodon](https://social.vivaldi.net/@cuellarfr), [Bluesky](https://bsky.app/profile/cuellar.fr) or [LinkedIn](https://www.linkedin.com/in/cuellarfr).
+- Or you can follow me on [Bluesky](https://bsky.app/profile/cuellar.fr), [GitHub](https://github.com/cuellarfr)  or [LinkedIn](https://www.linkedin.com/in/cuellarfr).

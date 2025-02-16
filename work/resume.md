@@ -81,4 +81,4 @@ Prototype, Interaction Design, Figma, Sketch, Axure RP, Photoshop, Illustrator, 
 - LinkedIn: [linkedin.com/in/cuellarfr](https://www.linkedin.com/in/cuellarfr)
 
 <hr>
-<a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full" href="/assets/certificates/resume_cuellar.pdf">Download Resume</a>
+<a class="text-stone-800 dark:text-stone-200 px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out hover:text-orange-600 dark:hover:text-orange-400" href="/assets/certificates/resume_cuellar.pdf">Download Resume</a>
