@@ -29,7 +29,7 @@ body_classes: page-basic
 
     <div class="w-full md:w-3/12 pr-3">
     {% if page.sponsor %}
-        <div class="flex flex-col hidden md:flex mb-3 md:mb-6 font-medium text-sm text-stone-600 dark:text-stone-400 py-6 border-t border-stone-200 dark:border-stone-700/80">
+        <div class="flex flex-col hidden md:flex mb-3 md:mb-6 font-medium text-sm text-stone-600 dark:text-stone-400 py-6 border-t border-stone-200 dark:border-stone-700">
             <p>Sponsor: {{ page.sponsor }}</p>
             <p>Duration: {{ page.duration }}</p>
             <p>Tags: {% for tags in page.tags %}
@@ -43,7 +43,7 @@ body_classes: page-basic
     </div>
 
     <div class="w-full mx-auto md:w-9/12">
-      <div class="prose case prose-stone dark:prose-invert py-6 border-t border-stone-200 dark:border-stone-700/80">
+      <div class="prose case prose-stone dark:prose-invert py-6 border-t border-stone-200 dark:border-stone-700">
         {{ content }}
         <hr>
         <a class="px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out no-underline" href="/work/a288d20020c6de3a6926698a5b7f0a39adce6c79/index.html">« Back</a>

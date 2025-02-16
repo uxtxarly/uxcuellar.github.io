@@ -10,45 +10,45 @@ sitemap: false
 
   <p class="prose prose-stone dark:prose-invert mb-12"><strong>I am a Senior User Experience Designer with over 12 years of experience</strong> crafting software solutions across diverse industries. Highly collaborative with stakeholders to transform business goals into compelling, technically feasible experiences that meet user needs. Extensive experience building teams, mentoring designers, and driving impactful design solutions in agile environments. I am fluent in English, Spanish and Catalan.</p>
 
-  <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700/80">Case Studies</h2>
+  <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700">Case Studies</h2>
 
   <section class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 mb-3">
     {% assign sorted_cases = site.cases | sort: 'year' | reverse %}
     {% for case in sorted_cases %}
-    <article class="bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-4 rounded transition duration-300 ease-in-out">
+    <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
       {% if case.thumbnail %}
-        <a href="{{ case.url | relative_url }}"><img width="80" height="45" class="rounded-md" alt="" src="/assets/images/{{ case.thumbnail | relative_url }}"/></a>
+        <a href="{{ case.url | relative_url }}"><img width="80" height="45" class="rounded-md hover:opacity-80 transition duration-300 ease-in-out" alt="" src="/assets/images/{{ case.thumbnail | relative_url }}"/></a>
       {% endif %}
-      <p class="mt-4 pb-2 font-semibold"><a href="{{ case.url | relative_url }}">{{ case.title }}</a></p>
-      <p class="text-sm"><a href="{{ case.url | relative_url }}">{{ case.description }}</a></p>
+      <h3 class="mt-4 pb-2 font-semibold font-sans hover:text-orange-600 dark:hover:text-orange-400"><a href="{{ case.url | relative_url }}">{{ case.title }}</a></h3>
+      <p class="text-sm">{{ case.description }}</p>
     </article>
     {% endfor %}
   </section>
 
   <aside class="lg:flex mt-12">
     <section class="lg:w-1/3 p-4">
-      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700/80">Experience</h2>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700">Experience</h2>
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Trimble</h3>
         <p class="text-sm">October 2021 - Present</p>
         <p class="text-sm">Senior UX Designer</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Goldstar Events</h3>
         <p class="text-sm">May 2015 - September 2021</p>
         <p class="text-sm">Senior UX Designer</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Lightspeed Systems</h3>
         <p class="text-sm">July 2012 - March 2015</p>
         <p class="text-sm">UI/UX Designer</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">HP Agrisystems</h3>
         <p class="text-sm">November 2011 - July 2012</p>
         <p class="text-sm">UI/UX Designer</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Previous agency work</h3>
         <p class="text-sm">November 2006 - August 2011</p>
         <p class="text-sm">Web Designer</p>
@@ -56,28 +56,28 @@ sitemap: false
       <div><a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full no-underline" href="/work/resume">Full Resume</a></div>
     </section>
     <section class="lg:w-1/3 p-4">
-      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700/80">Certificates</h2>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700">Certificates</h2>
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">UX / IxD Specialty</h3>
         <p class="text-sm">December 2020</p>
         <p class="text-sm">Nielsen Norman Group</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Interaction Design Training</h3>
         <p class="text-sm">November 2014</p>
         <p class="text-sm">Cooper U</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">IxD: Beyond the Wireframe</h3>
         <p class="text-sm">April 2013</p>
         <p class="text-sm">Future Insights Live</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Accessibility: Design for All</h3>
         <p class="text-sm">October 2021</p>
         <p class="text-sm">Interaction Design Foundation</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Agile Methods for UX Design</h3>
         <p class="text-sm">September 2022</p>
         <p class="text-sm">Interaction Design Foundation</p>
@@ -85,28 +85,28 @@ sitemap: false
       <div><a class="inline-flex items-center gap-2 text-sm justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded transition duration-300 ease-in-out w-full no-underline" href="/work/certificates">More Certificates</a></div>
     </section>
     <section class="lg:w-1/3 p-4">
-      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700/80">Design Principles</h2>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <h2 class="text-2xl font-bold py-6 border-t border-stone-200 dark:border-stone-700">Design Principles</h2>
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Human-Centered</h3>
         <p class="text-sm">I focus on users an their well-being.</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Collaboration</h3>
         <p class="text-sm">I create circles and break hierarchies. I seek and invite feedback from different stakeholders.</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Growth</h3>
         <p class="text-sm">I see challenges as opportunities to innovate.</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Experimentation</h3>
         <p class="text-sm">I build, validate and iterate. Failure is fuel for future success.</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Continuous Learning</h3>
         <p class="text-sm">Always learning and chasing new ideas and points of view.</p>
       </div>
-      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+      <div class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
         <h3 class="text-base font-semibold font-sans">Reflection</h3>
         <p class="text-sm">I see both failures and successes as learning opportunities.</p>
       </div>

@@ -14,7 +14,7 @@ layout: default
       <p class="text-base text-stone-600 dark:text-stone-400">On this site I collect <a href="/archive" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">notes and links</a> about design, technology and music. I also like to share <a href="https://last.fm/user/txarly" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">music I like</a>, my <a href="/music" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">music podcast</a> and the <a href="/music/records" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">vinyl records I collect</a>.</p>
       <p class="text-base text-stone-600 dark:text-stone-400">You can learn more <a href="/about" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">about me</a> or see what I’m up to <a href="/now" class="text-orange-700 dark:text-orange-500 hover:text-orange-600 dark:hover:text-orange-400">now</a>. You can also follow me here:</p>
       <ul class="inline">
-        
+
         {% for item in site.data.social %}
           <li class="inline-block px-2 py-4">
             <a rel="me" class="" href="{{ item.link }}">
@@ -28,9 +28,9 @@ layout: default
 </main>
 <aside class="lg:flex">
   <section class="lg:w-1/2 pr-6">
-    <h3 class="text-2xl font-bold hover:text-orangetext-orange-600 dark:hover:text-orange-400 py-6 border-t border-stone-200 dark:border-stone-700/80"><a href="/blog">Recent posts and links</a></h2>
+    <h3 class="text-2xl font-bold hover:text-orangetext-orange-600 dark:hover:text-orange-400 py-6 border-t border-stone-200 dark:border-stone-700"><a href="/blog">Recent posts and links</a></h2>
     {% for post in site.posts limit:4 %}
-    <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+    <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
 
       {% if post.link %}
         <h4 class="text-base font-semibold font-sans"><a rel="external" class="hover:text-orange-600 dark:hover:text-orange-400" href="{{ post.link }}">{{ post.title }} <span class="link-arrow">&rarr;</span></a></h4>
@@ -38,17 +38,17 @@ layout: default
         <h4 class="text-base font-semibold font-sans"><a href="{{ post.url | relative_url }}" class="hover:text-orange-600 dark:hover:text-orange-400">{{ post.title }}</a></h4>
       {% endif %}
 
-      
+
       <p class="text-base text-sm text-stone-600 dark:text-stone-400">{{ post.content | strip_html | truncatewords: 25 }}</p>
     </article>
     {% endfor %}
   </section>
-  
+
   <section class="lg:w-1/2 pr-6">
-    <h3 class="text-2xl font-bold hover:text-orange-600 dark:hover:text-orange-400 py-6 border-t border-stone-200 dark:border-stone-700/80"><a href="/music">Recent shows</a></h2>
+    <h3 class="text-2xl font-bold hover:text-orange-600 dark:hover:text-orange-400 py-6 border-t border-stone-200 dark:border-stone-700"><a href="/music">Recent shows</a></h2>
     {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
     {% for show in sorted_shows limit:4 %}
-    <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700/80">
+    <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700">
       <h4 class="text-base font-semibold font-sans"><a href="{{ show.url | relative_url }}" class="hover:text-orange-600 dark:hover:text-orange-400">{{ show.title }}</a></h4>
       <p class="text-base text-sm text-stone-600 dark:text-stone-400">{{ show.content | strip_html | truncatewords: 25 }}</p>
     </article>
