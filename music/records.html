@@ -19,9 +19,10 @@ description: "Just a list of all the records in my collection."
   <div class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-8 mb-3">
     {% assign sorted_items = site.data.records.main | sort: 'Artist' %}
     {% for item in sorted_items %}
-      <article class="bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-4 rounded transition duration-300 ease-in-out"><img src="/assets/images/records/{{ item.Thumbnail }}" alt="" width="160px" height="160px" loading="lazy" class="rounded">
-        <p class="text-sm font-semibold pt-1">{{ item.Title }}</p>
+      <article class="mb-6 md:border-l md:border-stone-200 md:pl-6 md:dark:border-stone-700"><img src="/assets/images/records/{{ item.Thumbnail }}" alt="" width="160px" height="160px" loading="lazy" class="rounded">
+        <p class="pt-4 text-sm font-semibold">{{ item.Title }}</p>
         <p class="text-sm">{{ item.Artist }}</p>
+        <p class="text-sm">({{ item.Label }}, {{ item.Released }})</p>
       </article>
     {% endfor %}
   </div>
