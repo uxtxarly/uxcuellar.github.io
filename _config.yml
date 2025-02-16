@@ -36,7 +36,6 @@ plugins:
   - jekyll-postcss
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll/mastodon_webfinger
   - jekyll-redirect-from
 
 paginate: 10
@@ -103,11 +102,6 @@ exclude:
   - tailwind.config.js
   - netlify.toml
 
-# Mastodon Webfinger
-mastodon:
-  username: cuellarfr
-  instance: vivaldi.net
-
-# PostCSS Cache 
+# PostCSS Cache
 postcss:
   cache: false
