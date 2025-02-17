@@ -6,15 +6,6 @@ description: "Just a list of all the records in my collection."
 ---
 <main id="main">
   {% include heading.html heading=page.heading %}
-  <div class="prose prose-stone dark:prose-invert mb-12">
-    <p>This is the collection of vinyl records I have accumulated. I only started buying vinyl a few years ago, I have a much bigger collection of CDs.</p>
-    <p>When I started doing this, I decided I would follow two rules:</p>
-    <ol>
-      <li>Only buy the records that really matter, my personal favorites.</li>
-      <li>Don't buy again the records that I already own on CD.</li>
-    </ol>
-    <p>Am I following those rules? Absolutely not! So here's the list organized alphabetically. I'll be adding the cover art and a link to <a href="https://www.discogs.com/">Discogs</a>, but right now it's just a work in progress.</p>
-  </div>
 
   <div class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-8 mb-3">
     {% assign sorted_items = site.data.records.main | sort: 'Artist' %}

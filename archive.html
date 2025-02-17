@@ -10,7 +10,7 @@ sitemap: false
 <main class="lg:flex" id="main">
 
   <section class="lg:w-1/2 pr-8 prose prose-stone dark:prose-invert">
-    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="date-list">Search posts</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="date-list">Search Posts</h2>
     <input type="text" id="search-input" placeholder="Search..." class="block w-full rounded-md border-0 py-3 pl-7 pr-20 mb-12 text-stone-900 ring-1 ring-inset ring-stone-300 placeholder:text-stone-400 focus:ring-2 focus:ring-inset focus:ring-stone-600 sm:text-sm sm:leading-6 dark:bg-stone-200">
     <ul class="pl-0" id="results-container"></ul>
 
@@ -26,7 +26,7 @@ sitemap: false
     })
     </script>
 
-    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="date-list">Posts by date</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="date-list">Posts by Date</h2>
     <div>
       <ul class="pl-0">
         {% for post in site.posts %}
@@ -46,7 +46,7 @@ sitemap: false
     </div>
     <a href="#date-list" class="text-stone-800 dark:text-stone-200 px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out hover:text-orange-600 dark:hover:text-orange-400">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
-    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="shows-date-list">Shows by date</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="shows-date-list">Shows by Date</h2>
     <div>
       <ul class="pl-0">
         {% assign sorted_shows = site.shows | sort: 'date' | reverse %}
@@ -67,7 +67,7 @@ sitemap: false
     </div>
     <a href="#date-list" class="text-stone-800 dark:text-stone-200 px-5 text-sm no-underline justify-center bg-white/60 dark:bg-stone-800/90 ring-1 ring-stone-900/5 dark:ring-white/10 hover:ring-stone-900/20 dark:hover:ring-white/20 p-2 rounded-full transition duration-300 ease-in-out hover:text-orange-600 dark:hover:text-orange-400">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to top' }} &uarr;</a>
 
-    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="updates-date-list">Updates by date</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="updates-date-list">Updates by Date</h2>
     <div>
       <ul class="pl-0">
         {% assign sorted_updates = site.updates | sort: 'date' | reverse %}
@@ -91,7 +91,7 @@ sitemap: false
   </section>
 
   <section class="lg:w-1/2 prose prose-stone dark:prose-invert">
-    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="tag-cloud">Posts by tag</h2>
+    <h2 class="text-3xl font-bold py-6 border-t border-stone-200 dark:border-stone-700" id="tag-cloud">Posts by Tag</h2>
     {% assign tags_max = 0 %}
     {% for tag in site.tags %}
       {% if tag[1].size > tags_max %}
