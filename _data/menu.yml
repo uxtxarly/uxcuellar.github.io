@@ -5,8 +5,8 @@ main:
   - name: "Music"
     url: "/music/"
     weight: 2
-  - name: "Now"
-    url: "/now/"
+  - name: "Work"
+    url: "/work/"
     weight: 3
   - name: "About"
     url: "/about/"
