@@ -2,9 +2,9 @@
 {% assign author_object = site.data.authors[author_name] %}
 
 {% if author_object %}
-<div class="flex items-center mb-3 last:mb-0">
+<div class="flex items-center mb-1 last:mb-0">
   {% if author_object.image %}
-    <img height="48" width="48" class="rounded-full sepia-[.50]" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
+    <img height="48" width="48" class="rounded-full sepia-[.50] mr-4" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
   {% endif %}
   <div>
     <span class="font-medium text-sm ml-1 block">{{ author_object.name }}</span>
@@ -12,10 +12,10 @@
   </div>
 
 {% endif %}
-  
+
 </div>
 
-<div class="font-medium text-sm ml-1 pl-12 text-stone-600 dark:text-stone-400"> 
+<div class="font-medium text-sm ml-5 pl-12 mb-3 text-stone-600 dark:text-stone-400">
   <p class="reading-time" title="Estimated read time">
     Reading time:
     {% assign words = content | number_of_words %}
