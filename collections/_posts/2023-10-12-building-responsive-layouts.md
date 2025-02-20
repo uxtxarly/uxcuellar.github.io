@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Building Responsive Layouts - Behind the Scenes of Our Design System
+title:  "Building Responsive Layouts: Behind the Scenes of Our Design System"
 authors: carlos
 description: A deep dive into the process of creating responsive layout rules for our design system at Trimble.
 tags:
