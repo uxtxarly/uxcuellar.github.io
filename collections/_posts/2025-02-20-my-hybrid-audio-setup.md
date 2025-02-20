@@ -6,6 +6,7 @@ tags:
  - tech
  - gadgets
 description: Some thoughts about my hybrid audio setup
+bluesky: 3lini43dk5c2y
 ---
 
 Today I want to share my journey with a setup that bridges decades of audio technology. It's got me thinking about the trade-offs between convenience and longevity, and I'm curious if any of you have faced similar dilemmas.
