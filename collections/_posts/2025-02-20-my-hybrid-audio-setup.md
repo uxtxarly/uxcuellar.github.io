@@ -22,7 +22,7 @@ But it's not without quirks. The software occasionally acts like it had one too 
 
 ![WiiM Amp + Schiit Mani](/assets/images/audio0.webp)
 
-One definite downside - no phono preamp built in. For my turntable, I had to add a Schiit Mani preamp to the chain. Not the end of the world, but another box and cable in the system.
+One definite downside - no phono preamp built in. For my turntable, I had to add a **Schiit Mani** preamp to the chain. Not the end of the world, but another box and cable in the system.
 
 ## The Star of the Show: My Kenwood KD-550 Turntable
 
