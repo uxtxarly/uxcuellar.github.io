@@ -45,7 +45,7 @@ layout: null
       <link>{{ site.url }}{{ show.url }}</link>
       <enclosure url="{{ show.file }}" type="audio/mpeg" length="{{ show.length }}"/>
       <description>
-        <![CDATA[ {{ show.description }} ]]>
+        <![CDATA[ {{ show.content | strip_html }} ]]>
       </description>
       <pubDate>{{ show.date | date_to_rfc822 }}</pubDate>
       <itunes:duration>{{ show.duration }}</itunes:duration>
