@@ -12,8 +12,8 @@ I started using [Last.fm](https://www.last.fm/user/txarly) exactly 20 years ago.
 2. I'm officially ancient in internet years
 
 ## The Cold, Hard Stats
-* Total scrobbles: 212,450 songs
-* Artists listened to: 4,785
+* Total scrobbles: 215,237 songs
+* Artists listened to: 4,788
 * Most active year: 2024 (apparently I'm peaking late)
 * Least active years: Several complete gaps in my listening history (life happened)
 * 2024 trend: Listened to 46 tracks with "fire" in the title (midlife crisis? You decide)
